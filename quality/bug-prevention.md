@@ -1,5 +1,11 @@
 ---
 title: Preventing Bugs Before They Exist
+prev:
+  text: What Is Quality?
+  link: /quality/
+next:
+  text: The Right Testing Strategy
+  link: /quality/testing-strategy
 ---
 
 # Preventing Bugs Before They Exist
@@ -35,4 +41,3 @@ If 85% of bugs come from specification problems (incorrect + missing), then the 
 
 This is why Spec-Driven Development exists.
 
-[Learn about the right testing strategy →](/quality/testing-strategy)

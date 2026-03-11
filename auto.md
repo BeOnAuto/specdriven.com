@@ -1,3 +1,12 @@
+---
+prev:
+  text: The Right Testing Strategy
+  link: /quality/testing-strategy
+next:
+  text: Community
+  link: /community
+---
+
 # Auto
 
 ## Put Your Specs on Auto

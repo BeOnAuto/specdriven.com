@@ -1,5 +1,11 @@
 ---
 title: The Right Testing Strategy
+prev:
+  text: Preventing Bugs
+  link: /quality/bug-prevention
+next:
+  text: Auto
+  link: /auto
 ---
 
 # The Right Testing Strategy
@@ -42,4 +48,3 @@ A perfect test automation strategy meets four criteria:
 
 These four criteria aren't aspirational. They're achievable when your testing strategy starts with specifications rather than code.
 
-**Next:** [See how Auto enforces these practices →](/auto)

@@ -1,3 +1,12 @@
+---
+prev:
+  text: Why Spec-Driven?
+  link: /why
+next:
+  text: The Manifesto
+  link: /manifesto
+---
+
 # What Are Specifications?
 
 ## Think About It
@@ -92,6 +101,3 @@ This means your specifications are always up to date. They don't rot in a wiki s
 
 Documentation lies. Code is cryptic. Executable specifications are the only artifact that is both human-readable and machine-verifiable.
 
----
-
-**Next:** [Read the manifesto](/manifesto)

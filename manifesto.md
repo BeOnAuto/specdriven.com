@@ -1,3 +1,12 @@
+---
+prev:
+  text: What Are Specifications?
+  link: /what
+next:
+  text: Spec Dialects
+  link: /dialects/
+---
+
 # The Spec-Driven Manifesto
 
 ## The Chain
@@ -108,8 +117,3 @@ None of this requires you to abandon your current tools or rewrite your process 
 
 Your specifications are not a step on the way to the product. They *are* the product. The code is just the compiled output.
 
----
-
-Start by understanding what specifications really are. Not documents. Not bureaucracy. Not overhead. The most important thing your team produces.
-
-[What Are Specifications? →](/what)

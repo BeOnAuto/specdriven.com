@@ -1,5 +1,11 @@
 ---
 title: Spec Dialects
+prev:
+  text: The Manifesto
+  link: /manifesto
+next:
+  text: Narrative-Driven Development
+  link: /dialects/narrative-driven
 ---
 
 # Spec Dialects
@@ -47,4 +53,3 @@ Just as modern software uses multiple programming languages, the future of spec-
 ### Build Your Own
 Working on a spec dialect? We'd love to hear about it. The spec dialect ecosystem is just beginning, and there's room for dialects covering games, infrastructure, data pipelines, AI/ML systems, and domains nobody has thought of yet.
 
-[Learn how specifications drive quality →](/quality/)

@@ -1,3 +1,10 @@
+---
+prev: false
+next:
+  text: What Are Specifications?
+  link: /what
+---
+
 # Why Spec-Driven?
 
 ## The Forgotten First Principle
@@ -48,6 +55,3 @@ The answer is to apply quality functions at the right time, starting with specif
 
 Spec-Driven Development puts specifications first, making them explicit, persistent, and executable. Not as bureaucratic overhead, but as the shortest path to software that actually does what you intended.
 
----
-
-**Next:** [Learn what specifications really are](/what)

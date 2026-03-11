@@ -1,5 +1,11 @@
 ---
 title: Narrative-Driven Development
+prev:
+  text: Spec Dialects
+  link: /dialects/
+next:
+  text: What Is Quality?
+  link: /quality/
 ---
 
 # Narrative-Driven Development
@@ -78,5 +84,3 @@ The result is production-ready code that traces directly back to your specificat
 
 ### Try It
 [Get started with Auto →](/auto)
-
-[Learn about the spec-driven philosophy →](/manifesto)

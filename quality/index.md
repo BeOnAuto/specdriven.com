@@ -1,5 +1,11 @@
 ---
 title: What Is Quality?
+prev:
+  text: Narrative-Driven Development
+  link: /dialects/narrative-driven
+next:
+  text: Preventing Bugs
+  link: /quality/bug-prevention
 ---
 
 # What Is Quality?
@@ -37,4 +43,3 @@ When quality is applied only at the end, it's like inspecting a house after it's
 ### The Connection to Specifications
 The single highest-leverage quality function is getting your specifications right. 50% of defects originate there. Fix the specifications, and you've eliminated half your bugs before writing a single line of code.
 
-**Next:** [Learn how specifications prevent bugs →](/quality/bug-prevention)

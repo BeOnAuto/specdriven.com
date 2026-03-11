@@ -1,5 +1,9 @@
 ---
 title: Community
+prev:
+  text: Auto
+  link: /auto
+next: false
 ---
 
 # Community
