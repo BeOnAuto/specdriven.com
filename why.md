@@ -21,13 +21,7 @@ You probably assume most bugs come from sloppy coding. They don't.
 
 A Cambridge University study found that **50% of all defects originate at the specification stage**, not in code, not in testing, but in the conversation (or lack thereof) about what to build.
 
-Three types of bugs exist in your software right now:
-
-1. **Implementation defects** (roughly 15%): the spec was right, the code was wrong. TDD catches these, reducing them by 40-90%.
-2. **Incorrect specifications** (the largest source): the spec was wrong, so the code faithfully implements the wrong thing. BDD techniques can reduce these from 50% to as low as 2%.
-3. **Missing specifications**: nobody thought of this scenario. No one asked the question. Discovery techniques prevent these, but only if you use them.
-
-Notice something? Two out of three bug categories have nothing to do with code. They have everything to do with specifications.
+Only about 15% of bugs are actual coding mistakes. The rest? Incorrect specifications and missing specifications. **85% of your bugs have nothing to do with code.** They have everything to do with what was (or wasn't) communicated before coding began.
 
 ## The Golden Rule of Feedback
 

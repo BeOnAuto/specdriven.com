@@ -4,7 +4,7 @@ prev:
   text: Spec Dialects
   link: /dialects/
 next:
-  text: What Is Quality?
+  text: Quality & Specifications
   link: /quality/
 ---
 

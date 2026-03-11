@@ -1,7 +1,7 @@
 ---
 prev:
-  text: The Right Testing Strategy
-  link: /quality/testing-strategy
+  text: Quality & Specifications
+  link: /quality/
 next:
   text: Community
   link: /community
@@ -56,4 +56,4 @@ Auto Engineer is the open source engine that powers the Auto pipeline. Clone it,
 
 Connect with other spec-driven practitioners, share your experience, and help shape the future of software development.
 
-[Join Discord](https://discord.gg/onauto)
+[Join Discord](https://discord.com/invite/B8BKcKMRm8)

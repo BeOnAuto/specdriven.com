@@ -4,6 +4,10 @@ hero:
   name: "Spec-Driven"
   text: "AI writes code faster than ever. The quality has never been worse."
   tagline: "Specifications are the new programming languages. It's time to take them seriously."
+  image:
+    light: /light.png
+    dark: /dark.png
+    alt: "Spec-Driven Development"
   actions:
     - theme: brand
       text: Read the Manifesto

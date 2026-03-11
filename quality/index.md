@@ -1,45 +1,53 @@
 ---
-title: What Is Quality?
+title: Quality & Specifications
 prev:
   text: Narrative-Driven Development
   link: /dialects/narrative-driven
 next:
-  text: Preventing Bugs
-  link: /quality/bug-prevention
+  text: Auto
+  link: /auto
 ---
 
-# What Is Quality?
+# Quality & Specifications
 
-### Quality Is Like Love
-When you love something, you invest time and energy. You care about its condition. When due care and attention is applied throughout, the quality shows, in tangible measures and in how it feels.
+## Quality Is Care
 
-High quality comes from care and attention.
+When you love something, you spend time with it. You pay attention to the details. You notice when something's off. High quality comes from care and attention applied throughout, not inspected in at the end.
 
-### Assumed Value vs Real Value
-Every feature starts as an assumption. You assume it will be valuable. But assumed value only becomes real value when a user actually receives benefit from it.
+Your specifications deserve that same care. A specification written in five minutes during a standup will produce five-minute-quality software. A specification that's been discussed, challenged, refined, and made precise will produce software that actually does what you intended.
 
-The mechanism that transforms assumed value into real value? **Quality functions.**
+The question isn't whether you can afford to spend time on specifications. It's whether you can afford not to.
 
-### Quality Functions
-Quality functions are the acts of care and attention applied throughout a product's lifecycle. They include:
-- Researching whether your idea solves a real problem
-- Specifying behavior precisely so the team shares understanding
-- Writing automated tests so the system proves it works
-- Monitoring production so you know when it doesn't
+## The Three Types of Bugs
 
-The formula is simple:
+Most defects don't come from bad code. They come from bad specifications. Here's the detailed breakdown.
 
-**Real Value = Quality(Assumed Value)**
+**Type 1: Implementation Defects (15% of all bugs)**
 
-Or in code: `Vr = Q(Va)`
+The spec was correct. The code was wrong. These include regression bugs: things that worked before but broke when code changed. They're the most visible bugs but account for only 15% of all defects.
 
-### Quality Belongs to Everyone
-In most organizations, "quality" is assigned to a QA team at the end of the process. By then, most opportunities to influence quality have already passed.
+**Quality function: Test-Driven Development.** TDD reduces implementation defects by 40-90%. Developers write executable specifications before writing code, ensuring that working code stays working.
 
-Quality isn't a phase. It isn't a department. It's a responsibility shared by everyone who touches the product, from the first idea to production monitoring.
+**Type 2: Incorrect Specifications (the largest source)**
 
-When quality is applied only at the end, it's like inspecting a house after it's built and discovering the foundation is crooked. The cheapest time to get the foundation right is before you pour the concrete.
+The spec was wrong. So the code is wrong. The code faithfully implements the wrong thing, and no amount of testing can catch it because the tests verify the wrong behavior too.
 
-### The Connection to Specifications
-The single highest-leverage quality function is getting your specifications right. 50% of defects originate there. Fix the specifications, and you've eliminated half your bugs before writing a single line of code.
+**Quality function: Behaviour-Driven Development.** Cross-functional teams flesh out detailed scenarios together, surfacing ambiguity before it becomes code. BDD can reduce specification defects from 50% to 2%.
 
+**Type 3: Missing Specifications**
+
+Nobody thought of this scenario. The spec wasn't wrong. It simply didn't exist. These are the unknown unknowns. Their impact ranges from embarrassing to catastrophic.
+
+**Quality function: Deliberate Discovery.** Teams collaboratively explore what they don't know they don't know, systematically uncovering gaps before they become production incidents.
+
+## The Math Is Clear
+
+85% of bugs come from specification problems (incorrect + missing). The highest-leverage investment you can make isn't in better testing. It's in better specifications.
+
+This is the core insight of Spec-Driven Development. Get the specifications right, and most of your quality problems disappear before a single line of code is written.
+
+## Quality Starts Here
+
+Quality isn't a phase at the end. It isn't a department. It starts the moment you decide what to build.
+
+Every specification you write is a quality decision. A vague spec is a decision to gamble. A precise spec is a decision to be deliberate. Spec-Driven Development is the practice of making that choice consciously, every time.

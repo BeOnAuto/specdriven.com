@@ -1,0 +1,431 @@
+/* ============================================================
+   Auto Brand Theme — matches on.auto aesthetic
+   Deep purple-black dark mode · clean white light mode
+   Brand stripes: #EC3F4A #FF8A1D #5EC72D #42C3F7
+   ============================================================ */
+
+/* Display font — TT Supermolot Neue Expanded Bold (from on.auto) */
+@font-face {
+  font-family: 'TT Supermolot Neue';
+  src: url('https://framerusercontent.com/assets/18dTfI9lbU8AJLdoZYyzkgn7vw.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Light mode */
+:root {
+  /* Brand — Auto primary blue */
+  --vp-c-brand-1: #0057dd;
+  --vp-c-brand-2: #0048b8;
+  --vp-c-brand-3: #003d9e;
+  --vp-c-brand-soft: rgba(0, 87, 221, 0.14);
+
+  /* Secondary accent — brand green */
+  --vp-c-green-1: #5ec72d;
+  --vp-c-green-soft: rgba(94, 199, 45, 0.14);
+
+  /* Backgrounds — brand guide */
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #fafafa;
+  --vp-c-bg-soft: #ffffff;
+  --vp-c-bg-elv: #ffffff;
+
+  /* Text — brand guide */
+  --vp-c-text-1: #18181b;
+  --vp-c-text-2: #52525b;
+  --vp-c-text-3: #71717a;
+
+  /* Borders / dividers */
+  --vp-c-divider: #e4e4e7;
+  --vp-c-gutter: #f4f4f5;
+
+  /* Code */
+  --vp-code-bg: #0e051b;
+  --vp-code-color: #f3ecfe;
+
+  /* Shadows */
+  --vp-shadow-1: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Dark mode — on.auto deep purple-black aesthetic */
+.dark {
+  /* Brand — lighter blue for dark bg contrast */
+  --vp-c-brand-1: #4d8ae8;
+  --vp-c-brand-2: #3a7be0;
+  --vp-c-brand-3: #6ba0f0;
+  --vp-c-brand-soft: rgba(0, 87, 221, 0.16);
+
+  /* Secondary accent */
+  --vp-c-green-1: #5ec72d;
+  --vp-c-green-soft: rgba(94, 199, 45, 0.16);
+
+  /* Backgrounds — deep purple-black from on.auto */
+  --vp-c-bg: #0e051b;
+  --vp-c-bg-alt: #130c1e;
+  --vp-c-bg-soft: #1a1329;
+  --vp-c-bg-elv: #160f22;
+
+  /* Text — lavender-white from on.auto */
+  --vp-c-text-1: #f3ecfe;
+  --vp-c-text-2: #b8aed0;
+  --vp-c-text-3: #8a7da0;
+
+  /* Borders / dividers — subtle purple glow */
+  --vp-c-divider: rgba(243, 236, 254, 0.08);
+  --vp-c-gutter: rgba(243, 236, 254, 0.04);
+
+  /* Code */
+  --vp-code-bg: #0a0414;
+  --vp-code-color: #f3ecfe;
+
+  /* Shadows */
+  --vp-shadow-1: 0 14px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Link hover */
+:root a:hover,
+.dark a:hover {
+  text-decoration-color: currentColor;
+}
+
+/* Hero section — retro rainbow stripe gradient matching on.auto aurora */
+.VPHero .name {
+  font-family: 'TT Supermolot Neue', sans-serif;
+  background: linear-gradient(135deg, #ec3f4a 0%, #ff8a1d 30%, #5ec72d 60%, #42c3f7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Nav bar title — same colorful gradient as hero */
+.VPNavBarTitle .title {
+  font-family: 'TT Supermolot Neue', sans-serif;
+  background: linear-gradient(135deg, #ec3f4a 0%, #ff8a1d 30%, #5ec72d 60%, #42c3f7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+/* -------------------------------------------------------
+   HERO — base (mobile-first, < 640px)
+   ------------------------------------------------------- */
+.VPHero {
+  padding-bottom: 36px !important;
+}
+
+.VPHero .main {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.VPHero .name {
+  font-size: 32px !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.02em;
+}
+
+.VPHero .text {
+  font-size: 32px !important;
+  line-height: 1.15 !important;
+}
+
+.VPHero .tagline {
+  font-size: 16px !important;
+  line-height: 1.4 !important;
+  padding-top: 10px !important;
+}
+
+.VPHero .actions {
+  padding-top: 20px !important;
+  gap: 10px !important;
+}
+
+.VPHero .image-container,
+.VPHero .image-container .image-bg,
+.VPHero .image-container img {
+  max-width: 240px;
+  max-height: 240px;
+}
+
+/* -------------------------------------------------------
+   FEATURES — base (mobile-first, < 640px)
+   ------------------------------------------------------- */
+.VPFeatures {
+  padding: 4px 0 36px !important;
+}
+
+.VPFeatures .VPFeature {
+  min-height: auto !important;
+}
+
+.VPFeature {
+  padding: 20px 16px !important;
+}
+
+.VPFeature .box {
+  align-items: center;
+  text-align: center;
+  gap: 0;
+  justify-content: flex-start;
+  padding: 0 !important;
+}
+
+.VPFeature .box .title {
+  font-size: 14px !important;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.VPFeature .box .details {
+  font-size: 12.5px !important;
+  line-height: 1.5;
+  padding-top: 4px;
+}
+
+.VPFeature .VPImage,
+.VPFeature .box > .VPImage {
+  margin-bottom: 8px !important;
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+.VPFeature img,
+.VPFeature .VPImage img {
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: contain !important;
+  image-rendering: pixelated;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+/* -------------------------------------------------------
+   TABLET — 640px – 959px
+   ------------------------------------------------------- */
+@media (min-width: 640px) and (max-width: 959px) {
+  .VPHero {
+    padding-bottom: 40px !important;
+  }
+
+  .VPHero .name {
+    font-size: 36px !important;
+  }
+
+  .VPHero .text {
+    font-size: 36px !important;
+  }
+
+  .VPHero .tagline {
+    font-size: 18px !important;
+  }
+
+  .VPHero .image-container,
+  .VPHero .image-container .image-bg,
+  .VPHero .image-container img {
+    max-width: 260px;
+    max-height: 260px;
+  }
+
+  .VPFeature {
+    padding: 20px 18px !important;
+  }
+
+  .VPFeature img,
+  .VPFeature .VPImage img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .VPFeature .box .title {
+    font-size: 13.5px !important;
+  }
+
+  .VPFeature .box .details {
+    font-size: 12px !important;
+  }
+}
+
+/* -------------------------------------------------------
+   DESKTOP — 960px+
+   ------------------------------------------------------- */
+@media (min-width: 960px) {
+  .VPHero {
+    padding-bottom: 48px !important;
+  }
+
+  .VPHero .name {
+    font-size: 44px !important;
+  }
+
+  .VPHero .text {
+    font-size: 44px !important;
+  }
+
+  .VPHero .tagline {
+    font-size: 20px !important;
+  }
+
+  .VPHero .actions {
+    padding-top: 24px !important;
+    gap: 12px !important;
+  }
+
+  .VPHero .image-container,
+  .VPHero .image-container .image-bg,
+  .VPHero .image-container img {
+    max-width: 320px;
+    max-height: 320px;
+  }
+
+  .VPFeature {
+    padding: 24px 20px !important;
+  }
+
+  .VPFeature img,
+  .VPFeature .VPImage img {
+    width:64px !important;
+    height: 64px !important;
+  }
+
+  .VPFeature .VPImage,
+  .VPFeature .box > .VPImage {
+    margin-bottom: 10px !important;
+  }
+
+  .VPFeature .box .title {
+    font-size: 14px !important;
+  }
+
+  .VPFeature .box .details {
+    font-size: 13px !important;
+    padding-top: 6px;
+  }
+}
+
+/* -------------------------------------------------------
+   LARGE DESKTOP — 1280px+
+   ------------------------------------------------------- */
+@media (min-width: 1280px) {
+  .VPHero .image-container,
+  .VPHero .image-container .image-bg,
+  .VPHero .image-container img {
+    max-width: 360px;
+    max-height: 360px;
+  }
+}
+
+/* Feature cards - light mode */
+.VPFeature:hover {
+  border-color: rgba(0, 87, 221, 0.4);
+}
+
+/* Feature cards - dark mode — on.auto card style */
+.dark .VPFeature {
+  background-color: #160f22;
+  border-color: rgba(243, 236, 254, 0.06);
+}
+
+.dark .VPFeature:hover {
+  border-color: rgba(243, 236, 254, 0.15);
+}
+
+/* Button styling — primary blue, pill-shaped like on.auto */
+.VPButton.brand {
+  background-color: #18181b !important;
+  border-color: #18181b !important;
+  color: #ffffff !important;
+  border-radius: 100px;
+}
+
+.VPButton.brand:hover {
+  background-color: #27272a !important;
+  border-color: #27272a !important;
+}
+
+.VPButton.alt {
+  border-radius: 100px;
+}
+
+.dark .VPButton.brand {
+  background-color: #f3ecfe !important;
+  border-color: #f3ecfe !important;
+  color: #0e051b !important;
+}
+
+.dark .VPButton.brand:hover {
+  background-color: #ddd4f0 !important;
+  border-color: #ddd4f0 !important;
+}
+
+.dark .VPButton.alt {
+  background-color: rgba(243, 236, 254, 0.08);
+  border-color: rgba(243, 236, 254, 0.12);
+  color: #f3ecfe;
+}
+
+.dark .VPButton.alt:hover {
+  background-color: rgba(243, 236, 254, 0.14);
+  border-color: rgba(243, 236, 254, 0.2);
+}
+
+/* Nav bar in dark mode */
+.dark .VPNavBar {
+  background-color: rgba(14, 5, 27, 0.85);
+  border-bottom-color: rgba(243, 236, 254, 0.08);
+}
+
+/* Sidebar in dark mode */
+.dark .VPSidebar {
+  background-color: #0e051b;
+}
+
+/* Local search modal */
+.dark .VPLocalSearchBox .shell {
+  background-color: #160f22;
+  border-color: rgba(243, 236, 254, 0.1);
+}
+
+/* Footer */
+.dark .VPFooter {
+  background-color: #0e051b;
+  border-top-color: rgba(243, 236, 254, 0.08);
+}
+
+/* Inline code - Light mode */
+:not(pre) > code {
+  background-color: #eff6ff;
+  color: #0050c8;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: 500;
+  border: 1px solid rgba(0, 87, 221, 0.15);
+}
+
+/* Inline code - Dark mode — purple-tinted to match on.auto */
+.dark :not(pre) > code {
+  background-color: rgba(243, 236, 254, 0.08);
+  color: #c4b8f0;
+  border: 1px solid rgba(243, 236, 254, 0.1);
+}
+
+/* Feature card inline code styling */
+.VPFeature code {
+  background-color: rgba(0, 87, 221, 0.08);
+  color: #0050c8;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 500;
+  border: 1px solid rgba(0, 87, 221, 0.15);
+}
+
+.dark .VPFeature code {
+  background-color: rgba(243, 236, 254, 0.08);
+  color: #c4b8f0;
+  border: 1px solid rgba(243, 236, 254, 0.1);
+}

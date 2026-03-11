@@ -21,7 +21,6 @@ Not everything is a spec dialect. Here's the distinction:
 **Spec Dialects** have:
 - A structured format with a defined schema
 - Machine-parseable syntax
-- The ability to specify behavior (not just facilitate discussion)
 - A direct relationship to executable output
 
 **Discovery Techniques** (not dialects) include:
@@ -52,4 +51,6 @@ Just as modern software uses multiple programming languages, the future of spec-
 
 ### Build Your Own
 Working on a spec dialect? We'd love to hear about it. The spec dialect ecosystem is just beginning, and there's room for dialects covering games, infrastructure, data pipelines, AI/ML systems, and domains nobody has thought of yet.
+
+[Submit your dialect →](/community) | [Contribute on GitHub →](https://github.com/BeOnAuto/specdriven.com)
 
