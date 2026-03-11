@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://specdriven.com">
-    <img src="public/dark.png" alt="Spec-Driven Development" width="600" />
+    <img src="https://specdriven.com/dark.png" alt="Spec-Driven Development" width="600" />
   </a>
 </p>
 
