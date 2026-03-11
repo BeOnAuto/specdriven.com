@@ -5,7 +5,7 @@ title: Narrative-Driven Development
 # Narrative-Driven Development
 
 ### What Is NDD?
-Narrative-Driven Development (NDD) is a spec dialect for building line-of-business web applications. It's a time-based modeling approach that unites product, design, and engineering around a single artifact — the narrative.
+Narrative-Driven Development (NDD) is a spec dialect for building line-of-business web applications. It's a time-based modeling approach that unites product, design, and engineering around a single artifact: the narrative.
 
 A narrative tells the story of how a user interacts with a system, moment by moment, through time. It captures not just what happens, but who does it, through which interface, and what the system does in response.
 
@@ -16,18 +16,18 @@ Traditional approaches scatter these fragments across user stories, Jira tickets
 
 ### The Core Constructs
 
-**Outcomes** — What business objective does this narrative achieve?
+**Outcomes**: What business objective does this narrative achieve?
 
-**Moments** — Events that happen at specific points in time, written in active voice: "User sees their balance," "System fetches dashboard data."
+**Moments**: Events that happen at specific points in time, written in active voice: "User sees their balance," "System fetches dashboard data."
 
-**Interfaces** — How the user interacts at each moment: a screen, a button, an API endpoint.
+**Interfaces**: How the user interacts at each moment: a screen, a button, an API endpoint.
 
-**Actions** — What the system does: queries (retrieve data) and commands (change state).
+**Actions**: What the system does. Queries retrieve data, commands change state.
 
-**Lanes** — Three parallel tracks that capture different perspectives:
-- **Context Lane** — the big picture (outcomes, frames)
-- **Interaction Lane** — the user experience (moments, interfaces)
-- **System Lane** — the technical behavior (actions, specifications)
+**Lanes**: Three parallel tracks that capture different perspectives:
+- **Context Lane**: the big picture (outcomes, frames)
+- **Interaction Lane**: the user experience (moments, interfaces)
+- **System Lane**: the technical behavior (actions, specifications)
 
 ### The Narrative DSL
 NDD has a TypeScript implementation that serves as the executable format. Here's what a real narrative looks like:
@@ -66,7 +66,7 @@ NDD organizes behavior into four slice types:
 | **Experience** | UI-only behavior | Interaction logic | — |
 
 ### From Narrative to Running Code
-When used with Auto Engineer, narratives flow through a pipeline:
+When used with Auto, narratives flow through a pipeline:
 1. Narrative → Domain Model (entities, commands, events, queries)
 2. Domain Model → GraphQL Schema
 3. Schema → Server Scaffold (Apollo + Emmett event sourcing)
@@ -77,6 +77,6 @@ When used with Auto Engineer, narratives flow through a pipeline:
 The result is production-ready code that traces directly back to your specifications.
 
 ### Try It
-[Get started with Auto Engineer →](/auto)
+[Get started with Auto →](/auto)
 
 [Learn about the spec-driven philosophy →](/manifesto)

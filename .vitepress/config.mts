@@ -23,7 +23,7 @@ export default defineConfig({
       { text: 'Manifesto', link: '/manifesto' },
       { text: 'Dialects', link: '/dialects/' },
       { text: 'Quality', link: '/quality/' },
-      { text: 'Auto Engineer', link: '/auto' },
+      { text: 'Auto', link: '/auto' },
     ],
     sidebar: {
       '/dialects/': [
@@ -51,8 +51,8 @@ export default defineConfig({
       { icon: 'discord', link: 'https://discord.gg/onauto' },
     ],
     footer: {
-      message: 'An initiative by <a href="https://xolv.io">Xolv.io</a> — Delivering higher quality software, faster.',
-      copyright: '© 2025 Xolv.io. All rights reserved.',
+      message: 'An initiative by <a href="https://on.auto">Auto</a>',
+      copyright: '© 2025 Auto. All rights reserved.',
     },
     editLink: {
       pattern: 'https://github.com/BeOnAuto/specdriven.com/edit/main/:path',

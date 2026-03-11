@@ -20,14 +20,14 @@ A spec dialect is more than a workshop technique or a meeting format. To qualify
 
 - **A structured format** with a defined schema or grammar
 - **Machine-parseable syntax** that tooling can process
-- **Behavioral specification** — it describes what a system should do, not just facilitates discussion
-- **A path to execution** — a relationship to tests, code generation, or validation
+- **Behavioral specification**: it describes what a system should do, not just facilitates discussion
+- **A path to execution**: a relationship to tests, code generation, or validation
 
 If your work meets these criteria, reach out on Discord and let's talk about featuring it on this site.
 
 ## Contribute to This Site
 
-This site is [open source on GitHub](https://github.com/BeOnAuto/specdriven.com). If you see something that could be improved, clarified, or expanded — submit a pull request. Spec-Driven Development is a community effort, and so is this site.
+This site is [open source on GitHub](https://github.com/BeOnAuto/specdriven.com). If you see something that could be improved, clarified, or expanded, submit a pull request. Spec-Driven Development is a community effort, and so is this site.
 
 [View on GitHub →](https://github.com/BeOnAuto/specdriven.com)
 
@@ -35,6 +35,6 @@ This site is [open source on GitHub](https://github.com/BeOnAuto/specdriven.com)
 
 Follow the evolution of spec-driven tooling and practices:
 
-- [on.auto](https://on.auto) — The spec-driven development platform
-- [Xolv.io](https://xolv.io) — The company behind Auto Engineer and Spec-Driven Development
-- [Discord](https://discord.gg/onauto) — Where the community gathers
+- [on.auto](https://on.auto): The spec-driven development platform
+- [Xolv.io](https://xolv.io): The company behind Auto and Spec-Driven Development
+- [Discord](https://discord.gg/onauto): Where the community gathers
