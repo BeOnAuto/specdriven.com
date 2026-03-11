@@ -66,14 +66,18 @@ This isn't a test. It's a specification of how your domain behaves. Anyone can r
 
 The component-level specification format. It communicates the behaviors and outcomes of individual modules:
 
-```
-Search Filter
-  render
-    it should show the color drop-down
-    it should show the submit button
-  submit
-    it should show an error if no color is selected
-    it should fire a search command with the selected color
+```typescript
+describe('Search Filter', () => {
+  describe('render', () => {
+    it('should show the color drop-down')
+    it('should show the submit button')
+  })
+
+  describe('submit', () => {
+    it('should show an error if no color is selected')
+    it('should fire a search command with the selected color')
+  })
+})
 ```
 
 Domain specifications tell you what the system does. Component specifications tell you how each piece contributes.
