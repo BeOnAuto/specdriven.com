@@ -112,8 +112,8 @@
 /* -------------------------------------------------------
    HERO — base (mobile-first, < 640px)
    ------------------------------------------------------- */
-.VPHero {
-  padding-bottom: 36px !important;
+.VPHero.has-image {
+  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 16px) 24px 36px !important;
 }
 
 .VPHero .main {
@@ -121,21 +121,25 @@
   margin: 0 auto;
 }
 
-.VPHero .name {
-  font-size: 32px !important;
-  line-height: 1.15 !important;
-  letter-spacing: -0.02em;
+.VPHero .heading {
+  align-items: center;
 }
 
+.VPHero .name,
 .VPHero .text {
   font-size: 32px !important;
   line-height: 1.15 !important;
+  letter-spacing: -0.02em;
+  max-width: 100% !important;
+  width: auto !important;
+  text-align: center;
 }
 
 .VPHero .tagline {
   font-size: 16px !important;
   line-height: 1.4 !important;
   padding-top: 10px !important;
+  max-width: 100% !important;
 }
 
 .VPHero .actions {
@@ -143,11 +147,16 @@
   gap: 10px !important;
 }
 
+/* Image spacing — override default negative margins that crowd the heading */
+.VPHero .image {
+  margin: 0 0 7px 0 !important;
+}
+
 .VPHero .image-container,
 .VPHero .image-container .image-bg,
 .VPHero .image-container img {
-  max-width: 240px;
-  max-height: 240px;
+  max-width: 200px;
+  max-height: 150px;
 }
 
 /* -------------------------------------------------------
@@ -207,8 +216,8 @@
    TABLET — 640px – 959px
    ------------------------------------------------------- */
 @media (min-width: 640px) and (max-width: 959px) {
-  .VPHero {
-    padding-bottom: 40px !important;
+  .VPHero.has-image {
+    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 24px) 48px 40px !important;
   }
 
   .VPHero .name {
@@ -223,11 +232,15 @@
     font-size: 18px !important;
   }
 
+  .VPHero .image {
+    margin-bottom: 0px !important;
+  }
+
   .VPHero .image-container,
   .VPHero .image-container .image-bg,
   .VPHero .image-container img {
-    max-width: 260px;
-    max-height: 260px;
+    max-width: 240px;
+    max-height: 180px;
   }
 
   .VPFeature {
@@ -253,16 +266,31 @@
    DESKTOP — 960px+
    ------------------------------------------------------- */
 @media (min-width: 960px) {
-  .VPHero {
-    padding-bottom: 48px !important;
+  .VPHero.has-image {
+    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 64px 36px !important;
   }
 
-  .VPHero .name {
-    font-size: 44px !important;
+  .VPHero .container {
+    gap: 32px;
   }
 
+  .VPHero .main {
+    flex-shrink: 1;
+  }
+
+  .VPHero .image {
+    margin-bottom: 0 !important;
+    flex-shrink: 0;
+  }
+
+  .VPHero .heading {
+    align-items: flex-start;
+  }
+
+  .VPHero .name,
   .VPHero .text {
     font-size: 44px !important;
+    text-align: left;
   }
 
   .VPHero .tagline {
@@ -277,8 +305,8 @@
   .VPHero .image-container,
   .VPHero .image-container .image-bg,
   .VPHero .image-container img {
-    max-width: 320px;
-    max-height: 320px;
+    max-width: 280px;
+    max-height: 210px;
   }
 
   .VPFeature {
@@ -310,11 +338,15 @@
    LARGE DESKTOP — 1280px+
    ------------------------------------------------------- */
 @media (min-width: 1280px) {
+  .VPHero .container {
+    gap: 40px;
+  }
+
   .VPHero .image-container,
   .VPHero .image-container .image-bg,
   .VPHero .image-container img {
-    max-width: 360px;
-    max-height: 360px;
+    max-width: 340px;
+    max-height: 255px;
   }
 }
 
