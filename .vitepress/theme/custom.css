@@ -1,0 +1,69 @@
+/* Hero image glow effect - Auto brand colors */
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #e85a4f 0%, #f5a623 35%, #7ed321 70%, #50c878 100%);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #e85a4f 0%, #f5a623 33%, #7ed321 66%, #50c878 100%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}
+
+.VPHero .VPImage {
+  filter: drop-shadow(-2px 4px 6px rgba(0, 0, 0, 0.2));
+  padding: 18px;
+}
+
+/* Make hero image larger */
+.VPHero .image-src {
+  max-width: 280px;
+  max-height: 280px;
+}
+
+.VPHero .image-container {
+  width: 360px;
+  height: 360px;
+}
+
+.VPHero .image-bg {
+  width: 240px;
+  height: 240px;
+}
+
+@media (min-width: 640px) {
+  .VPHero .image-src {
+    max-width: 360px;
+    max-height: 360px;
+  }
+
+  .VPHero .image-container {
+    width: 440px;
+    height: 440px;
+  }
+
+  .VPHero .image-bg {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPHero .image-src {
+    max-width: 440px;
+    max-height: 440px;
+  }
+
+  .VPHero .image-bg {
+    width: 400px;
+    height: 400px;
+  }
+}

@@ -1,0 +1,118 @@
+---
+prev:
+  text: Tool Landscape
+  link: /landscape/
+next: false
+---
+
+# Evaluation Framework
+
+> With so many tools approaching spec-driven development from different angles, you need a way to evaluate what matters for your context. This page defines 13 capability dimensions and scores each of the six profiled tools against them.
+>
+> These are editorial assessments based on publicly available information. Tool creators and practitioners: if a score or note is inaccurate, [submit a PR](https://github.com/BeOnAuto/specdriven.com) or [open an issue](https://github.com/BeOnAuto/specdriven.com/issues).
+
+## The 13 Capability Dimensions {#13-dimensions}
+
+These are independent capabilities, not forced trade-offs. A well-designed tool can score high across many of them. But most tools make design choices that favor some dimensions over others.
+
+**1. Development Velocity** {#dim-velocity}
+
+How fast you get from idea to working output. There are two sub-dimensions here: first output speed (where vibe coding excels) and iteration speed (where the curves cross). Spec-driven approaches stay flat or improve over time. Vibe coding degrades as complexity grows.
+
+**2. Spec Durability** {#dim-durability}
+
+Do specs remain valid as the system evolves? Markdown specs without a connection to the running system diverge quickly. Executable specs that are part of the test suite remain valid by definition, because the build breaks when they don't.
+
+**3. Executability** {#dim-executability}
+
+Can specs automatically verify themselves? Does the system continuously prove its own correctness? This is where the [historical lineage](/timeline) matters most. Most current tools have regressed here compared to the BDD generation.
+
+**4. Accessibility** {#dim-accessibility}
+
+Can non-developers meaningfully participate? Product managers, designers, and business analysts all need to read and contribute to specs. A code-level interface is powerful but excludes some stakeholders. Markdown is approachable but vague. Model-based approaches that offer multiple views (code, visual, document) can serve both audiences.
+
+**5. Model Coherence** {#dim-coherence}
+
+Does the tool maintain a single underlying model serving all audiences (visual, documentation, code), or does it produce disconnected artifacts that drift apart over time?
+
+**6. Traceability** {#dim-traceability}
+
+Can you follow the thread from business intent to implementation and back? This is critical for enterprises, compliance, audit trails, and debugging production issues.
+
+**7. Agent Guidance** {#dim-agent-guidance}
+
+How effectively does the spec format constrain AI to produce faithful output? Loose prose is a suggestion. A structured DSL with executable assertions is a contract.
+
+**8. Portability** {#dim-portability}
+
+Can you take your specs across different tools, agents, and environments without lock-in? If you switch from one AI coding assistant to another, do your specs survive?
+
+**9. Brownfield Readiness** {#dim-brownfield}
+
+Does it work on existing codebases, not just greenfield projects? Most real-world software is brownfield. A tool that only works from scratch has a limited audience.
+
+**10. Modularity and Extensibility** {#dim-modularity}
+
+How decoupled is the spec from the implementation? Can you target multiple languages or platforms from the same specification?
+
+**11. Composability** {#dim-composability}
+
+Can specs reference, build on, and reuse each other without duplication at scale? As systems grow, you need specifications that compose cleanly.
+
+**12. Cross-Cutting Expressiveness** {#dim-cross-cutting}
+
+Can the spec format handle non-functional requirements like security, compliance, and performance that span multiple features?
+
+**13. Reconcilability** {#dim-reconcilability}
+
+When spec and implementation diverge, does the system help bring them back into alignment? Can you bootstrap specs from existing code?
+
+### Domain Fit {#domain-fit}
+
+Beyond capability dimensions, each tool has a natural domain:
+
+- **Line-of-business applications**: Workflows, CRUD, commands/queries, business rules
+- **APIs and services**: Backend, integrations, data pipelines, microservices
+- **Frontend-heavy applications**: Rich UI, design systems, interactive experiences
+- **Infrastructure and DevOps**: Cloud provisioning, IaC, CI/CD
+- **Greenfield prototypes**: Zero-to-one, proof of concept, rapid experimentation
+- **Legacy modernization**: Brownfield migration, refactoring, strangler pattern
+- **General purpose**: No specific domain constraint
+
+Capability profile and domain fit are separate layers. A tool might be strong on executability but only for line-of-business apps. Another might be general purpose but weak on traceability. You need both lenses.
+
+### Rating Scale
+
+| Rating | Meaning                                        |
+| ------ | ---------------------------------------------- |
+| ●●●    | Strong. The tool does this well today.         |
+| ●●○    | Moderate. Partial support or work in progress. |
+| ●○○    | Weak. Minimal support or on the roadmap.       |
+| ○○○    | Absent. Not addressed by the tool.             |
+
+## Comparison Table {#comparison-table}
+
+| Dimension            | [Auto/NDD](/landscape/auto#score-card) | [Spec Kit](/landscape/github-spec-kit#score-card) | [Intent](/landscape/intent#score-card) | [Kiro](/landscape/kiro#score-card) | [OpenSpec](/landscape/openspec#score-card) | [Tessl](/landscape/tessl#score-card) |
+| -------------------- | -------------------------------------- | ------------------------------------------------- | -------------------------------------- | ---------------------------------- | ------------------------------------------ | ------------------------------------ |
+| Development Velocity | ●●●                                    | ●●○                                               | ●●●                                    | ●●○                                | ●●●                                        | ●●○                                  |
+| Spec Durability      | ●●●                                    | ●○○                                               | ●●○                                    | ●○○                                | ●○○                                        | ●●○                                  |
+| Executability        | ●●●                                    | ○○○                                               | ○○○                                    | ○○○                                | ○○○                                        | ●○○                                  |
+| Accessibility        | ●●●                                    | ●●○                                               | ●○○                                    | ●●●                                | ●●○                                        | ●○○                                  |
+| Model Coherence      | ●●●                                    | ●○○                                               | ●●○                                    | ●○○                                | ●○○                                        | ●○○                                  |
+| Traceability         | ●●●                                    | ●●○                                               | ●●○                                    | ●●○                                | ●○○                                        | ●●○                                  |
+| Agent Guidance       | ●●●                                    | ●●○                                               | ●●●                                    | ●●●                                | ●○○                                        | ●●○                                  |
+| Portability          | ●●●                                    | ●●●                                               | ●○○                                    | ●○○                                | ●●●                                        | ●●○                                  |
+| Brownfield Readiness | ●●○                                    | ●●○                                               | ●●●                                    | ●●○                                | ●●●                                        | ●●○                                  |
+| Modularity           | ●●●                                    | ●●○                                               | ●●○                                    | ●●○                                | ●○○                                        | ●●○                                  |
+| Composability        | ●●●                                    | ●○○                                               | ●●○                                    | ●○○                                | ●○○                                        | ●○○                                  |
+| Cross-Cutting        | ●●●                                    | ●●○                                               | ●○○                                    | ●●○                                | ●○○                                        | ●○○                                  |
+| Reconcilability      | ●○○                                    | ●○○                                               | ●●●                                    | ○○○                                | ●●○                                        | ●●○                                  |
+| Domain Fit           | LOB apps                               | General purpose                                   | Enterprise                             | AWS-native                         | Brownfield                                 | Component-level                      |
+
+Click any tool name to see its detailed score card with per-dimension notes.
+
+---
+
+> **Think a dimension is missing or mislabeled?** This framework is community-driven. [Open an issue](https://github.com/BeOnAuto/specdriven.com/issues) to discuss.
+
+_An initiative by [Auto](https://on.auto)._
