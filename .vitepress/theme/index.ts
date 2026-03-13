@@ -9,7 +9,7 @@ export default {
       const isLocal = window.location.hostname === 'localhost';
 
       posthog.init('phc_elW8D8ol33mfOT9p9OHf7oIeovn9r0wGE4QloAnoi0y', {
-        api_host: isLocal ? 'https://us.i.posthog.com' : '/ingest',
+        api_host: isLocal ? 'https://us.i.posthog.com' : '/idata',
         capture_pageview: false, // We'll capture manually for SPA
         persistence: isLocal ? 'memory' : 'localStorage+cookie',
       });

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,9 @@
   },
   "license": "CC-BY-NC-ND-4.0",
   "devDependencies": {
+    "@commitlint/cli": "^20.4.4",
+    "@commitlint/config-conventional": "^20.4.4",
+    "husky": "^9.1.7",
     "vitepress": "^2.0.0-alpha.16"
   },
   "dependencies": {
