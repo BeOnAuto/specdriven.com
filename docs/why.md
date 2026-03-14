@@ -51,6 +51,22 @@ The difference is that your prompts are ephemeral (gone after the session), unst
 
 Spec-driven development is what happens when you take that same act of specifying and make it persistent, structured, and executable. You're not adding a new step. You're upgrading the step you're already doing.
 
+## The Throwaway Problem
+
+Here's the paradox: every software team already does spec-driven development. They just do it badly.
+
+Every standup where someone explains what they're building? That's a verbal specification. Every pull request description? A retroactive specification. Every argument about whether a feature "should" work a certain way? That's a specification negotiation happening in real time.
+
+Specifications are everywhere. They permeate every phase of your process. The problem is that you treat them as exhaust, a byproduct of the "real work," instead of as the primary artifact.
+
+The whiteboard gets photographed and forgotten. The Slack thread scrolls into oblivion. The meeting notes rot in a Google Doc no one will ever open again. The user story gets dragged to "Done" and becomes invisible.
+
+What survives? The code. And so the code becomes the de facto specification, the only record of what was intended.
+
+But code is a terrible specification. Code tells you *what* the system does, not *why* it does it. Code tells you *how* a feature was implemented, not *what problem it was solving*. Code can tell you that a timeout is set to 30 seconds, but not that it's 30 seconds because the third-party API has a known latency issue that the vendor promised to fix in Q3.
+
+When the code is your only spec, every future decision gets made without context. You're navigating by the footprints left behind instead of the map that was drawn ahead.
+
 ## The Way Out
 
 The answer isn't to slow down. You don't need to choose between speed and quality. That's a false trade-off.

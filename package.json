@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@lottiefiles/dotlottie-web": "^0.66.2",
+    "@rive-app/canvas": "^2.35.2",
     "posthog-js": "^1.360.2"
   }
 }

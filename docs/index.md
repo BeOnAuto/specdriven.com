@@ -1,27 +1,33 @@
 ---
 layout: home
 features:
-  - icon: "🎯"
+  - icon:
+      src: /icons/01-why-spec-driven.svg
     title: "Why Spec-Driven?"
     details: "50% of all software defects are born before a single line of code is written. AI is accelerating the consequences."
     link: /why
-  - icon: "📐"
+  - icon:
+      src: /icons/02-what-are-specs.svg
     title: "What Are Specs?"
     details: "Specifications are the communication of design. Without them, shared understanding is impossible."
     link: /what
-  - icon: "📜"
+  - icon:
+      src: /icons/03-the-manifesto.svg
     title: "The Manifesto"
     details: "Understanding, Design, Specification, Code. The chain that every successful project follows."
     link: /manifesto
-  - icon: "🗺️"
+  - icon:
+      src: /icons/04-tool-landscape.svg
     title: "Tool Landscape"
     details: "An honest catalog of spec-driven tools: Auto, Kiro, Spec Kit, Tessl, Intent, OpenSpec, and more."
     link: /landscape/
-  - icon: "🗣️"
+  - icon:
+      src: /icons/05-spec-dialects.svg
     title: "Spec Dialects"
     details: "Purpose-built specification languages for different domains. Like programming languages, but for humans."
     link: /dialects/
-  - icon: "🤝"
+  - icon:
+      src: /icons/06-discovery-techniques.svg
     title: "Discovery Techniques"
     details: "EventStorming, Example Mapping, User Story Mapping, and more. How teams discover what to specify."
     link: /discovery

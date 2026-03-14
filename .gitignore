@@ -1,4 +1,4 @@
 node_modules
 .vitepress/dist
 .vitepress/cache
-.scratch
+.scratch.claude/worktrees/

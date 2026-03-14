@@ -29,6 +29,20 @@ This distinction matters more than it sounds. The quality of your specifications
 
 You've seen this play out. The architect who has the whole system in their head but can't explain it. The product owner who knows exactly what they want but writes stories that could mean three different things. The design was good. The specification was bad. And the team built the wrong thing.
 
+## The Bandwidth Problem
+
+You have a model of the system in your head right now. It's rich, nuanced, full of context. You know why that edge case matters. You know which user workflow is critical and which is cosmetic. You understand the business constraint that makes the obvious technical solution impossible.
+
+Now try to transfer that model to someone else's head.
+
+You can't. Not fully. Human communication bandwidth is brutally limited. You talk, you draw, you write documents, you wave your hands, and maybe 60% of what you meant gets through. The other 40% gets filled in by the listener's assumptions, biases, and different context.
+
+This is not a failure of communication skills. It's a fundamental constraint of being human. Your mental models are too rich, too interconnected, too soaked in implicit knowledge to survive the compression of speech or text without loss.
+
+Specifications are how you fight that constraint. A good specification doesn't just describe what you want. It creates a shared reference point that both sides can examine, question, and refine. It forces ambiguity into the open. It turns "I think we're on the same page" into "let's look at the same page and find out."
+
+You will never achieve perfect synchronization. But specifications get you closer than anything else.
+
 ## High Quality vs. Low Quality
 
 When humans communicate design to other humans, the difference between good and bad specs is stark. Compare these two specifications for the same feature:

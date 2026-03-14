@@ -109,6 +109,12 @@
   z-index: 10;
 }
 
+/* ---------- Feature Card Icons ---------- */
+.VPFeatures .VPFeature .icon img {
+  width: 48px;
+  height: 48px;
+}
+
 /* ---------- Feature Cards ---------- */
 .dark .VPFeatures .VPFeature {
   background: #1c1c20;
@@ -255,7 +261,7 @@
 }
 
 /* ---------- Scrollbar ---------- */
-.dark ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 8px;
 }
 
@@ -263,13 +269,26 @@
   background: #18181b;
 }
 
+:root:not(.dark) ::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
 .dark ::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
 }
 
+:root:not(.dark) ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 .dark ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+
+:root:not(.dark) ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.25);
 }
 
 /* ---------- Selection ---------- */

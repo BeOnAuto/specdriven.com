@@ -1,8 +1,5 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue'
-import { useData } from 'vitepress'
-
-const { isDark } = useData()
 
 const lottieContainer = ref<HTMLCanvasElement | null>(null)
 let dotLottieInstance: any = null
@@ -65,10 +62,9 @@ onMounted(async () => {
   if (lottieContainer.value && !prefersReducedMotion) {
     try {
       const { DotLottie } = await import('@lottiefiles/dotlottie-web')
-      const lottieSrc = isDark.value ? '/animations/hero.lottie' : '/animations/hero-light.lottie'
       dotLottieInstance = new DotLottie({
         canvas: lottieContainer.value,
-        src: lottieSrc,
+        src: '/animations/design-to-specs.json',
         loop: true,
         autoplay: true,
       })
@@ -158,8 +154,8 @@ onUnmounted(() => {
 <style scoped>
 .animated-hero {
   position: relative;
-  overflow: hidden;
-  padding-top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px);
+  overflow: visible;
+  padding-top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 8px);
   padding-bottom: 48px;
   margin-bottom: 48px;
 }
@@ -306,13 +302,13 @@ onUnmounted(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 500px;
+  max-width: 480px;
   width: 100%;
 }
 
 .lottie-canvas {
   width: 100%;
-  max-width: 500px;
+  max-width: 480px;
   aspect-ratio: 1;
 }
 
