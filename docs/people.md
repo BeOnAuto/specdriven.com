@@ -19,7 +19,7 @@ next:
 
 **Era:** ~2010-present | **Contribution:** Narrative-Driven Development, Auto, specdriven.com
 
-Founder of [Auto](https://on.auto). Sam has focused on spec-driven development for roughly 15 years, long before AI made it trendy. He purchased specdriven.com in 2020 and first documented the term "spec-driven" in a 2018 GitHub gist, predating the current wave by half a decade.
+Founder of [Auto](https://on.auto). Sam has focused on spec-driven development for roughly 15 years, long before AI made it trendy. He purchased specdriven.com in 2020 and documented his thinking across [Embracing Specifications](https://gist.github.com/SamHatoum/388c6ff663eb86ef3463a251b48f2db5) (January 2018) and [Spec-Driven Development](https://gist.github.com/SamHatoum/e3789342ec5329ed5b9a8fecd64346f3) (May 2021), predating the current wave by half a decade.
 
 He developed **Narrative-Driven Development** at Xolvio, independently from Event Modeling, building on extensive experience with BDD, DDD, EventStorming, and quality-first practices across dozens of enterprise client engagements (including Audi and Volkswagen).
 
