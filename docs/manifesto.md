@@ -15,7 +15,7 @@ AI removed the bottleneck. The thing that defined software development for sixty
 
 But every piece of software is still millions of decisions. Which fields go on the form. What happens when the payment fails. Whether to retry or circuit-break when a service goes down. Who has access to what, and why.
 
-Most of those decisions are invisible. They're scattered across Slack threads, buried in meeting notes, lost in pull request descriptions. The only record that survives is the code. And code tells you *what* the system does, never *why*.
+Most of those decisions are invisible. They're scattered across chat threads, buried in meeting notes, lost in pull request descriptions. The only record that survives is the code. And code tells you *what* the system does, never *why*.
 
 When humans wrote all the code, that was a problem. Now that AI writes it at machine speed, it's a crisis.
 
@@ -31,7 +31,7 @@ Three things separate teams that harness AI from teams that drown in it.
 
 ### 1. Capture intent. Never discard it.
 
-Decisions are being made every day in standups, in design reviews, in Slack threads, in pairing sessions. The problem isn't that they stay locked away. The problem is that they're communicated and then lost. The whiteboard gets erased. The conversation scrolls away. The meeting notes rot in a doc no one reopens. Treat every decision as a specification. Record it. Keep it alive.
+Decisions are being made every day in standups, in design reviews, in chat threads, in pairing sessions. The problem isn't that they stay locked away. The problem is that they're communicated and then lost. The whiteboard gets erased. The conversation scrolls away. The meeting notes rot in a doc no one reopens. Treat every decision as a specification. Record it. Keep it alive.
 
 ### 2. Make every decision visible and changeable.
 
