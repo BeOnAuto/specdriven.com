@@ -13,7 +13,7 @@ export default defineConfig({
   },
   lang: 'en-US',
   title: 'Spec-Driven',
-  description: 'The code writes itself. The spec never will. Spec-Driven Development is the paradigm for building software in the age of AI.',
+  description: 'Code writes itself. Specs never will. Spec-Driven Development is the paradigm for building software in the age of AI.',
   appearance: 'dark',
   cleanUrls: true,
   head: [

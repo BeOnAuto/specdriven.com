@@ -5,6 +5,15 @@
    Dark BG: #18181b / #27272a
    ============================================ */
 
+/* ---------- Font Loading ---------- */
+html:not(.fonts-ready) body {
+  opacity: 0;
+}
+
+html.fonts-ready body {
+  transition: opacity 0.2s ease;
+}
+
 /* ---------- Brand Tokens ---------- */
 :root {
   --sd-red: #ec3f4a;

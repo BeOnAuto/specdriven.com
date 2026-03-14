@@ -13,6 +13,11 @@ export default {
   },
   enhanceApp({ router }) {
     if (typeof window !== 'undefined') {
+      // Prevent font swap jank: hide body until Barlow is loaded
+      document.fonts.ready.then(() => {
+        document.documentElement.classList.add('fonts-ready');
+      });
+
       const isLocal = window.location.hostname === 'localhost';
 
       posthog.init('phc_elW8D8ol33mfOT9p9OHf7oIeovn9r0wGE4QloAnoi0y', {
