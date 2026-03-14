@@ -43,8 +43,13 @@ Connect with other spec-driven practitioners on Discord. Share your experience, 
 
 [Join Discord →](https://discord.com/invite/B8BKcKMRm8)
 
-## Stay Updated
+## Spec-Driven Communities
 
-- [on.auto](https://on.auto): The spec-driven development platform
+Other teams building spec-driven tools and the communities around them:
 
-- [Discord](https://discord.com/invite/B8BKcKMRm8): Where the community gathers
+- **[Auto](https://on.auto)** - Spec-driven development platform and the team behind this site. [Discord](https://discord.com/invite/B8BKcKMRm8)
+- **[GitHub Spec Kit](https://github.com/github/spec-kit)** - GitHub's spec-driven development toolkit. [GitHub Discussions](https://github.com/github/spec-kit/discussions)
+- **[Intent](https://www.augmentcode.com/product/intent)** - Living specifications with multi-agent orchestration. [Discord](https://discord.com/invite/zvU8DAwxvt)
+- **[Kiro](https://kiro.dev)** - AWS's agentic IDE with built-in spec support. [Discord](https://discord.gg/kirodotdev)
+- **[OpenSpec](https://github.com/Fission-AI/OpenSpec)** - Open-source spec standard by Fission AI. [Discord](https://discord.gg/YctCnvvshC) · [GitHub Discussions](https://github.com/Fission-AI/OpenSpec/discussions)
+- **[Tessl](https://tessl.io)** - Spec registry and framework from the creator of Snyk. [Discord](https://discord.com/invite/jbb2vHnHZQ)
