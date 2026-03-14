@@ -154,23 +154,21 @@ onUnmounted(() => {
 <style scoped>
 .animated-hero {
   position: relative;
-  overflow: visible;
+  overflow: hidden;
   padding-top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 8px);
   padding-bottom: 48px;
   margin-bottom: 48px;
 }
 
-/* Background SVG layer — GPU-composited to avoid scroll jank */
+/* Background SVG layer — sits behind all content */
 .hero-bg {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 0;
+  z-index: -1;
   pointer-events: none;
-  transform: translateZ(0);
-  will-change: contents;
-  contain: layout style paint;
+  overflow: hidden;
 }
 
 .hero-bg svg {

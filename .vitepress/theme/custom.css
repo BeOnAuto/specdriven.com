@@ -75,8 +75,8 @@
   border-bottom-color: rgba(255, 255, 255, 0.06) !important;
 }
 
-/* Ensure mobile nav screen sits above hero animation */
-.VPNavScreen {
+/* Ensure nav (incl. hamburger + mobile menu) sits above hero animation */
+.VPNav {
   z-index: 100 !important;
 }
 
