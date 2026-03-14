@@ -1,9 +1,16 @@
 import DefaultTheme from 'vitepress/theme';
 import './custom.css';
 import posthog from 'posthog-js';
+import { h } from 'vue';
+import AnimatedHero from './components/AnimatedHero.vue';
 
 export default {
   extends: DefaultTheme,
+  Layout() {
+    return h(DefaultTheme.Layout, null, {
+      'home-hero-before': () => h(AnimatedHero),
+    });
+  },
   enhanceApp({ router }) {
     if (typeof window !== 'undefined') {
       const isLocal = window.location.hostname === 'localhost';

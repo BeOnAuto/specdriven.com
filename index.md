@@ -1,20 +1,5 @@
 ---
 layout: home
-hero:
-  name: "Spec-Driven"
-  text: "Specifications are the new programming languages."
-  tagline: "You're already specifying. Start doing it well."
-  image:
-    light: /light.png
-    dark: /dark.png
-    alt: "Spec-Driven Development"
-  actions:
-    - theme: brand
-      text: Read the Manifesto
-      link: /manifesto
-    - theme: alt
-      text: See It In Action
-      link: /see-it
 features:
   - icon: "🎯"
     title: "Why Spec-Driven?"
