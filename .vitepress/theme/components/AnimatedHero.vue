@@ -129,8 +129,8 @@ onUnmounted(() => {
         <h1 class="hero-name">
           <span class="hero-name-clip">Spec-Driven</span>
         </h1>
-        <p class="hero-tagline-main">Specifications are the new programming languages.</p>
-        <p class="hero-tagline-sub">You're already specifying. Start doing it well.</p>
+        <p class="hero-tagline-main">The code writes itself. The spec never will.</p>
+        <p class="hero-tagline-sub">Welcome to the specification era.</p>
         <div class="hero-actions">
           <a class="hero-action brand" href="/manifesto">Read the Manifesto</a>
           <a class="hero-action alt" href="/see-it">See It In Action</a>
