@@ -8,7 +8,7 @@ export default defineConfig({
   srcDir: 'docs',
   vite: {
     server: {
-      allowedHosts: ['auto.ngrok.pizza'],
+      allowedHosts: ['.ngrok.pizza'],
     },
   },
   lang: 'en-US',
