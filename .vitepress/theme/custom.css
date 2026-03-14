@@ -250,6 +250,43 @@
   display: table;
   width: max-content;
   margin: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* With border-collapse: separate, cells draw their own borders.
+   Use right+bottom only to avoid doubling. */
+.table-scroll th,
+.table-scroll td {
+  border: none;
+  border-right: 1px solid var(--vp-c-divider);
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.table-scroll th:last-child,
+.table-scroll td:last-child {
+  border-right: none;
+}
+
+.table-scroll tr:last-child td {
+  border-bottom: none;
+}
+
+/* Move all backgrounds from tr to cells (tr backgrounds scroll with the row) */
+.table-scroll tr {
+  background: transparent !important;
+}
+
+.dark .table-scroll td {
+  background: #1b1b1f;
+}
+
+.dark .table-scroll tr:nth-child(2n) td {
+  background: #202127;
+}
+
+.dark .vp-doc .table-scroll th {
+  background: #1c1a18;
 }
 
 /* Sticky first column */
@@ -258,15 +295,10 @@
   position: sticky;
   left: 0;
   z-index: 1;
-  background: var(--vp-c-bg);
 }
 
 .table-scroll th:first-child {
   z-index: 2;
-}
-
-.dark .table-scroll th:first-child {
-  background: #1c1a18;
 }
 
 /* Sticky column shadow for scroll affordance */
