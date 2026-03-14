@@ -160,7 +160,7 @@ onUnmounted(() => {
   margin-bottom: 48px;
 }
 
-/* Background SVG layer */
+/* Background SVG layer — GPU-composited to avoid scroll jank */
 .hero-bg {
   position: absolute;
   top: 0;
@@ -168,6 +168,9 @@ onUnmounted(() => {
   right: 0;
   z-index: 0;
   pointer-events: none;
+  transform: translateZ(0);
+  will-change: contents;
+  contain: layout style paint;
 }
 
 .hero-bg svg {

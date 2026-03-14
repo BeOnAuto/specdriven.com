@@ -75,6 +75,11 @@
   border-bottom-color: rgba(255, 255, 255, 0.06) !important;
 }
 
+/* Ensure mobile nav screen sits above hero animation */
+.VPNavScreen {
+  z-index: 100 !important;
+}
+
 /* ---------- Ambient Glow Behind Hero ---------- */
 .dark .VPHome {
   position: relative;
