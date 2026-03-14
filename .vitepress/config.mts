@@ -33,6 +33,10 @@ export default defineConfig({
       },
     ],
     ['link', { rel: 'manifest', href: `${base}site.webmanifest` }],
+    // Barlow font for hero headings
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    ['link', { href: 'https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap', rel: 'stylesheet' }],
     // OpenGraph
     [
       'meta',
@@ -194,7 +198,7 @@ export default defineConfig({
     ],
     footer: {
       message: 'An initiative by <a href="https://on.auto">Auto</a>',
-      copyright: '© 2025 Auto. All rights reserved.',
+      copyright: '© 2026 OnAuto, Inc. All rights reserved.',
     },
     editLink: {
       pattern: 'https://github.com/BeOnAuto/specdriven.com/edit/main/:path',

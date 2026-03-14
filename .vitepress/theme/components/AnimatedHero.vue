@@ -187,9 +187,11 @@ onUnmounted(() => {
 }
 
 .hero-name {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.1;
+  font-family: 'Barlow', sans-serif;
+  font-size: 4.6rem;
+  font-weight: 400;
+  line-height: 1.1em;
+  letter-spacing: -0.03em;
   margin-bottom: 16px;
 }
 
@@ -201,17 +203,23 @@ onUnmounted(() => {
 }
 
 .hero-tagline-main {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.85rem;
+  font-weight: 400;
   color: var(--vp-c-text-1);
-  line-height: 1.35;
+  line-height: 1.1em;
+  letter-spacing: -0.03em;
   margin-bottom: 8px;
 }
 
 .hero-tagline-sub {
-  font-size: 1.25rem;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.85rem;
+  font-weight: 400;
   color: var(--vp-c-text-2);
-  line-height: 1.4;
+  line-height: 1.1em;
+  letter-spacing: -0.03em;
+  font-style: italic;
   margin-bottom: 32px;
 }
 
@@ -231,11 +239,13 @@ onUnmounted(() => {
 
 .hero-action {
   display: inline-block;
-  border-radius: 20px;
-  padding: 0 20px;
-  line-height: 38px;
-  font-size: 14px;
-  font-weight: 600;
+  font-family: 'Barlow', sans-serif;
+  border-radius: 24px;
+  padding: 0 24px;
+  min-height: 3.5rem;
+  line-height: 3.5rem;
+  font-size: 1.3rem;
+  font-weight: 400;
   text-decoration: none;
   transition: border-color 0.25s, color 0.25s, background-color 0.25s;
 }
@@ -282,15 +292,15 @@ onUnmounted(() => {
 
 @media (max-width: 639px) {
   .hero-name {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .hero-tagline-main {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   .hero-tagline-sub {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .hero-lottie {
@@ -300,13 +310,13 @@ onUnmounted(() => {
 
 @media (min-width: 640px) and (max-width: 959px) {
   .hero-name {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
   }
 }
 
 @media (min-width: 960px) {
   .hero-name {
-    font-size: 3rem;
+    font-size: 4.6rem;
   }
 }
 
