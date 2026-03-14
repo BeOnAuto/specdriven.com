@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue'
+import { useData } from 'vitepress'
+
+const { isDark } = useData()
 
 const lottieContainer = ref<HTMLCanvasElement | null>(null)
 let dotLottieInstance: any = null
@@ -62,9 +65,10 @@ onMounted(async () => {
   if (lottieContainer.value && !prefersReducedMotion) {
     try {
       const { DotLottie } = await import('@lottiefiles/dotlottie-web')
+      const lottieSrc = isDark.value ? '/animations/hero.lottie' : '/animations/hero-light.lottie'
       dotLottieInstance = new DotLottie({
         canvas: lottieContainer.value,
-        src: '/animations/hero.lottie',
+        src: lottieSrc,
         loop: true,
         autoplay: true,
       })
@@ -88,29 +92,38 @@ onUnmounted(() => {
     <div class="hero-bg">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 322 1700 478" preserveAspectRatio="xMidYMax slice">
         <defs>
-          <linearGradient id="Gradient-0" x1="863" y1="0" x2="863" y2="542" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#835edf" stop-opacity="0" />
-            <stop offset="1" stop-color="#540fc9" stop-opacity=".15" />
+          <linearGradient id="Gradient-0" x1="0" y1="0" x2="1726" y2="542" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#ec3f4a" stop-opacity="0" />
+            <stop offset="0.33" stop-color="#ff8a1d" stop-opacity=".12" />
+            <stop offset="0.66" stop-color="#5ec72d" stop-opacity=".08" />
+            <stop offset="1" stop-color="#42c3f7" stop-opacity=".04" />
+          </linearGradient>
+          <linearGradient id="Gradient-stroke" x1="0" y1="0" x2="1726" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#ec3f4a" stop-opacity=".2" />
+            <stop offset="0.33" stop-color="#ff8a1d" stop-opacity=".15" />
+            <stop offset="0.66" stop-color="#5ec72d" stop-opacity=".12" />
+            <stop offset="1" stop-color="#42c3f7" stop-opacity=".1" />
           </linearGradient>
         </defs>
-        <path id="_a0" fill="url(#Gradient-0)" fill-opacity=".3" stroke="rgba(186,126,255,0.20)" d="M0 0h1726v556l-285.5-101l-344.1 17l-311.4-17l-323-70l-233 216l-229 43Z" stroke-width="2" transform="translate(850,257) translate(-863,-271)" />
-        <path id="_a1" fill="url(#Gradient-0)" fill-opacity=".3" stroke="rgba(186,126,255,0.20)" d="M0 0h1726v556l-285.5-101l-344.1 17l-311.4-17l-323-70l-233 216l-229 43Z" transform="translate(850,257) translate(-863,-271)" />
-        <path id="_a2" fill="url(#Gradient-0)" fill-opacity=".3" stroke="rgba(186,126,255,0.20)" d="M0 0h1726v556l-285.5-101l-344.1 17l-311.4-17l-323-70l-233 216l-229 43Z" stroke-width=".5" transform="translate(850,257) translate(-863,-271)" />
-        <path id="_a3" fill="url(#Gradient-0)" fill-opacity=".3" stroke="rgba(186,126,255,0.20)" d="M0 0h1726v556l-285.5-101l-344.1 17l-311.4-17l-323-70l-233 216l-229 43Z" stroke-width=".2" transform="translate(850,257) translate(-863,-271)" />
-        <path id="_a4" fill="url(#Gradient-0)" fill-opacity=".3" stroke="rgba(186,126,255,0.20)" d="M0 0h1726v366l-285.5 98l-344.1 87l-311.4-87h-323l-233 128l-229-58Z" stroke-width="2" transform="translate(850,254) translate(-863,-271)" />
-        <path id="_a5" fill="url(#Gradient-0)" fill-opacity=".3" stroke="rgba(186,126,255,0.20)" d="M0 0h1726v366l-285.5 98l-344.1 87l-311.4-87h-323l-233 128l-229-58Z" transform="translate(850,254) translate(-863,-271)" />
-        <path id="_a6" fill="url(#Gradient-0)" fill-opacity=".3" stroke="rgba(186,126,255,0.20)" d="M0 0h1726v366l-285.5 98l-344.1 87l-311.4-87h-323l-233 128l-229-58Z" stroke-width=".5" transform="translate(850,254) translate(-863,-271)" />
-        <path id="_a7" fill="url(#Gradient-0)" fill-opacity=".3" stroke="rgba(186,126,255,0.20)" d="M0 0h1726v366l-285.5 98l-344.1 87l-311.4-87h-323l-233 128l-229-58Z" stroke-width=".2" transform="translate(850,254) translate(-863,-271)" />
-        <ellipse id="_a8" rx="6.8" ry="6.8" fill="#c59cff" transform="translate(216,575) translate(0,0) scale(.2,.2) translate(0,0)" />
-        <ellipse id="_a9" rx="6.8" ry="6.8" fill="#c59cff" transform="translate(449,447) translate(0,0) scale(.2,.2) translate(0,0)" />
-        <ellipse id="_a10" rx="6.8" ry="6.8" fill="#c59cff" transform="translate(772,447) translate(0,0) scale(.2,.2) translate(0,0)" />
-        <ellipse id="_a11" rx="6.8" ry="6.8" fill="#c59cff" transform="translate(1083.4,534) translate(0,0) scale(.2,.2) translate(0,0)" />
-        <ellipse id="_a12" rx="6.8" ry="6.8" fill="#c59cff" transform="translate(1427.6,447) translate(0,0) scale(.2,.2) translate(0,0)" />
-        <ellipse id="_a13" rx="6.8" ry="6.8" fill="#c59cff" transform="translate(216,587) translate(0,0) scale(.2,.2) translate(0,0)" />
-        <ellipse id="_a14" rx="6.8" ry="6.8" fill="#c59cff" transform="translate(449,371) translate(0,0) scale(.2,.2) translate(0,0)" />
-        <ellipse id="_a15" rx="6.8" ry="6.8" fill="#c59cff" transform="translate(772,441) translate(0,0) scale(.2,.2) translate(0,0)" />
-        <ellipse id="_a16" rx="6.8" ry="6.8" fill="#c59cff" transform="translate(1083.4,458) translate(0,0) scale(.2,.2) translate(0,0)" />
-        <ellipse id="_a17" rx="6.8" ry="6.8" fill="#c59cff" transform="translate(1427.6,444.4) translate(0,0) scale(.2,.2) translate(0,0)" />
+        <path id="_a0" fill="url(#Gradient-0)" fill-opacity=".3" stroke="url(#Gradient-stroke)" d="M0 0h1726v556l-285.5-101l-344.1 17l-311.4-17l-323-70l-233 216l-229 43Z" stroke-width="2" transform="translate(850,257) translate(-863,-271)" />
+        <path id="_a1" fill="url(#Gradient-0)" fill-opacity=".3" stroke="url(#Gradient-stroke)" d="M0 0h1726v556l-285.5-101l-344.1 17l-311.4-17l-323-70l-233 216l-229 43Z" transform="translate(850,257) translate(-863,-271)" />
+        <path id="_a2" fill="url(#Gradient-0)" fill-opacity=".3" stroke="url(#Gradient-stroke)" d="M0 0h1726v556l-285.5-101l-344.1 17l-311.4-17l-323-70l-233 216l-229 43Z" stroke-width=".5" transform="translate(850,257) translate(-863,-271)" />
+        <path id="_a3" fill="url(#Gradient-0)" fill-opacity=".3" stroke="url(#Gradient-stroke)" d="M0 0h1726v556l-285.5-101l-344.1 17l-311.4-17l-323-70l-233 216l-229 43Z" stroke-width=".2" transform="translate(850,257) translate(-863,-271)" />
+        <path id="_a4" fill="url(#Gradient-0)" fill-opacity=".3" stroke="url(#Gradient-stroke)" d="M0 0h1726v366l-285.5 98l-344.1 87l-311.4-87h-323l-233 128l-229-58Z" stroke-width="2" transform="translate(850,254) translate(-863,-271)" />
+        <path id="_a5" fill="url(#Gradient-0)" fill-opacity=".3" stroke="url(#Gradient-stroke)" d="M0 0h1726v366l-285.5 98l-344.1 87l-311.4-87h-323l-233 128l-229-58Z" transform="translate(850,254) translate(-863,-271)" />
+        <path id="_a6" fill="url(#Gradient-0)" fill-opacity=".3" stroke="url(#Gradient-stroke)" d="M0 0h1726v366l-285.5 98l-344.1 87l-311.4-87h-323l-233 128l-229-58Z" stroke-width=".5" transform="translate(850,254) translate(-863,-271)" />
+        <path id="_a7" fill="url(#Gradient-0)" fill-opacity=".3" stroke="url(#Gradient-stroke)" d="M0 0h1726v366l-285.5 98l-344.1 87l-311.4-87h-323l-233 128l-229-58Z" stroke-width=".2" transform="translate(850,254) translate(-863,-271)" />
+        <!-- Node dots with brand colors -->
+        <ellipse id="_a8" rx="6.8" ry="6.8" fill="#ec3f4a" transform="translate(216,575) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a9" rx="6.8" ry="6.8" fill="#ff8a1d" transform="translate(449,447) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a10" rx="6.8" ry="6.8" fill="#5ec72d" transform="translate(772,447) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a11" rx="6.8" ry="6.8" fill="#42c3f7" transform="translate(1083.4,534) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a12" rx="6.8" ry="6.8" fill="#ff8a1d" transform="translate(1427.6,447) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a13" rx="6.8" ry="6.8" fill="#42c3f7" transform="translate(216,587) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a14" rx="6.8" ry="6.8" fill="#5ec72d" transform="translate(449,371) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a15" rx="6.8" ry="6.8" fill="#ec3f4a" transform="translate(772,441) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a16" rx="6.8" ry="6.8" fill="#ff8a1d" transform="translate(1083.4,458) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a17" rx="6.8" ry="6.8" fill="#5ec72d" transform="translate(1427.6,444.4) translate(0,0) scale(.25,.25) translate(0,0)" />
       </svg>
     </div>
 
@@ -131,6 +144,14 @@ onUnmounted(() => {
         <canvas ref="lottieContainer" class="lottie-canvas" />
       </div>
     </div>
+
+    <!-- Brand stripe accent -->
+    <div class="hero-stripe" aria-hidden="true">
+      <span class="stripe stripe-red"></span>
+      <span class="stripe stripe-orange"></span>
+      <span class="stripe stripe-green"></span>
+      <span class="stripe stripe-blue"></span>
+    </div>
   </div>
 </template>
 
@@ -140,6 +161,7 @@ onUnmounted(() => {
   overflow: hidden;
   padding-top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px);
   padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 /* Background SVG layer */
@@ -189,10 +211,10 @@ onUnmounted(() => {
 .hero-name {
   font-family: 'Barlow', sans-serif;
   font-size: 4.6rem;
-  font-weight: 400;
-  line-height: 1.1em;
+  font-weight: 800;
+  line-height: 1.05;
   letter-spacing: -0.03em;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .hero-name-clip {
@@ -207,8 +229,8 @@ onUnmounted(() => {
   font-size: 1.85rem;
   font-weight: 400;
   color: var(--vp-c-text-1);
-  line-height: 1.1em;
-  letter-spacing: -0.03em;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
   margin-bottom: 8px;
 }
 
@@ -217,10 +239,10 @@ onUnmounted(() => {
   font-size: 1.85rem;
   font-weight: 400;
   color: var(--vp-c-text-2);
-  line-height: 1.1em;
-  letter-spacing: -0.03em;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
   font-style: italic;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
 }
 
 /* CTA buttons */
@@ -240,14 +262,15 @@ onUnmounted(() => {
 .hero-action {
   display: inline-block;
   font-family: 'Barlow', sans-serif;
-  border-radius: 24px;
-  padding: 0 24px;
-  min-height: 3.5rem;
-  line-height: 3.5rem;
-  font-size: 1.3rem;
-  font-weight: 400;
+  border-radius: 8px;
+  padding: 0 28px;
+  min-height: 3rem;
+  line-height: 3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
   text-decoration: none;
-  transition: border-color 0.25s, color 0.25s, background-color 0.25s;
+  transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  letter-spacing: -0.01em;
 }
 
 .hero-action.brand {
@@ -260,6 +283,8 @@ onUnmounted(() => {
   border-color: var(--vp-button-brand-hover-border);
   color: var(--vp-button-brand-hover-text);
   background-color: var(--vp-button-brand-hover-bg);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(255, 138, 29, 0.15);
 }
 
 .hero-action.alt {
@@ -272,6 +297,7 @@ onUnmounted(() => {
   border-color: var(--vp-button-alt-hover-border);
   color: var(--vp-button-alt-hover-text);
   background-color: var(--vp-button-alt-hover-bg);
+  transform: translateY(-1px);
 }
 
 /* Lottie container */
@@ -290,9 +316,31 @@ onUnmounted(() => {
   aspect-ratio: 1;
 }
 
+/* Brand stripe decoration */
+.hero-stripe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  display: flex;
+  gap: 0;
+}
+
+.stripe {
+  flex: 1;
+  display: block;
+}
+
+.stripe-red { background: #ec3f4a; }
+.stripe-orange { background: #ff8a1d; }
+.stripe-green { background: #5ec72d; }
+.stripe-blue { background: #42c3f7; }
+
+/* Responsive */
 @media (max-width: 639px) {
   .hero-name {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 
   .hero-tagline-main {
@@ -310,7 +358,7 @@ onUnmounted(() => {
 
 @media (min-width: 640px) and (max-width: 959px) {
   .hero-name {
-    font-size: 3.2rem;
+    font-size: 3.6rem;
   }
 }
 
