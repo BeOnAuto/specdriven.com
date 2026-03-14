@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,400;0,600;0,800;1,400&display=block" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  width: 1200px;
+  height: 630px;
+  overflow: hidden;
+  font-family: 'Barlow', sans-serif;
+}
+
+/* ---- Dark theme (default) ---- */
+body {
+  background: #18181b;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+body .text-secondary { color: rgba(255, 255, 255, 0.7); }
+body .url-text { color: #ff8a1d; }
+
+/* ---- Light theme ---- */
+body.light {
+  background: #ffffff;
+  color: #18181b;
+}
+
+body.light .text-secondary { color: #52525b; }
+body.light .url-text { color: #e07010; }
+
+/* Ambient glow */
+body::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: -10%;
+  width: 120%;
+  height: 600px;
+  background:
+    radial-gradient(ellipse 40% 50% at 15% 25%, rgba(236, 63, 74, 0.09) 0%, transparent 70%),
+    radial-gradient(ellipse 35% 45% at 40% 18%, rgba(255, 138, 29, 0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 50% at 65% 25%, rgba(94, 199, 45, 0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 35% 45% at 88% 18%, rgba(66, 195, 247, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+body.light::before {
+  background:
+    radial-gradient(ellipse 40% 50% at 15% 25%, rgba(236, 63, 74, 0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 35% 45% at 40% 18%, rgba(255, 138, 29, 0.05) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 50% at 65% 25%, rgba(94, 199, 45, 0.05) 0%, transparent 70%),
+    radial-gradient(ellipse 35% 45% at 88% 18%, rgba(66, 195, 247, 0.04) 0%, transparent 70%);
+}
+
+/* ---- Layout ---- */
+.og-card {
+  position: relative;
+  width: 1200px;
+  height: 630px;
+  overflow: hidden;
+}
+
+/* SVG mesh background */
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero-bg svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body.light .hero-bg svg path { opacity: 0.7; }
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 64px;
+  height: 100%;
+  gap: 32px;
+}
+
+.hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+.hero-name {
+  font-size: 5.8rem;
+  font-weight: 800;
+  line-height: 1.0;
+  letter-spacing: -0.04em;
+  margin-bottom: 18px;
+}
+
+.hero-tagline-main {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+
+.hero-tagline-sub {
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-style: italic;
+  margin-bottom: 32px;
+}
+
+.hero-url {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Lottie - sized to fit within card height */
+.hero-lottie {
+  flex: 0 0 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: visible;
+}
+
+.lottie-canvas {
+  width: 400px;
+  height: 400px;
+  margin-top: 40px;
+}
+
+/* Bottom brand stripe - thick enough to see at thumbnail */
+.hero-stripe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 14px;
+  display: flex;
+  z-index: 10;
+}
+
+.stripe { flex: 1; display: block; }
+.stripe-red { background: #ec3f4a; }
+.stripe-orange { background: #ff8a1d; }
+.stripe-green { background: #5ec72d; }
+.stripe-blue { background: #42c3f7; }
+
+/* Top gradient stripe */
+.hero-stripe-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(120deg, #ec3f4a 0%, #ff8a1d 33%, #5ec72d 66%, #42c3f7 100%);
+  z-index: 10;
+}
+</style>
+</head>
+<body>
+<div class="og-card">
+  <!-- Top gradient stripe -->
+  <div class="hero-stripe-top" aria-hidden="true"></div>
+
+  <!-- Background SVG mesh -->
+  <div class="hero-bg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 322 1700 478" preserveAspectRatio="xMidYMax slice">
+      <defs>
+        <linearGradient id="Gradient-0" x1="0" y1="0" x2="1726" y2="542" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#ec3f4a" stop-opacity="0" />
+          <stop offset="0.33" stop-color="#ff8a1d" stop-opacity=".12" />
+          <stop offset="0.66" stop-color="#5ec72d" stop-opacity=".08" />
+          <stop offset="1" stop-color="#42c3f7" stop-opacity=".04" />
+        </linearGradient>
+        <linearGradient id="Gradient-stroke" x1="0" y1="0" x2="1726" y2="0" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#ec3f4a" stop-opacity=".2" />
+          <stop offset="0.33" stop-color="#ff8a1d" stop-opacity=".15" />
+          <stop offset="0.66" stop-color="#5ec72d" stop-opacity=".12" />
+          <stop offset="1" stop-color="#42c3f7" stop-opacity=".1" />
+        </linearGradient>
+      </defs>
+      <path fill="url(#Gradient-0)" fill-opacity=".3" stroke="url(#Gradient-stroke)" stroke-width="2"
+        d="M0 0h1726v440l-285.5 50l-344.1 40l-311.4-30l-323-20l-233 160l-229 10Z"
+        transform="translate(850,257) translate(-863,-271)" />
+      <path fill="url(#Gradient-0)" fill-opacity=".3" stroke="url(#Gradient-stroke)" stroke-width="1"
+        d="M0 0h1726v400l-285.5 80l-344.1 60l-311.4-50l-323 30l-233 130l-229-20Z"
+        transform="translate(850,257) translate(-863,-271)" />
+      <path fill="url(#Gradient-0)" fill-opacity=".3" stroke="url(#Gradient-stroke)" stroke-width=".5"
+        d="M0 0h1726v470l-285.5 30l-344.1-20l-311.4 10l-323 40l-233 90l-229 30Z"
+        transform="translate(850,257) translate(-863,-271)" />
+      <path fill="url(#Gradient-0)" fill-opacity=".3" stroke="url(#Gradient-stroke)" stroke-width=".2"
+        d="M0 0h1726v500l-285.5-10l-344.1 30l-311.4-40l-323 60l-233 70l-229-30Z"
+        transform="translate(850,254) translate(-863,-271)" />
+    </svg>
+  </div>
+
+  <!-- Content -->
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="hero-name">Spec-Driven</h1>
+      <p class="hero-tagline-main">Code writes itself. Specs never will.</p>
+      <p class="hero-tagline-sub text-secondary">Welcome to the specification era.</p>
+      <p class="hero-url url-text">specdriven.com</p>
+    </div>
+    <div class="hero-lottie">
+      <canvas id="lottie" class="lottie-canvas" width="1000" height="1000"></canvas>
+    </div>
+  </div>
+
+  <!-- Bottom brand stripe -->
+  <div class="hero-stripe" aria-hidden="true">
+    <span class="stripe stripe-red"></span>
+    <span class="stripe stripe-orange"></span>
+    <span class="stripe stripe-green"></span>
+    <span class="stripe stripe-blue"></span>
+  </div>
+</div>
+
+<script type="module">
+const params = new URLSearchParams(window.location.search);
+const theme = params.get('theme') || 'dark';
+if (theme === 'light') {
+  document.body.classList.add('light');
+}
+
+const animationPath = params.get('animation') || '../../docs/public/animations/design-to-specs.json';
+
+async function initLottie() {
+  try {
+    const { DotLottie } = await import('https://esm.sh/@lottiefiles/dotlottie-web@0.66.2');
+    const canvas = document.getElementById('lottie');
+
+    const dotLottie = new DotLottie({
+      canvas,
+      src: animationPath,
+      loop: false,
+      autoplay: false,
+    });
+
+    dotLottie.addEventListener('load', () => {
+      dotLottie.setFrame(0);
+      dotLottie.addEventListener('render', () => {
+        window.__OG_READY = true;
+      });
+    });
+
+    setTimeout(() => { window.__OG_READY = true; }, 5000);
+  } catch (e) {
+    console.error('Lottie failed:', e);
+    window.__OG_READY = true;
+  }
+}
+
+initLottie();
+</script>
+</body>
+</html>

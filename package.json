@@ -7,6 +7,7 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
+    "generate:og": "node scripts/og/generate.mjs",
     "prepare": "husky"
   },
   "repository": {
@@ -18,6 +19,7 @@
     "@commitlint/cli": "^20.4.4",
     "@commitlint/config-conventional": "^20.4.4",
     "husky": "^9.1.7",
+    "puppeteer": "^24.39.1",
     "vitepress": "^2.0.0-alpha.16"
   },
   "dependencies": {
