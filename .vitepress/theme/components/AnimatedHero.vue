@@ -208,17 +208,14 @@ onUnmounted(() => {
 .hero-name {
   font-family: 'Barlow', sans-serif;
   font-size: 4.6rem;
-  font-weight: 800;
-  line-height: 1.05;
+  font-weight: 400;
+  line-height: 1.1;
   letter-spacing: -0.03em;
   margin-bottom: 20px;
 }
 
 .hero-name-clip {
-  background: var(--vp-home-hero-name-background);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: var(--vp-home-hero-name-color);
+  color: var(--vp-c-text-1);
 }
 
 .hero-tagline-main {

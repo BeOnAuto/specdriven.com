@@ -6,6 +6,11 @@ const siteUrl = 'https://specdriven.com'
 export default defineConfig({
   base,
   srcDir: 'docs',
+  vite: {
+    server: {
+      allowedHosts: ['auto.ngrok.pizza'],
+    },
+  },
   lang: 'en-US',
   title: 'Spec-Driven',
   description: 'Specifications are the new programming languages. Spec-Driven Development is the paradigm for building software in the age of AI.',

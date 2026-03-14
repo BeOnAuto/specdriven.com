@@ -66,31 +66,25 @@
 }
 
 /* ---------- Navbar ---------- */
-.dark .VPNav {
+/* backdrop-filter goes on VPNavBar, NOT VPNav — putting it on VPNav
+   turns it into a containing block and breaks VPNavScreen (position:fixed) */
+.dark .VPNavBar {
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
-}
-
-.dark .VPNavBar {
   border-bottom-color: rgba(255, 255, 255, 0.06) !important;
-}
-
-/* Ensure nav (incl. hamburger + mobile menu) sits above hero animation */
-.VPNav {
-  z-index: 100 !important;
 }
 
 /* ---------- Ambient Glow Behind Hero ---------- */
 .dark .VPHome {
   position: relative;
+  overflow: hidden;
 }
 
 .dark .VPHome::before {
   content: '';
   position: absolute;
   top: -120px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: -20%;
   width: 140%;
   height: 700px;
   background:
@@ -115,9 +109,37 @@
 }
 
 /* ---------- Feature Card Icons ---------- */
+.VPFeatures .VPFeature .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 4px;
+}
+
+.dark .VPFeatures .VPFeature .icon {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.dark .VPFeatures .VPFeature .icon img {
+  filter: brightness(1.8);
+  opacity: 0.5;
+}
+
+:root:not(.dark) .VPFeatures .VPFeature .icon {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+:root:not(.dark) .VPFeatures .VPFeature .icon img {
+  opacity: 0.45;
+}
+
 .VPFeatures .VPFeature .icon img {
-  width: 48px;
-  height: 48px;
+  width: 20px;
+  height: 20px;
 }
 
 /* ---------- Feature Cards ---------- */
@@ -164,25 +186,7 @@
   line-height: 1.6;
 }
 
-/* Color-code each feature card's top stripe on hover */
-.dark .VPFeatures .items .item:nth-child(1) .VPFeature:hover::before {
-  background: #ec3f4a;
-}
-.dark .VPFeatures .items .item:nth-child(2) .VPFeature:hover::before {
-  background: #ff8a1d;
-}
-.dark .VPFeatures .items .item:nth-child(3) .VPFeature:hover::before {
-  background: #5ec72d;
-}
-.dark .VPFeatures .items .item:nth-child(4) .VPFeature:hover::before {
-  background: #42c3f7;
-}
-.dark .VPFeatures .items .item:nth-child(5) .VPFeature:hover::before {
-  background: linear-gradient(90deg, #ec3f4a, #ff8a1d);
-}
-.dark .VPFeatures .items .item:nth-child(6) .VPFeature:hover::before {
-  background: linear-gradient(90deg, #5ec72d, #42c3f7);
-}
+/* Consistent brand gradient stripe on all cards */
 
 /* ---------- Homepage Content Sections (Dark) ---------- */
 .dark .VPHome .vp-doc em {
@@ -335,6 +339,7 @@
 /* Light mode top stripe */
 :root:not(.dark) .VPHome {
   position: relative;
+  overflow: hidden;
 }
 
 :root:not(.dark) .VPHome::after {
@@ -382,13 +387,7 @@
   opacity: 1;
 }
 
-/* Light mode color-coded card stripes */
-:root:not(.dark) .VPFeatures .items .item:nth-child(1) .VPFeature:hover::before { background: #ec3f4a; }
-:root:not(.dark) .VPFeatures .items .item:nth-child(2) .VPFeature:hover::before { background: #ff8a1d; }
-:root:not(.dark) .VPFeatures .items .item:nth-child(3) .VPFeature:hover::before { background: #5ec72d; }
-:root:not(.dark) .VPFeatures .items .item:nth-child(4) .VPFeature:hover::before { background: #42c3f7; }
-:root:not(.dark) .VPFeatures .items .item:nth-child(5) .VPFeature:hover::before { background: linear-gradient(90deg, #ec3f4a, #ff8a1d); }
-:root:not(.dark) .VPFeatures .items .item:nth-child(6) .VPFeature:hover::before { background: linear-gradient(90deg, #5ec72d, #42c3f7); }
+/* Consistent brand gradient stripe on all light mode cards */
 
 /* Light content sections */
 .VPHome .vp-doc h2 {
