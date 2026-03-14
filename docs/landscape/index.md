@@ -23,6 +23,8 @@ This page summarizes every tool we're tracking. The top six have dedicated profi
 
 ## Tool Overview {#tool-overview}
 
+<div class="table-scroll">
+
 | Tool                                          | Creator/Org      | Spec Format             | Executable? | Open Source? | Primary Domain         |
 | --------------------------------------------- | ---------------- | ----------------------- | ----------- | ------------ | ---------------------- |
 | [Auto](/landscape/auto)                       | Auto             | Model-based (TypeScript DSL) | Yes    | Partial      | Line-of-business apps  |
@@ -37,6 +39,8 @@ This page summarizes every tool we're tracking. The top six have dedicated profi
 | Cursor Rules                                  | Cursor           | MDC files               | No          | N/A          | Convention enforcement |
 | Pre.dev                                       | Pre.dev          | Transferable specs      | No          | No           | Cross-tool specs       |
 | cc-sdd                                        | Community        | Markdown workflow       | No          | Yes          | Multi-agent SDD        |
+
+</div>
 
 ## The Executability Gap {#the-executability-gap}
 

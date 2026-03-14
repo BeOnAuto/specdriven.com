@@ -92,6 +92,8 @@ Capability profile and domain fit are separate layers. A tool might be strong on
 
 ## Comparison Table {#comparison-table}
 
+<div class="table-scroll">
+
 | Dimension            | [Auto/NDD](/landscape/auto#score-card) | [Spec Kit](/landscape/github-spec-kit#score-card) | [Intent](/landscape/intent#score-card) | [Kiro](/landscape/kiro#score-card) | [OpenSpec](/landscape/openspec#score-card) | [Tessl](/landscape/tessl#score-card) |
 | -------------------- | -------------------------------------- | ------------------------------------------------- | -------------------------------------- | ---------------------------------- | ------------------------------------------ | ------------------------------------ |
 | Development Velocity | ●●●                                    | ●●○                                               | ●●●                                    | ●●○                                | ●●●                                        | ●●○                                  |
@@ -108,6 +110,8 @@ Capability profile and domain fit are separate layers. A tool might be strong on
 | Cross-Cutting        | ●●●                                    | ●●○                                               | ●○○                                    | ●●○                                | ●○○                                        | ●○○                                  |
 | Reconcilability      | ●○○                                    | ●○○                                               | ●●●                                    | ○○○                                | ●●○                                        | ●●○                                  |
 | Domain Fit           | LOB apps                               | General purpose                                   | Enterprise                             | AWS-native                         | Brownfield                                 | Component-level                      |
+
+</div>
 
 Click any tool name to see its detailed score card with per-dimension notes.
 
