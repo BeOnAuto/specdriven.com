@@ -86,7 +86,7 @@ onUnmounted(() => {
   <div class="animated-hero">
     <!-- Background SVG mesh animation -->
     <div class="hero-bg">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1700 800" preserveAspectRatio="xMidYMax slice">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 322 1700 478" preserveAspectRatio="xMidYMax slice">
         <defs>
           <linearGradient id="Gradient-0" x1="863" y1="0" x2="863" y2="542" gradientUnits="userSpaceOnUse">
             <stop offset="0" stop-color="#835edf" stop-opacity="0" />
@@ -145,14 +145,17 @@ onUnmounted(() => {
 /* Background SVG layer */
 .hero-bg {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 0;
   pointer-events: none;
 }
 
 .hero-bg svg {
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Content layer */
