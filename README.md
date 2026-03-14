@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://specdriven.com">
-    <img src="docs/public/dark.png" alt="Spec-Driven Development" width="600" />
+    <img src="docs/public/og-image.png" alt="Spec-Driven Development" width="600" />
   </a>
 </p>
 
@@ -23,14 +23,14 @@ AI writes code faster than ever. The quality has never been worse.
 
 ## What's on the site
 
-| Page | What you'll learn |
-|------|-------------------|
-| [Why Spec-Driven?](https://specdriven.com/why) | The quality crisis AI is accelerating |
-| [What Are Specifications?](https://specdriven.com/what) | Specifications are the communication of design |
-| [The Manifesto](https://specdriven.com/manifesto) | The full thesis: Understanding → Design → Specification → Code |
-| [Spec Dialects](https://specdriven.com/dialects/) | Purpose-built specification languages for different domains |
-| [Quality & Specifications](https://specdriven.com/quality/) | Why 85% of bugs come from specification problems |
-| [Auto](https://specdriven.com/auto) | The spec-driven platform for building software |
+| Page                                                        | What you'll learn                                              |
+| ----------------------------------------------------------- | -------------------------------------------------------------- |
+| [Why Spec-Driven?](https://specdriven.com/why)              | The quality crisis AI is accelerating                          |
+| [What Are Specifications?](https://specdriven.com/what)     | Specifications are the communication of design                 |
+| [The Manifesto](https://specdriven.com/manifesto)           | The full thesis: Understanding → Design → Specification → Code |
+| [Spec Dialects](https://specdriven.com/dialects/)           | Purpose-built specification languages for different domains    |
+| [Quality & Specifications](https://specdriven.com/quality/) | Why 85% of bugs come from specification problems               |
+| [Auto](https://specdriven.com/auto)                         | The spec-driven platform for building software                 |
 
 ## Contribute
 
