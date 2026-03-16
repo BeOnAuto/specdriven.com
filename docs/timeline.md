@@ -52,7 +52,7 @@ This was the first systematic "specification layer" between business needs and c
 
 **Computer-Aided Software Engineering** tools like Excelerator and LBMS represented the first attempt to build tooling around specifications. They promised to automate the structured analysis process.
 
-They were expensive, complex, and required massive organizational buy-in. By the mid-1990s, most had been abandoned. The lesson: tooling that requires everyone to change how they work, all at once, tends to fail.
+They were expensive, complex, and required organization-wide buy-in. By the mid-1990s, most had been abandoned. The lesson: tooling that requires everyone to change how they work, all at once, tends to fail.
 
 ## The Model Era (1990s) {#the-model-era}
 
@@ -114,7 +114,7 @@ But this tiny tool turned out to be the spark that ignited BDD. [Dan North](/peo
 
 **Behavior-Driven Development** emerged between 2003 and 2006, driven by [Dan North](/people#north), [Chris Matts](/people#matts), and [Liz Keogh](/people#keogh).
 
-North replaced the word "test" with "behavior," reframing the whole conversation. He built **JBehave** in 2004 as the first BDD framework. That same year, Matts and North proposed the **Given/When/Then** format. North's 2006 article, "Introducing BDD," gave the movement its name and manifesto. Keogh was a BDD pioneer from 2004, contributing significantly to how practitioners understood and applied the ideas.
+North replaced the word "test" with "behavior," reframing the whole conversation. He built **JBehave** in 2004 as the first BDD framework. That same year, Matts and North proposed the **Given/When/Then** format. North's 2006 article, "Introducing BDD," gave the movement its name and manifesto. Keogh was a BDD pioneer from 2004, shaping how practitioners understood and applied the ideas through her writing and conference talks.
 
 BDD's core insight: if you describe behavior in a language everyone understands, you can align developers, testers, and business people around a single source of truth.
 
@@ -156,7 +156,7 @@ Each color has a specific meaning:
 - **Lilac:** Policies (reactive business rules)
 - **Green:** Read models/Views (what people need to see)
 
-EventStorming became a key factor behind the DDD renaissance and the broader [Collaborative Modeling](/discovery) movement. Brandolini's unfinished book on Leanpub became a surprise hit, proving the demand for better ways to discover domain knowledge together.
+EventStorming became a key factor behind the DDD renaissance and the broader [Collaborative Modeling](/guides/discovery) movement. Brandolini's unfinished book on Leanpub found a wide audience, proving the demand for more collaborative ways to discover domain knowledge.
 
 ### Event Modeling {#event-modeling}
 
@@ -166,9 +166,9 @@ Event Modeling produces a complete blueprint of a system. Swimlanes show UI wire
 
 ### Narrative-Driven Development {#narrative-driven-development}
 
-[Sam Hatoum](/people#hatoum) developed **Narrative-Driven Development (NDD)** starting around 2018, originating at Xolvio. It grew independently from Event Modeling but from the same EventStorming roots, developed through enterprise client work with companies like Audi and Volkswagen.
+[Sam Hatoum](/people#hatoum) developed **Narrative-Driven Development (NDD)** starting around 2018, originating at Xolvio. It grew independently from Event Modeling but from the same EventStorming roots, developed through enterprise client engagements.
 
-Teams using NDD consistently reported 3-4x faster delivery. It extends BDD's Given/When/Then with Should/Should Not patterns and uses a model-based approach with a TypeScript fluent interface. The result is a unified model that serves visual, documentation, and code audiences simultaneously. NDD is now productized through [Auto](https://on.auto). You can learn more on the [Narrative-Driven Development](/dialects/narrative-driven) page.
+NDD became Xolvio's standardized delivery approach, with clients praising its ability to capture their intent and the quality of the software produced. It extends BDD's Given/When/Then with Should/Should Not patterns and uses a model-based approach with a TypeScript fluent interface. The result is a unified model that serves visual, documentation, and code audiences simultaneously. NDD is now productized through [Auto](https://on.auto). You can learn more on the [Narrative-Driven Development](/dialects/narrative-driven) page.
 
 ### Co-evolution from EventStorming {#co-evolution}
 

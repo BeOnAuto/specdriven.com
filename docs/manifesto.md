@@ -11,19 +11,17 @@ next:
 
 ## The Manifesto
 
-AI removed the bottleneck. The thing that defined software development for sixty years, translating human thinking into working code, now happens in minutes. That changes everything.
-
-But every piece of software is still millions of decisions. Which fields go on the form. What happens when the payment fails. Whether to retry or circuit-break when a service goes down. Who has access to what, and why.
-
-Most of those decisions are invisible. They're scattered across chat threads, buried in meeting notes, lost in pull request descriptions. The only record that survives is the code. And code tells you *what* the system does, never *why*.
-
-When humans wrote all the code, that was a problem. Now that AI writes it at machine speed, it's a crisis.
-
-Every prompt you write to an AI is a specification. You're describing what to build, how it should behave, what matters. But those specifications evaporate the moment you close the chat window. The intent vanishes. The decisions disappear. All that remains is generated code that nobody fully understands, produced at a speed that makes the problem orders of magnitude worse.
-
-People have always treated specifications as disposable. In the age of AI, that's unforgivable.
-
 We believe specifications are the most important artifact in software development. Not code. Not tests. Not documentation. Specifications. They capture the *why* behind every decision, and *why* is the one thing you can never reverse engineer.
+
+Every piece of software is millions of decisions. What happens when the payment fails. Who has access to what, and why. Most are invisible, scattered across chat threads and meeting notes. The only record that survives is the code. And code tells you *what*, never *why*.
+
+When humans wrote all the code, that was a problem. Now that AI writes it at machine speed, it's a crisis. Every prompt is a specification that evaporates the moment you close the chat window. All that remains is code nobody fully understands.
+
+But AI also changed the equation. When implementation is nearly free, the specification isn't a tax on your speed. It *is* your speed.
+
+The tradeoff has always been the same: move fast or stay in control.
+
+For the first time, you don't have to choose. Put specifications first. Move fast. Stay in control.
 
 ## The Principles
 
@@ -35,7 +33,7 @@ Decisions are being made every day in standups, in design reviews, in chat threa
 
 ### 2. Make every decision visible and changeable.
 
-AI generates code at incredible speed. Even when it gets 80% right, you need control over the other 20%. Software is millions of small decisions layered on top of each other, and when AI makes those decisions for you with no visibility, you've traded speed for a system nobody understands. Visibility isn't overhead. It's how you harness AI's power without losing your grip.
+AI generates code at incredible speed. Even when it gets 80% right, you need control over the other 20%. Software is millions of small decisions layered on top of each other, and when AI makes those decisions for you with no visibility, you've traded speed for a system nobody understands. Visibility isn't overhead. It's how you move at AI speed without losing control.
 
 ### 3. Make specifications executable.
 
@@ -43,23 +41,19 @@ The highest form of a specification is one that machines can verify. When your s
 
 ## The Bigger Picture
 
-Software has always been about problem-solving. You understand a problem, you design a solution, you express that solution in code. The bottleneck was always that last step: how fast you can translate your thinking into working software.
-
-AI removed that bottleneck. But the problem-solving didn't go away. The need for clear thinking, clear communication, and clear decisions didn't go away. It just moved up.
+Software has always been about problem-solving. You understand a problem, you design a solution, you express that solution in code. AI hasn't changed that. It's changed how fast the last step happens. And in doing so, made the first two steps matter more than ever.
 
 Think about how programming languages evolved. Machine code gave way to assembly. Assembly gave way to C. C gave way to higher-level languages. Each generation added abstraction, moving closer to human intent. Specifications are the next abstraction. They are the language of problem-solving itself.
 
-Code is becoming a derived output. Specifications have always been the source of truth. We just kept throwing them away. Now that AI handles the translation, we can't afford to do that anymore.
+Specifications need the same rigor that programming languages developed over decades: clear syntax, precise semantics, composability, versioning, tooling. That's what spec dialects are: purpose-built specification languages for different domains and audiences.
 
-Specifications need to grow up. They need the same rigor that programming languages developed over decades: clear syntax, precise semantics, composability, versioning, tooling. That's what [spec dialects](/dialects/) are: purpose-built specification languages for different domains and audiences.
-
-Your specifications are not a step on the way to the product. They *are* the product.
+Code implements decisions. Tests verify them. Specifications *define* them. Definition is the hardest part of software. It always has been. That's why specifications are the most important artifact you'll ever produce. Everything else flows from getting them right.
 
 The tools exist. The practices exist. Teams that treat specifications as first-class artifacts are already building with AI at full speed and full control. Teams that don't are generating code they can't explain, can't maintain, and can't trust.
 
-The only question is whether you start now or spend the next year reverse-engineering intent from generated code.
+The gap between the two widens with every prompt.
 
-[See it in action](/see-it) | [Explore the tools](/landscape/)
+[See it in action](/guides/see-it) | [Explore the tools](/landscape/)
 
 ---
 

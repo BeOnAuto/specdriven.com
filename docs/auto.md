@@ -9,7 +9,7 @@ next: false
 
 ## Put Your Specs on Auto
 
-Auto is the spec-driven platform for building software. It takes your specifications and produces production-ready, fully-tested code. Not "prompt and pray," but a deterministic pipeline with feedback loops and quality checks at every stage.
+Auto is the spec-driven platform for building software. It takes your specifications and produces production-ready, fully-tested code. Not "prompt and pray," but a controlled pipeline where deterministic tests verify every stage.
 
 ## Why Auto?
 
@@ -24,7 +24,7 @@ Where prompt-to-app tools give you a [quick snapshot](/), Auto gives you profess
 3. **AI implements** the details with self-correcting feedback loops that catch errors before they reach you.
 4. **Quality checks** enforce 100% test coverage, type safety, and linting, automatically, on every run.
 
-This isn't vibe coding. This is AI software development made deterministic.
+This isn't vibe coding. This is AI software development with deterministic verification at every step.
 
 ## The Pipeline
 
@@ -32,7 +32,7 @@ This isn't vibe coding. This is AI software development made deterministic.
 Narratives → Domain Model → Server Scaffold → Frontend Scaffold → AI Implementation → Quality Checks → Production Code
 ```
 
-Each stage validates against your specifications. If something doesn't match, the pipeline corrects itself, up to 5 attempts with error feedback before escalating. Your specifications are the source of truth at every step.
+Each stage validates against your specifications. If something doesn't match, the pipeline adapts: retrying implementation, escalating to a more capable model, or flagging the specification for review. The tests are fixed and verifiable. The path to passing them is adaptive. Your specifications are the source of truth at every step.
 
 ## Get Started
 

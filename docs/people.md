@@ -21,7 +21,7 @@ next:
 
 Founder of [Auto](https://on.auto). Sam has focused on spec-driven development for roughly 15 years, long before AI made it trendy. He purchased specdriven.com in 2020 and documented his thinking across [Embracing Specifications](https://gist.github.com/SamHatoum/388c6ff663eb86ef3463a251b48f2db5) (January 2018) and [Spec-Driven Development](https://gist.github.com/SamHatoum/e3789342ec5329ed5b9a8fecd64346f3) (May 2021), predating the current wave by half a decade.
 
-He developed **Narrative-Driven Development** at Xolvio, independently from Event Modeling, building on extensive experience with BDD, DDD, EventStorming, and quality-first practices across dozens of enterprise client engagements (including Audi and Volkswagen).
+He developed **Narrative-Driven Development** at Xolvio, independently from Event Modeling, building on extensive experience with BDD, DDD, EventStorming, and quality-first practices across dozens of enterprise client engagements.
 
 NDD is a [model-based, multimodal specification format](/dialects/narrative-driven#ndd-is-model-based-and-multimodal): a TypeScript fluent interface for developers, visual journey maps for designers, and document views for product and QA teams. It extends BDD with Given/When/Then for business domain logic plus Should/Should Not for component-level contracts, all backed by a unified model with pluggable builders.
 
@@ -101,7 +101,7 @@ Cross-refs: [Timeline: Event Modeling](/timeline#event-modeling)
 
 Invented **EventStorming** (2013). This was a key factor behind the DDD renaissance and the Collaborative Modeling movement. Alberto founded Avanscoperta and authored *Introducing EventStorming* (Leanpub).
 
-Cross-refs: [Timeline: EventStorming](/timeline#eventstorming), [Discovery: EventStorming](/discovery#eventstorming)
+Cross-refs: [Timeline: EventStorming](/timeline#eventstorming), [Discovery: EventStorming](/guides/discovery#eventstorming)
 
 ### Adam Dymitruk {#adam-dymitruk}
 
@@ -117,7 +117,7 @@ Cross-refs: [Timeline: Event Modeling](/timeline#event-modeling)
 
 Popularized **User Story Mapping**. Author of *User Story Mapping* (O'Reilly, 2014). If you have ever arranged sticky notes in a two-dimensional grid to plan a release, you are using Jeff's technique.
 
-Cross-refs: [Discovery: User Story Mapping](/discovery#user-story-mapping)
+Cross-refs: [Discovery: User Story Mapping](/guides/discovery#user-story-mapping)
 
 ### Stefan Hofer and Henning Schwentner {#hofer-schwentner}
 
@@ -125,7 +125,7 @@ Cross-refs: [Discovery: User Story Mapping](/discovery#user-story-mapping)
 
 Developed **Domain Storytelling**, a pictographic notation for domain discovery. Authors of *Domain Storytelling* (Addison-Wesley, 2021).
 
-Cross-refs: [Discovery: Domain Storytelling](/discovery#domain-storytelling)
+Cross-refs: [Discovery: Domain Storytelling](/guides/discovery#domain-storytelling)
 
 ### Kenny Baas-Schwegler, Evelyn van Kelle, and Gien Verschatse {#collaborative-design}
 
@@ -133,7 +133,7 @@ Cross-refs: [Discovery: Domain Storytelling](/discovery#domain-storytelling)
 
 Authors of *Collaborative Software Design* (Manning). They synthesized the collaborative modeling movement into a practical guide that ties together EventStorming, Domain Storytelling, Example Mapping, and more.
 
-Cross-refs: [Discovery](/discovery)
+Cross-refs: [Discovery](/guides/discovery)
 
 ### Paul Rayner {#paul-rayner}
 
@@ -141,7 +141,7 @@ Cross-refs: [Discovery](/discovery)
 
 A leading DDD and EventStorming practitioner. Paul authored *The EventStorming Handbook*, co-authored *Behavior-Driven Development with Cucumber* (with Richard Lawrence), and founded the Explore DDD conference.
 
-Cross-refs: [Discovery: EventStorming](/discovery#eventstorming)
+Cross-refs: [Discovery: EventStorming](/guides/discovery#eventstorming)
 
 ## Specification by Example {#sbe}
 
@@ -151,7 +151,7 @@ Cross-refs: [Discovery: EventStorming](/discovery#eventstorming)
 
 Author of **Specification by Example** (2012 Jolt Award winner). Gojko synthesized the movement from 50+ teams and also created **Impact Mapping**. He runs the #GivenWhenThenWithStyle challenge series, which is worth following if you write scenarios.
 
-Cross-refs: [Timeline: SbE](/timeline#specification-by-example), [Discovery: Impact Mapping](/discovery#impact-mapping)
+Cross-refs: [Timeline: SbE](/timeline#specification-by-example), [Discovery: Impact Mapping](/guides/discovery#impact-mapping)
 
 ## Behavior-Driven Development {#bdd}
 
@@ -193,7 +193,7 @@ Cross-refs: [Timeline: Cucumber](/timeline#cucumber-and-gherkin)
 
 Co-founder of Cucumber Ltd. Co-author of *The Cucumber Book*. Created **Example Mapping** (~2015), a lightweight technique you can use to break down stories before writing scenarios. Currently leads Cucumber open-source at SmartBear.
 
-Cross-refs: [Discovery: Example Mapping](/discovery#example-mapping)
+Cross-refs: [Discovery: Example Mapping](/guides/discovery#example-mapping)
 
 ### Seb Rose {#seb-rose}
 

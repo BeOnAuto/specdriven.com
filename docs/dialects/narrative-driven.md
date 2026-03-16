@@ -98,7 +98,7 @@ The result is production-ready code that traces directly back to your specificat
 
 ### NDD and Collaborative Discovery
 
-NDD didn't emerge in isolation. It combines patterns from multiple [collaborative discovery](/discovery) techniques into a single executable format:
+NDD didn't emerge in isolation. It combines patterns from multiple [collaborative discovery](/guides/discovery) techniques into a single executable format:
 
 - **From EventStorming**: Domain events and commands as the backbone of system behavior
 - **From Example Mapping**: Concrete Given/When/Then examples as the specification unit

@@ -109,9 +109,9 @@ Here's where it gets powerful. When you combine specifications with automated te
 
 This means your specifications are always up to date. They don't rot in a wiki somewhere, gradually drifting from reality. They're living proof that your system does what it should. Every time the code changes, the specifications run. If they pass, your system matches its design. If they fail, you know immediately, and you know exactly what broke.
 
-Documentation lies. Code is cryptic. Executable specifications are the only artifact that is both human-readable and machine-verifiable.
+Documentation lies. Code is cryptic. Executable specifications are one of the few artifacts that are both human-readable and machine-verifiable.
 
 They also stand the test of time. People leave, context gets lost, and codebases evolve in ways no one anticipated. But executable specifications remain valid. They're institutional memory that doesn't walk out the door. Years from now, when someone asks "why does this work this way?", the specs still answer.
 
-In the age of AI where change happens in a blink, executable specs are the only way to maintain control.
+In the age of AI where change happens in a blink, executable specs are the most reliable way to maintain control.
 

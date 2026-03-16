@@ -22,7 +22,7 @@ A spec dialect has:
 - Machine-parseable syntax that tooling can process
 - A direct relationship to executable output
 
-[Collaborative discovery techniques](/discovery) (EventStorming, Example Mapping, Impact Mapping) are valuable, but they're inputs to specification, not specifications themselves. Discovery produces understanding. Dialects capture it.
+[Collaborative discovery techniques](/guides/discovery) (EventStorming, Example Mapping, Impact Mapping) are valuable, but they're inputs to specification, not specifications themselves. Discovery produces understanding. Dialects capture it.
 
 ## The Ancestral Spec Languages
 
@@ -50,7 +50,7 @@ What makes NDD a full dialect (rather than just another BDD framework) is its mo
 
 ## Archetype (Coming Soon)
 
-**Archetype** is a dialect for expressing architecture specifications. Currently in development by the Auto team. Where NDD specifies behavioral narratives (what users do and what the system does in response), Archetype will specify structural and architectural decisions.
+**Archetype** is a dialect for expressing architecture specifications. Currently in development by the Auto team. Where NDD specifies behavioral narratives (what users do and what the system does in response), Archetype will specify structural and architectural decisions: Architecture Decision Records (ADRs), infrastructure-as-code constraints, service contracts, non-functional requirements, and multi-agent coordination patterns.
 
 ## Emerging Dialects
 

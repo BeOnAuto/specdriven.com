@@ -21,9 +21,11 @@ You cannot go faster by ignoring quality. Poor quality is the drag on your wings
 
 You probably assume most bugs come from sloppy coding. They don't.
 
-A Cambridge University study found that **50% of all defects originate at the specification stage**, not in code, not in testing, but in the conversation (or lack thereof) about what to build.
+Research across decades of software engineering (from Barry Boehm's work at TRW and IBM to Capers Jones's analysis of thousands of projects) consistently finds that **roughly 50% of all defects originate at the specification stage**, not in code, not in testing, but in the conversation (or lack thereof) about what to build.
 
 Only about 15% of bugs are actual coding mistakes. The rest? Incorrect specifications and missing specifications. **85% of your bugs have nothing to do with code.** They have everything to do with what was (or wasn't) communicated before coding began.
+
+(See Boehm & Basili, "Software Defect Reduction Top 10 List," *IEEE Computer*, January 2001.)
 
 ## The Golden Rule of Feedback
 
@@ -31,13 +33,13 @@ Here's a principle that will change how you think about quality:
 
 > "The longer feedback lives in a system, the more costly it is to deal with it."
 
-A bug caught at specification time costs almost nothing to fix. It's a conversation, a clarification, a rewritten scenario. The same bug caught in production costs **50-100x more**. It's a hotfix, a rollback, an incident report, a customer apology, and a post-mortem.
+A bug caught at specification time costs almost nothing to fix. It's a conversation, a clarification, a rewritten scenario. The same bug caught in production costs orders of magnitude more. Boehm's original research found ratios of 1:5:10:50 across requirements, design, coding, and testing phases, with NASA validating ratios as high as 1,500x for requirements errors found in operations (*Software Engineering Economics*, 1981; NASA JSC Report 20100036670). It's a hotfix, a rollback, an incident report, a customer apology, and a post-mortem.
 
 You already know this intuitively. You've lived it. The question is whether your process reflects it.
 
 ## AI Made It Worse
 
-AI didn't create the quality problem. But it accelerated it dramatically.
+AI didn't create the quality problem. But it accelerated it.
 
 What used to decay over months and years now rots in days. Prompt-to-app tools skip the specification stage entirely, going straight from a vague idea to running code. This means that 50% defect rate from missing and incorrect specifications isn't just still there. It's being generated at unprecedented speed.
 
