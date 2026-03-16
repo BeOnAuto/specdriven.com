@@ -388,6 +388,40 @@ html.fonts-ready body {
   background: rgba(0, 0, 0, 0.25);
 }
 
+/* ---------- Evaluation Comparison: Assessment Row ---------- */
+.eval-comparison tbody tr:first-child td {
+  font-style: italic;
+  letter-spacing: 0.01em;
+  font-size: 0.85em;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.dark .eval-comparison tbody tr:first-child td {
+  color: #8b919a;
+  background: #1e1e22;
+}
+
+/* Ensure sticky first-column cell is opaque so content doesn't bleed through on scroll */
+.dark .eval-comparison tbody tr:first-child td:first-child {
+  background: #1e1e22;
+}
+
+:root:not(.dark) .eval-comparison tbody tr:first-child td {
+  color: #6b7280;
+  background: #f3f3f4;
+}
+
+:root:not(.dark) .eval-comparison tbody tr:first-child td:first-child {
+  background: #f3f3f4;
+}
+
+/* ---------- External Link Indicator in Tables ---------- */
+.vp-doc .table-scroll a[href^="http"]::after,
+.vp-doc table a[href^="http"]::after {
+  content: none; /* suppress VitePress default icon in tables, we use ↗ in text */
+}
+
 /* ---------- Selection ---------- */
 .dark ::selection {
   background: rgba(255, 138, 29, 0.3);

@@ -125,12 +125,12 @@ export default defineConfig({
         ]
       },
       {
-        text: 'How',
+        text: 'Guides',
         items: [
-          { text: 'See It In Action', link: '/see-it' },
-          { text: 'Discovery', link: '/discovery' },
-          { text: 'Discovery Techniques', link: '/discovery-techniques' },
-          { text: 'The AI-Native SDLC', link: '/sdlc' },
+          { text: 'Getting Started', link: '/guides/' },
+          { text: 'Writing Your First Spec', link: '/guides/writing-your-first-spec' },
+          { text: 'See It In Action', link: '/guides/see-it' },
+          { text: 'Using Specs with LLMs', link: '/guides/specs-with-llms' },
         ]
       },
       {
@@ -177,6 +177,39 @@ export default defineConfig({
             { text: 'Narrative-Driven (NDD)', link: '/dialects/narrative-driven' },
           ]
         }
+      ],
+      '/guides/': [
+        {
+          text: 'Getting Started',
+          items: [
+            { text: 'Guides Overview', link: '/guides/' },
+            { text: 'Writing Your First Spec', link: '/guides/writing-your-first-spec' },
+            { text: 'See It In Action', link: '/guides/see-it' },
+          ]
+        },
+        {
+          text: 'Working with Specs',
+          items: [
+            { text: 'Using Specs with LLMs', link: '/guides/specs-with-llms' },
+            { text: 'Making Specs Executable', link: '/guides/executable-specs' },
+            { text: 'Context Management', link: '/guides/context-management' },
+          ]
+        },
+        {
+          text: 'Going Deeper',
+          items: [
+            { text: 'Model-Based Specifications', link: '/guides/model-based-specs' },
+            { text: 'When You Need Dedicated Tools', link: '/guides/choosing-tools' },
+            { text: 'Specs in Your SDLC', link: '/guides/specs-in-your-sdlc' },
+          ]
+        },
+        {
+          text: 'Discovery',
+          items: [
+            { text: 'Where Specs Come From', link: '/guides/discovery' },
+            { text: 'Techniques Reference', link: '/guides/discovery-techniques' },
+          ]
+        },
       ],
       '/landscape/': [
         {
