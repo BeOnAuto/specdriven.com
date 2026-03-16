@@ -9,8 +9,6 @@ next:
 
 # The Spec-Driven Manifesto
 
-## The Manifesto
-
 We believe specifications are the most important artifact in software development. Not code. Not tests. Not documentation. Specifications. They capture the *why* behind every decision, and *why* is the one thing you can never reverse engineer.
 
 Every piece of software is millions of decisions. What happens when the payment fails. Who has access to what, and why. Most are invisible, scattered across chat threads and meeting notes. The only record that survives is the code. And code tells you *what*, never *why*.
