@@ -1,8 +1,10 @@
 ---
 prev:
   text: See It In Action
-  link: /see-it
-next: false
+  link: /guides/see-it
+next:
+  text: Discovery Techniques Reference
+  link: /guides/guides/discovery-techniques
 ---
 
 # Discovery
@@ -36,11 +38,11 @@ But here's the problem.
 
 ## The Sum Is Greater Than the Parts {#sum-greater-than-parts}
 
-Say each person on a team of five uses AI to become 3x more productive in their individual work. Hypothetically, the team should be 15x faster. That sounds great. But it's just arithmetic.
+Each person on a team of five uses AI to become more productive in their individual work. Everyone is faster. But individual productivity gains don't multiply. They just add up.
 
-Now imagine those same five people align on a shared specification before they each sprint off. The rework disappears. The "that's not what I meant" conversations disappear. The two-week detour that happened because two people had different mental models of the same feature disappears. Hypothetically, that aligned team could be 30x or 50x faster, because you're not just adding up individual gains. You're eliminating the waste between them.
+Now imagine those same five people align on a shared specification before they each sprint off. The rework disappears. The "that's not what I meant" conversations disappear. The two-week detour that happened because two people had different mental models of the same feature disappears. The gains compound, because you're not just adding up individual speed. You're eliminating the waste between people.
 
-The gap between 15x and 50x is discovery. It's the difference between optimizing the parts and optimizing the whole.
+That waste, the misalignment, the rework, the duplicated effort, is where most of your time actually goes. Discovery is what eliminates it. It's the difference between optimizing the parts and optimizing the whole.
 
 Right now, most teams are optimizing the parts. Each individual is faster than ever. But the sum isn't greater than the parts because the parts aren't connected. The PRD says one thing. The Figma file implies another. The Jira ticket captures a third interpretation. The developer's mental model is a fourth. And the AI that generates the code cheerfully implements whichever fragment it sees first.
 
@@ -60,7 +62,7 @@ Over the past two decades, the software community has developed a rich set of st
 
 These techniques are worth knowing. Some are widely used today. Others are more specialized. All of them address the same fundamental problem: how do you get from "we have a vague idea" to "we know exactly what to build"?
 
-For a comprehensive reference of these techniques (EventStorming, Event Modeling, Example Mapping, User Story Mapping, Impact Mapping, Domain Storytelling, Wardley Mapping, Context Mapping, Business Model Canvas, Storystorming, and The Three Amigos), see the [Discovery Techniques Reference](/discovery-techniques).
+For a comprehensive reference of these techniques (EventStorming, Event Modeling, Example Mapping, User Story Mapping, Impact Mapping, Domain Storytelling, Wardley Mapping, Context Mapping, Business Model Canvas, Storystorming, and The Three Amigos), see the [Discovery Techniques Reference](/guides/discovery-techniques).
 
 ## The Future of Discovery {#future-of-discovery}
 
@@ -74,11 +76,11 @@ The techniques on this page remain valuable as discovery inputs. The question fo
 
 **If you're starting from scratch:** Talk to the people who know the domain. Write down what you learn. Structure it. That's discovery. You don't need a formal technique to start.
 
-**If you want more structure:** [Example Mapping](/discovery-techniques#example-mapping) is the easiest entry point. 25 minutes, three people, one story. It works in person or remote.
+**If you want more structure:** [Example Mapping](/guides/discovery-techniques#example-mapping) is the easiest entry point. 25 minutes, three people, one story. It works in person or remote.
 
-**If you're tackling a large domain:** [EventStorming](/discovery-techniques#eventstorming) or [Event Modeling](/discovery-techniques#event-modeling) can map an entire business process in hours.
+**If you're tackling a large domain:** [EventStorming](/guides/discovery-techniques#eventstorming) or [Event Modeling](/guides/discovery-techniques#event-modeling) can map an entire business process in hours.
 
-**If you need strategic alignment first:** [Impact Mapping](/discovery-techniques#impact-mapping) or [Wardley Mapping](/discovery-techniques#wardley-mapping) connect business goals to technical decisions.
+**If you need strategic alignment first:** [Impact Mapping](/guides/discovery-techniques#impact-mapping) or [Wardley Mapping](/guides/discovery-techniques#wardley-mapping) connect business goals to technical decisions.
 
 ---
 

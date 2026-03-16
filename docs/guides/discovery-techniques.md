@@ -1,7 +1,7 @@
 ---
 prev:
   text: Discovery
-  link: /discovery
+  link: /guides/discovery
 next: false
 ---
 
@@ -9,7 +9,7 @@ next: false
 
 > A reference catalog of structured discovery techniques from the collaborative modeling community. These techniques help teams build shared understanding before writing specifications.
 >
-> For context on why discovery matters and how it fits into spec-driven development, see [Discovery](/discovery).
+> For context on why discovery matters and how it fits into spec-driven development, see [Discovery](/guides/discovery).
 
 ## EventStorming {#eventstorming}
 

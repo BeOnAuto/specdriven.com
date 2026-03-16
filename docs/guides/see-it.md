@@ -1,10 +1,10 @@
 ---
 prev:
-  text: The Manifesto
-  link: /manifesto
+  text: Writing Your First Spec
+  link: /guides/writing-your-first-spec
 next:
   text: Discovery
-  link: /discovery
+  link: /guides/discovery
 ---
 
 # See It In Action
@@ -163,4 +163,4 @@ The field is young. The honest takes matter as much as the success stories. See 
 
 ---
 
-*An initiative by [Auto](https://on.auto).*
+*Built by the team behind [Auto](https://on.auto), for the spec-driven community.*

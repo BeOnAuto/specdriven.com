@@ -1,10 +1,8 @@
 ---
 prev:
-  text: Collaborative Discovery
-  link: /discovery
-next:
-  text: Tool Landscape
-  link: /landscape/
+  text: When You Need Dedicated Tools
+  link: /guides/choosing-tools
+next: false
 ---
 
 # Spec-Driven in the AI-Native SDLC
@@ -19,7 +17,7 @@ Specifications are the answer to both questions. They sit at the center of the A
 
 ## Where Specs Fit
 
-Specifications have always been part of software development. But they've always been ephemeral. The user story gets marked "done" and never read again. The PRD rots in Confluence. The whiteboard gets erased. The Slack conversation scrolls away. Specifications were written and forgotten, or never written at all.
+Specifications have always been part of software development. But they've always been [ephemeral and disposable](/why#the-throwaway-problem). Written and forgotten, or never written at all.
 
 In the AI-native SDLC, specifications become the central artifact that connects every phase and every role. Not a phase you complete and move on from, but a living interface between human intent and machine execution. Every role contributes to that interface. Every role reads from it.
 
@@ -75,8 +73,8 @@ Specifications aren't static. They evolve through a continuous feedback loop:
 
 In the AI-native SDLC, this loop runs faster than ever. The cost of a full cycle (from specification change to deployed code) is collapsing. That means specifications can be iterative and evolutionary, not waterfall-style documents that freeze intent.
 
-[Learn about collaborative discovery →](/discovery) | [See spec-driven tools →](/landscape/)
+[Learn about collaborative discovery →](/guides/discovery) | [See spec-driven tools →](/landscape/)
 
 ---
 
-*An initiative by [Auto](https://on.auto).*
+*Built by the team behind [Auto](https://on.auto), for the spec-driven community.*
