@@ -44,26 +44,35 @@ Auto-updating specs risk blurring the line between "what we intended" and "what 
 
 [augmentcode.com/product/intent](https://www.augmentcode.com/product/intent)
 
-## Score Card
+## Capability Analysis
 
-> Editorial assessment. [Suggest corrections](https://github.com/BeOnAuto/specdriven.com/issues)
+**[Development Velocity](/landscape/evaluation#dim-velocity).** Intent's multi-agent parallel execution is a genuine speed advantage. The coordinator breaks work into tasks that run simultaneously across services and repositories, which can reduce wall-clock time on large changes.
 
-| Dimension | Rating | Note |
-|-----------|--------|------|
-| [Development Velocity](/landscape/evaluation#dim-velocity) | ●●● | Multi-agent parallel execution across services |
-| [Spec Durability](/landscape/evaluation#dim-durability) | ●●○ | Living specs auto-update; risk of becoming retrospective |
-| [Executability](/landscape/evaluation#dim-executability) | ○○○ | Specs update but do not independently verify |
-| [Accessibility](/landscape/evaluation#dim-accessibility) | ●○○ | Developer-focused; requires Context Engine understanding |
-| [Model Coherence](/landscape/evaluation#dim-coherence) | ●●○ | Context Engine provides coherence across repos |
-| [Traceability](/landscape/evaluation#dim-traceability) | ●●○ | Living specs maintain connection; auto-update can blur lineage |
-| [Agent Guidance](/landscape/evaluation#dim-agent-guidance) | ●●● | Coordinator/implementor/verifier architecture |
-| [Portability](/landscape/evaluation#dim-portability) | ●○○ | BYOA supported but living specs depend on Context Engine |
-| [Brownfield Readiness](/landscape/evaluation#dim-brownfield) | ●●● | Context Engine built for 400k+ file codebases |
-| [Modularity](/landscape/evaluation#dim-modularity) | ●●○ | Multi-agent, multi-repo orchestration |
-| [Composability](/landscape/evaluation#dim-composability) | ●●○ | Cross-repo specs compose through Context Engine |
-| [Cross-Cutting](/landscape/evaluation#dim-cross-cutting) | ●○○ | Not specifically addressed in current offering |
-| [Reconcilability](/landscape/evaluation#dim-reconcilability) | ●●● | Living specs auto-reconcile; Context Engine detects drift |
-| Domain Fit | | Enterprise/multi-repo |
+**[Spec Durability](/landscape/evaluation#dim-durability).** Living specs auto-update as agents work, which keeps them current but introduces a risk. If specs always reflect what was built rather than what was intended, they can quietly drift from the original requirements without anyone noticing.
+
+**[Executability](/landscape/evaluation#dim-executability).** Specs update alongside implementation, but they do not independently verify correctness. There is no mechanism for a spec to prove that the system actually satisfies it. The verifier agent checks results, but the spec itself is not executable.
+
+**[Accessibility](/landscape/evaluation#dim-accessibility).** Intent is developer-focused and assumes familiarity with the Context Engine and multi-agent workflows. Non-technical stakeholders would find it difficult to participate directly in the spec process.
+
+**[Model Coherence](/landscape/evaluation#dim-coherence).** The Context Engine provides a form of cross-repository coherence by maintaining semantic understanding of the entire codebase. This is valuable for large systems, though coherence depends on the engine's accuracy rather than a formally unified model.
+
+**[Traceability](/landscape/evaluation#dim-traceability).** Living specs maintain a connection between intent and implementation. However, the auto-update mechanism can blur the lineage between what was originally specified and what changed during implementation.
+
+**[Agent Guidance](/landscape/evaluation#dim-agent-guidance).** The coordinator/implementor/verifier architecture provides strong, structured guidance to agents. Each agent has a well-defined role, and the coordinator ensures tasks are scoped and delegated clearly.
+
+**[Portability](/landscape/evaluation#dim-portability).** BYOA support means you can plug in different agents, which is a plus. However, living specs depend on the Context Engine to function properly, so moving away from Augment Code's platform would be difficult.
+
+**[Brownfield Readiness](/landscape/evaluation#dim-brownfield).** The Context Engine was built for existing codebases at scale (400,000+ files). This is one of Intent's core strengths, as it can reason about and navigate large, established systems without requiring a greenfield start.
+
+**[Modularity](/landscape/evaluation#dim-modularity).** The multi-agent, multi-repo orchestration model supports modular work. Different agents can operate on different parts of the system. The architecture is flexible enough to scale across services.
+
+**[Composability](/landscape/evaluation#dim-composability).** Cross-repo specs can compose through the Context Engine, which understands relationships between services. This works well for enterprise systems where changes span multiple repositories.
+
+**[Cross-Cutting](/landscape/evaluation#dim-cross-cutting).** Cross-cutting concerns like security policies, logging, or error handling are not specifically addressed in the current offering. You would need to manage these through conventions rather than built-in mechanisms.
+
+**[Reconcilability](/landscape/evaluation#dim-reconcilability).** This is where living specs shine. Because specs auto-reconcile with implementation and the Context Engine detects drift, the system actively works to keep specs and code in sync.
+
+**[Scope](/landscape/evaluation#dim-scope).** Intent is enterprise-grade and designed to work across repos and domains. It handles large-scale, multi-service systems well. Smaller projects may find it more tooling than they need.
 
 [Full evaluation framework](/landscape/evaluation)
 

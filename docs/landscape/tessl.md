@@ -44,7 +44,7 @@ Fowler's ThoughtWorks analysis draws parallels between Tessl's spec-as-source ap
 
 ## Notable Strengths
 
-The Registry solves a real, immediate problem (agent hallucination on libraries). The Framework's spec-as-source vision would be significant if realized. The @test directives acknowledge the importance of testing (more than most tools in this space).
+The Registry solves a real, immediate problem (agent hallucination on libraries). The Framework's spec-as-source vision would be valuable if realized. The @test directives acknowledge the importance of testing (more than most tools in this space).
 
 ## Notable Limitations
 
@@ -60,26 +60,35 @@ The SDD tile is open source. The Registry is free. The Framework is in closed be
 
 **See also:** [Guy Podjarny](/people#guy-podjarny), [Timeline: AI-Driven Renaissance](/timeline#ai-renaissance)
 
-## Score Card
+## Capability Analysis
 
-> Editorial assessment. [Suggest corrections](https://github.com/BeOnAuto/specdriven.com/issues)
+**[Development Velocity](/landscape/evaluation#dim-velocity).** The Registry provides an immediate velocity boost by eliminating time wasted on agent hallucinations about library APIs. The Framework adds more ceremony upfront, which slows initial development but aims to pay off through more predictable code generation.
 
-| Dimension | Rating | Note |
-|-----------|--------|------|
-| [Development Velocity](/landscape/evaluation#dim-velocity) | ●●○ | Registry helps immediately; Framework adds ceremony |
-| [Spec Durability](/landscape/evaluation#dim-durability) | ●●○ | @test references link specs to tests; not intrinsically verified |
-| [Executability](/landscape/evaluation#dim-executability) | ●○○ | @test directives reference tests but specs don't self-verify |
-| [Accessibility](/landscape/evaluation#dim-accessibility) | ●○○ | .spec.md files are developer-facing |
-| [Model Coherence](/landscape/evaluation#dim-coherence) | ●○○ | 1:1 spec-to-file mapping; no unified system model |
-| [Traceability](/landscape/evaluation#dim-traceability) | ●●○ | 1:1 spec-to-code mapping; @generate creates explicit links |
-| [Agent Guidance](/landscape/evaluation#dim-agent-guidance) | ●●○ | Registry context + directives; spec format is still loose |
-| [Portability](/landscape/evaluation#dim-portability) | ●●○ | MCP-based; Registry works across agents |
-| [Brownfield Readiness](/landscape/evaluation#dim-brownfield) | ●●○ | @describe directive generates specs from existing code |
-| [Modularity](/landscape/evaluation#dim-modularity) | ●●○ | Registry is extensible; Framework is more rigid |
-| [Composability](/landscape/evaluation#dim-composability) | ●○○ | 1:1 mapping limits cross-component composition |
-| [Cross-Cutting](/landscape/evaluation#dim-cross-cutting) | ●○○ | Team rules in Registry; limited formal support |
-| [Reconcilability](/landscape/evaluation#dim-reconcilability) | ●●○ | @describe bootstraps specs from existing code |
-| Domain Fit | | Component-level |
+**[Spec Durability](/landscape/evaluation#dim-durability).** The @test directives link specs to test files, which gives specs some grounding in verifiable behavior. However, this linkage is a reference rather than an intrinsic property of the spec, so the connection can break without warning if tests move or change.
+
+**[Executability](/landscape/evaluation#dim-executability).** Specs reference tests via @test directives but do not self-verify. The spec points to a test file, but the spec format itself has no execution semantics. You cannot run a spec to confirm the system satisfies it.
+
+**[Accessibility](/landscape/evaluation#dim-accessibility).** The .spec.md files are developer-facing and assume familiarity with the directive syntax and YAML frontmatter. Non-technical stakeholders would need help interpreting them. The Registry's usage specs are somewhat more approachable since they resemble documentation.
+
+**[Model Coherence](/landscape/evaluation#dim-coherence).** The 1:1 spec-to-file mapping means each spec describes a single code file. There is no unified system model that ties specs together into a coherent picture of the whole application. Understanding the full system requires reading many individual specs.
+
+**[Traceability](/landscape/evaluation#dim-traceability).** The 1:1 spec-to-code mapping and @generate directive create explicit, direct links between specs and implementation files. This makes traceability at the individual file level quite strong, though cross-component tracing is not supported.
+
+**[Agent Guidance](/landscape/evaluation#dim-agent-guidance).** The Registry provides rich contextual guidance about library usage, which measurably reduces agent errors. The Framework's directives (@generate, @describe) give agents clear instructions, though the spec format itself is loose enough that agents still have considerable room for interpretation.
+
+**[Portability](/landscape/evaluation#dim-portability).** The Registry is MCP-based and works across agents, which is a strong portability story. The Framework is more tightly coupled to Tessl's own tooling, though MCP compatibility helps. Plain .spec.md files are readable outside the ecosystem.
+
+**[Brownfield Readiness](/landscape/evaluation#dim-brownfield).** The @describe directive generates specs from existing code, which provides a practical on-ramp for brownfield adoption. You can incrementally add specs to an existing codebase without rewriting anything.
+
+**[Modularity](/landscape/evaluation#dim-modularity).** The Registry is extensible, letting teams add their own usage specs for internal libraries and conventions. The Framework is more rigid due to the 1:1 mapping constraint, which limits how you can structure specs for complex components.
+
+**[Composability](/landscape/evaluation#dim-composability).** The 1:1 spec-to-file mapping limits cross-component composition. Each spec is self-contained, which makes it hard to express relationships between components or define behavior that spans multiple files.
+
+**[Cross-Cutting](/landscape/evaluation#dim-cross-cutting).** The Registry supports team-wide rules and conventions, which is a form of cross-cutting concern management. The Framework has limited formal support for expressing system-wide policies or patterns that apply across specs.
+
+**[Reconcilability](/landscape/evaluation#dim-reconcilability).** The @describe directive can bootstrap specs from existing code, making it straightforward to reconcile specs with an already-built system. This is one of the more practical brownfield features in the landscape.
+
+**[Scope](/landscape/evaluation#dim-scope).** The Registry covers any language and framework, giving it broad scope. The Framework is more constrained, currently focused on component-level specs with a 1:1 file mapping that works best for well-structured, modular codebases.
 
 [Full evaluation framework](/landscape/evaluation)
 

@@ -49,26 +49,35 @@ Yes, MIT license. [GitHub](https://github.com/github/spec-kit)
 
 **See also:** [Timeline: AI-Driven Renaissance](/timeline#ai-renaissance)
 
-## Score Card
+## Capability Analysis
 
-> Editorial assessment. [Suggest corrections](https://github.com/BeOnAuto/specdriven.com/issues)
+**[Development Velocity](/landscape/evaluation#dim-velocity).** The CLI scaffolds spec files quickly, giving teams a fast starting point. However, there is no spec-to-code automation, so the productivity gain is front-loaded in the planning phase rather than carried through to implementation.
 
-| Dimension | Rating | Note |
-|-----------|--------|------|
-| [Development Velocity](/landscape/evaluation#dim-velocity) | ●●○ | Quick scaffold; no spec-to-code automation |
-| [Spec Durability](/landscape/evaluation#dim-durability) | ●○○ | Markdown prose drifts without verification |
-| [Executability](/landscape/evaluation#dim-executability) | ○○○ | No executability mechanism |
-| [Accessibility](/landscape/evaluation#dim-accessibility) | ●●○ | Readable markdown; template structure adds some friction |
-| [Model Coherence](/landscape/evaluation#dim-coherence) | ●○○ | Separate spec/plan/tasks files can diverge |
-| [Traceability](/landscape/evaluation#dim-traceability) | ●●○ | spec to plan to tasks flow exists but is manual |
-| [Agent Guidance](/landscape/evaluation#dim-agent-guidance) | ●●○ | constitution.md + templates constrain agent behavior |
-| [Portability](/landscape/evaluation#dim-portability) | ●●● | Agent-agnostic, repo-native, MIT licensed |
-| [Brownfield Readiness](/landscape/evaluation#dim-brownfield) | ●●○ | Brownfield demos exist but not primary focus |
-| [Modularity](/landscape/evaluation#dim-modularity) | ●●○ | Community extensions for Jira, Azure DevOps |
-| [Composability](/landscape/evaluation#dim-composability) | ●○○ | Per-feature specs with limited cross-referencing |
-| [Cross-Cutting](/landscape/evaluation#dim-cross-cutting) | ●●○ | constitution.md handles project-wide principles |
-| [Reconcilability](/landscape/evaluation#dim-reconcilability) | ●○○ | /analyze checks consistency but cannot reconcile |
-| Domain Fit | | General purpose |
+**[Spec Durability](/landscape/evaluation#dim-durability).** Specs are plain markdown prose with no automated verification against the codebase. Without a mechanism to check freshness, specs tend to drift from reality over time.
+
+**[Executability](/landscape/evaluation#dim-executability).** There is no executability mechanism. Specs serve as documentation and agent prompts, not as verifiable contracts that can be run against the system.
+
+**[Accessibility](/landscape/evaluation#dim-accessibility).** The markdown format is readable by anyone, which is a real strength. The template structure does add some friction for non-technical contributors who may find the scaffolding conventions unfamiliar at first.
+
+**[Model Coherence](/landscape/evaluation#dim-coherence).** The spec model is spread across separate files (spec.md, plan.md, tasks). Each file has a clear role, but they can diverge from each other since there is no formal link enforcing consistency.
+
+**[Traceability](/landscape/evaluation#dim-traceability).** A natural flow exists from spec to plan to tasks, giving teams a conceptual trace through the development process. This trace is manual, though, and depends on the team keeping artifacts in sync.
+
+**[Agent Guidance](/landscape/evaluation#dim-agent-guidance).** The constitution.md file and structured templates do a solid job of constraining agent behavior. Templates force agents to think about user needs before jumping to code, and the constitution sets boundaries the agent must respect.
+
+**[Portability](/landscape/evaluation#dim-portability).** This is Spec Kit's standout quality. It is agent-agnostic, repo-native, and MIT licensed. You can use it with any IDE and any coding agent, making it one of the most portable options in the landscape.
+
+**[Brownfield Readiness](/landscape/evaluation#dim-brownfield).** Brownfield demos exist and the tool can be dropped into existing projects. That said, the workflow is primarily designed with new feature development in mind rather than retroactively specifying existing systems.
+
+**[Modularity](/landscape/evaluation#dim-modularity).** Community extensions for Jira and Azure DevOps integration show a healthy plugin story. The open-source model encourages teams to build their own extensions when needed.
+
+**[Composability](/landscape/evaluation#dim-composability).** Specs are scoped per feature with limited cross-referencing between them. For systems with features that interact heavily, teams need to manage those relationships manually.
+
+**[Cross-Cutting](/landscape/evaluation#dim-cross-cutting).** The constitution.md file handles project-wide principles like testing strategy, architectural constraints, and coding standards. This is a clean approach that keeps cross-cutting concerns in one place.
+
+**[Reconcilability](/landscape/evaluation#dim-reconcilability).** The /analyze command checks for consistency across spec artifacts, which is a step in the right direction. It can surface issues but cannot automatically reconcile them, so fixing drift is still a manual process.
+
+**[Scope](/landscape/evaluation#dim-scope).** Spec Kit is domain-agnostic and works across any project type. It makes no assumptions about your stack, cloud provider, or application domain, which gives it the widest possible applicability.
 
 [Full evaluation framework](/landscape/evaluation)
 

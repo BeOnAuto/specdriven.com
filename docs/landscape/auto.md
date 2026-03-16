@@ -32,11 +32,11 @@ Underneath sits a unified model serving multiple audiences:
 Narratives → Domain Model → GraphQL Schema → Server Scaffold → Frontend Scaffold → AI Implementation → Quality Checks → Production Code
 ```
 
-Each stage validates against specs. Self-correcting feedback loops (up to 5 attempts). Quality checks enforce 100% test coverage, type safety, linting.
+Each stage validates against specs. An adaptive pipeline where deterministic tests serve as the control mechanism. Quality checks enforce 100% test coverage, type safety, and linting.
 
 ## Origin Story
 
-NDD was NOT designed for the AI era. It originated at Xolvio through years of real client engagements with enterprise brands including Audi, Volkswagen, and others. Teams consistently delivered 3-4x faster. Auto (by Auto Inc) is the productization of a proven methodology.
+NDD was not designed for the AI era. It originated at Xolvio through years of enterprise client engagements and became the team's standardized delivery approach. Clients praised its ability to capture intent and the quality of software produced. Auto (by Auto Inc) is the productization of that methodology.
 
 ## Specification Format
 
@@ -44,11 +44,11 @@ Model-based (Zod schema) with a TypeScript fluent interface. Given/When/Then and
 
 ## Notable Strengths
 
-The only current approach maintaining the executable specification lineage from BDD. Unified model coherence. Modular builders for multi-language targeting. Battle-tested with enterprise clients before the AI wave.
+Carries forward the executable specification lineage from BDD into the AI era. Unified model coherence across audiences. Modular builders for multi-language targeting. Battle-tested with enterprise clients before the AI wave.
 
 ## Notable Limitations
 
-Purpose-built for line-of-business applications (workflows, orchestration, CRUD, domain logic). Not optimized for games, infrastructure-as-code, data science pipelines. Currently being productized (the on.auto platform is in waitlist stage).
+Purpose-built for line-of-business applications (workflows, orchestration, CRUD, domain logic). Not optimized for games, infrastructure-as-code, data science pipelines. Currently being productized (the on.auto platform is in waitlist stage). The TypeScript fluent interface, while powerful, creates a learning curve that prose-based tools avoid.
 
 ## Open Source
 
@@ -60,27 +60,68 @@ Purpose-built for line-of-business applications (workflows, orchestration, CRUD,
 
 **See also:** [Sam Hatoum](/people#sam-hatoum), [Timeline: NDD](/timeline#narrative-driven-development), [NDD dialect](/dialects/narrative-driven), [Auto getting started](/auto)
 
-## Score Card
+## Capability Analysis
 
-> Editorial assessment of Auto + NDD. Auto + Archetype will have a different profile. [Suggest corrections](https://github.com/BeOnAuto/specdriven.com/issues)
+### [Development Velocity](/landscape/evaluation#dim-velocity)
 
-| Dimension | Rating | Note |
-|-----------|--------|------|
-| [Development Velocity](/landscape/evaluation#dim-velocity) | ●●● | AI handles model investment (similar to vibe coding); fast to start, iteratively improvable |
-| [Spec Durability](/landscape/evaluation#dim-durability) | ●●● | Executable specs verified on every build |
-| [Executability](/landscape/evaluation#dim-executability) | ●●● | Only tool maintaining executable spec lineage from BDD |
-| [Accessibility](/landscape/evaluation#dim-accessibility) | ●●● | Three audiences (code, visual, document) from one model |
-| [Model Coherence](/landscape/evaluation#dim-coherence) | ●●● | Single Zod model serves all views |
-| [Traceability](/landscape/evaluation#dim-traceability) | ●●● | Every generated line traces to a narrative |
-| [Agent Guidance](/landscape/evaluation#dim-agent-guidance) | ●●● | Structured model constrains AI tightly |
-| [Portability](/landscape/evaluation#dim-portability) | ●●● | Open-source Auto Engineer; narratives writable in any language through open-source builders |
-| [Brownfield Readiness](/landscape/evaluation#dim-brownfield) | ●●○ | Can coexist with existing projects through integrations and entry/exit points |
-| [Modularity](/landscape/evaluation#dim-modularity) | ●●● | Pluggable builders target multiple languages from one spec |
-| [Composability](/landscape/evaluation#dim-composability) | ●●● | Narratives, journeys, scenes, and messages compose at multiple levels |
-| [Cross-Cutting](/landscape/evaluation#dim-cross-cutting) | ●●● | NFRs, security directives, and compliance constraints currently in progress |
-| [Reconcilability](/landscape/evaluation#dim-reconcilability) | ●○○ | Reverse-engineering existing apps to specs is on the roadmap |
-| Domain Fit | | Line-of-business applications |
+Auto's AI-assisted pipeline handles much of the model investment, making initial setup comparable to prompt-to-code approaches. The structured spec foundation means iteration speed stays consistent as complexity grows rather than degrading. However, the upfront investment in learning NDD's fluent interface and model concepts is real, and for simple prototypes, less structured tools will get you to a first output faster.
+
+### [Spec Durability](/landscape/evaluation#dim-durability)
+
+Specs compile into executable tests that run on every build. If the implementation diverges from the spec, the build breaks. This is a fundamental advantage over prose-based specs, which inevitably drift from reality without manual effort to keep them aligned.
+
+### [Executability](/landscape/evaluation#dim-executability)
+
+Specs compile directly into verifiable tests. This carries forward BDD's core insight that specifications should prove themselves. Most other tools in the current landscape have moved away from executable specifications, making this a genuine differentiator. The trade-off is that executable specs require more structure than free-form prose.
+
+### [Accessibility](/landscape/evaluation#dim-accessibility)
+
+The model serves three audiences (code, visual, document) from a single source. In theory, product managers interact through visual views while developers work in the TypeScript interface. In practice, the code-level fluent interface is the primary authoring surface today, and the visual and document views are still maturing. Non-technical stakeholders can read the outputs but cannot yet author specs without developer assistance.
+
+### [Model Coherence](/landscape/evaluation#dim-coherence)
+
+A single Zod-based model serves all views. This means visual wireframes, documentation, and code artifacts cannot diverge from each other because they are derived from the same source. This is architecturally strong compared to tools that maintain separate spec/plan/task files. The downside is that the model itself must be comprehensive enough to support all three views, which adds authoring complexity.
+
+### [Traceability](/landscape/evaluation#dim-traceability)
+
+Every generated line traces back to a narrative. The pipeline structure (narratives to domain model to schema to scaffolds to implementation) maintains a clear chain. For enterprises needing audit trails or compliance documentation, this is valuable. The traceability is strongest within the pipeline's own artifacts and weaker at the boundaries where Auto-generated code integrates with external systems.
+
+### [Agent Guidance](/landscape/evaluation#dim-agent-guidance)
+
+The structured model constrains AI generation tightly. Rather than interpreting prose suggestions, agents work against a typed schema with executable assertions. This produces more predictable AI output than unstructured approaches. The constraint is deliberate: it trades creative freedom for correctness.
+
+### [Portability](/landscape/evaluation#dim-portability)
+
+The Auto Engineer is open source, and narratives can be expressed in raw JSON or DSLs in other languages via open-source builders. You are not locked into a single IDE or AI agent. That said, the NDD model format is specific to Auto's ecosystem. Moving specs to a completely different spec-driven tool would require translation, not just file copying.
+
+### [Brownfield Readiness](/landscape/evaluation#dim-brownfield)
+
+Auto can coexist with existing projects through integrations and entry/exit points. You can adopt it incrementally for new features within an existing codebase. However, the pipeline is greenfield-leaning by design. Wrapping an existing legacy system's behavior in NDD narratives is possible but not the path of least resistance.
+
+### [Modularity](/landscape/evaluation#dim-modularity)
+
+Pluggable builders decouple specification from implementation. Write narratives once, target TypeScript, Python, or other platforms through different builders. This architecture cleanly separates "what the system does" from "how it is built." The builder ecosystem is still growing, so language coverage is not yet comprehensive.
+
+### [Composability](/landscape/evaluation#dim-composability)
+
+Narratives, journeys, scenes, and messages compose at multiple levels. You can build complex specifications from smaller, reusable pieces. The composition model is well-defined within NDD's own vocabulary. Cross-project composition (referencing narratives from one project in another) is less developed.
+
+### [Cross-Cutting](/landscape/evaluation#dim-cross-cutting)
+
+Handling non-functional requirements like security directives, compliance constraints, and performance targets is currently a work in progress. This is a known gap. Today, cross-cutting concerns require manual specification alongside the narrative structure rather than being first-class citizens of the model.
+
+### [Reconcilability](/landscape/evaluation#dim-reconcilability)
+
+Reverse-engineering existing applications into NDD specs is on the roadmap but not yet available. Today, if you have an existing codebase without narratives, you start from scratch writing specs for it. This means teams with large existing codebases must write specs from scratch for any functionality they want Auto to manage.
+
+### [Scope](/landscape/evaluation#dim-scope)
+
+Purpose-built for line-of-business applications: web apps, mobile apps, internal tools, workflows, orchestration, CRUD, and domain logic. This focused scope allows deep optimization for those domains. It is not designed for games, infrastructure-as-code, embedded systems, data science pipelines, or systems programming. If your work falls outside its target domain, Auto is not the right tool.
 
 [Full evaluation framework](/landscape/evaluation)
+
+---
+
+**Disclosure:** Auto is built by the team behind this site.
 
 *An initiative by [Auto](https://on.auto).*

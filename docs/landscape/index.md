@@ -25,20 +25,20 @@ This page summarizes every tool we're tracking. The top six have dedicated profi
 
 <div class="table-scroll">
 
-| Tool                                          | Creator/Org      | Spec Format             | Executable? | Open Source? | Primary Domain         |
-| --------------------------------------------- | ---------------- | ----------------------- | ----------- | ------------ | ---------------------- |
-| [Auto](/landscape/auto)                       | Auto             | Model-based (TypeScript DSL) | Yes    | Partial      | Line-of-business apps  |
-| [GitHub Spec Kit](/landscape/github-spec-kit) | GitHub/Microsoft | Markdown templates      | No          | Yes (MIT)    | General purpose        |
-| [Intent](/landscape/intent)                   | Augment Code     | Living markdown         | No          | No           | Enterprise/multi-repo  |
-| [Kiro](/landscape/kiro)                       | AWS              | Markdown (EARS)         | No          | Yes          | AWS-native apps        |
-| [OpenSpec](/landscape/openspec)               | Fission AI       | Markdown + YAML         | No          | Yes          | Brownfield/iterative   |
-| [Tessl](/landscape/tessl)                     | Tessl            | .spec.md directives     | Partial     | Partial      | Component-level        |
-| BMAD-METHOD                                   | Community        | Multi-artifact markdown | No          | Yes          | Full SDLC              |
-| IntentSpec                                    | Community        | Markdown + YAML         | No          | Yes          | Minimal/starting point |
-| Google Code Wiki                              | Google           | AI-generated docs       | No          | No           | Documentation          |
-| Cursor Rules                                  | Cursor           | MDC files               | No          | N/A          | Convention enforcement |
-| Pre.dev                                       | Pre.dev          | Transferable specs      | No          | No           | Cross-tool specs       |
-| cc-sdd                                        | Community        | Markdown workflow       | No          | Yes          | Multi-agent SDD        |
+| Tool                                                          | Creator/Org      | Spec Format             | Executable? | Open Source? | Primary Domain         |
+| ------------------------------------------------------------- | ---------------- | ----------------------- | ----------- | ------------ | ---------------------- |
+| [Auto](/landscape/auto)                                       | Auto             | Model-based             | Yes         | Partial      | Line-of-business apps  |
+| [BMAD-METHOD ↗](https://github.com/bmad-code-org/BMAD-METHOD) | Community        | Multi-artifact markdown | No          | Yes          | Full SDLC              |
+| [cc-sdd](#other-notable)                                      | Community        | Markdown workflow       | No          | Yes          | Multi-agent SDD        |
+| [Cursor Rules](#cursor-rules)                                 | Cursor           | MDC files               | No          | N/A          | Convention enforcement |
+| [GitHub Spec Kit](/landscape/github-spec-kit)                 | GitHub/Microsoft | Markdown templates      | No          | Yes (MIT)    | General purpose        |
+| [Google Code Wiki ↗](https://codewiki.google)                 | Google           | AI-generated docs       | No          | No           | Documentation          |
+| [Intent](/landscape/intent)                                   | Augment Code     | Living markdown         | No          | No           | Enterprise/multi-repo  |
+| [IntentSpec ↗](https://intentspec.org)                        | Community        | Markdown + YAML         | No          | Yes          | Minimal/starting point |
+| [Kiro](/landscape/kiro)                                       | AWS              | Markdown (EARS)         | No          | Yes          | AWS-native apps        |
+| [OpenSpec](/landscape/openspec)                               | Fission AI       | Markdown + YAML         | No          | Yes          | Brownfield/iterative   |
+| [Pre.dev](#other-notable)                                     | Pre.dev          | Transferable specs      | No          | No           | Cross-tool specs       |
+| [Tessl](/landscape/tessl)                                     | Tessl            | .spec.md directives     | Partial     | Partial      | Component-level        |
 
 </div>
 
@@ -60,7 +60,7 @@ The spec-driven approach is being tested in the real world. Here's what teams ar
 
 **Tessl's "build it twice" experiment** produced one of the strongest before/after comparisons. The same application built with vibe coding silently returned fabricated data. The spec-driven version caught the issue because the specifications explicitly defined correct behavior. Their blog post "My Coding Agent Lied to Me" documents the comparison.
 
-**Kiro's Delta Airlines showcase** at AWS re:Invent 2025 demonstrated non-coding business owners generating production prototypes using structured specifications. This is significant because it validates that spec-driven tools can serve non-developers, not just engineering teams.
+**Kiro's Delta Airlines showcase** at AWS re:Invent 2025 demonstrated non-coding business owners generating production prototypes using structured specifications. This validates that spec-driven tools can serve non-developers, not just engineering teams.
 
 **GitHub Spec Kit's demo repos** cover greenfield (.NET, Spring Boot + React) and brownfield (ASP.NET) scenarios. Critical reviews from Scott Logic found "a sea of markdown" and "unexpected friction," while Marmelab titled their review "The Waterfall Strikes Back." These critiques highlight real adoption barriers worth watching.
 
@@ -70,11 +70,11 @@ These are early signals, not definitive proof. The tools are maturing rapidly, a
 
 ## The Evaluation Framework {#evaluation-framework}
 
-With so many tools approaching from different angles, you need a way to evaluate what matters for your context. We've defined 13 capability dimensions (development velocity, spec durability, executability, accessibility, model coherence, traceability, agent guidance, portability, brownfield readiness, modularity, composability, cross-cutting expressiveness, and reconcilability) plus domain fit indicators to compare tools on equal footing.
+With so many tools approaching from different angles, you need a way to evaluate what matters for your context. We've defined capability dimensions (development velocity, spec durability, executability, accessibility, model coherence, traceability, agent guidance, portability, brownfield readiness, modularity, composability, cross-cutting expressiveness, reconcilability, and scope) plus domain fit indicators to evaluate tools.
 
-Each of the six profiled tools has been scored against all 13 dimensions using a traffic-light rating system, with per-tool notes explaining each score.
+Each of the six profiled tools has a per-dimension analysis on its own page, describing how the tool handles each capability.
 
-[See the full Evaluation Framework with tool score cards](/landscape/evaluation)
+[See the full Evaluation Framework](/landscape/evaluation)
 
 ## Other Tool Profiles {#other-tools}
 
@@ -96,7 +96,7 @@ AI-powered living documentation. It scans entire repositories using Gemini, gene
 
 ### Cursor Rules {#cursor-rules}
 
-Project-level AI behavior configuration within the Cursor IDE. Rules live in `.cursor/rules/` with four activation patterns: always-applied, auto-attached (by file glob), agent-requested, and manual. Rules are passive guidance, not active enforcement. There's a massive community ecosystem of shared rules. Not a spec tool in the strict sense, but it shapes how AI generates code for your project.
+Project-level AI behavior configuration within the Cursor IDE. Rules live in `.cursor/rules/` with four activation patterns: always-applied, auto-attached (by file glob), agent-requested, and manual. Rules are passive guidance, not active enforcement. There's a large community ecosystem of shared rules. Not a spec tool in the strict sense, but it shapes how AI generates code for your project.
 
 ### Other Notable Approaches {#other-notable}
 
@@ -111,4 +111,4 @@ The landscape is fragmenting rapidly. Additional tools worth watching:
 
 > **Building something in this space?** This list is intentionally incomplete and community-maintained. [Submit a PR](https://github.com/BeOnAuto/specdriven.com) to add your tool.
 
-_An initiative by [Auto](https://on.auto)._
+_Built by the team behind [Auto](https://on.auto), for the spec-driven community._
