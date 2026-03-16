@@ -17,11 +17,11 @@ Every piece of software is millions of decisions. What happens when the payment 
 
 When humans wrote all the code, that was a problem. Now that AI writes it at machine speed, it's a crisis. Every prompt is a specification that evaporates the moment you close the chat window. All that remains is code nobody fully understands.
 
-But AI also changed the equation. When implementation is nearly free, the specification isn't a tax on your speed. It *is* your speed.
+But AI also changed the equation. When implementation is nearly free, the specification isn't a brake on your speed. It *is* your speed.
 
 The tradeoff has always been the same: move fast or stay in control.
 
-For the first time, you don't have to choose. Put specifications first. Move fast. Stay in control.
+For the first time, you don't have to choose. Put specifications first. Move fast. Stay in control. That's what spec-*driven* means.
 
 ## The Principles
 
