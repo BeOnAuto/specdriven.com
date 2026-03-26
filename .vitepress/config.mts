@@ -13,7 +13,7 @@ export default defineConfig({
   },
   lang: 'en-US',
   title: 'Spec-Driven',
-  description: 'Code writes itself. Specs never will. Spec-Driven Development is the paradigm for building software in the age of AI.',
+  description: 'Specifications are becoming a new software medium. Spec-Driven Development is the shift from disposable prompts to structured, executable models.',
   appearance: 'dark',
   cleanUrls: true,
   head: [
@@ -56,7 +56,7 @@ export default defineConfig({
       {
         property: 'og:description',
         content:
-          'Specifications are the new programming languages. Spec-Driven Development is the paradigm for building software in the age of AI.',
+          'Specifications are becoming a new software medium. Spec-Driven Development is the shift from disposable prompts to structured, executable models.',
       },
     ],
     [
@@ -97,7 +97,7 @@ export default defineConfig({
       {
         name: 'twitter:description',
         content:
-          'Specifications are the new programming languages. Spec-Driven Development is the paradigm for building software in the age of AI.',
+          'Specifications are becoming a new software medium. Spec-Driven Development is the shift from disposable prompts to structured, executable models.',
       },
     ],
     [

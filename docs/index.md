@@ -1,5 +1,16 @@
 ---
 layout: home
+hero:
+  name: Spec-Driven Development
+  text: "Specifications are becoming a new software medium."
+  tagline: "The shift from disposable prompts and documents to structured, executable models for building software with AI."
+  actions:
+    - theme: brand
+      text: What Is Spec-Driven?
+      link: /what
+    - theme: alt
+      text: Explore the Landscape
+      link: /landscape/
 features:
   - icon:
       src: /icons/01-why-spec-driven.svg
@@ -23,15 +34,23 @@ features:
     link: /landscape/
   - icon:
       src: /icons/05-spec-dialects.svg
-    title: "Spec Dialects"
-    details: "Purpose-built specification languages for different domains. Like programming languages, but for humans."
-    link: /dialects/
+    title: "The First Dialect"
+    details: "Narrative-Driven Development is one of the clearest working expressions of the spec-driven shift."
+    link: https://narrativedriven.org
   - icon:
       src: /icons/06-discovery-techniques.svg
     title: "Guides"
     details: "From writing your first spec to making them executable. Practical, tool-agnostic guides for spec-driven development."
     link: /guides/
 ---
+
+## The New Workflow
+
+Software intent is moving into a more durable medium:
+
+`Intent → Structured Spec → AI Implementation → Verified Software`
+
+The category matters because prompts are disposable, documents drift, and code alone cannot preserve why a system works the way it does.
 
 ## The Polaroid Problem
 
@@ -58,6 +77,16 @@ The whiteboard gets erased. The conversation evaporates. The code becomes the on
 What does spec-driven development actually look like in practice? Real tools, real examples, real results.
 
 [See It In Action](/guides/see-it) | [Explore the Landscape](/landscape/)
+
+## The First Developed Dialect
+
+Category language is not enough on its own. People need a concrete way to work inside the shift.
+
+[Narrative-Driven Development](https://narrativedriven.org) is one of the clearest working spec dialects: software modeled as structured stories with storyboard, document, and code views that stay aligned.
+
+If `specdriven.com` explains the larger movement, `narrativedriven.org` shows how one serious dialect works in practice.
+
+[Explore Narrative-Driven Development](https://narrativedriven.org)
 
 ## Ready to Take Your Specifications Seriously?
 
