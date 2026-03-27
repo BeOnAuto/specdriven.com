@@ -103,6 +103,7 @@ body.light .hero-bg svg path { opacity: 0.7; }
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   padding-top: 16px;
 }
 
@@ -132,9 +133,32 @@ body.light .hero-bg svg path { opacity: 0.7; }
 }
 
 .hero-url {
-  font-size: 2rem;
+  position: absolute;
+  bottom: 32px;
+  right: 64px;
+  font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 0.02em;
+  z-index: 11;
+}
+
+.hero-cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 36px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 8px;
+  background: #ff8a1d;
+  color: #fff;
+  border: none;
+}
+
+body.light .hero-cta {
+  background: #e07010;
+  color: #fff;
 }
 
 /* Lottie - sized to fit within card height */
@@ -225,12 +249,15 @@ body.light .hero-bg svg path { opacity: 0.7; }
       <h1 class="hero-name">Spec-Driven</h1>
       <p class="hero-tagline-main">Code writes itself. Specs never will.</p>
       <p class="hero-tagline-sub text-secondary">Welcome to the specification era.</p>
-      <p class="hero-url url-text">specdriven.com</p>
+      <div class="hero-cta">Learn the Spec-Driven Approach &rarr;</div>
     </div>
     <div class="hero-lottie">
       <canvas id="lottie" class="lottie-canvas" width="1000" height="1000"></canvas>
     </div>
   </div>
+
+  <!-- URL -->
+  <p class="hero-url url-text">specdriven.com</p>
 
   <!-- Bottom brand stripe -->
   <div class="hero-stripe" aria-hidden="true">
