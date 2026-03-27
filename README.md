@@ -38,4 +38,4 @@ npm run dev
 
 ## License
 
-[CC BY-NC-ND 4.0](./LICENSE) · An initiative by [Auto](https://on.auto).
+[CC BY-NC 4.0](./LICENSE) · An initiative by [Auto](https://on.auto).

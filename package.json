@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/BeOnAuto/specdriven.com.git"
   },
-  "license": "CC-BY-NC-ND-4.0",
+  "license": "CC-BY-NC-4.0",
   "devDependencies": {
     "@commitlint/cli": "^20.4.4",
     "@commitlint/config-conventional": "^20.4.4",
