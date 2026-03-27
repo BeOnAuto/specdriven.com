@@ -47,7 +47,7 @@ export default defineConfig({
       'meta',
       {
         property: 'og:title',
-        content: 'Spec-Driven Development — Code Writes Itself. Specs Never Will.',
+        content: 'Spec-Driven — Code Writes Itself. Specs Never Will.',
       },
     ],
     ['meta', { property: 'og:type', content: 'website' }],
@@ -89,7 +89,7 @@ export default defineConfig({
       'meta',
       {
         name: 'twitter:title',
-        content: 'Spec-Driven Development — Code Writes Itself. Specs Never Will.',
+        content: 'Spec-Driven — Code Writes Itself. Specs Never Will.',
       },
     ],
     [
