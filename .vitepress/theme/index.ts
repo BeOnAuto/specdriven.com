@@ -3,6 +3,7 @@ import './custom.css';
 import posthog from 'posthog-js';
 import { h } from 'vue';
 import AnimatedHero from './components/AnimatedHero.vue';
+import ThemeImage from './components/ThemeImage.vue';
 
 export default {
   extends: DefaultTheme,
@@ -11,7 +12,8 @@ export default {
       'home-hero-before': () => h(AnimatedHero),
     });
   },
-  enhanceApp({ router }) {
+  enhanceApp({ app, router }) {
+    app.component('ThemeImage', ThemeImage);
     if (typeof window !== 'undefined') {
       // Prevent font swap jank: hide body until Barlow is loaded
       document.fonts.ready.then(() => {

@@ -19,13 +19,11 @@ Narrative-Driven Development is a model-based approach. The same specification r
 
 **The Visual View** (for designers and product teams):
 
-<img class="only-dark" src="/visual-canvas-dark.png" alt="User journey map showing the gym membership narrative as a visual timeline with moments, interfaces, and system actions" style="border-radius: 8px; border: 1px solid var(--vp-c-divider);">
-<img class="only-light" src="/visual-canvas-light.png" alt="User journey map showing the gym membership narrative as a visual timeline with moments, interfaces, and system actions" style="border-radius: 8px; border: 1px solid var(--vp-c-divider);">
+<ThemeImage dark="/visual-canvas-dark.png" light="/visual-canvas-light.png" alt="User journey map showing the gym membership narrative as a visual timeline with moments, interfaces, and system actions" />
 
 **The Document View** (for PMs, QA, and stakeholders):
 
-<img class="only-dark" src="/structured-doc-dark.png" alt="Structured document showing the gym membership narrative as readable specifications with business rules, acceptance criteria, and edge cases" style="border-radius: 8px; border: 1px solid var(--vp-c-divider);">
-<img class="only-light" src="/structured-doc-light.png" alt="Structured document showing the gym membership narrative as readable specifications with business rules, acceptance criteria, and edge cases" style="border-radius: 8px; border: 1px solid var(--vp-c-divider);">
+<ThemeImage dark="/structured-doc-dark.png" light="/structured-doc-light.png" alt="Structured document showing the gym membership narrative as readable specifications with business rules, acceptance criteria, and edge cases" />
 
 **The Code View** (for developers):
 
