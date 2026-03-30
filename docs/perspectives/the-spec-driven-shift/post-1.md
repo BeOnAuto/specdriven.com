@@ -38,4 +38,6 @@ What's the longest you've maintained an AI-generated codebase? I'm curious what 
 
 [Back to series overview](./index)
 
+*By [Sam Hatoum](https://www.linkedin.com/in/samhatoum/) · Follow the full series on [LinkedIn](https://www.linkedin.com/in/samhatoum/)*
+
 The Spec-Driven Shift | Week 1: The Wake-Up Call | Post 1 of 20
