@@ -224,6 +224,24 @@ export default defineConfig({
             { text: '1. Your AI Codebase Is a Ticking Time Bomb', link: '/perspectives/the-spec-driven-shift/post-1' },
           ]
         },
+        {
+          text: 'Week 2: The Lineage — Coming Soon',
+          items: [
+            { text: 'April 6-10', link: '/perspectives/the-spec-driven-shift/' },
+          ]
+        },
+        {
+          text: 'Week 3: The Practice — Coming Soon',
+          items: [
+            { text: 'April 13-17', link: '/perspectives/the-spec-driven-shift/' },
+          ]
+        },
+        {
+          text: 'Week 4: The Future — Coming Soon',
+          items: [
+            { text: 'April 20-24', link: '/perspectives/the-spec-driven-shift/' },
+          ]
+        },
       ],
       '/landscape/': [
         {
