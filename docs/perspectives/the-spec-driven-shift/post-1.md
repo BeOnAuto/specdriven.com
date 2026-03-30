@@ -34,7 +34,7 @@ Over the next 20 posts, I'm going to lay out everything I've learned about how t
 
 What's the longest you've maintained an AI-generated codebase? I'm curious what happened.
 
-— *Sam Hatoum ([LinkedIn](https://www.linkedin.com/in/samhatoum/))*
+— *Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]*
 
 ---
 
