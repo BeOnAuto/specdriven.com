@@ -4,6 +4,8 @@ title: "Your AI Codebase Is a Ticking Time Bomb"
 
 # Your AI Codebase Is a Ticking Time Bomb
 
+![Your AI Codebase Is a Ticking Time Bomb](/images/perspectives/post-1.jpg)
+
 I keep watching the same thing happen.
 
 A team picks up Cursor or Copilot or Claude. They prompt their way to a working prototype in a few hours. It works. Everyone's buzzing. They keep going. More features, more changes, more bug fixes. Weeks pass. Months pass.
