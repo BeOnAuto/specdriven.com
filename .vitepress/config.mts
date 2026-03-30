@@ -227,19 +227,19 @@ export default defineConfig({
         {
           text: 'Week 2: The Lineage — Coming Soon',
           items: [
-            { text: 'April 6-10', link: '/perspectives/the-spec-driven-shift/' },
+            { text: 'April 6-10', link: '/perspectives/the-spec-driven-shift/#week-2-the-lineage' },
           ]
         },
         {
           text: 'Week 3: The Practice — Coming Soon',
           items: [
-            { text: 'April 13-17', link: '/perspectives/the-spec-driven-shift/' },
+            { text: 'April 13-17', link: '/perspectives/the-spec-driven-shift/#week-3-the-practice' },
           ]
         },
         {
           text: 'Week 4: The Future — Coming Soon',
           items: [
-            { text: 'April 20-24', link: '/perspectives/the-spec-driven-shift/' },
+            { text: 'April 20-24', link: '/perspectives/the-spec-driven-shift/#week-4-the-future' },
           ]
         },
       ],
