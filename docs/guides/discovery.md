@@ -4,7 +4,7 @@ prev:
   link: /guides/see-it
 next:
   text: Discovery Techniques Reference
-  link: /guides/guides/discovery-techniques
+  link: /guides/discovery-techniques
 ---
 
 # Discovery
@@ -84,8 +84,8 @@ The techniques on this page remain valuable as discovery inputs. The question fo
 
 ---
 
-> **Facilitating these workshops?** *Collaborative Software Design* by van Kelle, Verschatse, and Baas-Schwegler (Manning) is an excellent guide.
+> **Facilitating these workshops?** _Collaborative Software Design_ by van Kelle, Verschatse, and Baas-Schwegler (Manning) is an excellent guide.
 >
 > **Know a technique that should be listed here?** [Submit a PR](https://github.com/BeOnAuto/specdriven.com).
 
-*An initiative by [Auto](https://on.auto).*
+_An initiative by [Auto](https://on.auto)._

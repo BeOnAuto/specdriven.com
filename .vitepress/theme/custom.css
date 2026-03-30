@@ -584,6 +584,12 @@ html.fonts-ready body {
   background: rgba(255, 138, 29, 0.2);
 }
 
+/* ---------- Dark/Light Image Toggle ---------- */
+.dark .only-light,
+:root:not(.dark) .only-dark {
+  display: none !important;
+}
+
 /* Light horizontal rules */
 :root:not(.dark) .vp-doc hr {
   border: none;
