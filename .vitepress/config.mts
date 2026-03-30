@@ -222,40 +222,6 @@ export default defineConfig({
           text: 'Week 1: The Wake-Up Call',
           items: [
             { text: '1. Your AI Codebase Is a Ticking Time Bomb', link: '/perspectives/the-spec-driven-shift/post-1' },
-            { text: '2. Stop Calling It a Spec If It\'s Not Specific', link: '/perspectives/the-spec-driven-shift/post-2' },
-            { text: '3. Over Half Your Bugs Aren\'t Code Bugs', link: '/perspectives/the-spec-driven-shift/post-3' },
-            { text: '4. Your AI Doesn\'t Know What It Doesn\'t Know', link: '/perspectives/the-spec-driven-shift/post-4' },
-            { text: '5. Code Was Always a Hindrance', link: '/perspectives/the-spec-driven-shift/post-5' },
-          ]
-        },
-        {
-          text: 'Week 2: The Lineage',
-          items: [
-            { text: '6. I Coined SDD in 2016', link: '/perspectives/the-spec-driven-shift/post-6' },
-            { text: '7. 60 Years of Specification', link: '/perspectives/the-spec-driven-shift/post-7' },
-            { text: '8. TDD Was Never About Testing', link: '/perspectives/the-spec-driven-shift/post-8' },
-            { text: '9. Dan North and AI', link: '/perspectives/the-spec-driven-shift/post-9' },
-            { text: '10. AI Needs History', link: '/perspectives/the-spec-driven-shift/post-10' },
-          ]
-        },
-        {
-          text: 'Week 3: The Practice',
-          items: [
-            { text: '11. 5 Spec Smells', link: '/perspectives/the-spec-driven-shift/post-11' },
-            { text: '12. A PRD Is Not a Spec', link: '/perspectives/the-spec-driven-shift/post-12' },
-            { text: '13. Jira Is Where Specs Go to Die', link: '/perspectives/the-spec-driven-shift/post-13' },
-            { text: '14. Freedom of a Tight Brief', link: '/perspectives/the-spec-driven-shift/post-14' },
-            { text: '15. Best AI Devs Are Spec-Driven', link: '/perspectives/the-spec-driven-shift/post-15' },
-          ]
-        },
-        {
-          text: 'Week 4: The Future',
-          items: [
-            { text: '16. Specs Are the Next Languages', link: '/perspectives/the-spec-driven-shift/post-16' },
-            { text: '17. Start Higher', link: '/perspectives/the-spec-driven-shift/post-17' },
-            { text: '18. When Coding Becomes Instant', link: '/perspectives/the-spec-driven-shift/post-18' },
-            { text: '19. Fool Me Once, I Write a Spec', link: '/perspectives/the-spec-driven-shift/post-19' },
-            { text: '20. Can You Specify?', link: '/perspectives/the-spec-driven-shift/post-20' },
           ]
         },
       ],
