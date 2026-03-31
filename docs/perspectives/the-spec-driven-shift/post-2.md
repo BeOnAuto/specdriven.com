@@ -4,6 +4,8 @@ title: "Stop Calling It a Spec If It's Not Specific"
 
 # Stop Calling It a Spec If It's Not Specific
 
+![Stop Calling It a Spec If It's Not Specific](/images/perspectives/post-2.png)
+
 People hear "specification" and they picture a dusty binder from some waterfall project in 2004. That's not what I'm talking about.
 
 A specification is the communication of design. Somebody designed something and they need to tell somebody else about it so it can be built. The way they communicate that design is the specification.
