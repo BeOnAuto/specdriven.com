@@ -30,7 +30,7 @@ That somewhere is your specifications.
 
 Without them, you're handing an infinitely productive amnesiac the keys to a complex system and hoping for the best.
 
-How do you keep context alive across AI sessions today?
+Consider how much of your system's design lives only in your head right now. If you stopped working on it tomorrow, how much would survive?
 
 
 — *Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]*

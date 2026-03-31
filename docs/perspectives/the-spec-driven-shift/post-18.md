@@ -28,7 +28,7 @@ And here's what makes it not waterfall: the feedback is instant too. In waterfal
 
 So the real question isn't "should I write specs?" It's: can you afford not to? Because the alternative is trusting an amnesiac AI to hold every design decision you've ever made. All your intent. All your constraints. Maintained by something with no memory between sessions.
 
-Is that a bet you want to make?
+When coding becomes instant, the only thing left to differentiate your software is the quality of your specifications. That moment is closer than most people think.
 
 
 — *Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]*

@@ -34,7 +34,7 @@ Most teams invest heavily in catching code bugs. Linting, code review, unit test
 
 If you want fewer bugs, look upstream. Look at your specs.
 
-Which type of bug burns you most often?
+Next time a bug lands in production, ask yourself: was the code wrong, or was the spec wrong? You might be surprised how often it's the latter.
 
 
 — *Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]*

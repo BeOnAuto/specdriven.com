@@ -22,7 +22,7 @@ The question has changed. It's not "can you get AI to produce code?" Obviously i
 
 If you can, you just went from building houses to building skyscrapers. If you can't, you're building houses faster. They'll just fall down sooner.
 
-What's the most ambitious thing you've built with AI? Was the design or the code the harder part?
+Next time you sit down to build something with AI, notice where you spend your time. If most of it is on prompts and code, ask yourself: did anyone design this first?
 
 
 — *Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]*

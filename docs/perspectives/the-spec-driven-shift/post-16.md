@@ -22,7 +22,7 @@ Some of the dialects that emerge will be general purpose, like Python is for pro
 
 We're at the assembly language stage of specification right now. High-level spec languages are coming.
 
-What would your ideal specification language look like?
+We're at the assembly language stage of specification right now. The high-level spec languages are coming — and the teams using them first will have an advantage that compounds with every AI generation.
 
 
 — *Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]*

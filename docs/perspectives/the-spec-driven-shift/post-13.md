@@ -30,7 +30,7 @@ Specs need a home that outlives the task. Not stapled to a ticket that dies when
 
 That's not a ticket. That's a different kind of artifact entirely.
 
-Where do your specs live after the ticket closes?
+Go look at a ticket your team closed six months ago. Can you find the spec? If the answer is no, neither can your AI.
 
 
 — *Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]*

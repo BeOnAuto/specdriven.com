@@ -30,7 +30,7 @@ But it all starts with two words. Capture intent.
 
 The people building skyscrapers are doing this. The people building houses that blow over aren't.
 
-Will you try it Monday? I'd love to hear what happens.
+The people building skyscrapers are already doing this. The question is whether you'll keep building houses that blow over, or start specifying before you build.
 
 
 — *Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]*

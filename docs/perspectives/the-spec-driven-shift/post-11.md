@@ -22,7 +22,7 @@ The pattern across all five: lack of specificity, things getting mixed together,
 
 A good spec reads like a good note to your future self. Clear enough that in two years, you or an AI or a new hire can read it and know what the system is supposed to do.
 
-What's the worst spec (or lack of one) you've ever had to build from?
+Look at the last spec you handed to your AI. How many of these five smells does it have?
 
 
 — *Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]*

@@ -30,7 +30,7 @@ That framework got the same reception. Too abstract. Just write the code.
 
 Timing matters with ideas. But so does showing up early and staying.
 
-What's a belief you held early that the world caught up to later?
+Sometimes the right idea just needs the right moment. The spec-driven conversation that couldn't get traction in 2016 is now the most important conversation in software development.
 
 
 — *Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]*

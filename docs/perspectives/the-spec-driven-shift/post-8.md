@@ -20,7 +20,7 @@ But TDD had a limitation. It lived in code. It spoke in code. The business could
 
 That gap between executable and shared is exactly what BDD solved. That's tomorrow.
 
-Did TDD change how you think about code? Or does it still feel like extra work?
+The next time you're about to write code, try writing the expectation first. Not as a test. As a design decision. See what happens to the way you think.
 
 
 — *Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]*

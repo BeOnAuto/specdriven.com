@@ -32,7 +32,7 @@ There are known techniques to deal with this. They're not new. They come from de
 
 Over the next 20 posts, I'm going to lay out everything I've learned about how to fix this. All of it starts with something that sounds simple but most people get wrong: specifications.
 
-What's the longest you've maintained an AI-generated codebase? I'm curious what happened.
+Think about your own AI-generated codebase. How long has it been since someone could explain why it works the way it does?
 
 — *Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]*
 

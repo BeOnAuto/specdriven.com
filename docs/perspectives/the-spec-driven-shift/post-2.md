@@ -34,7 +34,7 @@ Specifications don't arrive fully formed either. They evolve. Requirements lead 
 
 Whether that implementation takes a human two weeks or an AI two minutes, the spec is what makes the output match the intent.
 
-What's the biggest gap you've seen between what someone asked for and what actually got built?
+Think about the last feature your team shipped. Could someone new read the spec and know exactly what to build — or would they have to reverse-engineer it from the code?
 
 
 — *Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]*

@@ -22,7 +22,7 @@ It's the difference between telling a contractor "I need a kitchen" and handing 
 
 The gap between PRD and spec is where design lives. That gap is where you think about trade-offs, consider alternatives, and make actual choices. Skipping it doesn't save time. It just hands your most important decisions to something that doesn't know your context.
 
-How does your team bridge the gap between requirements and implementation?
+Next time someone hands you a PRD and says "build this," ask yourself: who made the design decisions? If the answer is "nobody yet," you're not ready to build.
 
 
 — *Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]*

@@ -34,7 +34,7 @@ Compare that to the alternative. Prompt, hope, prompt, hope, manually review tho
 
 Fool me once, I write a spec. Fool me twice? There is no twice.
 
-Which workflow would you trust with your production system?
+Think about which workflow you'd trust with your production system. The one that hopes AI got it right, or the one that proves it did.
 
 
 — *Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]*
