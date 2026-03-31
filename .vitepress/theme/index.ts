@@ -1,6 +1,6 @@
 import DefaultTheme from 'vitepress/theme';
 import './custom.css';
-import posthog from 'posthog-js';
+import posthog from 'posthog-js/dist/module.full.no-external';
 import { h } from 'vue';
 import AnimatedHero from './components/AnimatedHero.vue';
 import ThemeImage from './components/ThemeImage.vue';
@@ -26,8 +26,6 @@ export default {
         api_host: isLocal ? 'https://us.i.posthog.com' : '/idata',
         capture_pageview: false,
         persistence: isLocal ? 'memory' : 'localStorage+cookie',
-        disable_session_recording: true,
-        autocapture: false,
       });
 
       // Tag all events with environment
