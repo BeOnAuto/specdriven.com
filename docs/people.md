@@ -9,9 +9,9 @@ next:
 
 # Notable People in Spec-Driven Development
 
-> The people who shaped how we specify software, from executable specifications to collaborative modeling to AI-driven development.
+> The people who shaped how we specify software, from executable specifications to collaborative modeling to AI-driven development. Entries are listed alphabetically within each era.
 >
-> Someone missing? [Submit a PR](https://github.com/BeOnAuto/specdriven.com).
+> This page is curated by [Sam Hatoum](#sam-hatoum), founder of [Auto](https://on.auto) and creator of specdriven.com as a community resource for the spec-driven movement. Someone missing? [Submit a PR](https://github.com/BeOnAuto/specdriven.com).
 
 ## Modern Spec-Driven Development {#modern}
 
@@ -29,13 +29,13 @@ Sam created specdriven.com as a community resource for the entire spec-driven mo
 
 Cross-refs: [Timeline: NDD](/timeline#narrative-driven-development), [Landscape: Auto](/landscape/auto), [NDD Dialect](/dialects/narrative-driven)
 
-### Guy Podjarny {#guy-podjarny}
+### John Lam and Den Delimarsky {#spec-kit-team}
 
-**Era:** 2025 | **Contribution:** Tessl, Spec Registry
+**Era:** 2025 | **Contribution:** GitHub Spec Kit
 
-Founder and CEO of **Tessl**. Previously founded Snyk. Guy launched the Spec Registry (10,000+ usage specs) and the Tessl Framework. He coined the term "vibe specing."
+The two key figures behind **GitHub Spec Kit**. John Lam ([@jflam](https://github.com/jflam)) provided the research and conceptual foundation, born out of his work on steering LLM-assisted development at GitHub. Den Delimarsky ([@localden](https://github.com/localden)), then Principal Product Engineer at GitHub, was the primary implementer and public face of the project, writing the official announcement and evangelizing SDD across podcasts and conferences. Spec Kit surpassed 16,000 GitHub stars within its first week, codifying the `Specify → Plan → Tasks → Implement` pipeline as an open-source toolkit.
 
-Cross-refs: [Landscape: Tessl](/landscape/tessl)
+Cross-refs: [Landscape: GitHub Spec Kit](/landscape/github-spec-kit)
 
 ### Clare Liguori {#clare-liguori}
 
@@ -47,19 +47,13 @@ She articulated Kiro's three-phase SDD approach: requirements definition, techni
 
 Cross-refs: [Landscape: Kiro](/landscape/kiro)
 
-### John Lam and Den Delimarsky {#spec-kit-team}
+### Guy Podjarny {#guy-podjarny}
 
-**Era:** 2025 | **Contribution:** GitHub Spec Kit
+**Era:** 2025 | **Contribution:** Tessl, Spec Registry
 
-The two key figures behind **GitHub Spec Kit**. John Lam ([@jflam](https://github.com/jflam)) provided the research and conceptual foundation, born out of his work on steering LLM-assisted development at GitHub. Den Delimarsky ([@localden](https://github.com/localden)), then Principal Product Engineer at GitHub, was the primary implementer and public face of the project, writing the official announcement and evangelizing SDD across podcasts and conferences. Spec Kit surpassed 16,000 GitHub stars within its first week, codifying the `Specify → Plan → Tasks → Implement` pipeline as an open-source toolkit.
+Founder and CEO of **Tessl**. Previously founded Snyk. Guy launched the Spec Registry (10,000+ usage specs) and the Tessl Framework. He coined the term "vibe specing."
 
-Cross-refs: [Landscape: GitHub Spec Kit](/landscape/github-spec-kit)
-
-### Jason Goecke {#jason-goecke}
-
-**Era:** 2025-present | **Contribution:** Context Engineering, Enterprise SDD advocacy
-
-Managing Partner at [Cultiv8 Ventures](https://c8.ventures/). Former CEO of Tropo (acquired by Cisco), former VP and GM at Cisco. Jason has been one of the loudest voices advocating for spec-driven development in enterprise environments, combining it with **context engineering** to inject compliance, QMS, and architectural boundaries into AI agents. His framing: "AI without specifications equals expensive, fast chaos." He presented on SDD at the Telecom Application Developer Summit (2025) and writes actively on the progression from vibe coding to context engineering to spec-driven development.
+Cross-refs: [Landscape: Tessl](/landscape/tessl)
 
 ### Sze Wong {#sze-wong}
 
@@ -79,21 +73,13 @@ Cross-refs: [Landscape](/landscape/)
 
 ## Domain-Driven Design and Collaborative Modeling {#ddd-collaborative}
 
-### Eric Evans {#eric-evans}
+### Kenny Baas-Schwegler, Evelyn van Kelle, and Gien Verschatse {#collaborative-design}
 
-**Era:** 2003 | **Contribution:** Domain-Driven Design
+**Era:** 2020s | **Contribution:** Collaborative Software Design
 
-Author of **Domain-Driven Design** (2003). If you have ever used the terms **Ubiquitous Language**, **Bounded Contexts**, or **Aggregates**, you have Eric to thank. His work shaped BDD, EventStorming, Event Modeling, and NDD.
+Authors of *Collaborative Software Design* (Manning). They synthesized the collaborative modeling movement into a practical guide that ties together EventStorming, Domain Storytelling, Example Mapping, and more.
 
-Cross-refs: [Timeline: DDD](/timeline#domain-driven-design)
-
-### Greg Young {#greg-young}
-
-**Era:** 2000s-2010s | **Contribution:** CQRS, Event Sourcing
-
-Formalized **CQRS** and **Event Sourcing**. His process specifications directly influenced Event Modeling. If you work with event-driven systems, Greg's thinking is foundational.
-
-Cross-refs: [Timeline: Event Modeling](/timeline#event-modeling)
+Cross-refs: [Discovery](/guides/discovery)
 
 ### Alberto Brandolini {#alberto-brandolini}
 
@@ -111,13 +97,13 @@ CEO of Adaptech Group. Adam developed **Event Modeling**, building on Young's CQ
 
 Cross-refs: [Timeline: Event Modeling](/timeline#event-modeling)
 
-### Jeff Patton {#jeff-patton}
+### Eric Evans {#eric-evans}
 
-**Era:** 2005-present | **Contribution:** User Story Mapping
+**Era:** 2003 | **Contribution:** Domain-Driven Design
 
-Popularized **User Story Mapping**. Author of *User Story Mapping* (O'Reilly, 2014). If you have ever arranged sticky notes in a two-dimensional grid to plan a release, you are using Jeff's technique.
+Author of **Domain-Driven Design** (2003). If you have ever used the terms **Ubiquitous Language**, **Bounded Contexts**, or **Aggregates**, you have Eric to thank. His work shaped BDD, EventStorming, Event Modeling, and NDD.
 
-Cross-refs: [Discovery: User Story Mapping](/guides/discovery#user-story-mapping)
+Cross-refs: [Timeline: DDD](/timeline#domain-driven-design)
 
 ### Stefan Hofer and Henning Schwentner {#hofer-schwentner}
 
@@ -127,13 +113,13 @@ Developed **Domain Storytelling**, a pictographic notation for domain discovery.
 
 Cross-refs: [Discovery: Domain Storytelling](/guides/discovery#domain-storytelling)
 
-### Kenny Baas-Schwegler, Evelyn van Kelle, and Gien Verschatse {#collaborative-design}
+### Jeff Patton {#jeff-patton}
 
-**Era:** 2020s | **Contribution:** Collaborative Software Design
+**Era:** 2005-present | **Contribution:** User Story Mapping
 
-Authors of *Collaborative Software Design* (Manning). They synthesized the collaborative modeling movement into a practical guide that ties together EventStorming, Domain Storytelling, Example Mapping, and more.
+Popularized **User Story Mapping**. Author of *User Story Mapping* (O'Reilly, 2014). If you have ever arranged sticky notes in a two-dimensional grid to plan a release, you are using Jeff's technique.
 
-Cross-refs: [Discovery](/guides/discovery)
+Cross-refs: [Discovery: User Story Mapping](/guides/discovery#user-story-mapping)
 
 ### Paul Rayner {#paul-rayner}
 
@@ -142,6 +128,14 @@ Cross-refs: [Discovery](/guides/discovery)
 A leading DDD and EventStorming practitioner. Paul authored *The EventStorming Handbook*, co-authored *Behavior-Driven Development with Cucumber* (with Richard Lawrence), and founded the Explore DDD conference.
 
 Cross-refs: [Discovery: EventStorming](/guides/discovery#eventstorming)
+
+### Greg Young {#greg-young}
+
+**Era:** 2000s-2010s | **Contribution:** CQRS, Event Sourcing
+
+Formalized **CQRS** and **Event Sourcing**. His process specifications directly influenced Event Modeling. If you work with event-driven systems, Greg's thinking is foundational.
+
+Cross-refs: [Timeline: Event Modeling](/timeline#event-modeling)
 
 ## Specification by Example {#sbe}
 
@@ -155,11 +149,19 @@ Cross-refs: [Timeline: SbE](/timeline#specification-by-example), [Discovery: Imp
 
 ## Behavior-Driven Development {#bdd}
 
-### Dan North {#dan-north}
+### Aslak Hellesoy {#aslak-hellesoy}
 
-**Era:** 2003-2006 | **Contribution:** BDD
+**Era:** 2006-2008 | **Contribution:** RSpec, Cucumber, Gherkin
 
-Coined "**Behavior-Driven Development**." Created JBehave (2004). Co-developed the Given/When/Then canvas with Chris Matts. His 2006 article "Introducing BDD" is the origin document for the entire movement.
+Created RSpec (2006) and **Cucumber** (2008). **Gherkin** became the industry standard for executable specifications. Co-author of *The Cucumber Book*.
+
+Cross-refs: [Timeline: Cucumber](/timeline#cucumber-and-gherkin)
+
+### Liz Keogh {#liz-keogh}
+
+**Era:** 2004-present | **Contribution:** BDD pioneer, Deliberate Discovery
+
+A pioneer from 2004. Her framing captures the essence of BDD: "having conversations is more important than capturing conversations is more important than automating conversations."
 
 Cross-refs: [Timeline: BDD](/timeline#behavior-driven-development)
 
@@ -171,29 +173,29 @@ Business analyst at ThoughtWorks who, alongside Dan North, proposed the **Given/
 
 Cross-refs: [Timeline: BDD](/timeline#behavior-driven-development)
 
-### Liz Keogh {#liz-keogh}
+### Gaspar Nagy {#gaspar-nagy}
 
-**Era:** 2004-present | **Contribution:** BDD pioneer, Deliberate Discovery
+**Era:** 2009-present | **Contribution:** SpecFlow, BDD Books series
 
-A pioneer from 2004. Her framing captures the essence of BDD: "having conversations is more important than capturing conversations is more important than automating conversations."
+Creator of **SpecFlow** (.NET BDD framework). Co-author of the BDD Books series. Gaspar coined "formulation" for the second BDD practice. Editor of the BDD Addict newsletter.
+
+Cross-refs: [Resources](/resources)
+
+### Dan North {#dan-north}
+
+**Era:** 2003-2006 | **Contribution:** BDD
+
+Coined "**Behavior-Driven Development**." Created JBehave (2004). Co-developed the Given/When/Then canvas with Chris Matts. His 2006 article "Introducing BDD" is the origin document for the entire movement.
 
 Cross-refs: [Timeline: BDD](/timeline#behavior-driven-development)
 
-### Aslak Hellesoy {#aslak-hellesoy}
+### David Peterson {#david-peterson}
 
-**Era:** 2006-2008 | **Contribution:** RSpec, Cucumber, Gherkin
+**Era:** ~2005 | **Contribution:** Concordion
 
-Created RSpec (2006) and **Cucumber** (2008). **Gherkin** became the industry standard for executable specifications. Co-author of *The Cucumber Book*.
+Built **Concordion** at Sky UK. Free-form HTML-based executable specifications that doubled as living documentation. A different approach from Gherkin that proved specs could take many forms.
 
-Cross-refs: [Timeline: Cucumber](/timeline#cucumber-and-gherkin)
-
-### Matt Wynne {#matt-wynne}
-
-**Era:** 2008-present | **Contribution:** The Cucumber Book, Example Mapping
-
-Co-founder of Cucumber Ltd. Co-author of *The Cucumber Book*. Created **Example Mapping** (~2015), a lightweight technique you can use to break down stories before writing scenarios. Currently leads Cucumber open-source at SmartBear.
-
-Cross-refs: [Discovery: Example Mapping](/guides/discovery#example-mapping)
+Cross-refs: [Timeline: Concordion](/timeline#concordion-robot-rspec)
 
 ### Seb Rose {#seb-rose}
 
@@ -203,21 +205,13 @@ Co-author (with Gaspar Nagy) of *Discovery* (2018), *Formulation* (2021), and th
 
 Cross-refs: [Resources](/resources)
 
-### Gaspar Nagy {#gaspar-nagy}
+### Matt Wynne {#matt-wynne}
 
-**Era:** 2009-present | **Contribution:** SpecFlow, BDD Books series
+**Era:** 2008-present | **Contribution:** The Cucumber Book, Example Mapping
 
-Creator of **SpecFlow** (.NET BDD framework). Co-author of the BDD Books series. Gaspar coined "formulation" for the second BDD practice. Editor of the BDD Addict newsletter.
+Co-founder of Cucumber Ltd. Co-author of *The Cucumber Book*. Created **Example Mapping** (~2015), a lightweight technique you can use to break down stories before writing scenarios. Currently leads Cucumber open-source at SmartBear.
 
-Cross-refs: [Resources](/resources)
-
-### David Peterson {#david-peterson}
-
-**Era:** ~2005 | **Contribution:** Concordion
-
-Built **Concordion** at Sky UK. Free-form HTML-based executable specifications that doubled as living documentation. A different approach from Gherkin that proved specs could take many forms.
-
-Cross-refs: [Timeline: Concordion](/timeline#concordion-robot-rspec)
+Cross-refs: [Discovery: Example Mapping](/guides/discovery#example-mapping)
 
 ## The Executable Specification Pioneers {#exec-spec-pioneers}
 
@@ -228,6 +222,12 @@ Cross-refs: [Timeline: Concordion](/timeline#concordion-robot-rspec)
 Formalized **TDD** with red-green-refactor. Kent reframed tests as a design activity, not just verification. Co-author of the Agile Manifesto. Author of *TDD: By Example* (2002).
 
 Cross-refs: [Timeline: TDD](/timeline#test-driven-development)
+
+### Barry Boehm {#barry-boehm}
+
+**Era:** 1970s-2000s | **Contribution:** Defect Origin Research
+
+Documented that 50% of all software defects originate at the specification stage. Author of *Software Engineering Economics* (1981). If you need one argument for investing in specification quality, this is it.
 
 ### Ward Cunningham {#ward-cunningham}
 
@@ -253,13 +253,15 @@ Built the JUnit utility that printed test names as English sentences. This was t
 
 Cross-refs: [Timeline: AgileDox](/timeline#agiledox-testdox)
 
-### Barry Boehm {#barry-boehm}
-
-**Era:** 1970s-2000s | **Contribution:** Defect Origin Research
-
-Documented that 50% of all software defects originate at the specification stage. Author of *Software Engineering Economics* (1981). If you need one argument for investing in specification quality, this is it.
-
 ## Genesis: The Intellectual Roots {#genesis}
+
+### Jean-Raymond Abrial {#jean-raymond-abrial}
+
+**Era:** 1970s-1990s | **Contribution:** Z Notation, B Method
+
+Created **Z Notation** (Oxford, late 1970s) and the **B Method** (1990s). Abrial proved that specifications could be mathematically verified and refined into implementations. The B Method was used in the Paris Metro Line 14 (the driverless one).
+
+Cross-refs: [Timeline: Formal Methods](/timeline#formal-methods)
 
 ### Edsger Dijkstra {#edsger-dijkstra}
 
@@ -274,14 +276,6 @@ Cross-refs: [Timeline: Structured Programming](/timeline#structured-programming)
 **Era:** 1960s-1970s | **Contribution:** Hoare Logic, Pre/Post-condition Reasoning
 
 His **pre-condition/post-condition pattern** echoes directly through Given/When/Then decades later. If you write a Given clause, you are standing on Hoare's shoulders.
-
-### Jean-Raymond Abrial {#jean-raymond-abrial}
-
-**Era:** 1970s-1990s | **Contribution:** Z Notation, B Method
-
-Created **Z Notation** (Oxford, late 1970s) and the **B Method** (1990s). Abrial proved that specifications could be mathematically verified and refined into implementations. The B Method was used in the Paris Metro Line 14 (the driverless one).
-
-Cross-refs: [Timeline: Formal Methods](/timeline#formal-methods)
 
 ---
 
