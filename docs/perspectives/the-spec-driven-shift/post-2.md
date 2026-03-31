@@ -39,7 +39,7 @@ What's the biggest gap you've seen between what someone asked for and what actua
 
 ---
 
-[Previous: Your AI Codebase Is a Ticking Time Bomb](./post-1) | [Next: Over Half Your Bugs Aren't Code Bugs](./post-3)
+[Previous: Your AI Codebase Is a Ticking Time Bomb](./post-1)
 
 [Back to series overview](./index)
 

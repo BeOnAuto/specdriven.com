@@ -38,6 +38,8 @@ What's the longest you've maintained an AI-generated codebase? I'm curious what 
 
 ---
 
+[Next: Stop Calling It a Spec If It's Not Specific](./post-2)
+
 [Back to series overview](./index)
 
 The Spec-Driven Shift | Week 1: The Wake-Up Call | Post 1 of 20

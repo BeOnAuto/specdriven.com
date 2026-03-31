@@ -222,6 +222,7 @@ export default defineConfig({
           text: 'Week 1: The Wake-Up Call',
           items: [
             { text: '1. Your AI Codebase Is a Ticking Time Bomb', link: '/perspectives/the-spec-driven-shift/post-1' },
+            { text: '2. Stop Calling It a Spec If It\'s Not Specific', link: '/perspectives/the-spec-driven-shift/post-2' },
           ]
         },
         {
