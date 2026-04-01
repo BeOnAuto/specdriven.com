@@ -16,10 +16,6 @@ export default defineConfig({
   description: 'Specifications are becoming a new software medium. Spec-Driven Development is the shift from disposable prompts to structured, executable models.',
   appearance: 'dark',
   cleanUrls: true,
-  redirects: {
-    'perspectives/the-spec-driven-shift/post-1': 'perspectives/the-spec-driven-shift/your-ai-codebase-is-a-ticking-time-bomb',
-    'perspectives/the-spec-driven-shift/post-2': 'perspectives/the-spec-driven-shift/stop-calling-it-a-spec-if-its-not-specific',
-  },
   transformHead({ pageData }) {
     const head: Array<[string, Record<string, string>]> = []
     const image = pageData.frontmatter.image
