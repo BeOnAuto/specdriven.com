@@ -4,6 +4,8 @@ title: "Your AI Doesn't Know What It Doesn't Know. You Do."
 
 # Your AI Doesn't Know What It Doesn't Know. You Do.
 
+![](/images/perspectives/post-4.png)
+
 There's this meme I keep coming back to.
 
 One panel shows a person with this massive thought bubble. Inside it, a tangled web of experience, patterns, gut feelings, past failures, architectural instincts, tribal knowledge. Out of their mouth comes one carefully chosen sentence.

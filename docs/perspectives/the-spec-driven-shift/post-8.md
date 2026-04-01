@@ -4,6 +4,8 @@ title: "TDD Was Never About Testing"
 
 # TDD Was Never About Testing
 
+![](/images/perspectives/post-8.png)
+
 The most misunderstood thing about Test-Driven Development is right there in the name. Everyone fixates on "test." The important word is "driven."
 
 Before TDD, the flow was simple: understand the requirement, design a solution in your mind, write the code, run it, see what happens. The design lived entirely in the developer's head. Code was the first time it became real. If the mental design was wrong or drifted during implementation, you only found out after the fact.

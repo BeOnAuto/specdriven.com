@@ -4,6 +4,8 @@ title: "Code Was Always a Hindrance. I Just Didn't Know It Yet."
 
 # Code Was Always a Hindrance. I Just Didn't Know It Yet.
 
+![](/images/perspectives/post-5.png)
+
 Before AI, a skilled developer could build a house in a week. Now with AI, an amateur can build a house in a day. Me? I can build a skyscraper in a day. And soon, a moon base.
 
 Everyone keeps saying AI levels the playing field. And yeah, it does. For houses. It's dangerously wrong for skyscrapers.

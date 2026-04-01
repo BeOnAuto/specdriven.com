@@ -4,6 +4,8 @@ title: "AI Needs History. Your Database Deletes It."
 
 # AI Needs History. Your Database Deletes It.
 
+![](/images/perspectives/post-10.png)
+
 Traditional databases store current state. Customer lives at 123 Main St. They move. Now it's 456 Oak Ave. The old address? Gone. Overwritten. History erased.
 
 For most of the history of computing, that was fine. You need the current address to ship a package. You don't need the old one.

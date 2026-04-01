@@ -4,6 +4,8 @@ title: "Fool Me Once, I Write a Spec. Fool Me Twice? There Is No Twice."
 
 # Fool Me Once, I Write a Spec. Fool Me Twice? There Is No Twice.
 
+![](/images/perspectives/post-19.png)
+
 People ask what my actual daily workflow looks like. Not the theory. The practice.
 
 Here it is.

@@ -4,6 +4,8 @@ title: "The Best AI Developers Are Spec-Driven. They Just Haven't Named It Yet."
 
 # The Best AI Developers Are Spec-Driven. They Just Haven't Named It Yet.
 
+![](/images/perspectives/post-15.png)
+
 If you're using AI tools well, you're already doing spec-driven development. You just don't call it that.
 
 Think about what good AI-assisted dev actually looks like. You have a design in your head. You think about constraints. You write a prompt that captures your intent: what should happen, what shouldn't, what the boundaries are. You review the output. You check it matches your expectation. You iterate.

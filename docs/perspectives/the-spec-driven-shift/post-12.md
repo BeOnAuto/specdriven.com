@@ -4,6 +4,8 @@ title: "A PRD Is Not a Spec. Here's Why That Matters."
 
 # A PRD Is Not a Spec. Here's Why That Matters.
 
+![](/images/perspectives/post-12.png)
+
 This confusion costs teams months. And most don't even realize they're confused.
 
 There are three levels of progressive specificity:

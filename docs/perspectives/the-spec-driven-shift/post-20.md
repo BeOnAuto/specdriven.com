@@ -4,6 +4,8 @@ title: "The Question Isn't Whether AI Can Code. It's Whether You Can Specify."
 
 # The Question Isn't Whether AI Can Code. It's Whether You Can Specify.
 
+![](/images/perspectives/post-20.png)
+
 Give it a few years and building software without specifications will look as reckless as deploying without version control.
 
 Not because specs are trendy, but because the way AI-assisted development works demands them.

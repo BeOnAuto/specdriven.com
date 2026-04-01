@@ -4,6 +4,8 @@ title: "5 Spec Smells That Turn Every AI Prompt Into a Guessing Game"
 
 # 5 Spec Smells That Turn Every AI Prompt Into a Guessing Game
 
+![](/images/perspectives/post-11.png)
+
 Just like code smells tell you something's off in your implementation, spec smells tell you your specifications are going to cause problems. And with AI in the mix, spec smells don't just cause problems for your team. They turn every AI interaction into a guessing game where the AI fills in the blanks with its own assumptions.
 
 I see five constantly.

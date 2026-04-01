@@ -4,6 +4,8 @@ title: "When Coding Becomes Instant, Specs Are All That Matters"
 
 # When Coding Becomes Instant, Specs Are All That Matters
 
+![](/images/perspectives/post-18.png)
+
 "This is just waterfall with extra steps."
 
 I get this one a lot. Let me deal with it, and then I'll give you a thought experiment that I think settles it.

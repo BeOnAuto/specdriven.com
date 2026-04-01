@@ -4,6 +4,8 @@ title: "I Coined 'Spec-Driven Development' in 2016. Nobody Cared Until AI Broke 
 
 # I Coined 'Spec-Driven Development' in 2016. Nobody Cared Until AI Broke Everything.
 
+![](/images/perspectives/post-6.png)
+
 I started using the term "spec-driven development" in 2016. Bought specdriven.com in 2020. Could see where things were heading.
 
 For years: nothing. Crickets.

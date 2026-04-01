@@ -4,6 +4,8 @@ title: "60 Years of Specification in 3 Minutes"
 
 # 60 Years of Specification in 3 Minutes
 
+![](/images/perspectives/post-7.png)
+
 There's a lineage behind spec-driven development that most devs were never taught. Once you see it, you can't unsee it.
 
 **1960s.** The software crisis. Programs getting complex. Expensive failures piling up. Mathematicians and computer scientists asked the foundational question: how do we prove programs are correct? Tony Hoare came up with what's now called Hoare logic. Given a precondition P, execute action Q, verify postcondition R. PQR. That was the genesis. The intersection of mathematics and programming, trying to specify what software should do and verify that it does it.

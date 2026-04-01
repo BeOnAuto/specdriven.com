@@ -4,6 +4,8 @@ title: "Over Half Your Bugs Aren't Code Bugs"
 
 # Over Half Your Bugs Aren't Code Bugs
 
+![](/images/perspectives/post-3.png)
+
 Every bug you've ever seen falls into one of three buckets.
 
 Missing specification. Nobody thought of it. The design didn't account for that scenario at all.

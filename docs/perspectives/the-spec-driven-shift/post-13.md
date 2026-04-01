@@ -4,6 +4,8 @@ title: "Jira Is Where Specs Go to Die. Your AI Just Showed Up With a Shovel."
 
 # Jira Is Where Specs Go to Die. Your AI Just Showed Up With a Shovel.
 
+![](/images/perspectives/post-13.png)
+
 Three different things. Three different lifecycles. All collapsed into one Jira ticket.
 
 Requirements: the problem to solve. Stick around until the problem itself changes.

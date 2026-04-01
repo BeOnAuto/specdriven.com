@@ -4,6 +4,8 @@ title: "Give Me the Freedom of a Tight Brief. Why Specs Are the Ultimate AI Prom
 
 # Give Me the Freedom of a Tight Brief. Why Specs Are the Ultimate AI Prompt.
 
+![](/images/perspectives/post-14.png)
+
 I was auditing a media agency years ago and a creative director said something I've never forgotten.
 
 "Give me the freedom of a tight brief."

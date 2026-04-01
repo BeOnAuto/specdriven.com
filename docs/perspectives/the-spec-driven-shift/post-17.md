@@ -4,6 +4,8 @@ title: "Most Specs Fail Because They Start Too Low. Start Here Instead."
 
 # Most Specs Fail Because They Start Too Low. Start Here Instead.
 
+![](/images/perspectives/post-17.png)
+
 The most common spec mistake isn't writing bad specs. It's starting at the wrong level.
 
 Teams jump straight to component specs. "The email validator should accept RFC 5322." "The API returns 404 for missing resources." Fine specifications. Specific. Testable. But they're fragments without a whole.

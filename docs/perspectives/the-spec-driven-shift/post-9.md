@@ -4,6 +4,8 @@ title: "Dan North Wasn't Talking About AI. But He Could Have Been."
 
 # Dan North Wasn't Talking About AI. But He Could Have Been.
 
+![](/images/perspectives/post-9.png)
+
 BDD's origin story is less dramatic than you'd think and more useful than most people realize.
 
 Somebody built a tool that took Java test method names like `testCustomerCanLogIntoTheirAccount` and separated the camelCase into readable English. Dan North looked at those readable test names and had the insight: what if we stop thinking of these as tests? What if they're behavioral specifications?

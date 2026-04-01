@@ -4,6 +4,8 @@ title: "Specs Are the Next Programming Languages"
 
 # Specs Are the Next Programming Languages
 
+![](/images/perspectives/post-16.png)
+
 Here's what I think happens in the next few years. We end up with an ecosystem of specification dialects as varied as programming languages.
 
 Look at the history of abstraction. Wired circuits. Machine code. Assembly. High-level languages. Frameworks. Each generation abstracted the previous one. Each gave people a higher-order way to say what they wanted.
