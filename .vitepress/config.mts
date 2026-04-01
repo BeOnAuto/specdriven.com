@@ -244,6 +244,7 @@ export default defineConfig({
           items: [
             { text: '1. Your AI Codebase Is a Ticking Time Bomb', link: '/perspectives/the-spec-driven-shift/your-ai-codebase-is-a-ticking-time-bomb' },
             { text: '2. Stop Calling It a Spec If It\'s Not Specific', link: '/perspectives/the-spec-driven-shift/stop-calling-it-a-spec-if-its-not-specific' },
+            { text: '3. Over Half Your Bugs Aren\'t Code Bugs', link: '/perspectives/the-spec-driven-shift/over-half-your-bugs-arent-code-bugs' },
           ]
         },
         {

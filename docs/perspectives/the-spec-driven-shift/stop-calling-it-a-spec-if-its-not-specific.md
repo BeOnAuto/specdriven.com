@@ -42,7 +42,7 @@ Think about the last feature your team shipped. Could someone new read the spec 
 
 ---
 
-[Previous: Your AI Codebase Is a Ticking Time Bomb](./your-ai-codebase-is-a-ticking-time-bomb)
+[Previous: Your AI Codebase Is a Ticking Time Bomb](./your-ai-codebase-is-a-ticking-time-bomb) | [Next: Over Half Your Bugs Aren't Code Bugs](./over-half-your-bugs-arent-code-bugs)
 
 [Back to series overview](./index)
 
