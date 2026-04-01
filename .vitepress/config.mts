@@ -20,6 +20,27 @@ export default defineConfig({
     'perspectives/the-spec-driven-shift/post-1': 'perspectives/the-spec-driven-shift/your-ai-codebase-is-a-ticking-time-bomb',
     'perspectives/the-spec-driven-shift/post-2': 'perspectives/the-spec-driven-shift/stop-calling-it-a-spec-if-its-not-specific',
   },
+  transformHead({ pageData }) {
+    const head: Array<[string, Record<string, string>]> = []
+    const image = pageData.frontmatter.image
+    const title = pageData.frontmatter.title || pageData.title
+    const description = pageData.frontmatter.description || pageData.description
+
+    if (title) {
+      head.push(['meta', { property: 'og:title', content: title }])
+      head.push(['meta', { name: 'twitter:title', content: title }])
+    }
+    if (description) {
+      head.push(['meta', { property: 'og:description', content: description }])
+      head.push(['meta', { name: 'twitter:description', content: description }])
+    }
+    if (image) {
+      head.push(['meta', { property: 'og:image', content: `${siteUrl}${image}` }])
+      head.push(['meta', { name: 'twitter:image', content: `${siteUrl}${image}` }])
+    }
+
+    return head
+  },
   head: [
     // Favicons
     [
