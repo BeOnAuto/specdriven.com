@@ -16,6 +16,10 @@ export default defineConfig({
   description: 'Specifications are becoming a new software medium. Spec-Driven Development is the shift from disposable prompts to structured, executable models.',
   appearance: 'dark',
   cleanUrls: true,
+  redirects: {
+    'perspectives/the-spec-driven-shift/post-1': 'perspectives/the-spec-driven-shift/your-ai-codebase-is-a-ticking-time-bomb',
+    'perspectives/the-spec-driven-shift/post-2': 'perspectives/the-spec-driven-shift/stop-calling-it-a-spec-if-its-not-specific',
+  },
   head: [
     // Favicons
     [
@@ -221,26 +225,41 @@ export default defineConfig({
         {
           text: 'Week 1: The Wake-Up Call',
           items: [
-            { text: '1. Your AI Codebase Is a Ticking Time Bomb', link: '/perspectives/the-spec-driven-shift/post-1' },
-            { text: '2. Stop Calling It a Spec If It\'s Not Specific', link: '/perspectives/the-spec-driven-shift/post-2' },
+            { text: '1. Your AI Codebase Is a Ticking Time Bomb', link: '/perspectives/the-spec-driven-shift/your-ai-codebase-is-a-ticking-time-bomb' },
+            { text: '2. Stop Calling It a Spec If It\'s Not Specific', link: '/perspectives/the-spec-driven-shift/stop-calling-it-a-spec-if-its-not-specific' },
+            { text: '3. Over Half Your Bugs Aren\'t Code Bugs', link: '/perspectives/the-spec-driven-shift/over-half-your-bugs-arent-code-bugs' },
+            { text: '4. Your AI Doesn\'t Know What It Doesn\'t Know', link: '/perspectives/the-spec-driven-shift/your-ai-doesnt-know-what-it-doesnt-know-you-do' },
+            { text: '5. Code Was Always a Hindrance', link: '/perspectives/the-spec-driven-shift/code-was-always-a-hindrance-i-just-didnt-know-it-yet' },
           ]
         },
         {
-          text: 'Week 2: The Lineage — Coming Soon',
+          text: 'Week 2: The Lineage',
           items: [
-            { text: 'April 6-10', link: '/perspectives/the-spec-driven-shift/#week-2-the-lineage' },
+            { text: '6. I Coined Spec-Driven Development in 2016', link: '/perspectives/the-spec-driven-shift/i-coined-spec-driven-development-in-2016-nobody-cared-until-ai-broke-everything' },
+            { text: '7. 60 Years of Specification in 3 Minutes', link: '/perspectives/the-spec-driven-shift/60-years-of-specification-in-3-minutes' },
+            { text: '8. TDD Was Never About Testing', link: '/perspectives/the-spec-driven-shift/tdd-was-never-about-testing' },
+            { text: '9. Dan North Wasn\'t Talking About AI', link: '/perspectives/the-spec-driven-shift/dan-north-wasnt-talking-about-ai-but-he-could-have-been' },
+            { text: '10. AI Needs History. Your Database Deletes It.', link: '/perspectives/the-spec-driven-shift/ai-needs-history-your-database-deletes-it' },
           ]
         },
         {
-          text: 'Week 3: The Practice — Coming Soon',
+          text: 'Week 3: The Practice',
           items: [
-            { text: 'April 13-17', link: '/perspectives/the-spec-driven-shift/#week-3-the-practice' },
+            { text: '11. 5 Spec Smells That Turn Every AI Prompt Into a Guessing Game', link: '/perspectives/the-spec-driven-shift/5-spec-smells-that-turn-every-ai-prompt-into-a-guessing-game' },
+            { text: '12. A PRD Is Not a Spec', link: '/perspectives/the-spec-driven-shift/a-prd-is-not-a-spec-heres-why-that-matters' },
+            { text: '13. Jira Is Where Specs Go to Die', link: '/perspectives/the-spec-driven-shift/jira-is-where-specs-go-to-die-your-ai-just-showed-up-with-a-shovel' },
+            { text: '14. Give Me the Freedom of a Tight Brief', link: '/perspectives/the-spec-driven-shift/give-me-the-freedom-of-a-tight-brief-why-specs-are-the-ultimate-ai-prompt' },
+            { text: '15. The Best AI Developers Are Spec-Driven', link: '/perspectives/the-spec-driven-shift/the-best-ai-developers-are-spec-driven-they-just-havent-named-it-yet' },
           ]
         },
         {
-          text: 'Week 4: The Future — Coming Soon',
+          text: 'Week 4: The Future',
           items: [
-            { text: 'April 20-24', link: '/perspectives/the-spec-driven-shift/#week-4-the-future' },
+            { text: '16. Specs Are the Next Programming Languages', link: '/perspectives/the-spec-driven-shift/specs-are-the-next-programming-languages' },
+            { text: '17. Most Specs Fail Because They Start Too Low', link: '/perspectives/the-spec-driven-shift/most-specs-fail-because-they-start-too-low-start-here-instead' },
+            { text: '18. When Coding Becomes Instant, Specs Are All That Matters', link: '/perspectives/the-spec-driven-shift/when-coding-becomes-instant-specs-are-all-that-matters' },
+            { text: '19. Fool Me Once, I Write a Spec', link: '/perspectives/the-spec-driven-shift/fool-me-once-i-write-a-spec-fool-me-twice-there-is-no-twice' },
+            { text: '20. The Question Isn\'t Whether AI Can Code', link: '/perspectives/the-spec-driven-shift/the-question-isnt-whether-ai-can-code-its-whether-you-can-specify' },
           ]
         },
       ],
