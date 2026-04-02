@@ -36,7 +36,7 @@ Dan wasn't talking about AI. But he was describing the mindset that makes AI dev
 
 ---
 
-[Previous: TDD Was Never About Testing](./tdd-was-never-about-testing) | [Next: AI Needs History. Your Database Deletes It.](./ai-needs-history-your-database-deletes-it)
+[Previous: TDD Was Never About Testing](./tdd-was-never-about-testing)
 
 [Back to series overview](./index)
 

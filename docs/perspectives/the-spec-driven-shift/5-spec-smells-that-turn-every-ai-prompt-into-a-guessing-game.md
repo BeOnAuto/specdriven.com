@@ -32,7 +32,7 @@ Look at the last spec you handed to your AI. How many of these five smells does 
 
 ---
 
-[Previous: AI Needs History. Your Database Deletes It.](./ai-needs-history-your-database-deletes-it) | [Next: A PRD Is Not a Spec. Here's Why That Matters.](./a-prd-is-not-a-spec-heres-why-that-matters)
+[Previous: AI Needs History. Your Database Deletes It.](./ai-needs-history-your-database-deletes-it)
 
 [Back to series overview](./index)
 

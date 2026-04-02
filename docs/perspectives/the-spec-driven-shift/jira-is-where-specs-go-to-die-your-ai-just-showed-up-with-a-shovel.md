@@ -40,7 +40,7 @@ Go look at a ticket your team closed six months ago. Can you find the spec? If t
 
 ---
 
-[Previous: A PRD Is Not a Spec. Here's Why That Matters.](./a-prd-is-not-a-spec-heres-why-that-matters) | [Next: Give Me the Freedom of a Tight Brief. Why Specs Are the Ultimate AI Prompt.](./give-me-the-freedom-of-a-tight-brief-why-specs-are-the-ultimate-ai-prompt)
+[Previous: A PRD Is Not a Spec. Here's Why That Matters.](./a-prd-is-not-a-spec-heres-why-that-matters)
 
 [Back to series overview](./index)
 

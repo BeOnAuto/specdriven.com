@@ -38,7 +38,7 @@ When coding becomes instant, the only thing left to differentiate your software 
 
 ---
 
-[Previous: Most Specs Fail Because They Start Too Low. Start Here Instead.](./most-specs-fail-because-they-start-too-low-start-here-instead) | [Next: Fool Me Once, I Write a Spec. Fool Me Twice? There Is No Twice.](./fool-me-once-i-write-a-spec-fool-me-twice-there-is-no-twice)
+[Previous: Most Specs Fail Because They Start Too Low. Start Here Instead.](./most-specs-fail-because-they-start-too-low-start-here-instead)
 
 [Back to series overview](./index)
 

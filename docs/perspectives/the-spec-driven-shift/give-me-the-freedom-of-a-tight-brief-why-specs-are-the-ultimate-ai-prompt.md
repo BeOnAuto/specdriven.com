@@ -34,7 +34,7 @@ Specs are the ultimate prompt. They give it the clarity to do good work.
 
 ---
 
-[Previous: Jira Is Where Specs Go to Die. Your AI Just Showed Up With a Shovel.](./jira-is-where-specs-go-to-die-your-ai-just-showed-up-with-a-shovel) | [Next: The Best AI Developers Are Spec-Driven. They Just Haven't Named It Yet.](./the-best-ai-developers-are-spec-driven-they-just-havent-named-it-yet)
+[Previous: Jira Is Where Specs Go to Die. Your AI Just Showed Up With a Shovel.](./jira-is-where-specs-go-to-die-your-ai-just-showed-up-with-a-shovel)
 
 [Back to series overview](./index)
 

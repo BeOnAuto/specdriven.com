@@ -30,7 +30,7 @@ The next time you're about to write code, try writing the expectation first. Not
 
 ---
 
-[Previous: 60 Years of Specification in 3 Minutes](./60-years-of-specification-in-3-minutes) | [Next: Dan North Wasn't Talking About AI. But He Could Have Been.](./dan-north-wasnt-talking-about-ai-but-he-could-have-been)
+[Previous: 60 Years of Specification in 3 Minutes](./60-years-of-specification-in-3-minutes)
 
 [Back to series overview](./index)
 

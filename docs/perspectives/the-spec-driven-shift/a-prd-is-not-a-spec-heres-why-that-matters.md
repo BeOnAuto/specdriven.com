@@ -32,7 +32,7 @@ Next time someone hands you a PRD and says "build this," ask yourself: who made 
 
 ---
 
-[Previous: 5 Spec Smells That Turn Every AI Prompt Into a Guessing Game](./5-spec-smells-that-turn-every-ai-prompt-into-a-guessing-game) | [Next: Jira Is Where Specs Go to Die. Your AI Just Showed Up With a Shovel.](./jira-is-where-specs-go-to-die-your-ai-just-showed-up-with-a-shovel)
+[Previous: 5 Spec Smells That Turn Every AI Prompt Into a Guessing Game](./5-spec-smells-that-turn-every-ai-prompt-into-a-guessing-game)
 
 [Back to series overview](./index)
 

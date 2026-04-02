@@ -34,7 +34,7 @@ Start with the whole. Slice vertically by value, not by technical layer. "Sell u
 
 ---
 
-[Previous: Specs Are the Next Programming Languages](./specs-are-the-next-programming-languages) | [Next: When Coding Becomes Instant, Specs Are All That Matters](./when-coding-becomes-instant-specs-are-all-that-matters)
+[Previous: Specs Are the Next Programming Languages](./specs-are-the-next-programming-languages)
 
 [Back to series overview](./index)
 

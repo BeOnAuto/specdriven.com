@@ -40,7 +40,7 @@ Sometimes the right idea just needs the right moment. The spec-driven conversati
 
 ---
 
-[Previous: Code Was Always a Hindrance. I Just Didn't Know It Yet.](./code-was-always-a-hindrance-i-just-didnt-know-it-yet) | [Next: 60 Years of Specification in 3 Minutes](./60-years-of-specification-in-3-minutes)
+[Previous: Code Was Always a Hindrance. I Just Didn't Know It Yet.](./code-was-always-a-hindrance-i-just-didnt-know-it-yet)
 
 [Back to series overview](./index)
 

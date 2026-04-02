@@ -40,7 +40,7 @@ The people building skyscrapers are already doing this. The question is whether 
 
 ---
 
-[Previous: Give Me the Freedom of a Tight Brief. Why Specs Are the Ultimate AI Prompt.](./give-me-the-freedom-of-a-tight-brief-why-specs-are-the-ultimate-ai-prompt) | [Next: Specs Are the Next Programming Languages](./specs-are-the-next-programming-languages)
+[Previous: Give Me the Freedom of a Tight Brief. Why Specs Are the Ultimate AI Prompt.](./give-me-the-freedom-of-a-tight-brief-why-specs-are-the-ultimate-ai-prompt)
 
 [Back to series overview](./index)
 

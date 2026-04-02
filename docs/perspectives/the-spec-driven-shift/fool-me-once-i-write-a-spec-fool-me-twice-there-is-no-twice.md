@@ -44,7 +44,7 @@ Think about which workflow you'd trust with your production system. The one that
 
 ---
 
-[Previous: When Coding Becomes Instant, Specs Are All That Matters](./when-coding-becomes-instant-specs-are-all-that-matters) | [Next: The Question Isn't Whether AI Can Code. It's Whether You Can Specify.](./the-question-isnt-whether-ai-can-code-its-whether-you-can-specify)
+[Previous: When Coding Becomes Instant, Specs Are All That Matters](./when-coding-becomes-instant-specs-are-all-that-matters)
 
 [Back to series overview](./index)
 

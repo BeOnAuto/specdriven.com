@@ -32,7 +32,7 @@ We're at the assembly language stage of specification right now. The high-level 
 
 ---
 
-[Previous: The Best AI Developers Are Spec-Driven. They Just Haven't Named It Yet.](./the-best-ai-developers-are-spec-driven-they-just-havent-named-it-yet) | [Next: Most Specs Fail Because They Start Too Low. Start Here Instead.](./most-specs-fail-because-they-start-too-low-start-here-instead)
+[Previous: The Best AI Developers Are Spec-Driven. They Just Haven't Named It Yet.](./the-best-ai-developers-are-spec-driven-they-just-havent-named-it-yet)
 
 [Back to series overview](./index)
 
