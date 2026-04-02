@@ -17,7 +17,7 @@ New posts drop daily. Follow along on [LinkedIn](https://linkedin.com/in/samhato
 1. [Your AI Codebase Is a Ticking Time Bomb](./your-ai-codebase-is-a-ticking-time-bomb)
 2. [Stop Calling It a Spec If It's Not Specific](./stop-calling-it-a-spec-if-its-not-specific)
 3. [Over Half Your Bugs Aren't Code Bugs](./over-half-your-bugs-arent-code-bugs)
-4. Your AI Doesn't Know What It Doesn't Know. You Do. — April 2
+4. [Your AI Doesn't Know What It Doesn't Know. You Do.](./your-ai-doesnt-know-what-it-doesnt-know-you-do)
 5. Code Was Always a Hindrance. I Just Didn't Know It Yet. — April 3
 
 ### Week 2: The Lineage
