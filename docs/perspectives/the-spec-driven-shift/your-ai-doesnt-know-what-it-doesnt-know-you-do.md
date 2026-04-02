@@ -9,11 +9,9 @@ image: /images/perspectives/your-ai-doesnt-know-what-it-doesnt-know-you-do.png
 
 There's this meme I keep coming back to.
 
-One panel shows a person with this massive thought bubble. Inside it, a tangled web of experience, patterns, gut feelings, past failures, architectural instincts, tribal knowledge. Out of their mouth comes one carefully chosen sentence.
+![What I think vs What I code vs What Claude thinks vs What Claude codes](/images/perspectives/what-claude-thinks.jpeg)
 
-Other panel. Tiny thought bubble. Enormous output.
-
-That's AI.
+A seasoned developer thinks about everything. Patterns, trade-offs, past failures, architectural consequences. And outputs a small amount of carefully chosen code. An AI doesn't think about any of that. It just produces an enormous amount of output.
 
 A senior dev's actual superpower isn't what they produce. It's what they choose not to produce. After 15 years, I've seen systems collapse from shortcuts. I know what happens when you pick the wrong pattern in week one. I carry all of that with me. And when I make a decision, I'm filtering through thousands of these accumulated lessons. Most of my thinking is about what NOT to do.
 
