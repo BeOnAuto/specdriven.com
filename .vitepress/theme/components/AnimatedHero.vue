@@ -133,7 +133,7 @@ onUnmounted(() => {
         <p class="hero-tagline-sub">Welcome to the specification era.</p>
         <div class="hero-actions">
           <a class="hero-action brand" href="/manifesto">Read the Manifesto</a>
-          <a class="hero-action alt" href="/see-it">See It In Action</a>
+          <a class="hero-action alt" href="/guides/see-it">See It In Action</a>
         </div>
       </div>
       <div class="hero-lottie">
