@@ -1,6 +1,6 @@
 import DefaultTheme from 'vitepress/theme';
 import './custom.css';
-import posthog from 'posthog-js/dist/module.full.no-external';
+import posthog from 'posthog-js';
 import { h } from 'vue';
 import AnimatedHero from './components/AnimatedHero.vue';
 import ThemeImage from './components/ThemeImage.vue';
