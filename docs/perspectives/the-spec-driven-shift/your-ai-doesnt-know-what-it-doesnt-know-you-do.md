@@ -36,6 +36,8 @@ Consider how much of your system's design lives only in your head right now. If 
 
 [Previous: Over Half Your Bugs Aren't Code Bugs](./over-half-your-bugs-arent-code-bugs)
 
+[Next: Code Was Always a Hindrance. I Just Didn't Know It Yet.](./code-was-always-a-hindrance-i-just-didnt-know-it-yet)
+
 [Back to series overview](./index)
 
 

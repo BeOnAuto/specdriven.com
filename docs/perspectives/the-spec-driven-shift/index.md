@@ -18,7 +18,7 @@ New posts drop daily. Follow along on [LinkedIn](https://linkedin.com/in/samhato
 2. [Stop Calling It a Spec If It's Not Specific](./stop-calling-it-a-spec-if-its-not-specific)
 3. [Over Half Your Bugs Aren't Code Bugs](./over-half-your-bugs-arent-code-bugs)
 4. [Your AI Doesn't Know What It Doesn't Know. You Do.](./your-ai-doesnt-know-what-it-doesnt-know-you-do)
-5. Code Was Always a Hindrance. I Just Didn't Know It Yet. — April 3
+5. [Code Was Always a Hindrance. I Just Didn't Know It Yet.](./code-was-always-a-hindrance-i-just-didnt-know-it-yet)
 
 ### Week 2: The Lineage
 *April 6-10 — Where spec-driven development comes from. TDD, BDD, DDD, Event Sourcing, and the 60-year thread that connects them all.*

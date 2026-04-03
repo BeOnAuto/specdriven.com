@@ -246,6 +246,7 @@ export default defineConfig({
             { text: '2. Stop Calling It a Spec If It\'s Not Specific', link: '/perspectives/the-spec-driven-shift/stop-calling-it-a-spec-if-its-not-specific' },
             { text: '3. Over Half Your Bugs Aren\'t Code Bugs', link: '/perspectives/the-spec-driven-shift/over-half-your-bugs-arent-code-bugs' },
             { text: '4. Your AI Doesn\'t Know What It Doesn\'t Know', link: '/perspectives/the-spec-driven-shift/your-ai-doesnt-know-what-it-doesnt-know-you-do' },
+            { text: '5. Code Was Always a Hindrance', link: '/perspectives/the-spec-driven-shift/code-was-always-a-hindrance-i-just-didnt-know-it-yet' },
           ]
         },
         {
