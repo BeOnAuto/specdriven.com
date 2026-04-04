@@ -1,4 +1,7 @@
 node_modules
 .vitepress/dist
 .vitepress/cache
+docs/.vitepress/cache
+docs/.vitepress/dist
+.auto-agent
 .claude-auto
