@@ -250,9 +250,9 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Week 2: The Lineage — Coming Soon',
+          text: 'Week 2: The Lineage',
           items: [
-            { text: 'April 6-10', link: '/perspectives/the-spec-driven-shift/#week-2-the-lineage' },
+            { text: '6. I Coined \'Spec-Driven Development\' in 2016', link: '/perspectives/the-spec-driven-shift/i-coined-spec-driven-development-in-2016-nobody-cared-until-ai-broke-everything' },
           ]
         },
         {

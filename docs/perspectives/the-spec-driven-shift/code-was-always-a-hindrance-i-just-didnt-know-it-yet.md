@@ -34,6 +34,8 @@ Next time you sit down to build something with AI, notice where you spend your t
 
 [Previous: Your AI Doesn't Know What It Doesn't Know. You Do.](./your-ai-doesnt-know-what-it-doesnt-know-you-do)
 
+[Next: I Coined 'Spec-Driven Development' in 2016. Nobody Cared Until AI Broke Everything.](./i-coined-spec-driven-development-in-2016-nobody-cared-until-ai-broke-everything)
+
 [Back to series overview](./index)
 
 

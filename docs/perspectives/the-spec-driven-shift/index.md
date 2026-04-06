@@ -21,7 +21,12 @@ New posts drop daily. Follow along on [LinkedIn](https://linkedin.com/in/samhato
 5. [Code Was Always a Hindrance. I Just Didn't Know It Yet.](./code-was-always-a-hindrance-i-just-didnt-know-it-yet)
 
 ### Week 2: The Lineage
-*April 6-10 — Where spec-driven development comes from. TDD, BDD, DDD, Event Sourcing, and the 60-year thread that connects them all.*
+
+6. [I Coined 'Spec-Driven Development' in 2016. Nobody Cared Until AI Broke Everything.](./i-coined-spec-driven-development-in-2016-nobody-cared-until-ai-broke-everything)
+7. 60 Years of Specification in 3 Minutes — *April 7*
+8. TDD Was Never About Testing — *April 8*
+9. Dan North Wasn't Talking About AI. But He Could Have Been. — *April 9*
+10. AI Needs History. Your Database Deletes It. — *April 10*
 
 ### Week 3: The Practice
 *April 13-17 — Spec smells, the PRD trap, where specs go to die, and what the best AI developers are already doing differently.*
