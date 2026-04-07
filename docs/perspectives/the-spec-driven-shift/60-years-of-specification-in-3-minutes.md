@@ -17,20 +17,18 @@ There's a lineage behind spec-driven development that most devs were never taugh
 
 **Mid-2000s.** Dan North noticed well-named test methods were basically behavioral specs in camel case. He asked: what if we stop calling these tests? What if they're behavioral specifications? BDD was born. Given-When-Then. Shared understanding. Suddenly specs weren't just for developers. Product owners could read them. QA could verify against them. The whole team could participate. And Given-When-Then was just Hoare logic from the 60s made readable by humans.
 
-**2000s-2010s.** Eric Evans formalized Domain-Driven Design. The words you use shape the system. Greg Young introduced Event Sourcing: stop storing state, start storing facts. Everything as an immutable event. Then Alberto Brandolini created Event Storming: model your system by placing events on a timeline, collaboratively, in a room. The most powerful specification technique most teams have never heard of.
+**2000s-2010s.** Eric Evans formalized Domain-Driven Design. The words you use shape the system. Greg Young introduced Event Sourcing: stop storing state, start storing facts. Everything as an immutable event. Then Alberto Brandolini created Event Storming: model your system by placing events on a timeline, collaboratively, in a room. Powerful temporal specification techniques most teams have never heard of.
 
-**2016-now.** I coined "spec-driven development" because I could see the thread connecting all of these. TDD, BDD, DDD, Event Sourcing, Event Storming. All reaching toward the same idea from different angles.
+**2016-now.** The convergence. TDD, BDD, DDD, time-base modeling all reaching toward the same idea from different angles. Specify before you build, in language everyone understands, and make it executable. The term "spec-driven development" started gaining traction as practitioners recognized the common thread.
 
 Now AI has made that convergence urgent. The techniques exist. The history is there. The question is whether the industry adopts them fast enough to keep up with the speed of AI-generated code.
 
-
-— *Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]*
+— _Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]_
 
 ---
 
 [Previous: I Coined 'Spec-Driven Development' in 2016. Nobody Cared Until AI Broke Everything.](./i-coined-spec-driven-development-in-2016-nobody-cared-until-ai-broke-everything)
 
 [Back to series overview](./index)
-
 
 The Spec-Driven Shift | Week 2: The Lineage | Post 7 of 20

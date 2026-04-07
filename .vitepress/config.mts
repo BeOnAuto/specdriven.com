@@ -253,6 +253,7 @@ export default defineConfig({
           text: 'Week 2: The Lineage',
           items: [
             { text: '6. I Coined \'Spec-Driven Development\' in 2016', link: '/perspectives/the-spec-driven-shift/i-coined-spec-driven-development-in-2016-nobody-cared-until-ai-broke-everything' },
+            { text: '7. 60 Years of Specification in 3 Minutes', link: '/perspectives/the-spec-driven-shift/60-years-of-specification-in-3-minutes' },
           ]
         },
         {
