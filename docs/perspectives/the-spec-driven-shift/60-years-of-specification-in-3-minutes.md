@@ -27,7 +27,7 @@ Now AI has made that convergence urgent. The techniques exist. The history is th
 
 ---
 
-[Previous: I Coined 'Spec-Driven Development' in 2016. Nobody Cared Until AI Broke Everything.](./i-coined-spec-driven-development-in-2016-nobody-cared-until-ai-broke-everything)
+[Previous: I Coined 'Spec-Driven Development' in 2016. Nobody Cared Until AI Broke Everything.](./i-coined-spec-driven-development-in-2016-nobody-cared-until-ai-broke-everything) | [Next: TDD Was Never About Testing](./tdd-was-never-about-testing)
 
 [Back to series overview](./index)
 
