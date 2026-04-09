@@ -9,7 +9,7 @@ image: /images/perspectives/dan-north-wasnt-talking-about-ai-but-he-could-have-b
 
 BDD's origin story is less dramatic than you'd think and more useful than most people realize.
 
-Somebody built a tool that took Java test method names like `testCustomerCanLogIntoTheirAccount` and separated the camelCase into readable English. Dan North looked at those readable test names and had the insight: what if we stop thinking of these as tests? What if they're behavioral specifications?
+Somebody built a tool called [AgileDox](https://agiledox.sourceforge.net) that took Java test method names like `testCustomerCanLogIntoTheirAccount` and separated the camelCase into readable English. Dan North looked at those readable test names and had the insight: what if we stop thinking of these as tests? What if they're behavioral specifications?
 
 Not "test that the discount applies." But "a customer with 24+ months tenure receives a 10% discount at checkout."
 

@@ -25,7 +25,7 @@ New posts drop daily. Follow along on [LinkedIn](https://linkedin.com/in/samhato
 6. [I Coined 'Spec-Driven Development' in 2016. Nobody Cared Until AI Broke Everything.](./i-coined-spec-driven-development-in-2016-nobody-cared-until-ai-broke-everything)
 7. [60 Years of Specification in 3 Minutes](./60-years-of-specification-in-3-minutes)
 8. [TDD Was Never About Testing](./tdd-was-never-about-testing)
-9. Dan North Wasn't Talking About AI. But He Could Have Been. — *April 9*
+9. [Dan North Wasn't Talking About AI. But He Could Have Been.](./dan-north-wasnt-talking-about-ai-but-he-could-have-been)
 10. AI Needs History. Your Database Deletes It. — *April 10*
 
 ### Week 3: The Practice
