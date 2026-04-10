@@ -32,7 +32,7 @@ Look at the last spec you handed to your AI. How many of these five smells does 
 
 ---
 
-[Previous: AI Needs History. Your Database Deletes It.](./ai-needs-history-your-database-deletes-it)
+[Previous: Specs That Ignore Time Ignore Half the Story](./specs-that-ignore-time-ignore-half-the-story)
 
 [Back to series overview](./index)
 
