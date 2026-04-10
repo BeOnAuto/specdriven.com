@@ -256,6 +256,7 @@ export default defineConfig({
             { text: '7. 60 Years of Specification in 3 Minutes', link: '/perspectives/the-spec-driven-shift/60-years-of-specification-in-3-minutes' },
             { text: '8. TDD Was Never About Testing', link: '/perspectives/the-spec-driven-shift/tdd-was-never-about-testing' },
             { text: '9. Dan North Wasn\'t Talking About AI', link: '/perspectives/the-spec-driven-shift/dan-north-wasnt-talking-about-ai-but-he-could-have-been' },
+            { text: '10. AI Needs History. Your Database Deletes It.', link: '/perspectives/the-spec-driven-shift/ai-needs-history-your-database-deletes-it' },
           ]
         },
         {
