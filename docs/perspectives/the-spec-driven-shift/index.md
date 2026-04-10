@@ -26,7 +26,7 @@ New posts drop daily. Follow along on [LinkedIn](https://linkedin.com/in/samhato
 7. [60 Years of Specification in 3 Minutes](./60-years-of-specification-in-3-minutes)
 8. [TDD Was Never About Testing](./tdd-was-never-about-testing)
 9. [Dan North Wasn't Talking About AI. But He Could Have Been.](./dan-north-wasnt-talking-about-ai-but-he-could-have-been)
-10. [AI Needs History. Your Database Deletes It.](./ai-needs-history-your-database-deletes-it)
+10. [Specs That Ignore Time Ignore Half the Story](./specs-that-ignore-time-ignore-half-the-story)
 
 ### Week 3: The Practice
 *April 13-17 — Spec smells, the PRD trap, where specs go to die, and what the best AI developers are already doing differently.*
