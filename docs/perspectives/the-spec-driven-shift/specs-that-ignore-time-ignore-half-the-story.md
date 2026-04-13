@@ -38,6 +38,8 @@ Specs that model time give AI something to reason with. Specs that model snapsho
 
 [Previous: Dan North Wasn't Talking About AI. But He Could Have Been.](./dan-north-wasnt-talking-about-ai-but-he-could-have-been)
 
+[Next: 5 Spec Smells That Turn Every AI Prompt Into a Guessing Game](./5-spec-smells-that-turn-every-ai-prompt-into-a-guessing-game)
+
 [Back to series overview](./index)
 
 

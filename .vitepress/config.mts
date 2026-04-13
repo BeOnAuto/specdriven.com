@@ -260,9 +260,9 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Week 3: The Practice — Coming Soon',
+          text: 'Week 3: The Practice',
           items: [
-            { text: 'April 13-17', link: '/perspectives/the-spec-driven-shift/#week-3-the-practice' },
+            { text: '11. 5 Spec Smells That Turn Every AI Prompt Into a Guessing Game', link: '/perspectives/the-spec-driven-shift/5-spec-smells-that-turn-every-ai-prompt-into-a-guessing-game' },
           ]
         },
         {

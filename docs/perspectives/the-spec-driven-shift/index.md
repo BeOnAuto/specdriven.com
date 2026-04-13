@@ -29,7 +29,12 @@ New posts drop daily. Follow along on [LinkedIn](https://linkedin.com/in/samhato
 10. [Specs That Ignore Time Ignore Half the Story](./specs-that-ignore-time-ignore-half-the-story)
 
 ### Week 3: The Practice
-*April 13-17 — Spec smells, the PRD trap, where specs go to die, and what the best AI developers are already doing differently.*
+
+11. [5 Spec Smells That Turn Every AI Prompt Into a Guessing Game](./5-spec-smells-that-turn-every-ai-prompt-into-a-guessing-game)
+12. A PRD Is Not a Spec. Here's Why That Matters. — *April 14*
+13. Jira Is Where Specs Go to Die. Your AI Just Showed Up With a Shovel. — *April 15*
+14. Give Me the Freedom of a Tight Brief. Why Specs Are the Ultimate AI Prompt. — *April 16*
+15. The Best AI Developers Are Spec-Driven. They Just Haven't Named It Yet. — *April 17*
 
 ### Week 4: The Future
 *April 20-24 — When coding becomes instant, specs are all that's left. Where this is heading and what it means for you.*
