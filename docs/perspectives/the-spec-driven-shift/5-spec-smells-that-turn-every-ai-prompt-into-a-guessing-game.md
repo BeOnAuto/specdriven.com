@@ -34,6 +34,8 @@ Look at the last spec you handed to your AI. How many of these five smells does 
 
 [Previous: Specs That Ignore Time Ignore Half the Story](./specs-that-ignore-time-ignore-half-the-story)
 
+[Next: A PRD Is Not a Spec. Here's Why That Matters.](./a-prd-is-not-a-spec-heres-why-that-matters)
+
 [Back to series overview](./index)
 
 

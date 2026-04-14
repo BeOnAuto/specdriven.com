@@ -263,6 +263,7 @@ export default defineConfig({
           text: 'Week 3: The Practice',
           items: [
             { text: '11. 5 Spec Smells That Turn Every AI Prompt Into a Guessing Game', link: '/perspectives/the-spec-driven-shift/5-spec-smells-that-turn-every-ai-prompt-into-a-guessing-game' },
+            { text: '12. A PRD Is Not a Spec', link: '/perspectives/the-spec-driven-shift/a-prd-is-not-a-spec-heres-why-that-matters' },
           ]
         },
         {

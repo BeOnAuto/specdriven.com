@@ -31,7 +31,7 @@ New posts drop daily. Follow along on [LinkedIn](https://linkedin.com/in/samhato
 ### Week 3: The Practice
 
 11. [5 Spec Smells That Turn Every AI Prompt Into a Guessing Game](./5-spec-smells-that-turn-every-ai-prompt-into-a-guessing-game)
-12. A PRD Is Not a Spec. Here's Why That Matters. — *April 14*
+12. [A PRD Is Not a Spec. Here's Why That Matters.](./a-prd-is-not-a-spec-heres-why-that-matters)
 13. Jira Is Where Specs Go to Die. Your AI Just Showed Up With a Shovel. — *April 15*
 14. Give Me the Freedom of a Tight Brief. Why Specs Are the Ultimate AI Prompt. — *April 16*
 15. The Best AI Developers Are Spec-Driven. They Just Haven't Named It Yet. — *April 17*
