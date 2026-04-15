@@ -9,11 +9,11 @@ image: /images/perspectives/jira-is-where-specs-go-to-die-your-ai-just-showed-up
 
 Three different things. Three different lifecycles. All collapsed into one Jira ticket.
 
-Requirements: the problem to solve. Stick around until the problem itself changes.
+**Requirements**: the problem to solve. Stick around until the problem itself changes.
 
-Specifications: the communication of the design. Should live as long as the feature exists in the system. Updated when the design evolves.
+**Specifications**: the communication of the design. Should live as long as the feature exists in the system. Updated when the design evolves.
 
-Tasks: the work to do. Created, scheduled, completed, archived. Done.
+**Tasks**: the work to do. Created, scheduled, completed, archived. Done.
 
 A Jira ticket is one entity with a text field you can put anything in. So everything collapses.
 
@@ -35,14 +35,12 @@ That's not a ticket. That's a different kind of artifact entirely.
 
 Go look at a ticket your team closed six months ago. Can you find the spec? If the answer is no, neither can your AI.
 
-
-— *Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]*
+— _Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]_
 
 ---
 
 [Previous: A PRD Is Not a Spec. Here's Why That Matters.](./a-prd-is-not-a-spec-heres-why-that-matters)
 
 [Back to series overview](./index)
-
 
 The Spec-Driven Shift | Week 3: The Practice | Post 13 of 20

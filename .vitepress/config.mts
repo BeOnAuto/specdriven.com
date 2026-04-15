@@ -264,6 +264,7 @@ export default defineConfig({
           items: [
             { text: '11. 5 Spec Smells That Turn Every AI Prompt Into a Guessing Game', link: '/perspectives/the-spec-driven-shift/5-spec-smells-that-turn-every-ai-prompt-into-a-guessing-game' },
             { text: '12. A PRD Is Not a Spec', link: '/perspectives/the-spec-driven-shift/a-prd-is-not-a-spec-heres-why-that-matters' },
+            { text: '13. Jira Is Where Specs Go to Die', link: '/perspectives/the-spec-driven-shift/jira-is-where-specs-go-to-die-your-ai-just-showed-up-with-a-shovel' },
           ]
         },
         {
