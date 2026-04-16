@@ -41,6 +41,8 @@ Go look at a ticket your team closed six months ago. Can you find the spec? If t
 
 [Previous: A PRD Is Not a Spec. Here's Why That Matters.](./a-prd-is-not-a-spec-heres-why-that-matters)
 
+[Next: Give Me the Freedom of a Tight Brief. Why Specs Are the Ultimate AI Prompt.](./give-me-the-freedom-of-a-tight-brief-why-specs-are-the-ultimate-ai-prompt)
+
 [Back to series overview](./index)
 
 The Spec-Driven Shift | Week 3: The Practice | Post 13 of 20

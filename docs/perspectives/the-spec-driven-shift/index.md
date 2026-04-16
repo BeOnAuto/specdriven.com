@@ -33,7 +33,7 @@ New posts drop daily. Follow along on [LinkedIn](https://linkedin.com/in/samhato
 11. [5 Spec Smells That Turn Every AI Prompt Into a Guessing Game](./5-spec-smells-that-turn-every-ai-prompt-into-a-guessing-game)
 12. [A PRD Is Not a Spec. Here's Why That Matters.](./a-prd-is-not-a-spec-heres-why-that-matters)
 13. [Jira Is Where Specs Go to Die. Your AI Just Showed Up With a Shovel.](./jira-is-where-specs-go-to-die-your-ai-just-showed-up-with-a-shovel)
-14. Give Me the Freedom of a Tight Brief. Why Specs Are the Ultimate AI Prompt. — *April 16*
+14. [Give Me the Freedom of a Tight Brief. Why Specs Are the Ultimate AI Prompt.](./give-me-the-freedom-of-a-tight-brief-why-specs-are-the-ultimate-ai-prompt)
 15. The Best AI Developers Are Spec-Driven. They Just Haven't Named It Yet. — *April 17*
 
 ### Week 4: The Future
