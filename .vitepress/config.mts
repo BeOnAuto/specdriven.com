@@ -266,6 +266,7 @@ export default defineConfig({
             { text: '12. A PRD Is Not a Spec', link: '/perspectives/the-spec-driven-shift/a-prd-is-not-a-spec-heres-why-that-matters' },
             { text: '13. Jira Is Where Specs Go to Die', link: '/perspectives/the-spec-driven-shift/jira-is-where-specs-go-to-die-your-ai-just-showed-up-with-a-shovel' },
             { text: '14. Give Me the Freedom of a Tight Brief', link: '/perspectives/the-spec-driven-shift/give-me-the-freedom-of-a-tight-brief-why-specs-are-the-ultimate-ai-prompt' },
+            { text: '15. The Best AI Developers Are Spec-Driven', link: '/perspectives/the-spec-driven-shift/the-best-ai-developers-are-spec-driven-they-just-havent-named-it-yet' },
           ]
         },
         {

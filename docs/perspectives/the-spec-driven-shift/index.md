@@ -34,7 +34,7 @@ New posts drop daily. Follow along on [LinkedIn](https://linkedin.com/in/samhato
 12. [A PRD Is Not a Spec. Here's Why That Matters.](./a-prd-is-not-a-spec-heres-why-that-matters)
 13. [Jira Is Where Specs Go to Die. Your AI Just Showed Up With a Shovel.](./jira-is-where-specs-go-to-die-your-ai-just-showed-up-with-a-shovel)
 14. [Give Me the Freedom of a Tight Brief. Why Specs Are the Ultimate AI Prompt.](./give-me-the-freedom-of-a-tight-brief-why-specs-are-the-ultimate-ai-prompt)
-15. The Best AI Developers Are Spec-Driven. They Just Haven't Named It Yet. — *April 17*
+15. [The Best AI Developers Are Spec-Driven. They Just Haven't Named It Yet.](./the-best-ai-developers-are-spec-driven-they-just-havent-named-it-yet)
 
 ### Week 4: The Future
 *April 20-24 — When coding becomes instant, specs are all that's left. Where this is heading and what it means for you.*
