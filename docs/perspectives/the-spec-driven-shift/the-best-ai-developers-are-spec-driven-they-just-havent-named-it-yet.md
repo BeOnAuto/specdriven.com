@@ -31,8 +31,6 @@ From there you can grow. Turn captured intent into automated tests. Organize spe
 
 But it all starts with two words. Capture intent.
 
-The people building skyscrapers are doing this. The people building houses that blow over aren't.
-
 The people building skyscrapers are already doing this. The question is whether you'll keep building houses that blow over, or start specifying before you build.
 
 
