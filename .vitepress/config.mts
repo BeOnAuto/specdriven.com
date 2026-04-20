@@ -304,7 +304,7 @@ export default defineConfig({
       copyright: '© 2026 OnAuto, Inc. All rights reserved.',
     },
     editLink: {
-      pattern: 'https://github.com/BeOnAuto/specdriven.com/edit/main/:path',
+      pattern: 'https://github.com/BeOnAuto/specdriven.com/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
   },
