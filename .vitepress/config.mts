@@ -270,9 +270,9 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Week 4: The Future — Coming Soon',
+          text: 'Week 4: The Future',
           items: [
-            { text: 'April 20-24', link: '/perspectives/the-spec-driven-shift/#week-4-the-future' },
+            { text: '16. Specs Are the Next Programming Languages', link: '/perspectives/the-spec-driven-shift/specs-are-the-next-programming-languages' },
           ]
         },
       ],

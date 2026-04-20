@@ -37,4 +37,9 @@ New posts drop daily. Follow along on [LinkedIn](https://linkedin.com/in/samhato
 15. [The Best AI Developers Are Spec-Driven. They Just Haven't Named It Yet.](./the-best-ai-developers-are-spec-driven-they-just-havent-named-it-yet)
 
 ### Week 4: The Future
-*April 20-24 — When coding becomes instant, specs are all that's left. Where this is heading and what it means for you.*
+
+16. [Specs Are the Next Programming Languages](./specs-are-the-next-programming-languages)
+17. Most Specs Fail Because They Start Too Low. Start Here Instead. — April 21
+18. When Coding Becomes Instant, Specs Are All That Matters — April 22
+19. Fool Me Once, I Write a Spec. Fool Me Twice? There Is No Twice. — April 23
+20. The Question Isn't Whether AI Can Code. It's Whether You Can Specify. — April 24
