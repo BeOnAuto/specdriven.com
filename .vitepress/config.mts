@@ -273,6 +273,7 @@ export default defineConfig({
           text: 'Week 4: The Future',
           items: [
             { text: '16. Specs Are the Next Programming Languages', link: '/perspectives/the-spec-driven-shift/specs-are-the-next-programming-languages' },
+            { text: '17. Most Specs Fail Because They Start Too Low', link: '/perspectives/the-spec-driven-shift/most-specs-fail-because-they-start-too-low-start-here-instead' },
           ]
         },
       ],
