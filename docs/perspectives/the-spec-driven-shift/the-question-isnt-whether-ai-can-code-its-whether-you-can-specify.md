@@ -23,7 +23,7 @@ TDD taught us to record design decisions as executable expectations. BDD taught 
 
 All of these are converging. Into spec dialects. Into executable specification frameworks. Into tools that compress design-to-implementation to minutes.
 
-I've spent 15 years in this space. Coined "spec-driven development" in 2016. Built Narrative-Driven Development as a synthesis of everything I've learned. Created specdriven.com as a neutral home for the community, because this is bigger than any one tool. And I'm building Auto to make these ideas accessible to every product engineer.
+I've spent nearly two decades in this space. Coined "spec-driven development" in 2016. Built Narrative-Driven Development as a synthesis of everything I've learned. Created specdriven.com as a neutral home for the community, because this is bigger than any one tool. And I'm building Auto to make these ideas accessible to every product engineer.
 
 But this series was never about me or my tools. It was about a principle.
 

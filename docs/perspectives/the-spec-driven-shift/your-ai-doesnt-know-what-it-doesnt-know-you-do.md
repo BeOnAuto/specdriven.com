@@ -9,7 +9,7 @@ image: /images/perspectives/your-ai-doesnt-know-what-it-doesnt-know-you-do.png
 
 There's [this meme](https://www.linkedin.com/feed/update/urn:li:activity:7355647020340072448/) I keep coming back to. A seasoned developer thinks about everything. Patterns, trade-offs, past failures, architectural consequences. And outputs a small amount of carefully chosen code. An AI doesn't think about any of that. It just produces an enormous amount of output.
 
-A senior dev's actual superpower isn't what they produce. It's what they choose not to produce. After 15 years, I've seen systems collapse from shortcuts. I know what happens when you pick the wrong pattern in week one. I carry all of that with me. And when I make a decision, I'm filtering through thousands of these accumulated lessons. Most of my thinking is about what NOT to do.
+A senior dev's actual superpower isn't what they produce. It's what they choose not to produce. After 40 years of coding and 28 years of professional experience, I've seen systems collapse from shortcuts. I know what happens when you pick the wrong pattern in week one. I carry all of that with me. And when I make a decision, I'm filtering through thousands of these accumulated lessons. Most of my thinking is about what NOT to do.
 
 An LLM doesn't have any of that for your system. It's got a vast statistical model of code in general, sure. But for your specific project, for your specific decisions, for the constraints you chose and why you chose them? It's got almost nothing. And it doesn't know it's got nothing. It'll just produce.
 

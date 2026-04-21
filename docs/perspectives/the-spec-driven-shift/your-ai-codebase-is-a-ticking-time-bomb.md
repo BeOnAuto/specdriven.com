@@ -15,7 +15,7 @@ And then the codebase turns into goulash.
 
 Not gradually. It feels gradual because every individual prompt seems fine. But at some point someone tries to change a thing and three other things break, and nobody can explain why the system works the way it does, and the whole team starts spending more time fixing regressions than building new features.
 
-I've been working in spec-driven development for 15 years, and I've seen this pattern before. Long before AI. Teams that skip specifications always end up here eventually. But with AI, it happens at a speed I've never seen.
+I've been working in spec-driven development for nearly two decades, and I've seen this pattern before. Long before AI. Teams that skip specifications always end up here eventually. But with AI, it happens at a speed I've never seen.
 
 Here's why.
 
