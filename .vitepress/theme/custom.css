@@ -600,11 +600,13 @@ html.fonts-ready body {
 
 /* ---------- Perspectives Gallery ---------- */
 .spec-gallery-week {
-  margin: 2.75rem 0 3.5rem;
+  margin: 3rem 0 4rem;
 }
 
 .spec-gallery-week h3 {
-  margin: 0 0 1.25rem;
+  position: relative;
+  margin: 0 0 1.5rem;
+  padding-left: 1rem;
   font-family: Barlow, sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
@@ -613,21 +615,27 @@ html.fonts-ready body {
   padding-bottom: 0;
 }
 
-.spec-gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+.spec-gallery-week h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  bottom: 0.35em;
+  width: 3px;
+  border-radius: 2px;
+  background: var(--sd-gradient-brand);
 }
 
-@media (max-width: 560px) {
-  .spec-gallery-grid {
-    grid-template-columns: 1fr;
-  }
+.spec-gallery-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .spec-gallery-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   border-radius: 12px;
   overflow: hidden;
   background: var(--vp-c-bg-soft);
@@ -637,6 +645,13 @@ html.fonts-ready body {
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+@media (max-width: 560px) {
+  .spec-gallery-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
 .spec-gallery-card:hover {
   transform: translateY(-3px);
   border-color: var(--vp-c-brand-1);
@@ -644,15 +659,24 @@ html.fonts-ready body {
 }
 
 .spec-gallery-card-image {
+  flex: 0 0 360px;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   background: var(--vp-c-bg-elv);
+  align-self: stretch;
+}
+
+@media (max-width: 560px) {
+  .spec-gallery-card-image {
+    flex: none;
+    width: 100%;
+  }
 }
 
 .spec-gallery-card-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   transition: transform 0.4s ease;
 }

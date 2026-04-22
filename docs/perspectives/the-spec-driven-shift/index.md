@@ -1,5 +1,6 @@
 ---
 title: "The Spec-Driven Shift"
+aside: false
 ---
 
 # The Spec-Driven Shift
