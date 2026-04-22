@@ -246,20 +246,18 @@ New posts drop daily. Follow along on [LinkedIn](https://linkedin.com/in/samhato
 </a>
 
 <div class="spec-gallery-card is-upcoming">
-  <div class="spec-gallery-card-image">Coming Apr 23</div>
+  <div class="spec-gallery-card-image"></div>
   <div class="spec-gallery-card-body">
     <div class="spec-gallery-card-number">Post 19</div>
-    <div class="spec-gallery-card-title">Fool Me Once, I Write a Spec. Fool Me Twice? There Is No Twice.</div>
-    <p class="spec-gallery-card-desc">Every bug, every regression, every surprise is a missing spec in disguise. Write it down once, catch it forever.</p>
+    <div class="spec-gallery-card-title">Coming Apr 23</div>
   </div>
 </div>
 
 <div class="spec-gallery-card is-upcoming">
-  <div class="spec-gallery-card-image">Coming Apr 24</div>
+  <div class="spec-gallery-card-image"></div>
   <div class="spec-gallery-card-body">
     <div class="spec-gallery-card-number">Post 20</div>
-    <div class="spec-gallery-card-title">The Question Isn't Whether AI Can Code. It's Whether You Can Specify.</div>
-    <p class="spec-gallery-card-desc">The closing piece: coding is no longer the bottleneck. Specifying is. The shift is already underway.</p>
+    <div class="spec-gallery-card-title">Coming Apr 24</div>
   </div>
 </div>
 
