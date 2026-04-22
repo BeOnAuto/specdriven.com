@@ -38,6 +38,8 @@ Start with the whole, and slice vertically by value rather than by technical lay
 
 [Previous: Specs Are the Next Programming Languages](./specs-are-the-next-programming-languages)
 
+[Next: When Coding Becomes Instant, Specs Are All That Matters](./when-coding-becomes-instant-specs-are-all-that-matters)
+
 [Back to series overview](./index)
 
 

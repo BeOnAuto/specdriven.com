@@ -233,14 +233,16 @@ New posts drop daily. Follow along on [LinkedIn](https://linkedin.com/in/samhato
   </div>
 </a>
 
-<div class="spec-gallery-card is-upcoming">
-  <div class="spec-gallery-card-image">Coming Apr 22</div>
+<a class="spec-gallery-card" href="./when-coding-becomes-instant-specs-are-all-that-matters">
+  <div class="spec-gallery-card-image">
+    <img src="/images/perspectives/when-coding-becomes-instant-specs-are-all-that-matters.png" alt="When Coding Becomes Instant, Specs Are All That Matters" loading="lazy" />
+  </div>
   <div class="spec-gallery-card-body">
     <div class="spec-gallery-card-number">Post 18</div>
     <div class="spec-gallery-card-title">When Coding Becomes Instant, Specs Are All That Matters</div>
     <p class="spec-gallery-card-desc">If code generation cost drops to zero, the only thing that still holds value is knowing what to build.</p>
   </div>
-</div>
+</a>
 
 <div class="spec-gallery-card is-upcoming">
   <div class="spec-gallery-card-image">Coming Apr 23</div>
