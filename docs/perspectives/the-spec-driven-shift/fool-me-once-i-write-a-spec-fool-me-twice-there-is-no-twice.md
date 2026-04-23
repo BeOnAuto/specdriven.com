@@ -15,11 +15,13 @@ Here it is.
 
 **Collaborate with AI, alone.** Long conversations about trade-offs, architecture, and blind spots. Not about code. "What am I not considering? What are the failure modes? Show me before and after as a sequence diagram." The AI's broad knowledge is genuinely useful here. It surfaces patterns I hadn't thought of, trade-offs I missed, edge cases I forgot. I go back and forth until I've got something RFC-shaped, a solid document that represents my best thinking on the problem.
 
-**Then collaborate with my colleagues.** I take the work I did with the AI and put it in front of humans, not to explain it but to stress-test it. My colleagues spot things the AI never will, because they know our product, our customers, our history, and the half-finished thing two teams over that mine is about to collide with. They push back on assumptions the AI happily accepted. They bring judgment that no amount of training data can substitute for. AI is a good pair, but my human counterparts are still far better, and the pairing is the point: solo with AI to draft, with humans to sharpen.
+**Then collaborate with my colleagues.** I take the work I did with the AI and put it in front of humans, not to explain it but to stress-test it. My colleagues catch things the AI never will. They know our product, our customers, our history, and what the team next door is building that my work is about to touch. They push back on assumptions the AI happily accepted, and they bring judgment that no amount of training data can substitute for. AI is a good pair, but my human counterparts are still far better, and the pairing is the point: solo with AI to draft, with humans to sharpen.
 
-**Specify everything.** Before implementation code gets written, every design decision becomes a test. My tests are my specs. They're the executable record of my intent. This is where the real work happens. Translating design into precise, testable expectations. It takes effort. But everything downstream depends on it.
+**Specify everything.** Before any implementation code gets written, every design decision becomes a test. My tests are my specs, the executable record of my intent. This is where the real work happens, translating design into precise, testable expectations. I use the AI to help me draft the specs so I can review them, argue with them, and change them until they say exactly what I mean. It takes effort, but everything downstream depends on it.
 
 **Let AI implement.** Now it does what it's good at. Writing code to make tests pass. Fast. Tireless.
+
+I do keep the batches small enough for me to actually review. I'm personally okay with a whole feature, or several scenarios, being built at once and reviewed together with a batch of feedback at the end. Works for me. Other people's mileage may vary, and smaller batches are fine too. The rule is: never bigger than you can meaningfully review.
 
 **Guardrails verify.** This is where it gets interesting. I've got multiple layers of automated guardrails, and every single one exists because I watched the AI make a specific mistake.
 
