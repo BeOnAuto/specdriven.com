@@ -51,6 +51,8 @@ When coding becomes instant, the only thing left to differentiate your software 
 
 [Previous: Most Specs Fail Because They Start Too Low. Start Here Instead.](./most-specs-fail-because-they-start-too-low-start-here-instead)
 
+[Next: Fool Me Once, I Write a Spec. Fool Me Twice? There Is No Twice.](./fool-me-once-i-write-a-spec-fool-me-twice-there-is-no-twice)
+
 [Back to series overview](./index)
 
 The Spec-Driven Shift | Week 4: The Future | Post 18 of 20

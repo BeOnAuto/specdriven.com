@@ -246,13 +246,16 @@ New posts drop daily. Follow along on [LinkedIn](https://linkedin.com/in/samhato
   </div>
 </a>
 
-<div class="spec-gallery-card is-upcoming">
-  <div class="spec-gallery-card-image"></div>
+<a class="spec-gallery-card" href="./fool-me-once-i-write-a-spec-fool-me-twice-there-is-no-twice">
+  <div class="spec-gallery-card-image">
+    <img src="/images/perspectives/fool-me-once-i-write-a-spec-fool-me-twice-there-is-no-twice.png" alt="Fool Me Once, I Write a Spec. Fool Me Twice? There Is No Twice." loading="lazy" />
+  </div>
   <div class="spec-gallery-card-body">
     <div class="spec-gallery-card-number">Post 19</div>
-    <div class="spec-gallery-card-title">Coming Apr 23</div>
+    <div class="spec-gallery-card-title">Fool Me Once, I Write a Spec. Fool Me Twice? There Is No Twice.</div>
+    <p class="spec-gallery-card-desc">My actual daily workflow. Think, collaborate on design, specify, let AI implement, and let guardrails verify. Every guardrail exists because I watched the AI make a specific mistake.</p>
   </div>
-</div>
+</a>
 
 <div class="spec-gallery-card is-upcoming">
   <div class="spec-gallery-card-image"></div>
