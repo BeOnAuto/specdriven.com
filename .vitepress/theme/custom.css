@@ -751,7 +751,3 @@ html.fonts-ready body {
   text-transform: uppercase;
 }
 
-/* Give the gallery room to breathe by widening the content area on this page */
-.vp-doc:has(.spec-gallery-grid) {
-  max-width: none;
-}
