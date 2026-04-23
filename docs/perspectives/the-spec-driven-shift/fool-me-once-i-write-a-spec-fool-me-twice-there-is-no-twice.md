@@ -23,13 +23,13 @@ I keep batches small enough to actually review. I'm personally okay with a whole
 
 **Guardrails verify.** This is where it gets interesting. I've got multiple layers of automated guardrails, and every one exists because I watched the AI make a specific mistake.
 
-100% test coverage, pinned as a rule. Not because coverage guarantees correctness, but because uncovered code is a decision I didn't specify.
+I pin 100% test coverage as a rule, not because coverage guarantees correctness, but because uncovered code is a decision I didn't specify, and I'd rather force every decision to be intentional than discover later that the AI made one for me.
 
-Commit validators, separate LLMs checking every commit against my quality rules. An impartial judge.
+I use commit validators, where a separate LLM reads every commit against my quality rules and approves or rejects it before anything lands. Having an impartial judge, with no attachment to the work and no reason to rationalise a shortcut, catches things my coding agent would have waved through.
 
-Anti-cheating checks, because AI will sometimes write meaningless tests to hit coverage numbers. Separate validators catch that.
+I use anti-cheating checks, because AI will sometimes write meaningless tests just to hit coverage numbers. A separate validator reads each test and decides whether it's actually asserting anything, and the ones that fail that bar get sent back to be written properly.
 
-Architectural constraints encoded as enforceable rules. If the architecture says no business logic in the client, the validator enforces it.
+I use architectural constraints encoded as enforceable rules. If my architecture says no business logic in the client, the validator reads the diff, spots the violation, and rejects the commit. The architecture stops being aspirational documentation and becomes something the code actually has to obey.
 
 Every guardrail started as a mistake. AI wrote tests that didn't test anything. Guardrail. Created a data access pattern that violated the architecture. Guardrail. Modified a shared module without considering downstream effects. Guardrail.
 
