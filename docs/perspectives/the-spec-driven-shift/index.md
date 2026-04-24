@@ -10,8 +10,6 @@ title: "The Spec-Driven Shift"
 
 AI is transforming how we build software, but most teams are losing control of their codebases in the process. This series lays out the case for spec-driven development: the principles, the history, and the practices that turn AI from a reckless code generator into a disciplined implementation partner.
 
-New posts drop daily. Follow along on [LinkedIn](https://linkedin.com/in/samhatoum) or check back here.
-
 <div class="spec-gallery-week">
 
 ### The Wake-Up Call
