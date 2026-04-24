@@ -257,13 +257,16 @@ New posts drop daily. Follow along on [LinkedIn](https://linkedin.com/in/samhato
   </div>
 </a>
 
-<div class="spec-gallery-card is-upcoming">
-  <div class="spec-gallery-card-image"></div>
+<a class="spec-gallery-card" href="./the-question-isnt-whether-ai-can-code-its-whether-you-can-specify">
+  <div class="spec-gallery-card-image">
+    <img src="/images/perspectives/the-question-isnt-whether-ai-can-code-its-whether-you-can-specify.png" alt="The Question Isn't Whether AI Can Code. It's Whether You Can Specify." loading="lazy" />
+  </div>
   <div class="spec-gallery-card-body">
     <div class="spec-gallery-card-number">Post 20</div>
-    <div class="spec-gallery-card-title">Coming Apr 24</div>
+    <div class="spec-gallery-card-title">The Question Isn't Whether AI Can Code. It's Whether You Can Specify.</div>
+    <p class="spec-gallery-card-desc">Building without specs will soon look as reckless as deploying without version control. AI doesn't hold your design in its head. Specs give it memory.</p>
   </div>
-</div>
+</a>
 
 </div>
 

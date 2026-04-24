@@ -276,6 +276,7 @@ export default defineConfig({
             { text: '17. Most Specs Fail Because They Start Too Low', link: '/perspectives/the-spec-driven-shift/most-specs-fail-because-they-start-too-low-start-here-instead' },
             { text: '18. When Coding Becomes Instant', link: '/perspectives/the-spec-driven-shift/when-coding-becomes-instant-specs-are-all-that-matters' },
             { text: '19. Fool Me Once, I Write a Spec', link: '/perspectives/the-spec-driven-shift/fool-me-once-i-write-a-spec-fool-me-twice-there-is-no-twice' },
+            { text: '20. The Question Isn\'t Whether AI Can Code', link: '/perspectives/the-spec-driven-shift/the-question-isnt-whether-ai-can-code-its-whether-you-can-specify' },
           ]
         },
       ],

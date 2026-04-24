@@ -37,18 +37,14 @@ Build with confidence. Know, don't hope, that the system does what it should.
 
 The spec-driven future isn't a question of if. It's a question of whether you lead it or spend the next few years catching up.
 
-Thanks for following The Spec-Driven Shift. If it changed how you think about building software, share it with your team. And if you want to go deeper, the conversation is just starting.
+Thanks for following The Spec-Driven Shift. If it changed how you think about building software, share it with your team. And if you want to go deeper, reach out!
 
-Come find us at specdriven.com.
-
-
-— *Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]*
+— _Sam Hatoum [[LinkedIn](https://www.linkedin.com/in/samhatoum/)]_
 
 ---
 
 [Previous: Fool Me Once, I Write a Spec. Fool Me Twice? There Is No Twice.](./fool-me-once-i-write-a-spec-fool-me-twice-there-is-no-twice) | [Back to Series Overview](./index)
 
 [Back to series overview](./index)
-
 
 The Spec-Driven Shift | Week 4: The Future | Post 20 of 20
