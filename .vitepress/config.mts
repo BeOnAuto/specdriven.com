@@ -165,6 +165,7 @@ export default defineConfig({
         text: 'Perspectives',
         items: [
           { text: 'The Spec-Driven Shift (20-part series)', link: '/perspectives/the-spec-driven-shift/' },
+          { text: 'Specs Are Fractal', link: '/perspectives/specs-are-fractal' },
         ]
       },
       {

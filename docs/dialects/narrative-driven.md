@@ -96,6 +96,16 @@ When used with Auto, narratives flow through a pipeline:
 
 The result is production-ready code that traces directly back to your specifications.
 
+### NDD and the Fractal Nature of Specs
+
+[Specifications are the communication of design](/what). Design happens at every level of a system, from product strategy down to a single method's behavior. So specs need to live at every level too. The full argument is in [Specs Are Fractal](/perspectives/specs-are-fractal).
+
+NDD is a deliberate attempt to address this fractal nature inside a single, executable specification format. Narratives sit at the user-experience level, organising the story of how someone interacts with the system through time. Slices (command, query, react, experience) carve behavior into independently implementable units. Moments capture individual events at specific points in time. Inside a slice, specs are written as rules and examples that drop down into executable behavioral detail.
+
+The intent is that authoring at the high level (a narrative as a story) and authoring at the low level (a precondition / postcondition example for a single behavior) are the same activity expressed at different zooms, held inside one shared model.
+
+This is a work in progress. NDD acknowledges the fractal recursion explicitly and is trying to make every level of design specifiable from inside one model. We don't claim to have solved it. We're still working on it.
+
 ### NDD and Collaborative Discovery
 
 NDD didn't emerge in isolation. It combines patterns from multiple [collaborative discovery](/guides/discovery) techniques into a single executable format:
