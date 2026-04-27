@@ -19,7 +19,7 @@ next:
 
 **Era:** ~2010-present | **Contribution:** Narrative-Driven Development, Auto, specdriven.com
 
-Founder of [Auto](https://on.auto). Sam has focused on spec-driven development for nearly two decades, long before AI made it trendy. The work began with a 2009 whiteboard app meant to replace Jira, continued through SDLC modeling in 2011, Simian/Chimp (2013 to 2015), xSpecs (2016 to 2020), and now Narrative-Driven Development at Auto. He purchased specdriven.com in 2020 and documented his thinking across [Embracing Specifications](https://gist.github.com/SamHatoum/388c6ff663eb86ef3463a251b48f2db5) (January 2018) and [Spec-Driven Development](https://gist.github.com/SamHatoum/e3789342ec5329ed5b9a8fecd64346f3) (May 2021), predating the current wave by half a decade.
+Founder of [Auto](https://on.auto). Sam has focused on spec-driven development for nearly two decades, long before AI made it trendy. The work began with a 2009 whiteboard app meant to replace Jira, continued through SDLC modeling in 2011, Simian/Chimp (2013 to 2015), xSpecs (2016 to 2020), and now Narrative-Driven Development at Auto. He purchased specdriven.com in 2020 and documented his thinking across [Embracing Specifications](https://gist.github.com/SamHatoum/388c6ff663eb86ef3463a251b48f2db5) (January 2018) and [Spec-Driven Development](https://gist.github.com/SamHatoum/e3789342ec5329ed5b9a8fecd64346f3) (May 2021), predating the current wave by half a decade. Sam has consistently disclaimed any "inventor" framing; for the full term genealogy and the receipts behind the 2016 industrial coining see [SDD Origins](/origins) and [Proof and Prior Art](/perspectives/the-spec-driven-shift/i-coined-spec-driven-development-proof).
 
 He developed **Narrative-Driven Development** at Xolvio, independently from Event Modeling, building on extensive experience with BDD, DDD, EventStorming, and quality-first practices across dozens of enterprise client engagements.
 
@@ -27,7 +27,7 @@ NDD is a [model-based, multimodal specification format](/dialects/narrative-driv
 
 Sam created specdriven.com as a community resource for the entire spec-driven movement.
 
-Cross-refs: [Timeline: NDD](/timeline#narrative-driven-development), [Landscape: Auto](/landscape/auto), [NDD Dialect](/dialects/narrative-driven)
+Cross-refs: [SDD Origins](/origins), [Timeline: NDD](/timeline#narrative-driven-development), [Landscape: Auto](/landscape/auto), [NDD Dialect](/dialects/narrative-driven)
 
 ### John Lam and Den Delimarsky {#spec-kit-team}
 
@@ -46,14 +46,6 @@ Senior Principal Software Engineer at AWS in the agentic AI organization. Clare 
 She articulated Kiro's three-phase SDD approach: requirements definition, technical design, and task list generation. 10+ years at Amazon, prior work on AWS Proton, Amazon ECS, and AWS Code Suite.
 
 Cross-refs: [Landscape: Kiro](/landscape/kiro)
-
-### Guy Podjarny {#guy-podjarny}
-
-**Era:** 2025 | **Contribution:** Tessl, Spec Registry
-
-Founder and CEO of **Tessl**. Previously founded Snyk. Guy launched the Spec Registry (10,000+ usage specs) and the Tessl Framework. He coined the term "vibe specing."
-
-Cross-refs: [Landscape: Tessl](/landscape/tessl)
 
 ### Sze Wong {#sze-wong}
 
@@ -276,6 +268,30 @@ Cross-refs: [Timeline: Structured Programming](/timeline#structured-programming)
 **Era:** 1960s-1970s | **Contribution:** Hoare Logic, Pre/Post-condition Reasoning
 
 His **pre-condition/post-condition pattern** echoes directly through Given/When/Then decades later. If you write a Given clause, you are standing on Hoare's shoulders.
+
+### Bertrand Meyer {#bertrand-meyer}
+
+**Era:** 1986-present | **Contribution:** Design by Contract, Eiffel
+
+Created **Eiffel** (1986) and formalized **Design by Contract (DbC)**. Meyer made Hoare-style preconditions, postconditions and invariants first-class syntax in a programming language, with runtime checking. The first time executable specifications shipped in production code.
+
+His 1988/1997 *Object-Oriented Software Construction* is one of the most influential textbooks in software engineering. His 1997 IEEE Computer column on the Ariane 5 explosion made the case that explicit contracts catch failures that implicit assumptions miss.
+
+DbC influenced JML, Spec#, Code Contracts, Java's `assert`, and Python's typing decorators. The 2004 [Ostroff/Paige/Makalsky](#ostroff-paige-makalsky) paper *Agile Specification-Driven Development* is built on Eiffel.
+
+Cross-refs: [Timeline: Design by Contract](/timeline#design-by-contract), [SDD Origins](/origins#_1986-meyer-s-design-by-contract-specs-become-executable)
+
+### Jonathan Ostroff, Richard Paige, and David Makalsky {#ostroff-paige-makalsky}
+
+**Era:** 2004 | **Contribution:** Agile Specification-Driven Development
+
+Authors of *Agile Specification-Driven Development* (XP 2004, Springer LNCS), the earliest known published use of the phrase "specification-driven development" in the academic record. The paper argues that tests and contracts are both specifications at different granularities and that analysis, design and implementation should be intertwined with executable artifacts at every level.
+
+Paige and Ostroff also published *Specification-Driven Design with Eiffel and Agents for Teaching Lightweight Formal Methods* at TFM 2004.
+
+Their work sits in the formal methods and Eiffel teaching tradition, distinct from the BDD/practitioner lineage that brought the term into mainstream usage in the 2020s.
+
+Cross-refs: [Timeline: Agile Specification-Driven Development](/timeline#agile-sdd), [SDD Origins](/origins#_2004-the-first-published-use-of-the-term)
 
 ---
 

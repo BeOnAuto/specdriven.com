@@ -7,6 +7,8 @@ image: /images/perspectives/i-coined-spec-driven-development-in-2016-nobody-care
 
 ![I Coined 'Spec-Driven Development' in 2016. Nobody Cared Until AI Broke Everything.](/images/perspectives/i-coined-spec-driven-development-in-2016-nobody-cared-until-ai-broke-everything.png)
 
+> *Editor's note: Since publishing this, prior art surfaced. The phrase appears in academic literature from 2004 onward, twelve years before this 2016 industrial use. For the full genealogy of the term see [SDD Origins](/origins). For receipts and proof points behind the 2016 industrial coining see [Proof and Prior Art](./i-coined-spec-driven-development-proof).*
+
 I started using the term "spec-driven development" in 2016. Bought specdriven.com in 2020. Could see where things were heading.
 
 For years: nothing. Crickets.

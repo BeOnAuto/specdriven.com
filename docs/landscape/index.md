@@ -13,6 +13,10 @@ next:
 >
 > Building something that should be listed here? [Submit a PR](https://github.com/BeOnAuto/specdriven.com) or [open an issue](https://github.com/BeOnAuto/specdriven.com/issues).
 
+## The Spec-as-Source Lineage {#spec-as-source-lineage}
+
+Spec-as-source isn't a new idea. Eiffel, from 1986, was a language built around the principle that specifications belong inside the source: pre-conditions, post-conditions and invariants as first-class syntax, checked at runtime. The modern wave of spec-as-source tools is doing the same thing one abstraction level up, with natural language as the assertion medium and AI as the code generator. The lineage matters because it tells you what works and what doesn't. Eiffel's experience showed that spec-as-source pays off when the spec language is precise and the tooling enforces consistency. The same will be true for the LLM era. For the deeper history, see [SDD Origins](/origins).
+
 ## The Current Wave {#current-wave}
 
 Multiple tools launched in 2025 and 2026, each tackling a different facet of the spec-driven problem. Some focus on guiding AI agents. Others focus on team collaboration. A few try to make specs executable. No single tool does everything, and the landscape is fragmenting as the community discovers what actually works.
@@ -106,6 +110,18 @@ The landscape is fragmenting rapidly. Additional tools worth watching:
 - **DeepWiki** (Devin): AI-generated documentation for repositories, similar in concept to Google Code Wiki.
 - **cc-sdd**: A community project bringing Kiro-style steering, spec, design, and tasks workflow to Claude Code, Codex, and other tools.
 - **MetaGPT**: Multi-agent framework (44.8k GitHub stars) that converts requirements into complete software projects through role-based agent collaboration.
+
+## Came and Went {#came-and-went}
+
+Spec-driven development is an active and evolving space. Companies enter, position, build, and sometimes pivot out. This section tracks entrants who were once active in the spec-driven development category and have since moved on. They're listed here for completeness and historical accuracy. Anyone curious about their current direction can follow the link to their site.
+
+### Tessl {#came-and-went-tessl}
+
+**Tessl** *(entered September 2025, departed January 2026)*
+
+Tessl started strong as a spec-driven development advocate, launching the Tessl Framework and Spec Registry in September 2025 with explicit messaging around spec-driven development for AI agents. By January 2026 they had repositioned around agent skills rather than specs, with the Spec Registry becoming the Tessl Registry. Tessl is still active as a company, just no longer in the spec-driven development space.
+
+[tessl.io →](https://tessl.io)
 
 ---
 

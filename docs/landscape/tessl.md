@@ -58,7 +58,7 @@ The SDD tile is open source. The Registry is free. The Framework is in closed be
 
 [tessl.io](https://tessl.io)
 
-**See also:** [Guy Podjarny](/people#guy-podjarny), [Timeline: AI-Driven Renaissance](/timeline#ai-renaissance)
+**See also:** [Timeline: AI-Driven Renaissance](/timeline#ai-renaissance)
 
 ## Capability Analysis
 

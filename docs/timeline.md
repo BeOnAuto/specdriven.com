@@ -3,8 +3,8 @@ prev:
   text: Notable People
   link: /people
 next:
-  text: Resources
-  link: /resources
+  text: SDD Origins
+  link: /origins
 ---
 
 # Timeline of Spec-Driven Development
@@ -48,11 +48,29 @@ While formal methods stayed in academia, practitioners built their own specifica
 
 This was the first systematic "specification layer" between business needs and code. You couldn't just jump from a vague request to implementation. There had to be something in between.
 
+## The Bridge Era (1980s) {#bridge-era}
+
+The 1980s sit between the formal-methods era of the 60s-70s and the OO/modeling era of the 90s. Two threads of work in this decade tried to make specifications more practical, by different routes. CASE tools tried to industrialize structured analysis with tooling. Design by Contract tried to industrialize formal verification by putting it inside the language.
+
 ### CASE Tools (1980s) {#case-tools}
 
 **Computer-Aided Software Engineering** tools like Excelerator and LBMS represented the first attempt to build tooling around specifications. They promised to automate the structured analysis process.
 
 They were expensive, complex, and required organization-wide buy-in. By the mid-1990s, most had been abandoned. The lesson: tooling that requires everyone to change how they work, all at once, tends to fail.
+
+### Design by Contract (1986) {#design-by-contract}
+
+In 1986, [Bertrand Meyer](/people#bertrand-meyer) publishes *Object-Oriented Software Construction* and creates **Eiffel**. Meyer takes [Hoare](/people#car-hoare)'s preconditions and postconditions out of the proof system and puts them directly inside the language as first-class syntax.
+
+Every Eiffel method declares what it requires of its caller (precondition), what it ensures in return (postcondition), and what invariants the surrounding object always satisfies. The compiler reads them. The runtime checks them. They sit next to the code they describe, in the same file, in the same syntax.
+
+This was the first time executable specifications shipped in production code. Not in a proof tool. Not in a separate document. In the language itself.
+
+**Design by Contract (DbC)** never went mainstream. Eiffel didn't win the language wars. But the idea propagated. JML for Java. Spec# for C#. Code Contracts for .NET. Java's `assert`. Python's typing decorators. The DNA is everywhere.
+
+Meyer's 1997 IEEE Computer column, *Design by Contract: The Lessons of Ariane*, used the Ariane 5 explosion (caused by an implicit precondition that held for Ariane 4 but not for Ariane 5) to argue that explicit contracts would have caught the failure. It became one of the canonical "this is why specs matter" stories.
+
+DbC is the missing link between Hoare's logic in academia and the agile-era executable specifications that arrived in the 1990s. It also became the foundation that the [2004 Ostroff/Paige/Makalsky paper](#agile-sdd) built its specification-driven development argument on.
 
 ## The Model Era (1990s) {#the-model-era}
 
@@ -117,6 +135,16 @@ But this tiny tool turned out to be the spark that ignited BDD. [Dan North](/peo
 North replaced the word "test" with "behavior," reframing the whole conversation. He built **JBehave** in 2004 as the first BDD framework. That same year, Matts and North proposed the **Given/When/Then** format. North's 2006 article, "Introducing BDD," gave the movement its name and manifesto. Keogh was a BDD pioneer from 2004, shaping how practitioners understood and applied the ideas through her writing and conference talks.
 
 BDD's core insight: if you describe behavior in a language everyone understands, you can align developers, testers, and business people around a single source of truth.
+
+### Agile Specification-Driven Development (2004) {#agile-sdd}
+
+In 2004, [Jonathan Ostroff, Richard Paige, and David Makalsky](/people#ostroff-paige-makalsky) publish *Agile Specification-Driven Development* at the XP 2004 conference (Springer LNCS). This is the earliest known published use of the phrase **"specification-driven development"** in the academic record.
+
+The argument: tests and contracts are both specifications, just at different granularities. A unit test specifies behavior at the example level. A contract specifies behavior at the method boundary. Their proposed practice was to intertwine analysis, design and implementation, with executable artifacts at every level.
+
+A companion paper by Paige and Ostroff at TFM 2004, *Specification-Driven Design with Eiffel and Agents for Teaching Lightweight Formal Methods*, makes the same case in a teaching context.
+
+The work is built on [Eiffel](#design-by-contract) and the Design by Contract tradition. The phrase didn't cross over into mainstream practitioner usage; that happened independently, twelve years later, on the BDD/agile-coaching side. See [SDD Origins](/origins) for the full story of how the term moved between communities.
 
 ### Concordion, Robot Framework, RSpec {#concordion-robot-rspec}
 
@@ -224,6 +252,7 @@ Writing specs in markdown is better than writing no specs at all. But a spec you
 | 1978 | Data Flow Diagrams popularized | [Tom DeMarco](/people#demarco) |
 | Early 1980s | SSADM standardized | UK Government |
 | 1980s | CASE Tools era | Various vendors |
+| 1986 | Eiffel and Design by Contract | [Bertrand Meyer](/people#bertrand-meyer) |
 | Late 1980s | Shlaer-Mellor Method | Shlaer, Mellor |
 | 1990s | B Method (successor to Z) | [Abrial](/people#abrial) |
 | 1995 | UML unified | [Booch](/people#booch), [Rumbaugh](/people#rumbaugh), [Jacobson](/people#jacobson) |
@@ -238,6 +267,7 @@ Writing specs in markdown is better than writing no specs at all. But a spec you
 | 2003-2006 | BDD emerges | [North](/people#north), [Matts](/people#matts), [Keogh](/people#keogh) |
 | 2004 | JBehave (first BDD framework) | [Dan North](/people#north) |
 | 2004 | Given/When/Then format proposed | [North](/people#north), [Matts](/people#matts) |
+| 2004 | *Agile Specification-Driven Development* (XP 2004), first published use of the phrase | [Ostroff, Paige, Makalsky](/people#ostroff-paige-makalsky) |
 | ~2005 | Concordion | [David Peterson](/people#peterson) |
 | ~2005 | Robot Framework | [Pekka Clark](/people#clark) |
 | 2006 | "Introducing BDD" article | [Dan North](/people#north) |

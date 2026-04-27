@@ -1,7 +1,7 @@
 ---
 prev:
-  text: Timeline
-  link: /timeline
+  text: SDD Origins
+  link: /origins
 next: false
 ---
 

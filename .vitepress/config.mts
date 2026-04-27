@@ -173,6 +173,7 @@ export default defineConfig({
           { text: 'Community', link: '/community' },
           { text: 'Notable People', link: '/people' },
           { text: 'Timeline', link: '/timeline' },
+          { text: 'SDD Origins', link: '/origins' },
           { text: 'Resources', link: '/resources' },
         ]
       },
@@ -291,7 +292,6 @@ export default defineConfig({
             { text: 'Intent (Augment)', link: '/landscape/intent' },
             { text: 'Kiro (AWS)', link: '/landscape/kiro' },
             { text: 'OpenSpec', link: '/landscape/openspec' },
-            { text: 'Tessl', link: '/landscape/tessl' },
           ]
         }
       ],
