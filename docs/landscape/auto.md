@@ -48,7 +48,7 @@ Carries forward the executable specification lineage from BDD into the AI era. U
 
 ## Notable Limitations
 
-Purpose-built for line-of-business applications (workflows, orchestration, CRUD, domain logic). Not optimized for games, infrastructure-as-code, data science pipelines. Currently being productized (the on.auto platform is in waitlist stage). The TypeScript fluent interface, while powerful, creates a learning curve that prose-based tools avoid.
+Purpose-built for line-of-business applications (workflows, orchestration, CRUD, domain logic). Not optimized for games, infrastructure-as-code, data science pipelines. The TypeScript fluent interface, while powerful, creates a learning curve that prose-based tools avoid.
 
 ## Open Source
 

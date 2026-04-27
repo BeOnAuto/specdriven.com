@@ -40,11 +40,11 @@ Each stage validates against your specifications. If something doesn't match, th
 
 The full spec-driven development platform with collaboration features, hosted infrastructure, and more.
 
-[Join the Waitlist](https://accounts.on.auto/waitlist)
+[Try Auto](https://on.auto)
 
-### Auto Engineer (Open Source)
+### AutoAgent (Open Source)
 
-Auto Engineer is the open source engine that powers the Auto pipeline. Clone it, configure it, build with it.
+An open source extension for your coding agent. It connects to Auto and builds against your specs.
 
 [View on GitHub](https://github.com/BeOnAuto/auto-engineer)
 
