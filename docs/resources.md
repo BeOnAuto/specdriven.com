@@ -89,7 +89,6 @@ next: false
 - [on.auto](https://on.auto) - Auto, implementing Narrative-Driven Development.
 - [kiro.dev](https://kiro.dev) - Kiro, AWS's agentic IDE.
 - [github.com/github/spec-kit](https://github.com/github/spec-kit) - GitHub Spec Kit.
-- [tessl.io](https://tessl.io) - Tessl's Spec Registry and Framework.
 - [github.com/Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) - OpenSpec.
 - [github.com/bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) - BMAD-METHOD.
 - [intentspec.org](https://intentspec.org) - IntentSpec open standard.

@@ -94,7 +94,6 @@ Each profiled tool in the [landscape](/landscape/) has been analyzed against the
 - [Intent](/landscape/intent)
 - [Kiro](/landscape/kiro)
 - [OpenSpec](/landscape/openspec)
-- [Tessl](/landscape/tessl)
 
 ---
 

@@ -42,7 +42,6 @@ This page summarizes every tool we're tracking. The top six have dedicated profi
 | [Kiro](/landscape/kiro)                                       | AWS              | Markdown (EARS)         | No          | Yes          | AWS-native apps        |
 | [OpenSpec](/landscape/openspec)                               | Fission AI       | Markdown + YAML         | No          | Yes          | Brownfield/iterative   |
 | [Pre.dev](#other-notable)                                     | Pre.dev          | Transferable specs      | No          | No           | Cross-tool specs       |
-| [Tessl](/landscape/tessl)                                     | Tessl            | .spec.md directives     | Partial     | Partial      | Component-level        |
 
 </div>
 
@@ -52,7 +51,7 @@ The most striking observation about the current wave is that nearly every new to
 
 The BDD and Specification by Example tradition (see the [Timeline](/timeline#agile-revolution)) established that specs should be executable. When a specification passes, it's not just documentation. It's verified truth. FIT, Cucumber, and RSpec all proved this worked in production at scale.
 
-Today, Kiro, Spec Kit, OpenSpec, BMAD, and IntentSpec all use markdown prose. Tessl has `@test` directives that reference test files but don't make specs intrinsically executable. Intent has living specs that update alongside implementation but don't verify correctness independently.
+Today, Kiro, Spec Kit, OpenSpec, BMAD, and IntentSpec all use markdown prose. Intent has living specs that update alongside implementation but don't verify correctness independently.
 
 This matters because markdown specs drift. Without automated verification, there's no guarantee your specs still describe your system. A spec that was accurate three months ago might be completely wrong today, and nobody knows until something breaks. For more on why this matters, see [Quality and Specifications](/quality/).
 

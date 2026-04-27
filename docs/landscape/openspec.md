@@ -2,9 +2,7 @@
 prev:
   text: Kiro
   link: /landscape/kiro
-next:
-  text: Tessl
-  link: /landscape/tessl
+next: false
 ---
 
 # OpenSpec (Fission AI)

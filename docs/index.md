@@ -30,7 +30,7 @@ features:
   - icon:
       src: /icons/04-tool-landscape.svg
     title: "Tool Landscape"
-    details: "An honest catalog of spec-driven tools: Auto, Kiro, Spec Kit, Tessl, Intent, OpenSpec, and more."
+    details: "An honest catalog of spec-driven tools: Auto, Kiro, Spec Kit, Intent, OpenSpec, and more."
     link: /landscape/
   - icon:
       src: /icons/05-spec-dialects.svg

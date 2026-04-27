@@ -221,7 +221,6 @@ In response, multiple tools launched in rapid succession, all converging on the 
 - [Auto](/landscape/auto), productization of NDD
 - [GitHub Spec Kit](/landscape/github-spec-kit) (2025), open-source, repo-native
 - [Kiro](/landscape/kiro) (AWS, 2025), agentic IDE with spec-driven mode
-- [Tessl](/landscape/tessl) (2025), Spec Registry + Framework
 - BMAD-METHOD (2025), open-source multi-agent framework
 - [OpenSpec](/landscape/openspec) (2025), lightweight, brownfield-friendly
 - [Intent](/landscape/intent) (Augment Code, 2025-2026), living specs with multi-agent orchestration
@@ -280,7 +279,7 @@ Writing specs in markdown is better than writing no specs at all. But a spec you
 | 2018-2019 | Event Modeling | [Adam Dymitruk](/people#dymitruk) |
 | 2024-2025 | Vibe coding becomes widespread | Various |
 | 2025 | Spec-driven tool wave begins | Multiple teams |
-| 2025-26 | AI-driven spec renaissance | Auto, Kiro, Tessl, Intent, others |
+| 2025-26 | AI-driven spec renaissance | Auto, Kiro, Intent, others |
 
 ---
 
