@@ -19,6 +19,8 @@ When you write a test first, you're making a decision: "this is how I intend thi
 
 That's what people mean when they say "TDD is a design technique, not a testing technique." The value isn't catching bugs after the fact. The value is recording design decisions before implementation and verifying them forever.
 
+This isn't a new claim. Ostroff, Paige and Makalsky wrote in 2004 that "both unit tests and contracts are specifications." The academic community had this years before the practitioner community caught up.
+
 But TDD had a limitation. It lived in code. It spoke in code. The business couldn't participate. A product owner couldn't verify that the test actually captured the right intent. The specification was executable but it wasn't shared.
 
 That gap between executable and shared is exactly what BDD solved. That's tomorrow.

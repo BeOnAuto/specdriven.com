@@ -29,6 +29,8 @@ BDD's real contribution wasn't better tests. It was shared understanding: specs 
 
 All three of those are exactly what AI-assisted development needs. AI can't do corridor conversations. It can't do late discovery. It needs shared understanding pre-baked. It needs the spec.
 
+Bertrand Meyer wasn't talking about AI either. But every contract he wrote was a durable, executable, machine-readable specification of intent. He was solving the same problem 30 years before the LLM. The client in his contracts was the calling code. Now the client is a human and the supplier is an AI. The metaphor holds. The scope just got bigger.
+
 Dan wasn't talking about AI. But he was describing the mindset that makes AI development actually work.
 
 
