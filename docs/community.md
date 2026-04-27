@@ -52,4 +52,3 @@ Other teams building spec-driven tools and the communities around them:
 - **[Intent](https://www.augmentcode.com/product/intent)** - Living specifications with multi-agent orchestration. [Discord](https://discord.com/invite/zvU8DAwxvt)
 - **[Kiro](https://kiro.dev)** - AWS's agentic IDE with built-in spec support. [Discord](https://discord.gg/kirodotdev)
 - **[OpenSpec](https://github.com/Fission-AI/OpenSpec)** - Open-source spec standard by Fission AI. [Discord](https://discord.gg/YctCnvvshC) · [GitHub Discussions](https://github.com/Fission-AI/OpenSpec/discussions)
-- **[Tessl](https://tessl.io)** - Spec registry and framework from the creator of Snyk. [Discord](https://discord.com/invite/jbb2vHnHZQ)
