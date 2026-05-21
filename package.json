@@ -1,0 +1,33 @@
+{
+  "name": "specdriven.com",
+  "version": "1.0.0",
+  "description": "Spec-Driven Development — Specifications are the new programming languages",
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "generate:og": "og generate",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeOnAuto/specdriven.com.git"
+  },
+  "license": "CC-BY-NC-4.0",
+  "devDependencies": {
+    "@beonauto/og": "github:BeOnAuto/og#v0.3.0",
+    "@commitlint/cli": "^20.4.4",
+    "@commitlint/config-conventional": "^20.4.4",
+    "husky": "^9.1.7",
+    "markdown-it-footnote": "^4.0.0",
+    "puppeteer": "^24.40.0",
+    "vitepress": "^2.0.0-alpha.16"
+  },
+  "dependencies": {
+    "@lottiefiles/dotlottie-web": "^0.66.2",
+    "@rive-app/canvas": "^2.37.4",
+    "posthog-js": "^1.364.5"
+  }
+}
