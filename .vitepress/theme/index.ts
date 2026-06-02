@@ -3,6 +3,8 @@ import './custom.css';
 import posthog from 'posthog-js';
 import { h } from 'vue';
 import AnimatedHero from './components/AnimatedHero.vue';
+import EmailCapture from './components/EmailCapture.vue';
+import EmailModal from './components/EmailModal.vue';
 import FlywheelDiagram from './components/FlywheelDiagram.vue';
 import FundamentalsIntro from './components/FundamentalsIntro.vue';
 import ThemeImage from './components/ThemeImage.vue';
@@ -13,6 +15,7 @@ export default {
     return h(DefaultTheme.Layout, null, {
       'home-hero-before': () => h(AnimatedHero),
       'home-features-before': () => h(FundamentalsIntro),
+      'layout-bottom': () => [h(EmailCapture), h(EmailModal)],
     });
   },
   enhanceApp({ app, router }) {
@@ -42,6 +45,14 @@ export default {
       router.onAfterRouteChanged = (to) => {
         posthog.capture('$pageview', { path: to });
       };
+
+      document.addEventListener('click', (event) => {
+        const target = event.target as HTMLElement | null;
+        const link = target?.closest?.('a[href$="#subscribe"]') as HTMLAnchorElement | null;
+        if (!link) return;
+        event.preventDefault();
+        window.dispatchEvent(new CustomEvent('open-subscribe-modal'));
+      });
     }
   },
 };

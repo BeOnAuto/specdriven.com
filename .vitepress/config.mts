@@ -248,6 +248,7 @@ export default defineConfig({
 					},
 				],
 			},
+			{ text: "Subscribe", link: "#subscribe" },
 		],
 		sidebar: {
 			"/what": learnSidebar,
