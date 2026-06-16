@@ -246,6 +246,10 @@ export default defineConfig({
 						text: "Specs Are Fractal",
 						link: "/perspectives/specs-are-fractal",
 					},
+					{
+						text: "Code Is Not Enough",
+						link: "/perspectives/code-is-not-enough",
+					},
 				],
 			},
 			{ text: "Subscribe", link: "#subscribe" },
@@ -537,6 +541,10 @@ export default defineConfig({
 							text: "Specs Are Fractal",
 							link: "/perspectives/specs-are-fractal",
 						},
+						{
+							text: "Code Is Not Enough",
+							link: "/perspectives/code-is-not-enough",
+						},
 					],
 				},
 				{
@@ -546,6 +554,39 @@ export default defineConfig({
 						{
 							text: "The Fractal Nature of Design",
 							link: "/first-principles/fractal-design",
+						},
+						{
+							text: "Narrative-Driven (NDD)",
+							link: "/dialects/narrative-driven",
+						},
+					],
+				},
+			],
+			"/perspectives/code-is-not-enough": [
+				{
+					text: "Perspectives",
+					items: [
+						{
+							text: "The Spec-Driven Shift",
+							link: "/perspectives/the-spec-driven-shift/",
+						},
+						{
+							text: "Specs Are Fractal",
+							link: "/perspectives/specs-are-fractal",
+						},
+						{
+							text: "Code Is Not Enough",
+							link: "/perspectives/code-is-not-enough",
+						},
+					],
+				},
+				{
+					text: "Related Reading",
+					items: [
+						{ text: "What Is a Spec?", link: "/what" },
+						{
+							text: "Model-Based Specifications",
+							link: "/guides/model-based-specs",
 						},
 						{
 							text: "Narrative-Driven (NDD)",
