@@ -250,6 +250,10 @@ export default defineConfig({
 						text: "Code Is Not Enough",
 						link: "/perspectives/code-is-not-enough",
 					},
+					{
+						text: "Notes for an Amnesiac",
+						link: "/perspectives/notes-for-an-amnesiac",
+					},
 				],
 			},
 			{ text: "Subscribe", link: "#subscribe" },
@@ -545,6 +549,10 @@ export default defineConfig({
 							text: "Code Is Not Enough",
 							link: "/perspectives/code-is-not-enough",
 						},
+						{
+							text: "Notes for an Amnesiac",
+							link: "/perspectives/notes-for-an-amnesiac",
+						},
 					],
 				},
 				{
@@ -577,6 +585,47 @@ export default defineConfig({
 						{
 							text: "Code Is Not Enough",
 							link: "/perspectives/code-is-not-enough",
+						},
+						{
+							text: "Notes for an Amnesiac",
+							link: "/perspectives/notes-for-an-amnesiac",
+						},
+					],
+				},
+				{
+					text: "Related Reading",
+					items: [
+						{ text: "What Is a Spec?", link: "/what" },
+						{
+							text: "Model-Based Specifications",
+							link: "/guides/model-based-specs",
+						},
+						{
+							text: "Narrative-Driven (NDD)",
+							link: "/dialects/narrative-driven",
+						},
+					],
+				},
+			],
+			"/perspectives/notes-for-an-amnesiac": [
+				{
+					text: "Perspectives",
+					items: [
+						{
+							text: "The Spec-Driven Shift",
+							link: "/perspectives/the-spec-driven-shift/",
+						},
+						{
+							text: "Specs Are Fractal",
+							link: "/perspectives/specs-are-fractal",
+						},
+						{
+							text: "Code Is Not Enough",
+							link: "/perspectives/code-is-not-enough",
+						},
+						{
+							text: "Notes for an Amnesiac",
+							link: "/perspectives/notes-for-an-amnesiac",
 						},
 					],
 				},
