@@ -16,9 +16,11 @@ image: /images/pages/objections.png
 
 ## "This is just waterfall with extra steps" {#waterfall}
 
-This is the most common pushback, and it misunderstands what made waterfall problematic.
+This is the most common pushback. SDD is NOT waterall. Let's get that out of the way first. Phased development has nothing to do with specifications driving software.
 
-Waterfall's problem was never that specifications existed. It was the feedback latency. Waterfall took months to produce specification documents, creating a long gap between when decisions were made and when consequences were discovered. By the time developers started building, the specs were already stale.
+TDD and BDD are SDD techniques. You could actually do TDD in waterfall fashion. You can write the tests for your entire system before implementing a single test! That would be applying phased waterfall development using a specification-ish technique.
+
+Waterfall was problematic, and its problem was never that specifications existed. It was the feedback latency. Waterfall took months to produce specification documents, creating a long gap between when decisions were made and when consequences were discovered. By the time developers started building, the specs were already stale.
 
 The longer a piece of feedback lives in a system without being addressed, the harder and more expensive it becomes to fix. Waterfall maximized this latency by design.
 
