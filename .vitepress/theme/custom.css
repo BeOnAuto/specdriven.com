@@ -566,6 +566,17 @@ html.fonts-ready body {
 
 /* Consistent brand gradient stripe on all light mode cards */
 
+/* Give the homepage body a clear break after the feature-card grid. */
+.VPHome .vp-doc {
+  padding-top: 40px;
+}
+
+@media (max-width: 640px) {
+  .VPHome .vp-doc {
+    padding-top: 24px;
+  }
+}
+
 /* Light content sections */
 .VPHome .vp-doc h2 {
   font-weight: 700;
@@ -574,6 +585,19 @@ html.fonts-ready body {
   padding-top: 32px;
   margin-top: 56px;
   position: relative;
+}
+
+/* Balance the publication note between the feature grid and first article section. */
+.VPHome .vp-doc blockquote:first-of-type + h2 {
+  margin-top: 32px;
+  padding-top: 16px;
+}
+
+@media (max-width: 640px) {
+  .VPHome .vp-doc blockquote:first-of-type + h2 {
+    margin-top: 24px;
+    padding-top: 8px;
+  }
 }
 
 .VPHome .vp-doc h2::after {
