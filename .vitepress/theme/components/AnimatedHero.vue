@@ -107,16 +107,16 @@ onUnmounted(() => {
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 322 1700 478" preserveAspectRatio="xMidYMax slice">
         <defs>
           <linearGradient id="Gradient-0" x1="0" y1="0" x2="1726" y2="542" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#ec3f4a" stop-opacity="0" />
-            <stop offset="0.33" stop-color="#ff8a1d" stop-opacity=".12" />
-            <stop offset="0.66" stop-color="#5ec72d" stop-opacity=".08" />
-            <stop offset="1" stop-color="#42c3f7" stop-opacity=".04" />
+            <stop offset="0" stop-color="#F2555A" stop-opacity="0" />
+            <stop offset="0.33" stop-color="#F08422" stop-opacity=".12" />
+            <stop offset="0.66" stop-color="#6BBF59" stop-opacity=".08" />
+            <stop offset="1" stop-color="#4FB0E8" stop-opacity=".04" />
           </linearGradient>
           <linearGradient id="Gradient-stroke" x1="0" y1="0" x2="1726" y2="0" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#ec3f4a" stop-opacity=".2" />
-            <stop offset="0.33" stop-color="#ff8a1d" stop-opacity=".15" />
-            <stop offset="0.66" stop-color="#5ec72d" stop-opacity=".12" />
-            <stop offset="1" stop-color="#42c3f7" stop-opacity=".1" />
+            <stop offset="0" stop-color="#F2555A" stop-opacity=".2" />
+            <stop offset="0.33" stop-color="#F08422" stop-opacity=".15" />
+            <stop offset="0.66" stop-color="#6BBF59" stop-opacity=".12" />
+            <stop offset="1" stop-color="#4FB0E8" stop-opacity=".1" />
           </linearGradient>
         </defs>
         <path id="_a0" fill="url(#Gradient-0)" fill-opacity=".3" stroke="url(#Gradient-stroke)" d="M0 0h1726v556l-285.5-101l-344.1 17l-311.4-17l-323-70l-233 216l-229 43Z" stroke-width="2" transform="translate(850,257) translate(-863,-271)" />
@@ -128,16 +128,16 @@ onUnmounted(() => {
         <path id="_a6" fill="url(#Gradient-0)" fill-opacity=".3" stroke="url(#Gradient-stroke)" d="M0 0h1726v366l-285.5 98l-344.1 87l-311.4-87h-323l-233 128l-229-58Z" stroke-width=".5" transform="translate(850,254) translate(-863,-271)" />
         <path id="_a7" fill="url(#Gradient-0)" fill-opacity=".3" stroke="url(#Gradient-stroke)" d="M0 0h1726v366l-285.5 98l-344.1 87l-311.4-87h-323l-233 128l-229-58Z" stroke-width=".2" transform="translate(850,254) translate(-863,-271)" />
         <!-- Node dots with brand colors -->
-        <ellipse id="_a8" rx="6.8" ry="6.8" fill="#ec3f4a" transform="translate(216,575) translate(0,0) scale(.25,.25) translate(0,0)" />
-        <ellipse id="_a9" rx="6.8" ry="6.8" fill="#ff8a1d" transform="translate(449,447) translate(0,0) scale(.25,.25) translate(0,0)" />
-        <ellipse id="_a10" rx="6.8" ry="6.8" fill="#5ec72d" transform="translate(772,447) translate(0,0) scale(.25,.25) translate(0,0)" />
-        <ellipse id="_a11" rx="6.8" ry="6.8" fill="#42c3f7" transform="translate(1083.4,534) translate(0,0) scale(.25,.25) translate(0,0)" />
-        <ellipse id="_a12" rx="6.8" ry="6.8" fill="#ff8a1d" transform="translate(1427.6,447) translate(0,0) scale(.25,.25) translate(0,0)" />
-        <ellipse id="_a13" rx="6.8" ry="6.8" fill="#42c3f7" transform="translate(216,587) translate(0,0) scale(.25,.25) translate(0,0)" />
-        <ellipse id="_a14" rx="6.8" ry="6.8" fill="#5ec72d" transform="translate(449,371) translate(0,0) scale(.25,.25) translate(0,0)" />
-        <ellipse id="_a15" rx="6.8" ry="6.8" fill="#ec3f4a" transform="translate(772,441) translate(0,0) scale(.25,.25) translate(0,0)" />
-        <ellipse id="_a16" rx="6.8" ry="6.8" fill="#ff8a1d" transform="translate(1083.4,458) translate(0,0) scale(.25,.25) translate(0,0)" />
-        <ellipse id="_a17" rx="6.8" ry="6.8" fill="#5ec72d" transform="translate(1427.6,444.4) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a8" rx="6.8" ry="6.8" fill="#F2555A" transform="translate(216,575) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a9" rx="6.8" ry="6.8" fill="#F08422" transform="translate(449,447) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a10" rx="6.8" ry="6.8" fill="#6BBF59" transform="translate(772,447) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a11" rx="6.8" ry="6.8" fill="#4FB0E8" transform="translate(1083.4,534) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a12" rx="6.8" ry="6.8" fill="#F08422" transform="translate(1427.6,447) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a13" rx="6.8" ry="6.8" fill="#4FB0E8" transform="translate(216,587) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a14" rx="6.8" ry="6.8" fill="#6BBF59" transform="translate(449,371) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a15" rx="6.8" ry="6.8" fill="#F2555A" transform="translate(772,441) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a16" rx="6.8" ry="6.8" fill="#F08422" transform="translate(1083.4,458) translate(0,0) scale(.25,.25) translate(0,0)" />
+        <ellipse id="_a17" rx="6.8" ry="6.8" fill="#6BBF59" transform="translate(1427.6,444.4) translate(0,0) scale(.25,.25) translate(0,0)" />
       </svg>
     </div>
 
@@ -357,7 +357,7 @@ onUnmounted(() => {
   color: var(--vp-button-brand-hover-text);
   background-color: var(--vp-button-brand-hover-bg);
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(255, 138, 29, 0.15);
+  box-shadow: 0 4px 16px rgba(240, 132, 34, 0.15);
 }
 
 .hero-action.alt {
@@ -408,10 +408,10 @@ onUnmounted(() => {
   display: block;
 }
 
-.stripe-red { background: #ec3f4a; }
-.stripe-orange { background: #ff8a1d; }
-.stripe-green { background: #5ec72d; }
-.stripe-blue { background: #42c3f7; }
+.stripe-red { background: #F2555A; }
+.stripe-orange { background: #F08422; }
+.stripe-green { background: #6BBF59; }
+.stripe-blue { background: #4FB0E8; }
 
 /* Responsive */
 @media (max-width: 639px) {

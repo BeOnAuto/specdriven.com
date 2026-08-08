@@ -1,7 +1,7 @@
 /* ============================================
    Spec-Driven — Custom Theme
    SpecDriven visual system
-   Colors: #ec3f4a #ff8a1d #5ec72d #42c3f7
+   Colors: #F2555A #F08422 #6BBF59 #4FB0E8
    Dark BG: #18181b / #27272a
    ============================================ */
 
@@ -16,17 +16,17 @@ html.fonts-ready body {
 
 /* ---------- Brand Tokens ---------- */
 :root {
-  --sd-red: #ec3f4a;
-  --sd-orange: #ff8a1d;
-  --sd-green: #5ec72d;
-  --sd-blue: #42c3f7;
+  --sd-red: #F2555A;
+  --sd-orange: #F08422;
+  --sd-green: #6BBF59;
+  --sd-blue: #4FB0E8;
   --sd-bg-dark: #18181b;
   --sd-bg-elevated: #27272a;
   --sd-text-primary: #18181b;
   --sd-text-secondary: #52525b;
 
-  --sd-gradient-brand: linear-gradient(120deg, #ec3f4a 0%, #ff8a1d 33%, #5ec72d 66%, #42c3f7 100%);
-  --sd-gradient-brand-reverse: linear-gradient(120deg, #42c3f7 0%, #5ec72d 33%, #ff8a1d 66%, #ec3f4a 100%);
+  --sd-gradient-brand: linear-gradient(120deg, #F2555A 0%, #F08422 30%, #C9C13F 50%, #6BBF59 72%, #4FB0E8 100%);
+  --sd-gradient-brand-reverse: linear-gradient(120deg, #4FB0E8 0%, #6BBF59 28%, #C9C13F 50%, #F08422 70%, #F2555A 100%);
 }
 
 /* ---------- VitePress Dark Theme ---------- */
@@ -40,21 +40,21 @@ html.fonts-ready body {
   --vp-c-text-2: rgba(255, 255, 255, 0.56);
   --vp-c-text-3: rgba(255, 255, 255, 0.32);
 
-  --vp-c-brand-1: #ff8a1d;
-  --vp-c-brand-2: #ffa04d;
-  --vp-c-brand-3: #e07010;
-  --vp-c-brand-soft: rgba(255, 138, 29, 0.14);
+  --vp-c-brand-1: #F08422;
+  --vp-c-brand-2: #F5A55E;
+  --vp-c-brand-3: #D06E12;
+  --vp-c-brand-soft: rgba(240, 132, 34, 0.14);
 
   --vp-c-divider: rgba(255, 255, 255, 0.08);
   --vp-c-gutter: rgba(255, 255, 255, 0.06);
 
   /* Buttons */
-  --vp-button-brand-border: rgba(255, 138, 29, 0.5);
+  --vp-button-brand-border: rgba(240, 132, 34, 0.5);
   --vp-button-brand-text: #fff;
-  --vp-button-brand-bg: rgba(255, 138, 29, 0.15);
-  --vp-button-brand-hover-border: #ff8a1d;
+  --vp-button-brand-bg: rgba(240, 132, 34, 0.15);
+  --vp-button-brand-hover-border: #F08422;
   --vp-button-brand-hover-text: #fff;
-  --vp-button-brand-hover-bg: rgba(255, 138, 29, 0.28);
+  --vp-button-brand-hover-bg: rgba(240, 132, 34, 0.28);
 
   --vp-button-alt-border: rgba(255, 255, 255, 0.12);
   --vp-button-alt-text: rgba(255, 255, 255, 0.78);
@@ -72,6 +72,22 @@ html.fonts-ready body {
   /* Home hero name */
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: var(--sd-gradient-brand);
+}
+
+/* ---------- Nav Wordmark (ChainMark lockup: mark + Hanken Grotesk) ---------- */
+:root {
+  --vp-nav-logo-height: 28px;
+}
+
+.VPNavBarTitle .logo {
+  margin-right: 10px;
+}
+
+.VPNavBarTitle .title {
+  font-family: 'Hanken Grotesk', var(--vp-font-family-base);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.02em;
 }
 
 /* ---------- Navbar ---------- */
@@ -132,10 +148,10 @@ html.fonts-ready body {
   width: 140%;
   height: 700px;
   background:
-    radial-gradient(ellipse 35% 45% at 20% 20%, rgba(236, 63, 74, 0.07) 0%, transparent 70%),
-    radial-gradient(ellipse 30% 40% at 45% 15%, rgba(255, 138, 29, 0.06) 0%, transparent 70%),
-    radial-gradient(ellipse 35% 45% at 70% 20%, rgba(94, 199, 45, 0.05) 0%, transparent 70%),
-    radial-gradient(ellipse 30% 40% at 90% 15%, rgba(66, 195, 247, 0.04) 0%, transparent 70%);
+    radial-gradient(ellipse 35% 45% at 20% 20%, rgba(242, 85, 90, 0.07) 0%, transparent 70%),
+    radial-gradient(ellipse 30% 40% at 45% 15%, rgba(240, 132, 34, 0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 35% 45% at 70% 20%, rgba(107, 191, 89, 0.05) 0%, transparent 70%),
+    radial-gradient(ellipse 30% 40% at 90% 15%, rgba(79, 176, 232, 0.04) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -219,11 +235,11 @@ html.fonts-ready body {
 }
 
 .dark .VPFeatures .VPFeature:hover {
-  border-color: rgba(255, 138, 29, 0.18);
+  border-color: rgba(240, 132, 34, 0.18);
   transform: translateY(-4px);
   box-shadow:
     0 16px 48px rgba(0, 0, 0, 0.35),
-    0 0 0 1px rgba(255, 138, 29, 0.08);
+    0 0 0 1px rgba(240, 132, 34, 0.08);
 }
 
 .dark .VPFeatures .VPFeature:hover::before {
@@ -258,15 +274,15 @@ html.fonts-ready body {
 }
 
 .dark .vp-doc :not(pre) > code {
-  background: rgba(255, 138, 29, 0.1);
-  color: #ffa04d;
+  background: rgba(240, 132, 34, 0.1);
+  color: #F5A55E;
   border-radius: 4px;
 }
 
 /* ---------- Blockquotes ---------- */
 .dark .vp-doc blockquote {
-  border-left: 3px solid #ff8a1d;
-  background: rgba(255, 138, 29, 0.04);
+  border-left: 3px solid #F08422;
+  background: rgba(240, 132, 34, 0.04);
   border-radius: 0 8px 8px 0;
 }
 
@@ -373,7 +389,7 @@ html.fonts-ready body {
 }
 
 .dark .vp-doc th {
-  background: rgba(255, 138, 29, 0.06);
+  background: rgba(240, 132, 34, 0.06);
   font-weight: 600;
 }
 
@@ -384,16 +400,16 @@ html.fonts-ready body {
 }
 
 .dark .VPFooter a {
-  color: #ff8a1d;
+  color: #F08422;
 }
 
 /* ---------- Sidebar Active ---------- */
 .dark .VPSidebarItem.is-active > .item .link > .text {
-  color: #ff8a1d;
+  color: #F08422;
 }
 
 .dark .VPSidebarItem.is-active > .item .indicator {
-  background: #ff8a1d;
+  background: #F08422;
 }
 
 /* ---------- Scrollbar ---------- */
@@ -463,7 +479,7 @@ html.fonts-ready body {
 
 /* ---------- Selection ---------- */
 .dark ::selection {
-  background: rgba(255, 138, 29, 0.3);
+  background: rgba(240, 132, 34, 0.3);
   color: #fff;
 }
 
@@ -480,17 +496,17 @@ html.fonts-ready body {
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: var(--sd-gradient-brand);
 
-  --vp-c-brand-1: #e07010;
-  --vp-c-brand-2: #c06000;
-  --vp-c-brand-3: #ff8a1d;
-  --vp-c-brand-soft: rgba(255, 138, 29, 0.08);
+  --vp-c-brand-1: #D06E12;
+  --vp-c-brand-2: #B25E0C;
+  --vp-c-brand-3: #F08422;
+  --vp-c-brand-soft: rgba(240, 132, 34, 0.08);
 
   --vp-button-brand-border: transparent;
   --vp-button-brand-text: #fff;
-  --vp-button-brand-bg: #ff8a1d;
+  --vp-button-brand-bg: #F08422;
   --vp-button-brand-hover-border: transparent;
   --vp-button-brand-hover-text: #fff;
-  --vp-button-brand-hover-bg: #e07010;
+  --vp-button-brand-hover-bg: #D06E12;
 
   --vp-c-bg: #ffffff;
   --vp-c-bg-alt: #fafafa;
@@ -537,7 +553,7 @@ html.fonts-ready body {
 }
 
 :root:not(.dark) .VPFeatures .VPFeature:hover {
-  border-color: rgba(255, 138, 29, 0.3);
+  border-color: rgba(240, 132, 34, 0.3);
   transform: translateY(-4px);
   box-shadow:
     0 12px 40px rgba(0, 0, 0, 0.06),
@@ -576,14 +592,14 @@ html.fonts-ready body {
 
 /* Light inline code */
 :root:not(.dark) .vp-doc :not(pre) > code {
-  background: rgba(255, 138, 29, 0.08);
-  color: #c06000;
+  background: rgba(240, 132, 34, 0.08);
+  color: #B25E0C;
 }
 
 /* Light blockquotes */
 :root:not(.dark) .vp-doc blockquote {
-  border-left: 3px solid #ff8a1d;
-  background: rgba(255, 138, 29, 0.04);
+  border-left: 3px solid #F08422;
+  background: rgba(240, 132, 34, 0.04);
   border-radius: 0 8px 8px 0;
 }
 
@@ -593,17 +609,17 @@ html.fonts-ready body {
 }
 
 :root:not(.dark) .VPFooter a {
-  color: #e07010;
+  color: #D06E12;
 }
 
 /* Light sidebar active */
 :root:not(.dark) .VPSidebarItem.is-active > .item .link > .text {
-  color: #e07010;
+  color: #D06E12;
 }
 
 /* Light selection */
 :root:not(.dark) ::selection {
-  background: rgba(255, 138, 29, 0.2);
+  background: rgba(240, 132, 34, 0.2);
 }
 
 /* ---------- Dark/Light Image Toggle ---------- */

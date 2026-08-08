@@ -138,6 +138,14 @@ export default defineConfig({
 				rel: "stylesheet",
 			},
 		],
+		// Hanken Grotesk for the wordmark (nav title)
+		[
+			"link",
+			{
+				href: "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap",
+				rel: "stylesheet",
+			},
+		],
 		["meta", { property: "og:type", content: "website" }],
 		["meta", { property: "og:site_name", content: "Spec-Driven" }],
 		["meta", { name: "author", content: "Sam Hatoum" }],

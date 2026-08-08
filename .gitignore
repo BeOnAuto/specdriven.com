@@ -8,3 +8,4 @@ docs/.vitepress/dist
 # Ketchup plans
 ketchup-plan.md
 .ketchup/
+scripts/brand/fonts/

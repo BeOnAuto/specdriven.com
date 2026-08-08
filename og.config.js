@@ -18,11 +18,9 @@ export default {
 			{ theme: "light", output: "og-light.png" },
 		],
 		defaultOutput: "og-dark.png",
-		// The Lottie player is imported from esm.sh, so networkidle never settles.
+		// Google Fonts load from the network, so wait for the template's own
+		// fonts-ready signal rather than networkidle.
 		waitUntil: "domcontentloaded",
 		waitFor: "window.__OG_READY === true",
-		extraParams: ({ origin }) => ({
-			animation: `${origin}/docs/public/animations/design-to-specs.json`,
-		}),
 	},
 };
