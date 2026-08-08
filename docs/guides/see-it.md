@@ -57,7 +57,9 @@ Scenario: An existing member tries to join again
   And Jane sees an email-already-registered message
 ```
 
-The examples turn an abstract rule into cases people can challenge and machines may later check.
+The examples turn an abstract rule into cases people can challenge. They are an introduction to the shape of a behavioral specification, not a complete assurance mechanism by themselves. Written examples can clarify what should happen, but they cannot tell you when the implementation stops matching them.
+
+For consequential behavior, connect the important scenarios to tests that run against the system. That makes them [executable specifications](/guides/executable-specs#what-executable-means): readable expectations that can also detect when the software no longer behaves as specified.
 
 ## 4. Describe the visible interface expectations
 
@@ -93,7 +95,7 @@ A schema or typed contract can make this boundary stricter. The examples still c
 
 ## 6. Connect what can be checked
 
-The duplicate-email scenario might become an automated acceptance check. The request and response shapes might be validated against a schema. A person may still need to review whether the interface makes the result understandable.
+The duplicate-email scenario should become an automated acceptance check. The request and response shapes might be validated against a schema. A person may still need to review whether the interface makes the result understandable.
 
 That distinction matters:
 
