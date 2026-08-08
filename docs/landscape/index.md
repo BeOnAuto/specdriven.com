@@ -1,137 +1,79 @@
 ---
+title: The Spec-Driven Tool Landscape
+description: An editorial comparison of current tools that use specifications to guide AI-assisted software development.
 prev:
-  text: Common Objections
-  link: /objections
+  text: Approaches and Formats
+  link: /dialects/
 next:
-  text: Auto
-  link: /landscape/auto
+  text: Evaluation Framework
+  link: /landscape/evaluation
 image: /images/pages/landscape/index.png
+aside: false
 ---
 
 # The Spec-Driven Tool Landscape
 
 ![The Spec-Driven Tool Landscape](/images/pages/landscape/index.png)
 
-> The spec-driven development space is young, fragmented, and evolving rapidly. This is an honest catalog of who's doing what, presented as a community resource.
->
-> Building something that should be listed here? [Submit a PR](https://github.com/BeOnAuto/specdriven.com) or [open an issue](https://github.com/BeOnAuto/specdriven.com/issues).
+The current wave of spec-driven tools does not share one definition or workflow. Some turn a brief into planning artifacts. Some coordinate coding agents. Some maintain a product or codebase model. Some use tests, verifier agents, schemas, or evaluations to check selected results.
 
-## The Spec-as-Source Lineage {#spec-as-source-lineage}
+The table describes those relationships without treating “executable” as a binary badge.
 
-Spec-as-source isn't a new idea. Eiffel, from 1986, was a language built around the principle that specifications belong inside the source: pre-conditions, post-conditions and invariants as first-class syntax, checked at runtime. The modern wave of spec-as-source tools is doing the same thing one abstraction level up, with natural language as the assertion medium and AI as the code generator. The lineage matters because it tells you what works and what doesn't. Eiffel's experience showed that spec-as-source pays off when the spec language is precise and the tooling enforces consistency. The same will be true for the LLM era. For the deeper history, see [Where "Spec-Driven Development" Came From](/origins).
-
-## The Current Wave {#current-wave}
-
-Multiple tools launched in 2025 and 2026, each tackling a different facet of the spec-driven problem. Some focus on guiding AI agents. Others focus on team collaboration. A few try to make specs executable. No single tool does everything, and the landscape is fragmenting as the community discovers what actually works.
-
-Different tools serve different audiences and make different trade-offs. A solo developer building a greenfield prototype has different needs than an enterprise team modernizing a legacy system. The tool that's perfect for one might be completely wrong for the other.
-
-This page summarizes every tool we're tracking. The top six have dedicated profile pages with deeper analysis. The rest are profiled briefly here.
-
-## The Executability Gap {#the-executability-gap}
-
-The most striking observation about the current wave is that nearly every new tool has regressed from the executable specification achievement of the BDD era. The hard-won lesson that specifications should prove themselves has been largely forgotten in the rush to address AI-driven development.
-
-::: warning The Executability Gap, in one line
-Most use markdown prose. Readable, yes. Verifiable? No.
-:::
-
-The BDD and Specification by Example tradition (see the [Timeline](/timeline#agile-revolution)) established that specs should be executable. When a specification passes, it's not just documentation. It's verified truth. FIT, Cucumber, and RSpec all proved this worked in production at scale.
-
-Today, Kiro, Spec Kit, OpenSpec, BMAD, and IntentSpec all use markdown prose. Intent has living specs that update alongside implementation but don't verify correctness independently.
-
-This matters because markdown specs drift. Without automated verification, there's no guarantee your specs still describe your system. A spec that was accurate three months ago might be completely wrong today, and nobody knows until something breaks. For more on why this matters, see [Quality and Specifications](/quality/).
-
-## Tool Overview {#tool-overview}
+## Maintained profiles
 
 <div class="table-scroll">
 
-| Tool                                                          | Creator/Org      | Spec Format             | Executable? | Open Source? | Primary Domain         |
-| ------------------------------------------------------------- | ---------------- | ----------------------- | ----------- | ------------ | ---------------------- |
-| [Auto](/landscape/auto)                                       | Auto             | NDD model/workflow      | Yes         | No           | Line-of-business apps  |
-| [BMAD-METHOD ↗](https://github.com/bmad-code-org/BMAD-METHOD) | Community        | Multi-artifact markdown | No          | Yes          | Full SDLC              |
-| [cc-sdd](#other-notable)                                      | Community        | Markdown workflow       | No          | Yes          | Multi-agent SDD        |
-| [Cursor Rules](#cursor-rules)                                 | Cursor           | MDC files               | No          | N/A          | Convention enforcement |
-| [GitHub Spec Kit](/landscape/github-spec-kit)                 | GitHub/Microsoft | Markdown templates      | No          | Yes (MIT)    | General purpose        |
-| [Google Code Wiki ↗](https://codewiki.google)                 | Google           | AI-generated docs       | No          | No           | Documentation          |
-| [Intent](/landscape/intent)                                   | Augment Code     | Living markdown         | No          | No           | Enterprise/multi-repo  |
-| [IntentSpec ↗](https://intentspec.org)                        | Community        | Markdown + YAML         | No          | Yes          | Minimal/starting point |
-| [Kiro](/landscape/kiro)                                       | AWS              | Markdown (EARS)         | No          | Yes          | AWS-native apps        |
-| [OpenSpec](/landscape/openspec)                               | Fission AI       | Markdown + YAML         | No          | Yes          | Brownfield/iterative   |
-| [Pre.dev](#other-notable)                                     | Pre.dev          | Transferable specs      | No          | No           | Cross-tool specs       |
-| *[Tessl](/landscape/tessl) (retired)*                         | *Tessl*          | *.spec.md + directives* | *No*        | *Partial*    | *Library context (Spec Registry); spec-as-source (Framework)* |
+| Tool | Primary maintained artifact | Main workflow | Relationship to verification | Availability |
+| --- | --- | --- | --- | --- |
+| [Auto](/landscape/auto) | Approved product model | Define, review, approve, build, check | Checks supported behavior against the approved scope; coverage depends on what has been modeled and supported | Commercial |
+| [GitHub Spec Kit](/landscape/github-spec-kit) | Repository Markdown artifacts | Specify, plan, tasks, implement | Guides implementation and supports quality checklists; Markdown has no universal execution semantics | MIT open source |
+| [Intent](/landscape/intent) | Living specifications plus code context | Coordinate agents across a workspace | Uses verifier agents and implementation feedback; the spec is not an independent executable contract | Commercial |
+| [Kiro](/landscape/kiro) | Requirements, design, and task documents | Plan, execute, verify between tasks | Agents can run tests and verification steps during delivery; the documents themselves are not executable | Commercial tools with public specs documentation |
+| [OpenSpec](/landscape/openspec) | Change proposals, specs, design, and tasks | Explore, propose, apply, verify, archive | `/opsx:verify` compares implementation with change artifacts; this is workflow verification, not a formal executable spec language | MIT open source |
+| [Tessl](/landscape/tessl) | Agent skills, registry packages, and evaluations | Install and improve reusable agent context | Current product uses evaluations for agent capabilities; its earlier spec-as-source Framework was paused | Commercial platform with public packages and tooling |
 
 </div>
 
-## What Practitioners Are Saying {#practitioner-feedback}
+## Three relationships worth separating
 
-The spec-driven approach is being tested in the real world. Here's what teams are finding.
+### Specifications guide implementation
 
-**Martin Fowler's analysis** categorizes spec-driven tools into three patterns: spec-first (write specs before code), spec-anchored (specs guide but don't generate), and spec-as-source (specs are the source of truth that drives generation). He draws an important parallel to Model-Driven Development, noting that MDD failed partly because the models were too rigid for real-world complexity. The question for this generation: do LLMs solve that flexibility problem, or do they introduce new ones?
+The specification is read by a person or agent and used to decide what to build. Most Markdown-first tools begin here. The value is planning, persistence, and a better handoff; conformance still depends on review and testing.
 
-**Tessl's "build it twice" experiment** produced one of the strongest before/after comparisons. The same application built with vibe coding silently returned fabricated data. The spec-driven version caught the issue because the specifications explicitly defined correct behavior. Their blog post "My Coding Agent Lied to Me" documents the comparison.
+### Specifications are reconciled with implementation
 
-**Kiro's Delta Airlines showcase** at AWS re:Invent 2025 demonstrated non-coding business owners generating production prototypes using structured specifications. This validates that spec-driven tools can serve non-developers, not just engineering teams.
+The workflow compares the maintained artifact with code or observed results and helps resolve divergence. This may use an agent, change review, generated documentation, or explicit approval states. Reconciliation is useful, but it can also blur intended behavior with whatever happened to be built.
 
-**GitHub Spec Kit's demo repos** cover greenfield (.NET, Spring Boot + React) and brownfield (ASP.NET) scenarios. Critical reviews from Scott Logic found "a sea of markdown" and "unexpected friction," while Marmelab titled their review "The Waterfall Strikes Back." These critiques highlight real adoption barriers worth watching.
+### Specifications drive machine checks
 
-**Prezi Engineering's case study** ("We Tried SDD So You Don't Have To") reported mixed results. Their team found that developers touching code directly became "an antipattern" in spec-driven workflows, a finding that challenges assumptions about how the approach integrates with existing development culture.
+Selected expectations have executable semantics through tests, schemas, model checking, contracts, or evaluations. A passing check supports the encoded claim. It does not establish that every important behavior was specified or that the underlying decision was correct.
 
-These are early signals, not definitive proof. The tools are maturing rapidly, and the landscape will look different in six months.
+Many products combine all three relationships in different proportions.
 
-## The Evaluation Framework {#evaluation-framework}
+## How to read the profiles
 
-With so many tools approaching from different angles, you need a way to evaluate what matters for your context. We've defined capability dimensions (development velocity, spec durability, executability, accessibility, model coherence, traceability, agent guidance, portability, brownfield readiness, modularity, composability, cross-cutting expressiveness, reconcilability, and scope) plus domain fit indicators to evaluate tools.
+Each maintained profile separates:
 
-Each of the six profiled tools has a per-dimension analysis on its own page, describing how the tool handles each capability.
+- **Documented capability:** what the vendor or project says the current product supports.
+- **Editorial assessment:** what follows from the published workflow, including limitations and unresolved questions.
+- **Primary sources:** official documentation, changelogs, and repositories readers can inspect.
 
-[See the full Evaluation Framework](/landscape/evaluation)
+Marketing claims are not treated as independent evidence. Superlatives such as “the only” or “fully verified” are excluded unless a narrowly defined comparison can support them.
 
-## Other Tool Profiles {#other-tools}
+The landscape changes quickly. A review date is a snapshot, not a promise that every product will look the same next month.
 
-### BMAD-METHOD {#bmad-method}
+## Other projects worth examining
 
-An open-source multi-agent framework that simulates an entire agile team using specialized AI personas: Analyst, Product Manager, Architect, Developer, QA, and Scrum Master. Each agent is defined as an "Agent-as-Code" markdown file. The framework enforces a structured lifecycle from Analysis through Planning, Solutioning, and Implementation. Strong focus on traceability through Git-versioned artifacts. Works with Claude Code, Cursor, and VS Code.
+This site does not maintain a full profile for every adjacent project. Useful starting points include:
 
-[GitHub](https://github.com/bmad-code-org/BMAD-METHOD)
+- [BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD), a multi-agent planning and delivery framework.
+- [IntentSpec](https://intentspec.org), a lightweight `intent.md` convention with schema validation.
+- [cc-sdd](https://github.com/gotalab/cc-sdd), a community implementation of steering and spec workflows for several coding agents.
+- [Allium](https://github.com/juxt/allium), a formal language for describing behavioral intent.
+- [Google Code Wiki](https://codewiki.google), generated repository documentation rather than a forward product specification.
 
-### IntentSpec {#intentspec}
+Inclusion means the project is relevant to the field, not that Sam endorses it.
 
-A minimalist open standard. You commit a single `intent.md` file alongside your code with objectives, expected outcomes, constraints, and edge cases. YAML frontmatter is validated against a JSON Schema. Three steps: define your `intent.md`, reference it in your agent's context, and add a GitHub Action for validation. Zero lock-in, but it can't scale to complex systems with many interacting components.
+[Read the evaluation framework →](/landscape/evaluation)
 
-[intentspec.org](https://intentspec.org)
-
-### Google Code Wiki {#google-code-wiki}
-
-AI-powered living documentation. It scans entire repositories using Gemini, generating structured wikis with architecture diagrams, class diagrams, and sequence diagrams. The wiki regenerates after every commit and includes a chat agent for answering questions about the codebase. It explains what code does and how it works, but not why decisions were made. Public preview at codewiki.google for open-source repos.
-
-### Cursor Rules {#cursor-rules}
-
-Project-level AI behavior configuration within the Cursor IDE. Rules live in `.cursor/rules/` with four activation patterns: always-applied, auto-attached (by file glob), agent-requested, and manual. Rules are passive guidance, not active enforcement. There's a large community ecosystem of shared rules. Not a spec tool in the strict sense, but it shapes how AI generates code for your project.
-
-### Other Notable Approaches {#other-notable}
-
-The landscape is fragmenting rapidly. Additional tools worth watching:
-
-- **Pre.dev**: A system for holding and evolving specs that survive tool switching. Specs as a portable asset, not tied to any single agent or IDE.
-- **DeepWiki** (Devin): AI-generated documentation for repositories, similar in concept to Google Code Wiki.
-- **cc-sdd**: A community project bringing Kiro-style steering, spec, design, and tasks workflow to Claude Code, Codex, and other tools.
-- **MetaGPT**: Multi-agent framework (44.8k GitHub stars) that converts requirements into complete software projects through role-based agent collaboration.
-
-## Came and Went {#came-and-went}
-
-Spec-driven development is an active and evolving space. Companies enter, position, build, and sometimes pivot out. This section tracks entrants who were once active in the spec-driven development category and have since moved on. They're listed here for completeness and historical accuracy. Anyone curious about their current direction can follow the link to their site.
-
-### Tessl {#came-and-went-tessl}
-
-**Tessl** *(entered September 2025, departed January 2026)*
-
-Tessl started strong as a spec-driven development advocate, launching the Tessl Framework and Spec Registry in September 2025 with explicit messaging around spec-driven development for AI agents. By January 2026 they had repositioned around agent skills rather than specs, with the Spec Registry becoming the Tessl Registry. Tessl is still active as a company, just no longer in the spec-driven development space.
-
-[tessl.io →](https://tessl.io)
-
----
-
-> **Building something in this space?** This list is intentionally incomplete and community-maintained. [Submit a PR](https://github.com/BeOnAuto/specdriven.com) to add your tool.
-
-_Built by the team behind [Auto](https://on.auto), for the spec-driven community._
+[Suggest a correction or addition →](/community#suggest-a-change)

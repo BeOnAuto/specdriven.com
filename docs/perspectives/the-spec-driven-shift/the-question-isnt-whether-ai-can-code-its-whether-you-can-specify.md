@@ -7,6 +7,8 @@ image: /images/perspectives/the-question-isnt-whether-ai-can-code-its-whether-yo
 
 ![The Question Isn't Whether AI Can Code. It's Whether You Can Specify.](/images/perspectives/the-question-isnt-whether-ai-can-code-its-whether-you-can-specify.png)
 
+> **Editor's note, 2026:** This essay preserves the language of the original series. SpecDriven is Sam Hatoum's publication, not a neutral community-owned site, and Narrative-Driven Development is now a retired method name. [Read what changed](https://on.auto/narrative-driven-development).
+
 Give it a few years and building software without specifications will look as reckless as deploying without version control.
 
 Not because specs are trendy, but because the way AI-assisted development works demands them.

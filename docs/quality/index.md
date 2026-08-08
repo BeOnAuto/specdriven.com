@@ -21,15 +21,15 @@ The question isn't whether you can afford to spend time on specifications. It's 
 
 ## The Three Types of Bugs
 
-As explored in [Why Spec-Driven?](/why#where-your-bugs-really-come-from), most defects don't come from bad code. They come from bad specifications. Here's the detailed breakdown.
+As explored in [Why Spec-Driven?](/why#where-your-bugs-really-come-from), many defects begin before coding: in missing requirements, incorrect assumptions, unclear design, or incomplete specifications. A useful working classification is:
 
 **Type 1: Implementation Defects**
 
-The spec was correct. The code was wrong. These include regression bugs: things that worked before but broke when code changed. They're the most visible bugs, but they're the smaller share.
+The spec was correct. The code was wrong. These include regression bugs: things that worked before but broke when code changed. They are often the most visible because the disagreement between expected and observed behavior is direct.
 
 **Type 2: Incorrect Specifications**
 
-The spec was wrong, so the code is wrong. The code faithfully implements the wrong thing, and no amount of testing can catch it because the tests verify the wrong behavior too. This is typically the largest share.
+The stated expectation was wrong, so code and tests built from the same assumption can agree with each other while the product still does the wrong thing.
 
 **Type 3: Missing Specifications**
 
@@ -40,15 +40,15 @@ Nobody thought of this scenario. The spec wasn't wrong. It simply didn't exist. 
 > "Quality has to be caused, not controlled."
 > *Philip Crosby*
 
-Most bugs come from specification problems (incorrect + missing). The highest-leverage investment you can make isn't in better testing. It's in better specifications. [See the full evidence pack on the ROI page.](/guides/roi#pre-ai-evidence-what-specifications-did-for-quality)
+Specification work is one high-leverage place to prevent defects, alongside sound engineering, testing, observability, and operational learning. [See the full evidence pack on the ROI page.](/guides/roi#pre-ai-evidence-what-specifications-did-for-quality)
 
 Two practices address all three types:
 
-**Executable Specifications** turn your specs into automated checks. Whether through TDD, BDD, or other test automation approaches, the key is that specifications become living verification, catching implementation defects when code changes and ensuring incorrect specs fail visibly rather than silently producing wrong behavior.
+**Executable Specifications** connect selected expectations to automated checks. Whether through TDD, BDD, contract testing, or other automation, they can expose implementation drift when code changes. They cannot tell you that an agreed expectation was itself wrong.
 
 **Deliberate Discovery** helps teams systematically explore what they don't know. Cross-functional conversations surface ambiguity and missing scenarios before they become code. When business experts, developers, and testers flesh out concrete examples together, incorrect and missing specifications emerge while they're still cheap to fix.
 
-Get the specifications right, and most quality problems disappear before a single line of code is written.
+Improve specifications early, and many avoidable misunderstandings can be resolved before they become expensive implementation or production problems.
 
 ## Quality Starts Here
 
@@ -68,14 +68,14 @@ The field of spec-driven development is young. The evidence for its underlying p
 
 **Honest framing**: The tooling is immature. The best practices are still being discovered. But the direction is supported by decades of evidence that getting specifications right produces better software. If you're waiting for a perfect meta-analysis, you'll be waiting a long time. The practitioners who've done this work know it works. The challenge is making it accessible to everyone else.
 
-## Is 100% Coverage Really Possible? {#coverage}
+## What Does Coverage Actually Tell You? {#coverage}
 
-Yes. With a caveat.
+Coverage measures what code or behavior a test suite exercised under a particular definition. It is useful, but narrower than correctness.
 
-If you practice strict test-driven development (write the test first, then write the code to pass it), 100% code coverage is the natural outcome. Every line of code exists because a test required it. There's no untested code because there's no code without a test.
+Test-driven development can encourage high coverage, but it does not guarantee 100% line, branch, path, or behavioral coverage. Teams can write code during refactoring, use weak assertions, miss branches, or test the wrong expectation.
 
-AI makes this more achievable, not less. When the AI writes implementation code to satisfy specifications, you can fail the build if coverage drops below 100%. The AI retries until the coverage target is met. The human never has to chase coverage manually.
+A build can enforce a numeric threshold, and an agent can add tests until the number is reached. That still does not show that the tests express the right product behavior.
 
-The caveat: 100% coverage means 100% of specified behavior is verified. It does not mean 100% of all possible behavior. If you didn't specify an edge case, no test covers it, and 100% coverage won't save you. Coverage is necessary but not sufficient. Your specifications must be complete.
+Even 100% line coverage means only that every measured line executed. It does not mean every branch, state, interaction, edge case, or specified behavior was verified. Coverage is supporting evidence, not a quality guarantee.
 
-This is why [deliberate discovery](#prevention) and [collaborative techniques](/guides/discovery) matter. Coverage tells you that your specified behavior works. Discovery helps you find the behavior you forgot to specify.
+This is why [deliberate discovery](#prevention), strong assertions, mutation testing, contract checks, exploratory testing, and operational feedback all matter. Different quality functions expose different kinds of error.

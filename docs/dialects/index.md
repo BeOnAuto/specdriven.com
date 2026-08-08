@@ -1,82 +1,85 @@
 ---
-title: Spec Dialects
+title: Approaches and Formats
+description: A practical guide to the different forms specifications can take and how each relates to implementation and verification.
 prev:
   text: Where "Spec-Driven Development" Came From
   link: /origins
 next:
-  text: Notable People
-  link: /people
+  text: Tool Landscape
+  link: /landscape/
 image: /images/pages/dialects/index.png
 ---
 
-# Spec Dialects
+# Approaches and Formats
 
-![Spec Dialects](/images/pages/dialects/index.png)
+![Approaches and Formats](/images/pages/dialects/index.png)
 
-## What Is a Spec Dialect?
+There is no universal specification format. Different decisions need different forms, and most consequential products use several together.
 
-You wouldn't write a game engine in SQL. You wouldn't build a website in Assembly. Different programming languages exist because different problems need different tools. The same is true for specifications.
+The useful question is not “Which dialect should we adopt?” It is:
 
-A **spec dialect** is a repeatable specification language purpose-built for a specific domain. It's not just a workshop technique or meeting format. It gives teams shared vocabulary, structure, and tooling affordances for expressing design intent for a particular class of problems.
+> What must people be able to understand, what must a builder be able to implement, and what must a machine be able to check?
 
-A spec dialect has:
+## Common forms
 
-- A structured vocabulary or grammar
-- Repeatable patterns that tooling or workflow can support
-- A relationship to execution, verification, or implementation
+### Plain-language briefs and structured Markdown
 
-[Collaborative discovery techniques](/guides/discovery) (EventStorming, Example Mapping, Impact Mapping) are valuable, but they're inputs to specification, not specifications themselves. Discovery produces understanding. Dialects capture it.
+Useful for goals, scope, constraints, decisions, and the reasoning behind them. These formats are easy to review and version, but prose alone leaves room for interpretation. Add examples, contracts, or checks when precision matters.
 
-## The Ancestral Spec Languages
+### Behavioral examples
 
-Modern spec dialects build on two foundational spec languages from the BDD movement: **Given/When/Then (Gherkin)** for domain-level specifications and **describe/it/should** for component-level specifications. Together, they proved that specifications could be both human-readable and machine-executable.
+Given/When/Then, Example Mapping, and specification-by-example formats make expected behavior concrete. They are especially useful when several plausible interpretations exist.
 
-Gherkin isn't called a "dialect" itself. It's the ancestral specification language that modern dialects extend. Its Given/When/Then pattern has become the most widely adopted structure for behavioral specifications. The describe/it/should format (from Jasmine, Mocha, RSpec) does the same for individual modules.
+```gherkin
+Given a show has 1 ticket remaining
+When a customer tries to reserve 2 tickets
+Then the reservation is rejected
+And no tickets are held
+```
 
-See [The OG Specifications](/what#the-og-specifications) for examples and a deeper look at how these formats work.
+Some behavioral examples can be automated. A passing check demonstrates the encoded example, not every possible behavior of the product.
 
-## Narrative-Driven Development (NDD)
+### Acceptance criteria and user stories
 
-**NDD is a product modeling method for line-of-business applications.** It builds on Gherkin (Given/When/Then) and describe/it/should, the ancestral spec languages from BDD, and extends them into a taxonomy for goals, outcomes, moments, rules, examples, and interaction expectations.
+Stories and acceptance criteria help teams discuss a slice of value in familiar language. Their quality depends on specificity: a short sentence can start a conversation, but it may not contain enough information to guide implementation or verification by itself.
 
-What sets NDD apart from a BDD framework: it gives teams a broader vocabulary for modeling product intent over time.
+### Schemas and contracts
 
-[Learn more about NDD →](/dialects/narrative-driven)
+OpenAPI, JSON Schema, GraphQL schemas, database constraints, and typed interfaces express the shape and boundaries of information precisely. They are strong at structural compatibility and weaker at explaining the product goal or business reason behind a rule.
 
-## Archetype (Coming Soon)
+### Models and diagrams
 
-**Archetype** is a dialect for describing software architectures as graphs of nodes and edges, in development by the Auto team. Where NDD specifies systems through time, Archetype specifies them through structure: components, the relationships between them, and the constraints those relationships must satisfy.
+State models, sequence diagrams, event models, process maps, and architecture views make relationships and change over time easier to inspect. Their value depends on whether they remain connected to implementation and current decisions.
 
-## Emerging Dialects
+### Formal specifications
 
-### Event Modeling
+Languages such as TLA+, Alloy, Z, and the B Method support mathematical reasoning about selected system properties. They can provide exceptional confidence for high-risk concerns, but require specialist skill and do not replace product discovery.
 
-[Event Modeling](/timeline#event-modeling), pioneered by [Adam Dymitruk](/people#adam-dymitruk), is close to being a full dialect. It has a visual specification format with swimlanes, wireframes, events, commands, and Given/When/Then specifications per slice. Contributors like Martin Dilger are building JSON schema-backed tooling.
+## Relationships to implementation
 
-What's missing for full dialect status: a standardized, machine-parseable specification format that tooling can process consistently. Event Models are typically created in visual tools (like Miro or specialized apps) rather than as structured text files. The community is actively working on this.
+The format is only one choice. Teams also decide how specifications relate to code:
 
-Event Modeling has a lot of momentum. It solves a real problem (complete system blueprints from a single visual artifact) and has a growing community of practitioners. It's the closest emerging approach to becoming a spec dialect.
+- **Spec-first:** write and review the specification before implementation.
+- **Spec-anchored:** keep a maintained specification as a durable reference while code evolves.
+- **Spec-as-source:** generate some or all implementation artifacts from a sufficiently structured specification.
+- **Executable specification:** connect selected statements or examples to automated verification.
 
-## Potential Future Dialects
+These relationships can coexist. A product brief may be spec-anchored, an API contract spec-as-source, and behavioral examples executable.
 
-Several spec formats look like they could evolve into dialects, though they aren't established as such yet:
+## Choose by decision, not fashion
 
-**Tessl's .spec.md format** uses structured directives (`@generate`, `@test`, `@describe`) within markdown files. The 1:1 mapping between spec files and code files, combined with the directive system, gives it more structure than pure prose. If the format matures and gains adoption beyond the Tessl ecosystem, it could become a dialect for component-level specification. See [Tessl](/landscape/tessl).
+Use the lightest form that makes the important decision inspectable and sufficiently precise. Ask:
 
-**EARS from Kiro** (Easy Approach to Requirements Syntax) is a structured format for writing requirements within Kiro's spec mode. It provides templates and patterns that constrain how requirements are expressed. Requirements are not specifications (requirements describe the problem, specifications describe the solution), but if EARS develops a formal schema and gains tooling support beyond Kiro, it could evolve toward dialect status. See [Kiro](/landscape/kiro).
+1. Who must review it?
+2. What ambiguity would be costly?
+3. Does a builder need prose, examples, structure, or all three?
+4. What can be checked automatically, and what still requires judgment?
+5. How will the specification remain current when the product changes?
 
-**Allium** by [JUXT](https://juxt.pro/) is a formal language for capturing behavioral intent separately from implementation code. It's designed for LLM-assisted development, addressing the problem of meaning drift within AI sessions and knowledge loss across sessions. Unlike markdown, Allium's formal syntax makes contradictions and ambiguities visible. It distinguishes elicitation (forward from stakeholder intent) from distillation (backward from existing code). Open source on [GitHub](https://github.com/juxt/allium). See [Allium documentation](https://juxt.github.io/allium/).
+The goal is not a stack of artifacts. It is a coherent, reviewable expression of what should be built and how anyone will know it is right.
 
-## The Future Is Polyglot
+## Historical note
 
-Just as modern software uses multiple programming languages, the future of spec-driven development is polyglot. Different dialects for different domains. Different levels of abstraction for different concerns. All structured. All persistent. Each with its own relationship to execution, verification, or implementation.
+[Narrative-Driven Development](/dialects/narrative-driven) was an earlier named method developed by Sam Hatoum. The name was retired in 2026; its history remains documented without presenting it as a current approach readers need to learn.
 
-You might use NDD for your line-of-business application logic, Archetype for your architecture decisions, and another dialect for your data pipeline or infrastructure. The same way you might use TypeScript for your frontend, Python for your ML models, and Terraform for your cloud resources.
-
-## Build Your Own
-
-Working on a spec dialect? The ecosystem is just beginning. There's room for dialects covering games, infrastructure, data pipelines, AI/ML systems, and domains nobody has thought of yet.
-
-The criteria: structured vocabulary, repeatable form, and a path toward execution, verification, or implementation.
-
-[Submit your dialect →](/community) | [Contribute on GitHub →](https://github.com/BeOnAuto/specdriven.com)
+[Suggest an approach or correction →](/community#suggest-a-change)

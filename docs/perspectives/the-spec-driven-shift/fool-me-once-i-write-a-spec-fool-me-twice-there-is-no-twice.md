@@ -7,6 +7,8 @@ image: /images/perspectives/fool-me-once-i-write-a-spec-fool-me-twice-there-is-n
 
 ![Fool Me Once, I Write a Spec. Fool Me Twice? There Is No Twice.](/images/perspectives/fool-me-once-i-write-a-spec-fool-me-twice-there-is-no-twice.png)
 
+> **Editor's note:** The 100% coverage rule below describes Sam’s personal guardrail in this essay. Line coverage is not proof that all specified behavior is verified. [Read the current coverage guidance](/quality/#coverage).
+
 People keep asking what my actual daily workflow looks like. Not the theory, the practice. Here it is.
 
 **Think first.** Before I open anything, I work through the design: current state, what needs to change, constraints, trade-offs, before and after. Most of that context still lives in my head today, which is a limitation I'm actively building tools to solve, but the principle holds: design thinking before implementation.

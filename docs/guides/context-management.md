@@ -18,15 +18,15 @@ Where do specs physically live? How do they stay in sync with the code? How do y
 
 This principle from software design applies directly to specs. Your specs and your code change together. When the spec updates, the code updates. When the code changes, the spec might need to change. They're coupled.
 
-So put them next to each other. Specs live in the codebase, in the same repository, ideally in the same directory or adjacent to the code they specify. Not in a wiki. Not in a separate repo. Not in Confluence.
+For repository-native specifications, put them near the code they guide: in the same repository and, where practical, adjacent to the relevant implementation. Product models and review systems may use a separate authoritative store, but they still need explicit versioning and traceability to delivery work.
 
 When they're co-located, you can see them when you're working on the code. You can update them in the same commit. You can review them in the same pull request. The lifecycle is unified.
 
-## Executable Specs = Built-In Drift Detection
+## Executable Specs Can Detect Covered Drift
 
-If your specs are executable (coupled to tests), drift detection is free. The spec changes but the test doesn't update? The test fails. The code changes but the spec isn't reflected? The test fails. You know immediately.
+When a specification is connected to a substantive check, some drift becomes visible automatically. If observed behavior no longer satisfies an encoded expectation, the check fails.
 
-Without executable specs, drift is silent. The spec says one thing. The code does another. Nobody knows until someone manually compares them, which they won't.
+That protection is limited to what the check actually observes. A specification can still be incomplete, a test can encode the wrong assumption, and code can change outside the measured behavior. Non-executable specifications need an explicit review or reconciliation mechanism.
 
 If you can't make all your specs executable right now, consider using LLMs as drift detectors. Point an AI at your spec file and your code file and ask: "does this code still match this specification?" It's not as reliable as a test, but it's better than nothing.
 
@@ -36,7 +36,7 @@ Co-location, authoring, publishing, and drift detection are different concerns. 
 
 **Co-location:** specs live next to code in the repo. This is about where the source of truth resides.
 
-**Authoring:** who writes specs and how. Just because specs are in a code repo doesn't mean only developers can edit them. Build a layer that lets product managers edit specs in a friendly interface while the source of truth remains durable. Narrative-Driven Development approaches this through readable narrative review. Others use tools that generate spec files from a visual editor.
+**Authoring:** who writes specifications and how. Just because a source lives in a code repository does not mean only developers can contribute. Teams may use friendly review interfaces, structured editors, or generated files while keeping a versioned authoritative source.
 
 **Publishing:** how specs are shared with people who need to read them but not edit them. Running tests can publish results as a readable report. Spec files can be rendered as documentation. The fact that the source lives in a repo doesn't mean that's the only way people access it.
 

@@ -1,8 +1,12 @@
 ---
+title: Evaluation Framework
+description: Fourteen questions for evaluating spec-driven tools without reducing them to a single score.
 prev:
   text: Tool Landscape
   link: /landscape/
-next: false
+next:
+  text: Auto
+  link: /landscape/auto
 image: /images/pages/landscape/evaluation.png
 ---
 
@@ -10,94 +14,87 @@ image: /images/pages/landscape/evaluation.png
 
 ![Evaluation Framework](/images/pages/landscape/evaluation.png)
 
-> Fourteen dimensions for evaluating spec-driven tools. Use this framework to assess any tool against what matters for your context. Each profiled tool in the [landscape](/landscape/) includes a per-dimension analysis using these dimensions.
->
-> **Think a dimension is missing or mislabeled?** This framework is community-driven. [Open an issue](https://github.com/BeOnAuto/specdriven.com/issues) to discuss.
+> **Last reviewed: August 7, 2026.** These dimensions are editorial questions, not a scientific scorecard. A profile should cite current primary sources and label inferences as editorial assessments.
 
-## The Capability Dimensions {#dimensions}
+## The capability dimensions
 
-These are independent capabilities, not forced trade-offs. A well-designed tool can be strong across many of them. But most tools make design choices that favor some dimensions over others.
+### 1. Development velocity {#dim-velocity}
 
-### 1. Development Velocity {#dim-velocity}
+How quickly does the workflow produce a useful first result, and how does iteration feel as the product grows? Claims that structured work improves long-term velocity are hypotheses to test in context, not universal curves.
 
-How fast you get from idea to working output. There are two sub-dimensions here: first output speed (where prompt-to-code approaches excel) and iteration speed (where the curves cross). Spec-driven approaches tend to stay flat or improve over time as complexity grows, while unstructured approaches degrade.
+### 2. Specification durability {#dim-durability}
 
-### 2. Spec Durability {#dim-durability}
+How is the maintained intent kept current as the system changes? Versioning, approval, generated artifacts, tests, and reconciliation can all help. None makes a specification correct “by definition.”
 
-Do specs remain valid as the system evolves? Markdown specs without a connection to the running system diverge quickly. Executable specs that are part of the test suite remain valid by definition, because the build breaks when they don't.
+### 3. Relationship to verification {#dim-executability}
 
-### 3. Executability {#dim-executability}
-
-Can specs automatically verify themselves? Does the system continuously prove its own correctness? This is where the [historical lineage](/timeline) matters most. Most current tools have moved away from the executable specification model that the BDD generation proved worked.
+Can selected statements drive machine checks? Does the tool run tests, validate schemas, compare behavior, use verifier agents, or merely guide implementation? What exactly does a passing result establish?
 
 ### 4. Accessibility {#dim-accessibility}
 
-Can non-developers meaningfully participate? Product managers, designers, and business analysts all need to read and contribute to specs. Code-first interfaces are powerful but exclude some stakeholders. Markdown is approachable but vague. Strong tools give different audiences review surfaces that still point at the same model of intent.
+Can the people responsible for product, design, domain knowledge, quality, and engineering meaningfully review and change the relevant decisions?
 
-### 5. Model Coherence {#dim-coherence}
+### 5. Model coherence {#dim-coherence}
 
-Does the tool keep one product model coherent across audiences, or does it produce disconnected artifacts that drift apart over time?
+Does the tool maintain connected concepts, or produce artifacts whose agreement depends on manual synchronization?
 
 ### 6. Traceability {#dim-traceability}
 
-Can you follow the thread from business intent to implementation and back? This is critical for enterprises, compliance, audit trails, and debugging production issues.
+Can a reader follow an important decision to its source, approval, implementation, and evidence—and see when it was changed or superseded?
 
-### 7. Agent Guidance {#dim-agent-guidance}
+### 7. Agent guidance {#dim-agent-guidance}
 
-How effectively does the spec format constrain AI to produce faithful output? Loose prose is a suggestion. A structured DSL with executable assertions is a contract.
+How does the tool place the right approved context in front of an agent? More structure can reduce ambiguity, but no format eliminates interpretation.
 
 ### 8. Portability {#dim-portability}
 
-Can you take your specs across different tools, agents, and environments without lock-in? If you switch from one AI coding assistant to another, do your specs survive?
+Can the maintained specifications survive a change of editor, agent, repository, or platform? Which useful capabilities disappear outside the vendor’s runtime?
 
-### 9. Brownfield Readiness {#dim-brownfield}
+### 9. Brownfield readiness {#dim-brownfield}
 
-Does it work on existing codebases, not just greenfield projects? Most real-world software is brownfield. A tool that only works from scratch has a limited audience.
+Can the workflow begin with existing code and incomplete evidence? Does it distinguish observed behavior from intended behavior instead of treating code as automatically authoritative?
 
-### 10. Modularity and Extensibility {#dim-modularity}
+### 10. Modularity and extensibility {#dim-modularity}
 
-How decoupled is the spec from the implementation? Can you target multiple languages or platforms from the same specification?
+Can teams extend the workflow, target several implementations, and replace parts without rebuilding the entire specification system?
 
 ### 11. Composability {#dim-composability}
 
-Can specs reference, build on, and reuse each other without duplication at scale? As systems grow, you need specifications that compose cleanly.
+Can specifications reference and reuse each other while keeping dependencies understandable at scale?
 
-### 12. Cross-Cutting Expressiveness {#dim-cross-cutting}
+### 12. Cross-cutting expressiveness {#dim-cross-cutting}
 
-Can the spec format handle non-functional requirements like security, compliance, and performance that span multiple features?
+Can the system express policies and qualities—security, access, performance, compliance, accessibility—that affect many product slices?
 
 ### 13. Reconcilability {#dim-reconcilability}
 
-When spec and implementation diverge, does the system help bring them back into alignment? Can you bootstrap specs from existing code?
+When the maintained artifact and implementation disagree, does the workflow expose the difference, preserve authority, and help a person resolve it?
 
-### 14. Scope {#dim-scope}
+### 14. Scope and fit {#dim-scope}
 
-How broad is the tool's applicability? A specialized tool (purpose-built for a specific domain like web, mobile, and internal tools) can optimize deeply for that domain but won't cover others. A general-purpose tool works across domains but may lack depth in any single one. Neither is better. It depends on what you're building.
+Which products, teams, and lifecycle stages does the tool actually support? A specialist can be excellent within a narrow scope; generality is not automatically better.
 
-## Domain Fit {#domain-fit}
+## Evidence standard
 
-Beyond capability dimensions, each tool has a natural domain:
+A strong evaluation distinguishes:
 
-- **Line-of-business applications**: Workflows, CRUD, commands/queries, business rules
-- **APIs and services**: Backend, integrations, data pipelines, microservices
-- **Frontend-heavy applications**: Rich UI, design systems, interactive experiences
-- **Infrastructure and DevOps**: Cloud provisioning, IaC, CI/CD
-- **Greenfield prototypes**: Zero-to-one, proof of concept, rapid experimentation
-- **Legacy modernization**: Brownfield migration, refactoring, strangler pattern
-- **General purpose**: No specific domain constraint
+1. **Documented behavior** in official docs or repositories.
+2. **Demonstrated behavior** visible in a reproducible example.
+3. **Vendor claims** that have not been independently established.
+4. **Editorial inference** drawn from the public workflow.
+5. **Unknowns** that cannot be judged from public material.
 
-Capability profile and domain fit are separate layers. A tool might be strong on executability but only for line-of-business apps. Another might be general purpose but weak on traceability. You need both lenses.
+Profiles on this site should include a review date and primary-source links. Readers can [submit corrections on GitHub](https://github.com/BeOnAuto/specdriven.com).
 
-## Applying the Framework {#applying}
+## Apply it to your context
 
-Each profiled tool in the [landscape](/landscape/) has been analyzed against these dimensions with descriptive assessments explaining how the tool handles each capability. Browse the tool profiles to see how they compare:
+Do not add fourteen scores and choose the highest total. Begin with the risk that made a specification necessary. A solo greenfield project, a regulated workflow, an existing codebase, and a multi-repository platform need different evidence.
+
+Current profiles:
 
 - [Auto](/landscape/auto)
 - [GitHub Spec Kit](/landscape/github-spec-kit)
 - [Intent](/landscape/intent)
 - [Kiro](/landscape/kiro)
 - [OpenSpec](/landscape/openspec)
-
----
-
-*An initiative by [Auto](https://on.auto).*
+- [Tessl](/landscape/tessl)

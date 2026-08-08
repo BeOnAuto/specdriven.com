@@ -157,7 +157,7 @@ Several tools explored different approaches to executable specs:
 
 In 2008, [Aslak Hellesoy](/people#aslak-hellesoy) forked RSpec Story Runner into **Cucumber** and created **Gherkin** as its specification language.
 
-Gherkin was a breakthrough: human-readable AND machine-executable. Business people could read it. Developers could run it. Testers could verify it. Cucumber became the dominant BDD tool and spawned implementations in virtually every programming language. You can learn more about Gherkin and other spec formats on the [dialects](/dialects/) page.
+Gherkin was a breakthrough: human-readable and connectable to machine execution. Business people could read it, and automated scenarios could check encoded expectations. Cucumber became the dominant BDD tool and spawned implementations in many programming languages. See [Approaches and Formats](/dialects/) for the wider context.
 
 ### Specification by Example {#specification-by-example}
 
@@ -196,6 +196,8 @@ Event Modeling produces a complete blueprint of a system. Swimlanes show UI wire
 
 NDD became Xolvio's standardized delivery approach, with clients praising its ability to capture their intent and the quality of the software produced. It extends BDD's Given/When/Then with Should/Should Not patterns and organizes product intent as domains, narratives, scenes, and moments. You can learn more on the [Narrative-Driven Development](/dialects/narrative-driven) page.
 
+In 2026, Auto retired the public NDD method name and replaced its specialist vocabulary with ordinary product terms such as capabilities, goals, outcomes, behaviors, rules, scenarios, and decisions. The practices continued inside Auto's product-modeling workflow while NDD became a historical name.
+
 ### Co-evolution from EventStorming {#co-evolution}
 
 EventStorming (2013) triggered two independent evolutionary paths. Both Dymitruk and Hatoum were deeply immersed in the DDD/EventStorming community. They arrived at similar conclusions through different routes.
@@ -216,7 +218,7 @@ The problems accumulate quickly: errors compound across generations of AI output
 
 In response, multiple tools launched in rapid succession, all converging on the same insight: you need specifications before you need code.
 
-- [Auto](/landscape/auto), productization of NDD
+- [Auto](/landscape/auto), product modeling for software built with agents
 - [GitHub Spec Kit](/landscape/github-spec-kit) (2025), open-source, repo-native
 - [Kiro](/landscape/kiro) (AWS, 2025), agentic IDE with spec-driven mode
 - BMAD-METHOD (2025), open-source multi-agent framework
@@ -231,7 +233,7 @@ You can explore these tools in detail on the [landscape](/landscape/) page.
 
 Here's the irony. Nearly every new tool in this wave regressed from executable specifications back to markdown prose. The hard-won lesson from Cucumber, FIT, and Specification by Example (that specs should prove themselves by running) has been largely forgotten.
 
-Writing specs in markdown is better than writing no specs at all. But a spec you can't execute is a spec you can't verify. See [The Executability Gap](/landscape/#the-executability-gap) for a deeper look at this problem.
+Writing specs in markdown is better than writing no specs at all. But a spec you can't execute directly still needs an explicit verification path. That distinction is the [executability gap](#executability-gap).
 
 ## Summary Timeline {#summary-timeline}
 
@@ -281,6 +283,4 @@ Writing specs in markdown is better than writing no specs at all. But a spec you
 
 ---
 
-*This timeline is a community resource. Something missing or inaccurate? [Submit a PR](https://github.com/BeOnAuto/specdriven.com) or [open an issue](https://github.com/BeOnAuto/specdriven.com/issues).*
-
-*An initiative by [Auto](https://on.auto).*
+*Something missing or inaccurate? [Suggest a correction](/community#suggest-a-change) and include the supporting source.*

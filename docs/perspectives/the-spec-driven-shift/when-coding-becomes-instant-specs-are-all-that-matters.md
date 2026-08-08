@@ -7,6 +7,8 @@ image: /images/perspectives/when-coding-becomes-instant-specs-are-all-that-matte
 
 ![When Coding Becomes Instant, Specs Are All That Matters](/images/perspectives/when-coding-becomes-instant-specs-are-all-that-matters.png)
 
+> **Editor's note:** “Coding becomes instant” is the essay’s future-facing premise, not a claim that implementation effort is zero today. The current [ROI evidence review](/guides/roi) treats AI productivity results as context-dependent.
+
 "Spec-driven development is just waterfall with extra steps." And in the same breath: "Big upfront design doesn't work." I hear these two critiques constantly, often from teams now drowning in AI-generated code they no longer recognize.
 
 But when coding becomes instant, specs are all that matters. Both critiques miss the same thing.

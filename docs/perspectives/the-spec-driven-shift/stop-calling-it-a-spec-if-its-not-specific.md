@@ -7,6 +7,8 @@ image: /images/perspectives/stop-calling-it-a-spec-if-its-not-specific.png
 
 ![Stop Calling It a Spec If It's Not Specific](/images/perspectives/stop-calling-it-a-spec-if-its-not-specific.png)
 
+> **Editor's note:** The maintained field guide now uses a more precise definition: a specification is an explicit, inspectable expression of intended design or behavior that can guide implementation or verification. [Read the current definition](/what#the-definition).
+
 People hear "specification" and they picture a dusty binder from some waterfall project in 2004. That's not what I'm talking about.
 
 A specification is the communication of design. Somebody designed something and they need to tell somebody else about it so it can be built. The way they communicate that design is the specification.

@@ -1,6 +1,6 @@
 /* ============================================
    Spec-Driven — Custom Theme
-   Auto Brand Design System
+   SpecDriven visual system
    Colors: #ec3f4a #ff8a1d #5ec72d #42c3f7
    Dark BG: #18181b / #27272a
    ============================================ */
@@ -88,6 +88,34 @@ html.fonts-ready body {
 .VPNavBarMenuGroup .menu {
   right: auto !important;
   left: 0 !important;
+}
+
+/* Keep the full field navigation readable at tablet widths. VitePress keeps
+   its desktop nav active above 768px, so collapse search to its icon and move
+   the lower-priority appearance/social controls into the existing extra menu. */
+@media (min-width: 768px) and (max-width: 1120px) {
+  .VPNavBar .VPNavBarAppearance,
+  .VPNavBar .VPNavBarSocialLinks {
+    display: none !important;
+  }
+
+  .VPNavBarSearchButton {
+    width: 40px !important;
+    min-width: 40px !important;
+    padding: 0 !important;
+    justify-content: center !important;
+  }
+
+  .VPNavBarSearchButton .text,
+  .VPNavBarSearchButton .keys {
+    display: none !important;
+  }
+
+  .VPNavBarMenu .VPNavBarMenuLink,
+  .VPNavBarMenu .VPNavBarMenuGroup > .button {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+  }
 }
 
 /* ---------- Ambient Glow Behind Hero ---------- */
@@ -744,4 +772,3 @@ html.fonts-ready body {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-

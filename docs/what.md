@@ -14,21 +14,21 @@ image: /images/pages/what.png
 
 What springs to mind when you hear "specifications"? A user story? A wireframe? An architecture diagram? A Swagger file?
 
-These are specification **mediums**, containers for specifications. But what are specifications themselves?
+These can all carry specification material. Whether they are sufficient specifications depends on what decision they make explicit and what someone needs to do with it.
 
 ## The Definition
 
-Consider the patterns in your own work:
+A practical definition is:
 
-- A product owner understands what customers want and designs a solution.
-- A UI designer understands the system and designs interfaces.
-- An architect understands the requirements and designs components.
+> **A specification is an explicit, inspectable expression of intended design or behavior that can guide implementation or verification.**
 
-They all share the same pattern: someone understands a problem, designs a solution, and needs to communicate that design to those who will build it.
+Three related ideas are easy to collapse:
 
-**Specifications are the communication of design.**
+- A **requirement** describes a need, problem, constraint, or outcome.
+- A **design** chooses how the product or system will address it.
+- A **specification** expresses intended design or behavior precisely enough for its audience to review, implement, or check.
 
-This distinction matters more than it sounds. The quality of your specifications lies in the quality of the communication, not the quality of the design itself. A brilliant design, poorly communicated, produces broken software. A modest design, clearly communicated, produces software that works.
+The boundaries are not always clean. A user story can contain requirements and specification material. A schema can be both design and specification. The distinction is useful because calling an artifact a “spec” does not make it sufficiently specific.
 
 You've seen this play out. The architect who has the whole system in their head but can't explain it. The product owner who knows exactly what they want but writes stories that could mean three different things. The design was good. The specification was bad. And the team built the wrong thing.
 
@@ -38,7 +38,7 @@ You have a model of the system in your head right now. It's rich, nuanced, full 
 
 Now try to transfer that model to someone else's head.
 
-You can't. Not fully. Human communication bandwidth is brutally limited. You talk, you draw, you write documents, you wave your hands, and maybe 60% of what you meant gets through. The other 40% gets filled in by the listener's assumptions, biases, and different context.
+You can't. Not fully. Human communication bandwidth is limited. You talk, draw, write documents, and demonstrate behavior; whatever remains implicit gets filled in by the listener's assumptions and context.
 
 This is not a failure of communication skills. It's a fundamental constraint of being human. Your mental models are too rich, too interconnected, too soaked in implicit knowledge to survive the compression of speech or text without loss.
 
@@ -55,7 +55,7 @@ When humans communicate design to other humans, the difference between good and 
 
 What does this tell you? Almost nothing. What kind of user? Login how? What happens on failure? You're left guessing, and every guess is a coin flip between a correct implementation and a defect.
 
-**High detail:**
+**More explicit:**
 > "Online banking customers can view their login history to verify account security."
 >
 > - Login history shows the last 20 login attempts
@@ -63,9 +63,9 @@ What does this tell you? Almost nothing. What kind of user? Login how? What happ
 > - Failed login attempts are highlighted in red
 > - The customer can filter by date range
 > - Login history is only accessible after re-authentication
-> - *(and dozens more details for a complete spec...)*
+> - Failed login attempts are visually distinguishable
 
-The second version communicates design. The first hopes someone guesses right. Every vague specification is a lottery ticket, and the odds aren't in your favor.
+The second version is still not complete, but it exposes decisions the first leaves to guesswork. Specificity is contextual: it is enough when the intended audience can act without inventing consequential behavior.
 
 ## The OG Specifications
 
@@ -84,7 +84,7 @@ Feature: Search dealer inventory by color
     Then she sees the BMW 330i
 ```
 
-This isn't a test. It's a specification of how your domain behaves. Anyone can read it and know exactly what the system should do. And when it's automated, it proves the system actually does it.
+This is a readable example of intended behavior. When connected to automation, it can check whether the implementation satisfies this encoded scenario.
 
 ### describe/it/should
 
@@ -104,17 +104,16 @@ describe `Search Filter`
 
 Domain specifications tell you what the system does. Component specifications tell you how each piece contributes.
 
-These were the pioneers. They proved that structured, executable specifications change everything about how software gets built. Today, they're part of a growing family of [spec dialects](/dialects/) purpose-built for different domains.
+These formats helped establish that specifications can be readable by people and connected to machine verification. They now sit among a wider set of [approaches and formats](/dialects/) used for different decisions.
 
 ## Executable Specifications
 
 Here's where it gets powerful. When you combine specifications with automated tests, you get **executable specifications** that a machine can verify against running code.
 
-This means your specifications are always up to date. They don't rot in a wiki somewhere, gradually drifting from reality. They're living proof that your system does what it should. Every time the code changes, the specifications run. If they pass, your system matches its design. If they fail, you know immediately, and you know exactly what broke.
+Executable specifications can reduce drift because selected statements or examples run against the implementation. When a check fails, it exposes a disagreement between an encoded expectation and observed behavior.
 
-Documentation lies. Code is cryptic. Executable specifications are one of the few artifacts that are both human-readable and machine-verifiable.
+A passing check is narrower than proof that the whole system matches its design. The example may be incomplete, the assertion may observe the wrong thing, and the shared assumption may itself be wrong. Executability strengthens a specification; it does not remove the need for review, discovery, or judgment.
 
-They also stand the test of time. People leave, context gets lost, and codebases evolve in ways no one anticipated. But executable specifications remain valid. They're institutional memory that doesn't walk out the door. Years from now, when someone asks "why does this work this way?", the specs still answer.
+Maintained executable specifications can become useful institutional memory. They show what selected behavior was expected and whether current code still satisfies it. Reasons and product context still need to be recorded where the check itself cannot express them.
 
-In the age of AI where change happens in a blink, executable specs are the most reliable way to maintain control.
-
+In an age of rapid AI-generated change, that connection between an explicit expectation and observed behavior is an important control.

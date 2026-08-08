@@ -22,7 +22,7 @@ Your job is to define "complete" in a way that aligns with your actual intent. T
 
 When you give an LLM a specification coupled with a test, the test becomes the acceptance criterion. The LLM writes code. The test runs. If it passes, the spec is met. If it fails, the LLM tries again. This is a tighter feedback loop than any human code review.
 
-The key: your test must verify the OUTCOME, not the implementation path. If the test is overly specific about how the code should work, the LLM is constrained unnecessarily. If the test only checks the outcome, the LLM has freedom to implement however it wants within the bounds of correctness.
+The key: prefer checks of observable outcomes over incidental implementation details. Overly specific tests can make harmless refactoring expensive. Outcome-focused checks give the implementer freedom within the constraints actually encoded; they do not establish correctness beyond those constraints.
 
 ## Atomic Task Decomposition
 

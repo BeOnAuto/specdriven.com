@@ -30,7 +30,7 @@ Here's a way to think about the relationship. Imagine a glass of water. If the g
 
 Quality wraps around value. It's the set of things you do to ensure that the value you're building actually reaches the people who need it in the form they need it. Without quality, value leaks.
 
-This has a direct consequence for specifications. Specs are the [communication of design](/what). If your specs are low quality (vague, incomplete, contradictory, missing edge cases), then the designs they communicate will be implemented incorrectly or incompletely. The value you intended won't be the value that gets delivered. Quality at the specification level determines quality at every level downstream.
+This has a direct consequence for specifications. A specification makes [intended design or behavior explicit enough to guide implementation or verification](/what). When that expression is vague, incomplete, or contradictory, builders have to invent consequential details. The value intended may not be the value delivered.
 
 ## Estimated Value vs Realized Value
 

@@ -51,8 +51,8 @@ async function submit() {
   <section id="subscribe" class="sd-subscribe">
     <div class="sd-subscribe-inner">
       <div class="sd-subscribe-copy">
-        <h2>Specs are how design communicates.</h2>
-        <p>Get new patterns, dialects, and tools the moment they’re written down. Low-volume, no fluff.</p>
+        <h2>Keep the important decisions visible.</h2>
+        <p>Get new patterns, approaches, and tools when they’re written down. Low-volume, no fluff.</p>
       </div>
       <form v-if="state !== 'done'" class="sd-subscribe-form" @submit.prevent="submit">
         <label class="sd-subscribe-label" for="sd-subscribe-input">Email</label>
@@ -62,13 +62,14 @@ async function submit() {
           type="email"
           required
           autocomplete="email"
-          placeholder="you@studio.com"
+          placeholder="you@example.com"
           :disabled="state === 'submitting'"
         />
         <button type="submit" :disabled="state === 'submitting'">
           {{ state === 'submitting' ? 'Subscribing…' : 'Subscribe' }}
         </button>
         <p v-if="errorMessage" class="sd-subscribe-error">{{ errorMessage }}</p>
+        <p class="sd-subscribe-privacy">By subscribing, you agree to the <a href="/privacy">privacy note</a>.</p>
       </form>
       <p v-else class="sd-subscribe-success">
         You’re in. We’ll only write when there’s something worth your time.
@@ -187,6 +188,13 @@ async function submit() {
   margin: 4px 0 0;
   font-size: 13px;
   color: var(--sd-red);
+}
+
+.sd-subscribe-privacy {
+  grid-column: 1 / -1;
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: var(--vp-c-text-3);
 }
 
 .sd-subscribe-success {

@@ -7,6 +7,8 @@ image: /images/perspectives/over-half-your-bugs-arent-code-bugs.png
 
 ![Over Half Your Bugs Aren't Code Bugs](/images/perspectives/over-half-your-bugs-arent-code-bugs.png)
 
+> **Editor's note:** The title states the original essay’s argument, not a universal measured proportion. Studies classify requirements, design, and implementation defects differently. The maintained [Why Spec-Driven?](/why#where-your-bugs-really-come-from) and [ROI evidence review](/guides/roi) use the narrower claim that many expensive defects originate before implementation.
+
 Every bug you've ever seen falls into one of three buckets.
 
 Missing specification. Nobody thought of it. The design didn't account for that scenario at all.

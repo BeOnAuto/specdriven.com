@@ -12,106 +12,111 @@ image: /images/pages/guides/see-it.png
 
 ![See It In Action](/images/pages/guides/see-it.png)
 
-Spec-driven development is easier to understand when you can see it. This page shows examples of specs and what they clarify.
+Spec-driven development becomes easier to understand when one small product decision is followed through several useful forms.
 
-Right now, the clearest example we can show is [Narrative-Driven Development](/dialects/narrative-driven), a product modeling method purpose-built for line-of-business web applications. As other dialects and tools mature, we'll add their examples here too. **Building something in this space? [Submit a PR](https://github.com/BeOnAuto/specdriven.com) to add your own examples.**
+Imagine a gym that wants visitors to join online. “Let people sign up” is a useful starting point, but it leaves important decisions unresolved.
 
-## Narrative-Driven Development: Model in Action
-
-NDD organizes product intent into a narrative model:
+## 1. State the goal and outcome
 
 ```text
-Domain -> Narrative -> Scene -> Moment
+Goal
+A visitor can become a gym member without staff assistance.
+
+Outcome
+The visitor has one active membership for the selected plan and can see that it was created.
 ```
 
-Here is a small gym membership example.
+The goal explains why the slice exists. The outcome says what must become true without prescribing an implementation.
+
+## 2. Make the rules explicit
 
 ```text
-Domain: Gym Membership
+Rule
+A valid sign-up creates one active membership.
 
-Narrative: Visitor becomes a member
-
-Scene: Membership created
-
-Moment: Sign up for membership
-Type: Command
-
-Rule: Valid sign-ups create a new membership.
-
-Example: New member signs up for a monthly plan
-Given Jane is not already a member
-When Jane signs up for a monthly plan with jane@example.com
-Then Jane has an active monthly membership
-And Jane sees a membership confirmation
-
-Rule: Duplicate emails are rejected.
-
-Example: Existing member tries to sign up again
-Given jane@example.com already belongs to an active member
-When Jane tries to sign up again with jane@example.com
-Then the sign-up is rejected
-And no duplicate membership is created
-And Jane sees an email-already-registered message
+Rule
+An email address cannot belong to two active memberships.
 ```
 
-## What This Clarifies
+Rules expose product decisions that a builder would otherwise have to infer.
 
-The example separates:
+## 3. Add concrete behavioral examples
 
-- **Domain**: Gym Membership
-- **Narrative**: Visitor becomes a member
-- **Scene**: Membership created
-- **Moment**: Sign up for membership
-- **Moment type**: Command
-- **Rules**: valid sign-ups create memberships; duplicate emails are rejected
-- **Examples**: concrete Given/When/Then cases
+```gherkin
+Scenario: A new member chooses a monthly plan
+  Given Jane has no active membership
+  When Jane signs up for the monthly plan with jane@example.com
+  Then Jane has one active monthly membership
+  And Jane sees a membership confirmation
 
-That structure is useful before any implementation format exists. Product can review the outcome. QA can review the examples. Design can review the visible states. Engineering can ask whether the behavior is precise enough to build.
+Scenario: An existing member tries to join again
+  Given jane@example.com belongs to an active member
+  When Jane tries to sign up again with that email address
+  Then the sign-up is rejected
+  And no second membership is created
+  And Jane sees an email-already-registered message
+```
 
-## Add Should Statements
+The examples turn an abstract rule into cases people can challenge and machines may later check.
 
-For interaction behavior, NDD uses should statements:
+## 4. Describe the visible interface expectations
 
 ```text
-describe Sign Up Form
-  it should show membership tier options
-  it should require an email address
-  it should disable submit while sign-up is in progress
-  it should show an inline error when the email is already registered
+The sign-up view shows:
+- available membership plans and prices
+- an email field
+- a clear action to join
+- progress while the request is being processed
+- either a confirmation or an error that explains what to do next
 ```
 
-These statements sit next to the business rules they support.
+This is not a finished visual design. It states the information and feedback needed to support the behavior.
 
-## Explain Shown Information
+## 5. Define the information boundary
 
-Important screen content should have an explained source:
-
-```text
-What the product shows:
-- Membership status appears after sign-up is accepted.
-- The confirmation shows the selected membership tier.
-- Duplicate-email errors depend on existing member records.
+```json
+{
+  "email": "jane@example.com",
+  "plan": "monthly"
+}
 ```
 
-That is enough to catch ambiguity before build.
+```json
+{
+  "membershipId": "m_123",
+  "status": "active",
+  "plan": "monthly"
+}
+```
 
-## The Landscape in Practice
+A schema or typed contract can make this boundary stricter. The examples still carry meaning that a data shape alone cannot express.
 
-The spec-driven wave isn't just theory. Teams are testing it in the real world, and the results are instructive, both the wins and the friction.
+## 6. Connect what can be checked
 
-- **[Tessl](/landscape/tessl)** built the same app twice (vibe-coded vs. spec-driven). The vibe-coded version silently fabricated data. The spec-driven version caught it.
-- **[Kiro](/landscape/kiro)** showcased non-coding business owners at Delta Airlines generating production prototypes from structured specs.
-- **[GitHub Spec Kit](/landscape/github-spec-kit)** demonstrates greenfield and brownfield spec-driven workflows, with critical reviews noting real adoption friction.
-- **Prezi Engineering** found that developers touching code directly became "an antipattern" in their spec-driven workflow.
+The duplicate-email scenario might become an automated acceptance check. The request and response shapes might be validated against a schema. A person may still need to review whether the interface makes the result understandable.
 
-The field is young. The honest takes matter as much as the success stories. See the [full practitioner feedback](/landscape/#practitioner-feedback) for details.
+That distinction matters:
 
-[Explore all tools](/landscape/)
+- **The written decision** can be reviewed.
+- **The encoded expectation** can be checked against implementation.
+- **The user experience** may still require human judgment and real-world feedback.
 
-## Ready to Go Deeper?
+No single artifact proves the whole product is correct. Together, they reduce how much a builder has to guess and make disagreements easier to find.
 
-[Read the Manifesto](/manifesto) | [Join the Community](/community)
+## What changed from the vague request?
 
----
+“Let people sign up” became a small, connected set of explicit decisions:
 
-*Built by the team behind [Auto](https://on.auto), for the spec-driven community.*
+- why the behavior exists
+- what outcome must become true
+- which rules constrain it
+- concrete examples of success and failure
+- what information the interface must communicate
+- what data crosses the boundary
+- which expectations can be automated
+
+That is the practical move from an idea or prompt to a specification that can guide implementation and verification.
+
+[Compare current tools and workflows →](/landscape/)
+
+[Explore other approaches and formats →](/dialects/)

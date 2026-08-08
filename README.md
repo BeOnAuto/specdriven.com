@@ -4,19 +4,21 @@
   </a>
 </p>
 
-<h3 align="center">Code writes itself. Specs never will.</h3>
+<h3 align="center">Code can be generated. The important decisions still have to be made.</h3>
 
 <p align="center">
   <a href="https://specdriven.com"><strong>specdriven.com</strong></a> ·
   <a href="https://specdriven.com/manifesto">Manifesto</a> ·
-  <a href="https://specdriven.com/dialects/">Dialects</a> ·
+  <a href="https://specdriven.com/dialects/">Approaches & Formats</a> ·
   <a href="https://specdriven.com/landscape/">Landscape</a> ·
-  <a href="https://discord.com/invite/B8BKcKMRm8">Discord</a>
+  <a href="https://specdriven.com/about">About Sam</a>
 </p>
 
 ---
 
-[specdriven.com](https://specdriven.com) is an open knowledge base from the [Auto](https://on.auto) team. It covers the case for treating specifications as the most important artifact in software: [why they matter](https://specdriven.com/why), [what they are](https://specdriven.com/what), the [manifesto](https://specdriven.com/manifesto), a catalog of [spec dialects](https://specdriven.com/dialects/) and [tools](https://specdriven.com/landscape/), and [discovery techniques](https://specdriven.com/discovery) teams use to figure out what to specify.
+[specdriven.com](https://specdriven.com) is [Sam Hatoum's](https://specdriven.com/about) publication about spec-driven development. It covers [why specifications matter](https://specdriven.com/why), [what they are](https://specdriven.com/what), the [manifesto](https://specdriven.com/manifesto), [approaches and formats](https://specdriven.com/dialects/), the [tool landscape](https://specdriven.com/landscape/), and practical [discovery techniques](https://specdriven.com/guides/discovery-techniques).
+
+Sam also founded [Auto](https://on.auto). Auto is covered on SpecDriven as one participant in the field; it does not publish this site.
 
 This repo is the source for the site. Go read it, then come back here to help make it better.
 
@@ -25,9 +27,9 @@ This repo is the source for the site. Go read it, then come back here to help ma
 Every page on the site has an **Edit this page on GitHub** link at the bottom.
 
 - **Fix something**: See a typo, an unclear sentence, a broken link? Open a PR.
-- **Disagree with something?** Open an issue or bring it to [Discord](https://discord.com/invite/B8BKcKMRm8). This is a good place to debate ideas, challenge claims, or suggest a different angle.
-- **Add a spec dialect**: Building a structured specification language? [Read the criteria](https://specdriven.com/community) and submit it.
-- **Join the conversation**: [Discord](https://discord.com/invite/B8BKcKMRm8) is where the community gathers.
+- **Disagree with something?** Open an issue. This is a good place to debate ideas, challenge claims, or suggest a different angle.
+- **Add an approach or format**: Building a structured way to specify software? [Read the contribution guide](https://specdriven.com/community) and submit it.
+- **Follow Sam's work**: Visit the [About page](https://specdriven.com/about) or connect on [LinkedIn](https://www.linkedin.com/in/samhatoum/).
 
 ## Run locally
 
@@ -38,4 +40,4 @@ pnpm dev
 
 ## License
 
-[CC BY-NC 4.0](./LICENSE) · An initiative by [Auto](https://on.auto).
+[CC BY-NC 4.0](./LICENSE) · Published independently by [Sam Hatoum](https://specdriven.com/about).

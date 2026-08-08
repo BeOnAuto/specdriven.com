@@ -34,7 +34,7 @@ Prioritize by business impact. Your most valuable domain with your most critical
 
 Now you have a plan. Start with Domain 1, Behavior 1. Write the spec. Build the test harness. Verify. Move to Behavior 2. Over time, you build up coverage of your most critical value streams.
 
-This is inventory work. You're building a map of what you've got, what you've specified, and what's left. The NDD structure of domains, narratives, scenes, and moments is one framework for this. Value stream mapping is another. Pick whatever gives you a structured way to divide and track.
+This is inventory work. You're building a map of what exists, what has been specified, and what remains uncertain. Capability maps, value streams, user journeys, and event or state models can all help divide and track the work. Pick the lightest structure that makes the risk visible.
 
 ## Mining Knowledge
 

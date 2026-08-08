@@ -28,15 +28,15 @@ The commit modifies a shared module that three other features depend on, and non
 
 Each of these is a failure mode. And each one becomes a guardrail once you've seen it.
 
-A guardrail is a quality function that runs automatically, catching specific failure modes before they reach the codebase. You observe a failure mode, you build a constraint around it, and that failure mode never gets past the gate again.
+A guardrail is a quality function that runs automatically to catch a known class of failure before it reaches the codebase. You observe a failure mode, encode a relevant constraint, and make recurrence more visible.
 
 ## Types of Guardrails
 
 **Pre-commit hooks.** Code that runs before a commit is accepted. If the hook fails, the commit is rejected. Use these for fast checks: test coverage thresholds, linting rules, file modification restrictions.
 
-**LLM validators.** Independent AI calls that evaluate the commit from an impartial perspective. The implementing agent is driven to complete its task. The validating agent is driven to check quality. They have different objectives, which is the point. The validator looks at the diff and checks: does this commit adhere to the architectural constraints? Is this test substantive or is it gaming coverage? Does this change respect the boundaries of the module it's modifying?
+**LLM validators.** Separate AI calls can evaluate a commit with a different instruction and context from the implementing agent. That is another perspective, not an impartial oracle. A validator can inspect a diff for architectural constraints, weak tests, and module-boundary violations; deterministic checks should enforce what can be expressed deterministically.
 
-**Coverage thresholds.** Pin your test coverage at a level you're comfortable with. For TDD practitioners, 100% is natural because if you truly drive everything with a test, there's no uncovered code by definition. For others, pick a threshold and enforce it. Uncovered code is an unspecified decision. It might be fine. It might be a ticking time bomb.
+**Coverage thresholds.** Set a threshold appropriate to the codebase and use drops as a review signal. High line coverage does not establish high behavioral coverage, and TDD does not guarantee 100%. Inspect assertion quality, branches, mutations, and risk—not only the headline number.
 
 **Anti-cheating checks.** AI will sometimes write tests that exist solely to satisfy coverage requirements without actually testing behavior. A separate validator can scan new tests and flag ones that don't assert anything meaningful. This is the "is the AI grading its own homework?" problem. The answer is: no. A separate, impartial agent grades the homework.
 
@@ -50,4 +50,4 @@ Separate them. Let them fight. The implementer tries to complete the task. The v
 
 This is analogous to separation of concerns in code. You don't let the same function produce data and validate it. You shouldn't let the same agent implement and evaluate.
 
-> 🔄 **Feedback opportunity:** What's the last mistake your AI made that reached the codebase? That's your next guardrail. Write it down. Build the check. It'll never happen again. This is a compounding practice: every guardrail makes the system more reliable.
+> 🔄 **Feedback opportunity:** What's the last mistake your AI made that reached the codebase? Ask whether a deterministic check, review rule, or separate evaluation could catch the same class of mistake earlier next time.

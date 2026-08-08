@@ -18,15 +18,12 @@ const ogCard = siteCard({
 
 const learnSidebar = [
 	{
-		text: "Learn",
+		text: "Foundations",
 		items: [
 			{ text: "What Are Specs?", link: "/what" },
 			{ text: "Why Spec-Driven?", link: "/why" },
 			{ text: "The Manifesto", link: "/manifesto" },
 			{ text: "Common Objections", link: "/objections" },
-			{ text: "History of Specifications in Software", link: "/timeline" },
-			{ text: 'Where "Spec-Driven Development" Came From', link: "/origins" },
-			{ text: "Notable People", link: "/people" },
 			{ text: "Resources", link: "/resources" },
 		],
 	},
@@ -48,11 +45,11 @@ export default defineConfig({
 	lang: "en-US",
 	title: "Spec-Driven",
 	description:
-		"Specifications are becoming a new software medium. Spec-Driven Development is the shift from disposable prompts to structured, executable models.",
+		"Sam Hatoum's independent publication on the history, practice, tools, and future of spec-driven development.",
 	appearance: "dark",
 	cleanUrls: true,
 	transformHead({ pageData, siteData }) {
-		const head: Array<[string, Record<string, string>]> = [];
+		const head: any[] = [];
 		const image = pageData.frontmatter.image;
 		const title = pageData.frontmatter.title || pageData.title;
 		const description =
@@ -68,9 +65,21 @@ export default defineConfig({
 					? rel.slice(0, -"/index".length)
 					: rel;
 		const pageUrl = path ? `${siteUrl}/${path}` : siteUrl;
+		const canonicalUrl = pageData.frontmatter.canonical || pageUrl;
 
-		head.push(["link", { rel: "canonical", href: pageUrl }]);
-		head.push(["meta", { property: "og:url", content: pageUrl }]);
+		head.push(["link", { rel: "canonical", href: canonicalUrl }]);
+		head.push(["meta", { property: "og:url", content: canonicalUrl }]);
+
+		if (pageData.frontmatter.redirect) {
+			head.push([
+				"meta",
+				{
+					"http-equiv": "refresh",
+					content: `0; url=${pageData.frontmatter.redirect}`,
+				},
+			]);
+			head.push(["meta", { name: "robots", content: "noindex, follow" }]);
+		}
 
 		if (title) {
 			head.push(["meta", { property: "og:title", content: title }]);
@@ -131,6 +140,7 @@ export default defineConfig({
 		],
 		["meta", { property: "og:type", content: "website" }],
 		["meta", { property: "og:site_name", content: "Spec-Driven" }],
+		["meta", { name: "author", content: "Sam Hatoum" }],
 		[
 			"meta",
 			{
@@ -146,38 +156,17 @@ export default defineConfig({
 			dark: "/logo-dark.svg",
 		},
 		siteTitle: "Spec-Driven",
-		// Nav structure: Learn | Practice | Ecosystem | Perspectives
+		// Field-level navigation. Auto is covered as one participant, not as publisher.
 		nav: [
 			{
-				text: "Learn",
+				text: "Foundations",
 				items: [
-					{
-						text: "Start Here",
-						items: [
-							{ text: "What Are Specs?", link: "/what" },
-							{ text: "Why Spec-Driven?", link: "/why" },
-							{ text: "The Manifesto", link: "/manifesto" },
-							{ text: "Common Objections", link: "/objections" },
-						],
-					},
-					{
-						text: "Foundations",
-						items: [{ text: "First Principles", link: "/first-principles/" }],
-					},
-					{
-						text: "History",
-						items: [
-							{
-								text: "History of Specifications in Software",
-								link: "/timeline",
-							},
-							{
-								text: 'Where "Spec-Driven Development" Came From',
-								link: "/origins",
-							},
-							{ text: "Notable People", link: "/people" },
-						],
-					},
+					{ text: "What Are Specs?", link: "/what" },
+					{ text: "Why Spec-Driven?", link: "/why" },
+					{ text: "First Principles", link: "/first-principles/" },
+					{ text: "The Manifesto", link: "/manifesto" },
+					{ text: "Common Objections", link: "/objections" },
+					{ text: "Resources", link: "/resources" },
 				],
 			},
 			{
@@ -200,39 +189,19 @@ export default defineConfig({
 				],
 			},
 			{
-				text: "Ecosystem",
+				text: "Landscape",
 				items: [
-					{
-						text: "Tools",
-						items: [
-							{ text: "Tool Landscape", link: "/landscape/" },
-							{ text: "Evaluation Framework", link: "/landscape/evaluation" },
-						],
-					},
-					{
-						text: "Dialects",
-						items: [
-							{ text: "What Are Spec Dialects?", link: "/dialects/" },
-							{
-								text: "Narrative-Driven Development",
-								link: "/dialects/narrative-driven",
-							},
-							{
-								text: "Submit a Spec Dialect",
-								link: "/community#submit-a-spec-dialect",
-							},
-						],
-					},
-					{
-						text: "Community",
-						items: [
-							{
-								text: "Spec-Driven Communities",
-								link: "/community#spec-driven-communities",
-							},
-							{ text: "Resources", link: "/resources" },
-						],
-					},
+					{ text: "Tool Landscape", link: "/landscape/" },
+					{ text: "Evaluation Framework", link: "/landscape/evaluation" },
+					{ text: "Approaches & Formats", link: "/dialects/" },
+				],
+			},
+			{
+				text: "History",
+				items: [
+					{ text: "Timeline", link: "/timeline" },
+					{ text: 'Origins of "Spec-Driven Development"', link: "/origins" },
+					{ text: "Notable People", link: "/people" },
 				],
 			},
 			{
@@ -256,6 +225,7 @@ export default defineConfig({
 					},
 				],
 			},
+			{ text: "About", link: "/about" },
 			{ text: "Subscribe", link: "#subscribe" },
 		],
 		sidebar: {
@@ -314,13 +284,9 @@ export default defineConfig({
 			],
 			"/dialects/": [
 				{
-					text: "Spec Dialects",
+					text: "Approaches & Formats",
 					items: [
-						{ text: "What Are Spec Dialects?", link: "/dialects/" },
-						{
-							text: "Narrative-Driven (NDD)",
-							link: "/dialects/narrative-driven",
-						},
+						{ text: "Overview", link: "/dialects/" },
 					],
 				},
 			],
@@ -559,14 +525,7 @@ export default defineConfig({
 					text: "Related Reading",
 					items: [
 						{ text: "What Is a Spec?", link: "/what" },
-						{
-							text: "The Fractal Nature of Design",
-							link: "/first-principles/fractal-design",
-						},
-						{
-							text: "Narrative-Driven (NDD)",
-							link: "/dialects/narrative-driven",
-						},
+						{ text: "The Fractal Nature of Design", link: "/first-principles/fractal-design" },
 					],
 				},
 			],
@@ -599,10 +558,6 @@ export default defineConfig({
 						{
 							text: "Model-Based Specifications",
 							link: "/guides/model-based-specs",
-						},
-						{
-							text: "Narrative-Driven (NDD)",
-							link: "/dialects/narrative-driven",
 						},
 					],
 				},
@@ -637,10 +592,6 @@ export default defineConfig({
 							text: "Model-Based Specifications",
 							link: "/guides/model-based-specs",
 						},
-						{
-							text: "Narrative-Driven (NDD)",
-							link: "/dialects/narrative-driven",
-						},
 					],
 				},
 			],
@@ -655,6 +606,7 @@ export default defineConfig({
 						{ text: "Intent (Augment)", link: "/landscape/intent" },
 						{ text: "Kiro (AWS)", link: "/landscape/kiro" },
 						{ text: "OpenSpec", link: "/landscape/openspec" },
+						{ text: "Tessl", link: "/landscape/tessl" },
 					],
 				},
 			],
@@ -663,18 +615,18 @@ export default defineConfig({
 			provider: "local",
 		},
 		socialLinks: [
-			{ icon: "github", link: "https://github.com/BeOnAuto/specdriven.com" },
-			{ icon: "discord", link: "https://discord.com/invite/B8BKcKMRm8" },
+			{ icon: "github", link: "https://github.com/SamHatoum" },
+			{ icon: "linkedin", link: "https://www.linkedin.com/in/samhatoum/" },
 		],
+		editLink: {
+			pattern: "https://github.com/BeOnAuto/specdriven.com/edit/main/docs/:path",
+			text: "Suggest a change on GitHub",
+		},
 		footer: {
 			message:
-				'An initiative by <a href="https://on.auto">Auto</a> · <a href="/community">Community</a>',
-			copyright: "© 2026 OnAuto, Inc. All rights reserved.",
-		},
-		editLink: {
-			pattern:
-				"https://github.com/BeOnAuto/specdriven.com/edit/main/docs/:path",
-			text: "Edit this page on GitHub",
+				'An independent publication by <a href="/about">Sam Hatoum</a> · <a href="/community">Contribute</a> · <a href="/privacy">Privacy</a>',
+			copyright:
+				'© 2026 Sam Hatoum · Content licensed <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.',
 		},
 	},
 });

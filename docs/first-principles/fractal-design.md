@@ -24,7 +24,7 @@ The relationship between requirements, solutions, and specifications is fractal.
 
 At the top of the fractal, you're looking at the whole product. What problem does it solve? Who is it for? What are the key behaviors? The "spec" at this level might be an information architecture, a set of user journeys, a domain model. Broad strokes. Strategic decisions.
 
-Zoom in one level and you're looking at a single feature or narrative. What's the user trying to accomplish? What interactions are involved? What does the system do in response? The spec at this level might be a set of Given/When/Then scenarios, a storyboard, a set of interface contracts.
+Zoom in one level and you're looking at a single goal or feature. What's the user trying to accomplish? What interactions are involved? What does the system do in response? The spec at this level might be a set of Given/When/Then scenarios, a storyboard, or interface contracts.
 
 Zoom in again and you're looking at a single component. How does the email validator work? What are the edge cases for the payment retry logic? The spec at this level might be a set of describe/it/should statements, a property-based test, a contract on a function signature.
 
@@ -66,13 +66,13 @@ Design by Contract and Eiffel (1986 onwards) made that foundation executable. Pr
 
 TDD (late 1990s) made the deepest level of the fractal executable. Individual design decisions expressed as failing tests, verified continuously. Kent Beck didn't frame it this way, but TDD is specification at the function level of the fractal.
 
-BDD (mid-2000s) moved up the fractal. Dan North took specifications out of code and into shared language. Given/When/Then. Whole-team readable. Behavioral specs at the narrative level, not just the function level.
+BDD (mid-2000s) moved up the fractal. Dan North took specifications out of code and into shared language. Given/When/Then. Whole-team readable. Behavioral examples at the product level, not just the function level.
 
 Domain-Driven Design, Event Sourcing, and Event Storming filled in the upper levels of the fractal. Ubiquitous language. Facts stored as events. Time-based modeling. These gave teams tools to specify at the domain and architecture levels.
 
-Modern spec dialects and modeling methods like [Narrative-Driven Development](/dialects/narrative-driven) attempt to span multiple levels of the fractal with one shared product model and vocabulary. Domain-level intent can connect to narratives, scenes, moments, rules, examples, and component expectations without forcing teams to invent a new language at every level.
+Modern connected models attempt to span several levels with shared concepts and explicit relationships. Product goals can connect to outcomes, behavior, rules, examples, contracts, and component expectations without forcing every audience into one representation.
 
-The trajectory is clear. Over six decades, we've been making more and more levels of the fractal executable. The levels that remain unexecutable (strategic decisions, information architecture, certain architectural constraints) are the frontier. They're where the next generation of spec dialects will operate.
+Over six decades, more levels have become machine-checkable. Other decisions—strategy, information architecture, experience quality, and many architectural trade-offs—still depend heavily on review and judgment. The frontier is not making every statement executable; it is making each important decision inspectable and connecting the checkable parts to evidence.
 
 For the term genealogy and the academic prior art behind this trajectory, see [Where "Spec-Driven Development" Came From](/origins). For the essay-style argument that puts the AI angle front and centre, see [Specs Are Fractal](/perspectives/specs-are-fractal) in the Perspectives section.
 
@@ -82,7 +82,7 @@ There's a game metaphor that captures the fractal perfectly.
 
 In Asteroids, you start with a large rock. You shoot it and it breaks into smaller rocks. You shoot those and they break into even smaller rocks. You keep going until there's nothing left.
 
-Specifying a system is the same game. You start with the big picture. You break it into domains. You break domains into narratives. Narratives into scenes. Scenes into moments. Moments into individual specs. Each break is a design decision. Each resulting piece needs its own specification.
+Specifying a system is the same game. You start with the big picture, then break it into capabilities, goals, outcomes, behaviors, rules, contracts, and smaller implementation decisions. Each break reveals another design choice. Each important choice needs an expression appropriate to its audience and risk.
 
 You don't just break the big rock once and call it done. You play until every piece is small enough to implement confidently. Some pieces need to get very small (business-critical logic). Others can stay relatively large (standard UI components where a design library handles the details).
 

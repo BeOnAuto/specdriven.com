@@ -92,8 +92,8 @@ async function submit() {
         <div class="sd-modal-card">
           <button class="sd-modal-close" aria-label="Close" @click="close">×</button>
           <div class="sd-modal-stripe" aria-hidden="true"></div>
-          <h2 id="sd-modal-title">Specs are how design communicates.</h2>
-          <p class="sd-modal-sub">Get new patterns, dialects, and tools the moment they’re written down. Low-volume, no fluff.</p>
+          <h2 id="sd-modal-title">Keep the important decisions visible.</h2>
+          <p class="sd-modal-sub">Get new patterns, approaches, and tools when they’re written down. Low-volume, no fluff.</p>
           <form v-if="state !== 'done'" class="sd-modal-form" @submit.prevent="submit">
             <label class="sd-sr-only" for="sd-modal-input">Email</label>
             <input
@@ -103,13 +103,14 @@ async function submit() {
               type="email"
               required
               autocomplete="email"
-              placeholder="you@studio.com"
+              placeholder="you@example.com"
               :disabled="state === 'submitting'"
             />
             <button type="submit" :disabled="state === 'submitting'">
               {{ state === 'submitting' ? 'Subscribing…' : 'Subscribe' }}
             </button>
             <p v-if="errorMessage" class="sd-modal-error">{{ errorMessage }}</p>
+            <p class="sd-modal-privacy">By subscribing, you agree to the <a href="/privacy">privacy note</a>.</p>
           </form>
           <p v-else class="sd-modal-success">
             You’re in. We’ll only write when there’s something worth your time.
@@ -251,6 +252,13 @@ async function submit() {
   margin: 4px 0 0;
   font-size: 13px;
   color: var(--sd-red);
+}
+
+.sd-modal-privacy {
+  grid-column: 1 / -1;
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: var(--vp-c-text-3);
 }
 
 .sd-modal-success {

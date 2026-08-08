@@ -1,125 +1,60 @@
 ---
+title: Auto — Tool Profile
+description: An editorial profile of Auto's product-modeling workflow for software built with agents.
 prev:
-  text: Tool Landscape
-  link: /landscape/
+  text: Evaluation Framework
+  link: /landscape/evaluation
 next:
   text: GitHub Spec Kit
   link: /landscape/github-spec-kit
-image: /images/pages/landscape/auto.png
+image: /images/pages/auto.png
 ---
 
 # Auto
 
-![Auto](/images/pages/landscape/auto.png)
+![Auto](/images/pages/auto.png)
 
-**What it is:** A spec-driven platform for building line-of-business software. Auto productizes [Narrative-Driven Development](/dialects/narrative-driven), the product modeling method for describing software as domains, narratives, scenes, and moments.
+> **Disclosure:** Auto was founded by Sam Hatoum, who publishes SpecDriven. This profile is Sam’s assessment of a product in which he has a direct commercial interest. **Last reviewed: August 7, 2026.**
 
-**The problem it solves:** Prompt-to-code workflows lose product intent as the app grows. Auto puts a reviewable narrative between the prompt and implementation, then supports the team through an AI-assisted build workflow.
+## What it is
 
-**How it works:** users describe the product, review the resulting NDD narrative, refine rules and examples, and use Auto's product workflow to move from reviewed intent toward implementation.
+Auto describes itself as product modeling for software built with agents. Its public workflow turns product context into a reviewable model, keeps proposed changes separate until approval, builds supported applications, and checks supported behavior against what was approved.
 
-For the method itself, see [Narrative-Driven Development](/dialects/narrative-driven).
+The visible product language includes capabilities, goals, outcomes, behaviors, rules, examples, requirements, flows, screens, and product decisions.
 
-## Product Workflow
+## Documented workflow
 
-Auto's workflow is built around the NDD narrative model:
+1. Bring a workflow, prototype, prompts, feedback, screenshots, examples, and delivery context.
+2. Review what Auto believes the product should do through its product and screen views.
+3. Correct and approve important decisions.
+4. Build the approved application using Auto’s supported delivery path.
+5. Check supported behavior against the approved model and use it as the reference for later changes.
 
-1. Capture product intent.
-2. Draft a narrative using domains, narratives, scenes, and moments.
-3. Review outcomes, rules, examples, should statements, and the information the product shows.
-4. Use Auto's workflow to support AI-assisted implementation.
-5. Keep the narrative updated as the product changes.
+The human remains responsible for product judgment and approval. Auto’s role is to make the relevant decisions inspectable and operational.
 
-Auto handles the product workflow. The team reviews intent before build.
+## Relationship to verification
 
-## Origin Story
+Auto connects approved rules and examples to checks of supported implementation behavior. This is stronger than treating the model only as planning prose, but it is not a blanket guarantee that every property of an application has been specified or verified.
 
-NDD originated at Xolvio through years of enterprise client engagements and became the team's standardized delivery approach. Clients praised its ability to capture intent and the quality of software produced. Auto is the productization of that methodology.
+The meaningful questions are which scope has been modeled, which behaviors Auto currently supports checking, and what evidence a particular result provides.
 
-## Specification Format
+## Editorial assessment
 
-NDD is a product model and review method: Domain -> Narrative -> Scene -> Moment, plus moment types, Given/When/Then examples, and should statements.
+**Strengths:** Auto gives non-code stakeholders visible review surfaces, distinguishes proposed changes from approved product decisions, and carries one maintained product definition into build and later change.
 
-Auto carries the product workflow around that method.
+**Limitations and boundaries:** Its public offer is narrower than arbitrary mature-application adoption. Auto does not claim that it can preserve every implementation decision, migrate every production data set, support every stack, or reconstruct complete intent from existing code automatically.
 
-## Notable Strengths
+**Best fit:** Workflow-heavy applications where goals, user paths, rules, roles, information, and later change matter enough to review before implementation.
 
-Carries forward the executable specification lineage from BDD into the AI era. Strong outcome framing. Clear vocabulary. Useful for line-of-business products where workflows, business rules, interface behavior, and important screen content need to stay aligned.
+## Historical note
 
-## Notable Limitations
+Auto previously used Narrative-Driven Development as a public method name. It retired that name and the specialist vocabulary in 2026. The current product uses ordinary product language. [Read Auto’s explanation](https://on.auto/narrative-driven-development).
 
-Purpose-built for line-of-business applications: workflows, orchestration, CRUD, domain logic, dashboards, forms, and internal tools. It is not optimized for games, infrastructure-as-code, data science pipelines, embedded systems, or low-level systems programming.
+## Primary sources
 
-Because Auto uses a richer product workflow than plain markdown, teams should expect more modeling discipline than prompt-to-code tools require.
+- [Auto product website](https://on.auto)
+- [How Auto works](https://on.auto/how-it-works)
+- [Product modeling](https://on.auto/product-model)
+- [What happened to NDD](https://on.auto/narrative-driven-development)
 
-## Links
-
-[on.auto](https://on.auto)
-
-**See also:** [Sam Hatoum](/people#sam-hatoum), [Timeline: NDD](/timeline#narrative-driven-development), [NDD dialect](/dialects/narrative-driven), [Auto getting started](/auto)
-
-## Capability Analysis
-
-### [Development Velocity](/landscape/evaluation#dim-velocity)
-
-Auto is designed to help teams move quickly without losing intent. Initial setup asks teams to clarify the narrative, but the payoff is that iteration has a durable product story to return to instead of a disappearing chat thread.
-
-### [Spec Durability](/landscape/evaluation#dim-durability)
-
-The narrative remains a living review surface. When the product changes, the team updates the narrative first: goals, outcomes, moments, rules, examples, and the information the product shows.
-
-### [Executability](/landscape/evaluation#dim-executability)
-
-Auto is built for AI-assisted implementation from reviewed intent. The narrative gives the team a stable product surface before implementation work begins.
-
-### [Accessibility](/landscape/evaluation#dim-accessibility)
-
-The NDD vocabulary is readable by product, design, QA, and engineering. Non-technical stakeholders can review goals, outcomes, moments, rules, and examples without learning an implementation format.
-
-### [Model Coherence](/landscape/evaluation#dim-coherence)
-
-Auto's product workflow keeps teams oriented around one narrative model, not separate prompt threads, design notes, tickets, and implementation assumptions. The method emphasizes shared vocabulary and review coherence.
-
-### [Traceability](/landscape/evaluation#dim-traceability)
-
-NDD improves traceability at the product level: features trace back to narratives, scenes, moments, rules, and examples. Auto uses that reviewed intent as the coordination surface for implementation.
-
-### [Agent Guidance](/landscape/evaluation#dim-agent-guidance)
-
-Auto guides AI-assisted implementation through reviewed product intent. The method gives the team clearer language for the product behavior being built.
-
-### [Portability](/landscape/evaluation#dim-portability)
-
-The NDD vocabulary is portable: teams can use domains, narratives, scenes, moments, rules, examples, and should statements in documents, workshops, issues, and prompts. Auto's product workflow is the commercial implementation of that method.
-
-### [Brownfield Readiness](/landscape/evaluation#dim-brownfield)
-
-Auto is most natural when introducing new behavior or restructuring behavior that can be described as narratives. Existing products can adopt the vocabulary incrementally by modeling one behavior slice at a time.
-
-### [Modularity](/landscape/evaluation#dim-modularity)
-
-NDD's hierarchy encourages modular thinking: domains contain narratives, narratives contain scenes, scenes contain moments. That gives teams a way to discuss scope without flattening everything into a feature list.
-
-### [Composability](/landscape/evaluation#dim-composability)
-
-Narratives compose through shared product language, related outcomes, and consistent rules. Cross-project composition remains a product and process question rather than a file-format promise.
-
-### [Cross-Cutting](/landscape/evaluation#dim-cross-cutting)
-
-Handling non-functional requirements like security, compliance, and performance is still a work in progress. Today, teams capture those concerns as rules, permissions, or open questions alongside the relevant narratives.
-
-### [Reconcilability](/landscape/evaluation#dim-reconcilability)
-
-Reverse-engineering existing applications into narratives is a natural direction for Auto, but teams can already use NDD manually to document and review important existing behavior.
-
-### [Scope](/landscape/evaluation#dim-scope)
-
-Purpose-built for line-of-business applications: web apps, mobile apps, internal tools, workflows, orchestration, CRUD, dashboards, forms, and domain logic. If your work falls outside that target domain, Auto may not be the right tool.
-
-[Full evaluation framework](/landscape/evaluation)
-
----
-
-**Disclosure:** Auto is built by the team behind this site.
-
-*An initiative by [Auto](https://on.auto).*
+[Full evaluation framework →](/landscape/evaluation)

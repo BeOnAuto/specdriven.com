@@ -7,6 +7,8 @@ image: /images/perspectives/specs-are-fractal.png
 
 ![](/images/perspectives/specs-are-fractal.png)
 
+> **Editor's note, 2026:** This essay preserves the terminology used when it was written. The current field guide defines a specification more precisely as an explicit, inspectable expression of intended design or behavior that can guide implementation or verification. Narrative-Driven Development, mentioned below as active work, was retired as a public method name in 2026. [Read what changed](https://on.auto/narrative-driven-development).
+
 Specifications are the [communication of design](/what). That's the definition the rest of this site rests on, and it's the right place to start.
 
 If specs are the communication of design, then specs go wherever design goes. Design happens at every level of a system. Therefore specs are fractal.

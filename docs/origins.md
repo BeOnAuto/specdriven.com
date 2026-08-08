@@ -4,7 +4,7 @@ prev:
   text: History of Specifications in Software
   link: /timeline
 next:
-  text: Spec Dialects
+  text: Approaches and Formats
   link: /dialects/
 image: /images/pages/origins.png
 ---
@@ -55,10 +55,10 @@ The arrival of capable AI coding assistants creates the commercial conditions fo
 
 - **[GitHub Spec Kit](/landscape/github-spec-kit)** (GitHub/Microsoft, 2025), open-source toolkit codifying a `Specify → Plan → Tasks → Implement` pipeline. Surpassed 16,000 GitHub stars in its first week.
 - **[Kiro](/landscape/kiro)** (AWS, 2025), an agentic IDE structured around "vibe mode" vs "spec mode." Demonstrated by Clare Liguori at AWS re:Invent 2025.
-- **Tessl** (2025), launched the Tessl Framework and Spec Registry with explicit spec-driven messaging. (Tessl repositioned around agent skills in January 2026; see [Came and Went](/landscape/#came-and-went).)
+- **[Tessl](/landscape/tessl)** (2025), launched the Tessl Framework and Spec Registry with explicit spec-driven messaging, then repositioned around agent skills in January 2026.
 - **[OpenSpec](/landscape/openspec)** (Fission AI, 2025), brownfield-friendly spec workflow.
 - **[Intent](/landscape/intent)** (Augment Code, 2025-2026), positioning around "living specifications" for enterprise / multi-repo development.
-- **[Auto](/landscape/auto)** (founded by Sam Hatoum, productizing the [Narrative-Driven Development](/dialects/narrative-driven) dialect of spec-driven development).
+- **[Auto](/landscape/auto)** (founded by Sam Hatoum, applying product-modeling practices to software built with agents; Auto retired its earlier Narrative-Driven Development method name in 2026).
 - **Community projects** including BMAD-METHOD, IntentSpec, cc-sdd, and others adopting spec-driven framing.
 
 By the close of 2025, "spec-driven development" is a recognized commercial category with multiple competing implementations. Public discourse covers tradeoffs (Marmelab's "The Waterfall Strikes Back," Scott Logic's "a sea of markdown"), case studies (Tessl's "build it twice" experiment, Kiro's Delta Airlines showcase, Prezi Engineering's "We Tried SDD So You Don't Have To"), and analysis ([Martin Fowler](/people#martin-fowler)'s spec-first / spec-anchored / spec-as-source taxonomy).

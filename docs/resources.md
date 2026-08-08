@@ -14,7 +14,7 @@ image: /images/pages/resources.png
 
 > The essential reading, watching, and reference list for spec-driven development.
 >
-> Missing something? [Submit a PR](https://github.com/BeOnAuto/specdriven.com).
+> Missing something? [Suggest an addition](/community#suggest-a-change).
 
 ## Books {#books}
 
@@ -92,7 +92,7 @@ image: /images/pages/resources.png
 
 ### Modern Spec-Driven Tools
 - [specdriven.com](https://specdriven.com) - This site.
-- [on.auto](https://on.auto) - Auto, productizing Narrative-Driven Development.
+- [on.auto](https://on.auto) - Auto, product modeling for software built with agents.
 - [kiro.dev](https://kiro.dev) - Kiro, AWS's agentic IDE.
 - [github.com/github/spec-kit](https://github.com/github/spec-kit) - GitHub Spec Kit.
 - [github.com/Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) - OpenSpec.
@@ -124,6 +124,4 @@ image: /images/pages/resources.png
 
 ---
 
-> **Know a resource that should be listed here?** [Submit a PR](https://github.com/BeOnAuto/specdriven.com).
-
-*An initiative by [Auto](https://on.auto).*
+> **Know a resource that should be listed here?** [Suggest an addition](/community#suggest-a-change).

@@ -1,7 +1,7 @@
 ---
 prev:
-  text: Narrative-Driven Development
-  link: /dialects/narrative-driven
+  text: Where "Spec-Driven Development" Came From
+  link: /origins
 next:
   text: Resources
   link: /resources
@@ -14,17 +14,17 @@ image: /images/pages/people.png
 
 > The people who shaped how we specify software, from executable specifications to collaborative modeling to AI-driven development. Entries are listed alphabetically within each era.
 >
-> This page is curated by [Sam Hatoum](#sam-hatoum), founder of [Auto](https://on.auto) and creator of specdriven.com as a community resource for the spec-driven movement. Someone missing? [Submit a PR](https://github.com/BeOnAuto/specdriven.com).
+> This page is curated by [Sam Hatoum](#sam-hatoum), who publishes SpecDriven independently and also founded [Auto](https://on.auto). Someone missing? [Suggest an addition](/community#suggest-a-change).
 
 ## Modern Spec-Driven Development {#modern}
 
 ### Sam Hatoum {#sam-hatoum}
 
-**Era:** ~2010-present | **Contribution:** Narrative-Driven Development, Auto, specdriven.com
+**Era:** ~2010-present | **Contribution:** Industrial spec-driven development, Narrative-Driven Development, Auto, specdriven.com
 
-Founder of [Auto](https://on.auto). First sustained industrial use of "spec-driven development" beginning 2016, traceable through Simian (2013 to 2015), xSpecs (2016 to 2020), and Auto (present). Purchased specdriven.com in 2020. Developed Narrative-Driven Development at Xolvio across enterprise client engagements, building on BDD, DDD, EventStorming, and quality-first practices. Disclaims any "inventor" framing; for the term genealogy and the receipts behind the 2016 industrial coining see [Where "Spec-Driven Development" Came From](/origins) and [Proof and Prior Art](/perspectives/the-spec-driven-shift/i-coined-spec-driven-development-proof).
+Publisher of [SpecDriven](/about) and founder of [Auto](https://on.auto), where he currently works on product modeling for software built with agents. His use of "spec-driven development" beginning in 2016 is traceable through Simian (2013 to 2015), xSpecs (2016 to 2020), and later work. He purchased specdriven.com in 2020 and developed Narrative-Driven Development at Xolvio across client engagements, building on BDD, DDD, EventStorming, and quality-first practices. Auto has since retired the NDD method name and uses ordinary product language in the product. Sam disclaims any "inventor" framing; for the term genealogy and the receipts behind the 2016 industrial coining see [Where "Spec-Driven Development" Came From](/origins) and [Proof and Prior Art](/perspectives/the-spec-driven-shift/i-coined-spec-driven-development-proof).
 
-Cross-refs: [Where "Spec-Driven Development" Came From](/origins), [Timeline: NDD](/timeline#narrative-driven-development), [Landscape: Auto](/landscape/auto), [NDD Dialect](/dialects/narrative-driven)
+Cross-refs: [Where "Spec-Driven Development" Came From](/origins), [Timeline: NDD](/timeline#narrative-driven-development), [Landscape: Auto](/landscape/auto), [Historical NDD note](/dialects/narrative-driven)
 
 ### John Lam and Den Delimarsky {#spec-kit-team}
 
@@ -372,6 +372,4 @@ Cross-refs: [Timeline: Agile Specification-Driven Development](/timeline#agile-s
 
 ---
 
-> **Know someone who should be listed here?** [Submit a PR](https://github.com/BeOnAuto/specdriven.com).
-
-*An initiative by [Auto](https://on.auto).*
+> **Know someone who should be listed here?** [Suggest an addition](/community#suggest-a-change).

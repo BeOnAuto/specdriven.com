@@ -32,7 +32,7 @@ A unified model is one source of product truth that can serve multiple audiences
 
 This is different from having three separate artifacts (technical notes, design files, product docs) that you try to keep in sync by hand. Separate artifacts drift unless the process gives them a shared product story.
 
-The model also gives you inventory. You can look at it and see: how many domains do we have? How many narratives in each domain? How many scenes in each narrative? What's specified? What isn't? Where are the gaps? This is spec coverage, analogous to code coverage, and it's powerful for managing spec debt.
+The model also gives you inventory. You can see which capabilities, goals, outcomes, behaviors, contracts, and decisions have been described; where relationships exist; and where important gaps remain. This is not a percentage guarantee of completeness. It is a way to make the current scope and unknowns inspectable.
 
 ## When You Need a Model
 
@@ -46,4 +46,4 @@ You need multiple audiences to work from the same source of truth.
 
 Your spec inventory has grown beyond what anyone can hold in their head.
 
-[Narrative-Driven Development](/dialects/narrative-driven) is one example of a model-based approach to product intent. Event Modeling is another. Both provide a way to organize specs hierarchically with explicit relationships. The choice depends on your domain and your team.
+State models, event models, process maps, linked behavioral examples, and typed domain models all make different relationships explicit. Choose the smallest combination that exposes the dependencies your team actually needs to reason about.

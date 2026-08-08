@@ -7,6 +7,8 @@ image: /images/perspectives/specs-are-the-next-programming-languages.png
 
 ![Specs Are the Next Programming Languages](/images/perspectives/specs-are-the-next-programming-languages.png)
 
+> **Editor's note, 2026:** This essay preserves the language and argument of the original publication. Narrative-Driven Development is no longer an active method name, and this site now discusses the wider category as [approaches and formats](/dialects/). [Read what changed](https://on.auto/narrative-driven-development).
+
 Here's what I think happens in the next few years. We end up with an ecosystem of specification dialects as varied as programming languages.
 
 Look at the history of abstraction. Wired circuits. Machine code. Assembly. High-level languages. Frameworks. Each generation abstracted the previous one. Each gave people a higher-order way to say what they wanted.

@@ -16,7 +16,7 @@ The format you write specs in matters less than getting the design right first. 
 
 ## Don't Choose the Format First
 
-This is the most common mistake teams make when they start with spec-driven development. They pick a tool or format and try to make everything fit. "We're a Gherkin shop now." "Everything goes in markdown." "We're using NDD."
+This is the most common mistake teams make when they start with spec-driven development. They pick a tool or format and try to make everything fit. “We're a Gherkin shop now.” “Everything goes in Markdown.” “Everything must be a schema.”
 
 That's backward. You should design the solution first, then find the right expression for it. The spec format follows the design, not the other way around.
 
@@ -34,24 +34,13 @@ Spec formats sit on a spectrum from informal to formal:
 
 **Typed models (Zod schemas, TypeScript interfaces, GraphQL schemas, JSON schemas).** Machine-parseable. Validatable. Good for: data contracts, API definitions, domain models, anything that needs to be consistent across multiple consumers. Bad for: behavioral specifications, user journeys.
 
-**Full spec dialects and method languages (Narrative-Driven Development, Event Models).** Repeatable ways to organize behavior, examples, and product structure. Good for: systems where specs need to serve multiple audiences (developers, designers, product), where the product story needs to stay coherent across many features. Bad for: small projects where the overhead isn't justified.
+**Models and connected views (state models, event models, process maps).** Repeatable ways to organize behavior, examples, and product structure. Good for: systems where specifications serve several audiences and relationships matter across many features. Bad for: small projects where the overhead is not justified.
 
-## When the Hierarchy Becomes a Dialect
+## When Flat Files Need Structure
 
-The practitioner hierarchy (capability -> goal -> outcome -> slice; see [Writing Your First Spec](/guides/writing-your-first-spec) for the full explainer) describes how specs are organized at any scale. Dialects formalize that hierarchy with concrete vocabulary, structure, and tooling.
+The practitioner hierarchy (capability → goal → outcome → slice; see [Writing Your First Spec](/guides/writing-your-first-spec)) is one way to organize work at different levels. Other approaches organize around events, states, actors, services, or contracts.
 
-Narrative-Driven Development is one such dialect. The terms map directly:
-
-| Practitioner term | NDD term |
-|---|---|
-| Capability | Domain |
-| Goal | Narrative |
-| Outcome | Scene |
-| Slice | Moment |
-
-Other dialects make different trade-offs. Event Modeling focuses on the temporal flow of events through a system. Some teams build their own minimal dialect on top of plain markdown with a folder convention.
-
-The point isn't which dialect you pick. The point is that once you outgrow flat markdown files, you want something that gives the hierarchy a concrete form, with tooling or workflow support that maintains it. For NDD specifically, see [Narrative-Driven Development](/dialects/narrative-driven).
+The point is not to learn a proprietary vocabulary. Once you outgrow flat Markdown files, you need a structure that makes important relationships visible and a workflow that helps keep them current.
 
 ## Signals You've Outgrown Plain Text
 
@@ -75,4 +64,4 @@ So if you're working with AI, err toward the more structured end of the spectrum
 
 ## Where to Go Next
 
-For other dialects (NDD and the spec-as-source family), see the [Spec Dialects](/dialects/) section in Learn.
+For a broader comparison, see [Approaches and Formats](/dialects/).

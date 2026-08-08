@@ -44,7 +44,7 @@ Three levels:
 
 Produces a complete blueprint. Shows what users see (wireframes), what happens (events), what triggers changes (commands), how data is presented (read models). Specs are Given/When/Then, tied to individual commands and views, creating independently implementable vertical slices.
 
-**How it feeds specs:** Event Models ARE specifications. Each slice can be directly translated into executable specs. Sessions can be as short as 15 minutes. See also [Event Modeling as a spec dialect](/dialects/).
+**How it feeds specs:** Event Models can carry specification material about behavior over time. Individual slices can inform concrete examples, contracts, and checks. See also [models and diagrams as specification formats](/dialects/).
 
 **Key resource:** [eventmodeling.org](https://eventmodeling.org)
 
@@ -202,7 +202,7 @@ The flow is: **Strategy, Discovery, Specification, Execution.** Each level feeds
 
 **For a brand new project:** Big Picture EventStorming, then User Story Mapping, then Example Mapping.
 
-**For an existing project:** Focused EventStorming, then Example Mapping, then feed into your [spec dialect](/dialects/).
+**For an existing project:** Focused EventStorming, then Example Mapping, then express the resulting decisions in the [formats](/dialects/) your team can maintain.
 
 **For strategic decisions:** Impact Mapping, then Wardley Mapping, then EventStorming for what you build.
 
@@ -212,6 +212,4 @@ The flow is: **Strategy, Discovery, Specification, Execution.** Each level feeds
 
 > **Facilitating these workshops?** *Collaborative Software Design* by van Kelle, Verschatse, and Baas-Schwegler (Manning) is an excellent guide.
 >
-> **Know a technique that should be listed here?** [Submit a PR](https://github.com/BeOnAuto/specdriven.com).
-
-*An initiative by [Auto](https://on.auto).*
+> **Know a technique that should be listed here?** [Suggest an addition](/community#suggest-a-change).

@@ -12,13 +12,13 @@ image: /images/pages/manifesto.png
 
 ![The Spec-Driven Manifesto](/images/pages/manifesto.png)
 
-We believe specifications are the most important artifact in software development. Not code. Not tests. Not documentation. Specifications. They capture the *why* behind every decision, and *why* is the one thing you can never reverse engineer.
+We believe specifications are among the most important artifacts in software development. They can preserve intended behavior and the reasons behind important decisions—context that code alone rarely reveals.
 
 Every piece of software is millions of decisions. What happens when the payment fails. Who has access to what, and why. Most are invisible, scattered across chat threads and meeting notes. The only record that survives is the code. And code tells you *what*, never *why*.
 
-When humans wrote all the code, that was a problem. Now that AI writes it at machine speed, it's a crisis. Every prompt is a specification that evaporates the moment you close the chat window. All that remains is code nobody fully understands.
+When humans wrote all the code, that was a problem. Now that AI can generate it at machine speed, it is urgent. Prompts contain consequential instructions and assumptions that can evaporate when the chat closes. The generated code survives; much of the reasoning does not.
 
-But AI also changed the equation. When implementation is nearly free, the specification isn't a brake on your speed. It *is* your speed.
+AI also changed the economics. As implementation becomes faster and cheaper, clarification and verification account for more of the work that separates a demo from dependable software.
 
 The tradeoff has always been the same: move fast or stay in control.
 
@@ -30,7 +30,7 @@ Three things separate teams that harness AI from teams that drown in it.
 
 ### 1. Capture intent. Never discard it.
 
-Decisions are being made every day in standups, in design reviews, in chat threads, in pairing sessions. The problem isn't that they stay locked away. The problem is that they're communicated and then lost. The whiteboard gets erased. The conversation scrolls away. The meeting notes rot in a doc no one reopens. Treat every decision as a specification. Record it. Keep it alive.
+Decisions are being made every day in standups, design reviews, chat threads, and pairing sessions. The problem is that important ones are communicated and then lost. The whiteboard gets erased. The conversation scrolls away. Record the decisions that define behavior, constraints, and trade-offs. Keep them inspectable.
 
 ### 2. Make every decision visible and changeable.
 
@@ -38,7 +38,7 @@ AI generates code at incredible speed. Even when it gets 80% right, you need con
 
 ### 3. Make specifications executable.
 
-The highest form of a specification is one that machines can verify. When your specifications are executable, they don't just describe intent, they prove it. Through every iteration, every refactor, every change, executable specifications tell you whether your software still does what you intended. They survive the test of time.
+Where a statement can be checked by a machine, connect it to verification. Executable specifications can show whether observed behavior still satisfies encoded expectations through iteration and change. They do not prove unencoded assumptions or replace human judgment.
 
 ## The Bigger Picture
 
@@ -46,11 +46,11 @@ Software has always been about problem-solving. You understand a problem, you de
 
 Think about how programming languages evolved. Machine code gave way to assembly. Assembly gave way to C. C gave way to higher-level languages. Each generation added abstraction, moving closer to human intent. Specifications are the next abstraction. They are the language of problem-solving itself.
 
-Specifications need the same rigor that programming languages developed over decades: clear syntax, precise semantics, composability, versioning, tooling. That's what spec dialects are: purpose-built specification languages for different domains and audiences.
+Specifications benefit from the same qualities programming languages developed over decades: clear semantics, composability, versioning, and tooling. Different [approaches and formats](/dialects/) provide different levels of rigor for different decisions and audiences.
 
-Code implements decisions. Tests verify them. Specifications *define* them. Definition is the hardest part of software. It always has been. That's why specifications are the most important artifact you'll ever produce. Everything else flows from getting them right.
+Code implements decisions. Tests and other checks provide evidence about them. Specifications make intended decisions explicit. Definition is difficult work, and the quality of everything downstream depends partly on how well it is done.
 
-The tools exist. The practices exist. Teams that treat specifications as first-class artifacts are already building with AI at full speed and full control. Teams that don't are generating code they can't explain, can't maintain, and can't trust.
+The tools exist. The practices exist. Teams can treat specifications as first-class artifacts today and learn where the approach improves clarity, control, and verification in their own context.
 
 The gap between the two widens with every prompt.
 

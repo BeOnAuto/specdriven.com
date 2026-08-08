@@ -1,11 +1,11 @@
 ---
 layout: home
-title: Spec-Driven Development | Specifications for the AI Era
-description: Spec-driven development turns intent, design, and business rules into structured, executable specifications. The discipline that makes AI-generated software auditable, verifiable, and yours.
+title: Spec-Driven Development | Sam Hatoum
+description: "Sam Hatoum's publication on spec-driven development: its history, principles, practices, tools, and competing approaches."
 animatedHero:
   name: Spec-Driven Development
   subhead: Specifications are becoming a new software medium.
-  lead: Spec-driven development turns intent and design into structured specifications that guide people, AI agents, and tests. The shift from disposable prompts to executable models.
+  lead: Spec-driven development turns important product and software decisions into explicit, inspectable specifications that can guide people, AI agents, implementation, and verification.
   actions:
     - theme: brand
       text: What Is Spec-Driven?
@@ -17,17 +17,17 @@ features:
   - icon:
       src: /images/home/why.png
     title: "Why Spec-Driven?"
-    details: "Roughly half of all software defects originate before a single line of code is written. AI is accelerating the consequences."
+    details: "Research has long attributed many expensive defects to requirements and design problems. AI accelerates the consequences of unresolved decisions."
     link: /guides/roi
   - icon:
       src: /images/home/what.png
     title: "What Are Specs?"
-    details: "Specifications are the communication of design. Without them, shared understanding is impossible."
+    details: "A specification makes intended design or behavior explicit enough to review, implement, or check."
     link: /what
   - icon:
       src: /images/home/manifesto.png
     title: "The Manifesto"
-    details: "Understanding, Design, Specification, Code. The chain that every successful project follows."
+    details: "Understanding, design, specification, implementation, and feedback are related decisions—not one irreversible phase gate."
     link: /manifesto
   - icon:
       src: /images/home/first-principles.png
@@ -36,29 +36,31 @@ features:
     link: /first-principles/
   - icon:
       src: /images/home/dialects.png
-    title: "Spec Dialects"
-    details: "Different problems need different spec languages. Narrative-Driven, Archetype, and other working dialects."
+    title: "Approaches & Formats"
+    details: "Prose, examples, schemas, models, and formal methods expose different decisions and carry different trade-offs."
     link: /dialects/
   - icon:
       src: /images/home/landscape.png
     title: "Tool Landscape"
-    details: "An honest catalog of spec-driven tools: Auto, Kiro, Spec Kit, Intent, OpenSpec, and more."
+    details: "An editorial catalog of spec-driven tools: Auto, Kiro, Spec Kit, Intent, OpenSpec, Tessl, and more."
     link: /landscape/
 ---
 
+> **A publication by [Sam Hatoum](/about).** SpecDriven is where I document the history, practice, tools, arguments, and open questions around the field that my career has been building toward. I also founded [Auto](https://on.auto), which is covered here as one participant in the landscape.
+
 ## The New Workflow
 
-Spec-driven development is a software engineering practice where specifications are the primary artifact driving implementation. Software intent is moving into a more durable medium:
+Spec-driven development is an approach in which explicit specifications materially guide implementation and verification. Software intent is moving into a more durable medium:
 
-`Intent → Structured Spec → AI Implementation → Verified Software`
+`Intent → Explicit Specification → Implementation → Evidence`
 
-The category matters because prompts are disposable, documents drift, and code alone cannot preserve why a system works the way it does.
+The category matters because prompts can be disposable, documents can drift, and code alone rarely preserves why a system works the way it does.
 
-## You're Already Doing It
+## You're Already Specifying
 
-Here's the thing: you already do spec-driven development. You just don't know it.
+Every team specifies, even when it does not keep a formal specification.
 
-Every whiteboard session, every user story, every prompt you write to an AI is a specification. The problem isn't that you don't create specifications. The problem is that [you throw them away](/why#the-throwaway-problem).
+A whiteboard, user story, prompt, or conversation can contain specification material. None is automatically precise or complete enough to guide a consequential implementation. The problem is that the decisions inside them are often implicit, fragmented, or [thrown away](/why#the-throwaway-problem).
 
 The whiteboard gets erased. The conversation evaporates. The code becomes the only surviving record, and code can't tell you [_why_ something works the way it does](/manifesto#the-principles). Three months later, nobody knows. You're left reverse-engineering intent from implementation.
 
@@ -68,30 +70,28 @@ Prompt-to-app tools are the Polaroid camera of software development. You point, 
 
 An SLR is a different machine. The lens comes off and gets swapped for the right glass. The aperture, shutter speed, and focal length are all under your control. Every setting is a deliberate decision, and the result scales from a wallet print to a billboard without falling apart. The work happens before the shot, not after it.
 
-Spec-driven development is the SLR of software. Every specification is a deliberate decision about what you're building and why. The output isn't just code that works. It's code that works _for the reasons you intended_, and that scales when the system grows.
+Spec-driven development is the SLR of software. Maintained specifications expose the settings that matter: what you are building, which choices were deliberate, and what evidence will show whether the implementation behaves as intended.
 
 ## From disposable prompts to durable specifications
 
-Every prompt you write to an AI is a specification. You're describing what you want built, what it should do, how it should behave. The problem isn't that you don't create specifications. The problem is that you throw them away the moment you close the chat window.
+Every prompt to an AI contains instructions about what to build. The problem is that a prompt is usually partial, conversational, and easy to lose when the session ends.
 
-Spec-driven development takes that same act of specifying and makes it persistent, structured, and executable. The chat window becomes a working file. The intent survives the session. The design decisions become something you can audit, share, and verify against running code.
+Spec-driven development makes the important decisions persistent and inspectable. The intent survives the session. Design and behavior become something people can review, builders can implement, and—where suitable—machines can check against running code.
 
 ## See the Difference
 
-What does spec-driven development actually look like in practice? Real tools, real examples, real results.
+What does spec-driven development actually look like in practice? Current tools, concrete examples, and different relationships between intent, implementation, and checks.
 
-The [landscape page](/landscape/#the-executability-gap) tracks who is building what, where the executability gap is widening, and which tools have regressed from the lessons of the BDD era. The [manifesto](/manifesto) lays out the three principles that separate teams that guide AI from teams that drown in it.
+The [landscape page](/landscape/) tracks what current tools claim, what their public workflows support, and how each relates specifications to implementation and verification. The [manifesto](/manifesto) states the argument for making product and software decisions explicit before generated code becomes the only surviving record.
 
 [See It In Action](/guides/see-it) | [Explore the Landscape](/landscape/)
 
-_Built by the team behind [Auto](/auto), for the spec-driven community. We acknowledge we have a vested interest. We run a platform in this space and we have our own dialect, [Narrative-Driven Development](/dialects/narrative-driven), and both are listed alongside the rest on the [landscape](/landscape/). We try hard to keep the comparison fair. Where we have skin in the game, we say so._
-
 ---
 
-> _Code writes itself. Specs never will._
+> _Code can be generated. The important decisions still have to be made._
 
 ## Ready to Take Your Specifications Seriously?
 
-The gap between what you _meant_ and what got _built_ is the most expensive problem in software. Specifications close that gap, if you treat them as first-class artifacts instead of disposable napkin sketches.
+The gap between what you _meant_ and what got _built_ is a recurring source of rework and risk. Maintained specifications can narrow that gap when teams treat them as first-class artifacts instead of disposable notes.
 
 [Explore the Landscape](/landscape/) | [Read the Manifesto](/manifesto) | [See It In Action](/guides/see-it)

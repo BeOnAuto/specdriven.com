@@ -16,13 +16,13 @@ Every engineering investment eventually has to survive a budget meeting. "We sho
 
 ## The Short Answer
 
-Before AI, the answer was already settled. Decades of peer-reviewed research showed that specification-first practices cut defects substantially, sometimes by as much as 90%, with productivity costs that paid back downstream through reduced rework. [See the pre-AI evidence.](#pre-ai-evidence-what-specifications-did-for-quality)
+Before AI, relevant evidence came from requirements engineering, TDD, formal methods, and the economics of finding errors earlier. Some studies found substantial quality gains, but the results depend on practice, team, and context; they do not establish one universal return for everything called spec-driven development. [See the pre-AI evidence.](#pre-ai-evidence-what-specifications-did-for-quality)
 
-AI changed the equation, and not in the direction the marketing suggests. Code volume went up. Defect density per change went up. Architectural drift accelerated. Security flaws multiplied. The only randomized controlled trial in mature codebases showed something the industry is still absorbing: experienced developers thought AI made them 20% faster; measurement showed it made them 19% slower. [See the AI-era evidence.](#ai-era-evidence-what-changed-and-what-didn-t)
+AI-era evidence is mixed by task and context. Bounded greenfield experiments have measured speed gains, while a 2025 randomized controlled trial with experienced maintainers working in familiar repositories measured a slowdown under its study conditions. Vendor and observational studies raise concerns about security, churn, and review load, but should not be generalized beyond their methods. [See the AI-era evidence.](#ai-era-evidence-what-changed-and-what-didn-t)
 
-What we have now, that we did not have a year ago, is direct measured evidence that specifications close that gap. Spec-aware AI generation reduces adaptation costs by 46.5% and improves initial correctness by 30.7%. The thing that worked before AI works better with AI. [See the direct evidence.](#direct-evidence-that-specifications-help-with-ai)
+Early research is beginning to compare structured, specification-aware generation with less constrained generation. One 2025 preprint reports lower adaptation costs and higher initial correctness on its benchmark. That is promising evidence, not a settled effect size for production teams. [See the direct evidence.](#early-direct-evidence-for-specification-aware-ai)
 
-The structural point is simple. AI shifts engineering work from typing to verification, and specifications are how teams absorb that load. Without them, you are paying for AI to produce code your team then reviews, rewrites, and debugs. With them, every change traces back to a specific intent, every verification has a reference, and every question about why something works the way it does has an answer that survives the chat window.
+The structural point is simple. AI can shift effort from typing toward clarification, review, and verification. Maintained specifications can give changes and checks an explicit reference, but only where teams capture the important decisions and keep the relationship current.
 
 The investment in specification quality goes up with AI, not down.
 
@@ -30,13 +30,13 @@ The investment in specification quality goes up with AI, not down.
 
 Frame it in terms they care about.
 
-**Risk reduction.** Code generated without specifications is untraceable. When something breaks in production, you cannot point to which specification was violated, because there are no specifications. With spec-driven development, every failure traces back to a specific spec, making diagnosis and recovery faster.
+**Risk reduction.** When important decisions survive only in chat and code, tracing a production failure back to intended behavior becomes harder. Maintained specifications can improve that trace where source, scope, and verification evidence are connected.
 
-**Maintenance cost predictability.** GitClear's measured churn doubled and clone density grew 8x in AI-assisted codebases [^8]. Specs with executable tests prevent drift and catch regressions before they ship.
+**Maintenance cost predictability.** GitClear reports increased churn and duplication correlated with the AI-adoption period in its dataset [^8]. Substantive automated checks can catch covered regressions before release; specifications can also preserve why the behavior matters.
 
-**AI effectiveness.** The MaintainCoder data shows 46.5% lower adaptation cost and 30.7% better initial correctness under spec-aware generation [^16]. Stanford's controlled study shows that effort spent on query construction directly improves security outcomes [^11]. AI with clear acceptance criteria produces measurably better output. Without specs, you are paying for AI that produces code your team then spends time reviewing and rewriting.
+**AI effectiveness.** MaintainCoder reports lower adaptation cost and better initial correctness under its specification-aware benchmark condition [^16]. A Stanford study found that prompt construction and participant behavior affected security outcomes [^11]. These results support testing explicit constraints and acceptance criteria; they do not establish one guaranteed productivity gain.
 
-**Talent retention.** Stack Overflow's 2025 survey shows 66% of developers struggle with AI output that is "almost right, but not quite" [^12]. Trust dropped 11 points in one year. Developers in spec-driven environments spend their time on design rather than debugging probabilistic output. They have confidence when they make changes.
+**Developer experience.** Stack Overflow's 2025 survey reports widespread frustration with AI output that is “almost right, but not quite” [^12]. Track whether clearer constraints reduce review and rework for your own team rather than assuming the effect.
 
 > 🔄 **Feedback opportunity:** Quantify the time your team spends on regressions, debugging, and figuring out what existing code does. That is the cost of spec debt. Spec-driven development directly reduces that cost. Track it for one sprint before and one sprint after adopting specs and you will have your own data.
 
@@ -54,7 +54,7 @@ Boehm's research on software engineering economics documented cost ratios of rou
 
 Empirical NASA observations across spacecraft modification programs and a 20-year aircraft program yielded escalation ratios of 29x to 186x for requirements errors found in operations [^5].
 
-These numbers are old by software-industry standards. They are also peer-reviewed, replicated, and consistent. They represent what specification-first practices produced when humans were writing all the code.
+These studies are relevant antecedents, not direct trials of today’s AI-era tools. They support testing earlier feedback and executable expectations while leaving the size of the benefit context-dependent.
 
 ## AI-Era Evidence: What Changed and What Didn't
 
@@ -76,13 +76,13 @@ AI has changed both the speed of code production and the cost of low quality. Th
 
 Counter-evidence exists, and it matters. Bounded single-task experiments often show large speedups. Microsoft and Accenture's RCT across roughly 4,800 developers found a 26% increase in task completion. GitHub's 2023 study with 95 freelancers building an HTTP server from scratch showed 55% faster completion [^14][^15]. These tasks share a common shape: no existing codebase, no architectural constraints, no review process. They measure how AI performs on greenfield problems. METR's RCT in mature repositories measured something different and produced the opposite result. The pattern is consistent: AI shifts engineering work from typing to verification, and the cost of verification scales with codebase complexity in a way that controlled experiments rarely capture.
 
-## Direct Evidence That Specifications Help With AI
+## Early Direct Evidence for Specification-Aware AI
 
-The case for spec-driven development with AI is not just an interpolation from pre-AI TDD studies. It is directly measured.
+Direct evidence is beginning to appear, but it remains early.
 
-The MaintainCoder study (2025) established benchmarks to measure code maintainability under realistic requirement evolution. Standard unconstrained LLM code generation showed maintainability degradation of 46% to 246% under changing requirements. Under a structured specification-aware approach, dynamic maintainability improved by up to 60%, adaptation costs fell by 46.5%, and initial functional correctness improved by 30.7% [^16].
+The MaintainCoder preprint (2025) introduced a benchmark for code maintainability under requirement evolution. It reports worse maintainability under unconstrained generation and improvements under its structured specification-aware condition [^16]. The result is specific to the benchmark and should be replicated before being treated as a production effect size.
 
-Stanford's 2023 security study found that participants who invested more effort in their queries produced more secure code [^11]. Effort in query construction is, operationally, specification work.
+Stanford's 2023 security study found that participant prompting behavior affected security outcomes [^11]. Treating this as evidence for specification work is an editorial inference, not the study’s direct intervention.
 
 ZoomInfo's deployment of Copilot across 400+ developers over 8 months reported 33% suggestion acceptance and 72% satisfaction, but engineering leaders specifically called out that "the tool's lack of domain-specific logic and lack of consistency in code quality... negatively impact time savings due to the need for additional scrutiny required while vetting the generated code" [^17]. The missing domain-specific logic is what specifications encode.
 
@@ -102,7 +102,7 @@ Sources are tagged by credibility tier: **peer-reviewed** (academic research wit
 
 [^5]: Stecklein, J.M., Dabney, J., Dick, B., Haskins, B., Lovell, R., & Moroney, G. (2004). "Error Cost Escalation Through the Project Life Cycle." NASA NTRS / INCOSE. **Peer-reviewed at INCOSE.** The 29x and 157-186x figures are empirical (5 spacecraft programs and a 20-year aircraft program respectively). Higher modeled figures in the same paper come from scenario projections rather than measured outcomes. ([source](https://ntrs.nasa.gov/citations/20100036670))
 
-[^6]: Becker, J., Rush, N., Barnes, E., & Rein, D. (2025). "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity." METR. arXiv:2507.09089. **Peer-reviewed preprint, independent RCT.** 16 developers, 246 tasks, mature repositories with five years average prior experience. ([source](https://arxiv.org/abs/2507.09089))
+[^6]: Becker, J., Rush, N., Barnes, E., & Rein, D. (2025). "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity." METR. arXiv:2507.09089. **Research preprint; randomized controlled trial.** 16 developers, 246 tasks, mature repositories with five years average prior experience. ([source](https://arxiv.org/abs/2507.09089))
 
 [^7]: CodeRabbit (Dec 17, 2025). "State of AI vs Human Code Generation Report." **Vendor research.** 470 GitHub PRs (320 AI co-authored, 150 human-only). AI authorship inferred from "Co-Authored-By" trailer, so the human group likely contains undisclosed AI assistance, which would understate the gap. CodeRabbit sells AI code review tooling. ([source](https://www.coderabbit.ai/blog/state-of-ai-vs-human-code-generation-report))
 
@@ -122,6 +122,6 @@ Sources are tagged by credibility tier: **peer-reviewed** (academic research wit
 
 [^15]: Peng, S., Kalliamvakou, E., Cihon, P., & Demirer, M. (2023). "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot." arXiv:2302.06590. N=95 freelancers building an HTTP server in JavaScript from scratch. Single isolated task with no existing codebase or review process. ([source](https://arxiv.org/abs/2302.06590))
 
-[^16]: MaintainCoder study (2025). Establishes MaintainBench for assessing code maintainability under requirement evolution. **Peer-reviewed.** Standard LLM code generation degrades 46% to 246% under changing requirements; specification-aware generation improves dynamic maintainability by up to 60%, reduces adaptation costs by 46.5%, and improves initial correctness by 30.7%. ([source](https://arxiv.org/abs/2503.24260))
+[^16]: MaintainCoder study (2025). Establishes MaintainBench for assessing code maintainability under requirement evolution. **Research preprint.** Reports benchmark results comparing unconstrained and specification-aware generation. ([source](https://arxiv.org/abs/2503.24260))
 
-[^17]: ZoomInfo Engineering (2025). "Experience with GitHub Copilot for Developer Productivity at Zoominfo." arXiv:2501.13282. **Peer-reviewed practitioner report.** 400+ developers, 8 months. ([source](https://engineering.zoominfo.com/experience-with-github-copilot-for-developer-productivity-at-zoominfo))
+[^17]: ZoomInfo Engineering (2025). "Experience with GitHub Copilot for Developer Productivity at Zoominfo." arXiv:2501.13282. **Industry practitioner report.** 400+ developers, 8 months. ([source](https://engineering.zoominfo.com/experience-with-github-copilot-for-developer-productivity-at-zoominfo))

@@ -14,7 +14,7 @@ image: /images/pages/first-principles/spec-lifecycle.png
 
 ## Birth
 
-A specification is born when design needs to be communicated. [Specifications are the communication of design](/what), and a spec exists from the moment that communication begins. Before the spec exists, there was a requirement (the problem), then a solution (the design), then the need to express that design precisely enough for someone or something to implement it.
+A specification is born when intended design or behavior needs to become [explicit and inspectable](/what). Before it exists, there may be a requirement, an emerging solution, examples, constraints, and unresolved questions. The specification is the expression precise enough for its audience to review, implement, or check.
 
 Specs don't come from nowhere. They come from design. And design comes from understanding the problem. Skip the problem understanding and your design will be wrong. Skip the design and your spec will be a requirement masquerading as a specification. Both are expensive mistakes.
 
@@ -42,7 +42,7 @@ In all these cases, the spec updates. Tests update to match. The system updates 
 
 Specs start broad and get more specific over time. This is the asteroids pattern: you have a large block, you split it into smaller blocks, and you keep splitting until each piece is atomic.
 
-At the highest level, you might have a domain spec: "retail customers can purchase products online." That splits into narratives, scenes, and moments. Each split is a design decision and a new specification at a finer grain.
+At the highest level, you might have a product outcome: “retail customers can purchase products online.” That can split into capabilities, goals, outcomes, behaviors, rules, and interface or contract decisions. Each split reveals a finer-grained question that may need its own specification.
 
 How atomic should you go? It depends on what's at stake. Business-critical logic deserves the highest level of specificity. You want to specify every edge case, every constraint, every permutation. A UI shimmer animation? Probably not worth specifying to the nth degree. Use a design library and move on.
 
@@ -54,7 +54,7 @@ Specs die when the feature they describe no longer exists. If you remove a featu
 
 Most teams are bad at this. They add specs but rarely remove them. Over time, the spec inventory drifts from reality. Some specs describe features that were redesigned. Some describe features that were removed. Some describe features that were never built. This is spec drift, and it's a form of spec debt.
 
-An executable spec has a built-in death detection mechanism: if the feature is removed and the test is still there, the test fails (because the code it's testing no longer exists). If you delete the test along with the code, the spec dies cleanly. Non-executable specs don't have this mechanism. They just rot.
+An executable specification may expose deliberate feature removal because its checks begin failing or are removed in the same change. That signal is useful, but not foolproof: weak tests and indirect dependencies can hide drift. Non-executable specifications need an explicit retirement process.
 
 ## Spec Debt
 

@@ -160,10 +160,8 @@ A few principles that hold regardless of format:
 
 This guide covered the basics: rules, examples, and the two core patterns (Given/When/Then and describe/it/should). From here:
 
-- **[See It In Action](/guides/see-it)** for more sophisticated examples using spec dialects
+- **[See It In Action](/guides/see-it)** for one decision expressed through several useful formats
 - **[Making Specs Executable](/guides/executable-specs)** to turn these specs into automated tests
 - **[Using Specs with LLMs](/guides/specs-with-llms)** for prompt patterns that get better results from AI coding tools
 
 ---
-
-*An initiative by [Auto](https://on.auto).*

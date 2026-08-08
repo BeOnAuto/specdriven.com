@@ -24,13 +24,13 @@ You cannot go faster by ignoring quality. Poor quality is the drag on your wings
 
 ## Where Your Bugs Really Come From
 
-You probably assume most bugs come from sloppy coding. They don't.
+It is easy to treat defects as coding mistakes. Many begin earlier.
 
-Research across decades of software engineering (from Barry Boehm's work at TRW and IBM to Capers Jones's analysis of thousands of projects) consistently finds that **roughly 50% of all defects originate at the specification stage**, not in code, not in testing, but in the conversation (or lack thereof) about what to build.
+Research across decades of software engineering attributes a substantial share of expensive defects to requirements and design problems: omissions, incorrect assumptions, ambiguity, and decisions discovered too late. Studies use different categories and report different ranges, so it is more accurate to say that many defects are created before implementation than to assign one universal percentage.
 
-Coding mistakes are a smaller share than most teams assume. The largest share of bugs trace back to specification problems: incorrect specs, missing specs, vague intent. **Your bugs are mostly not code bugs.** They have everything to do with what was (or wasn't) communicated before coding began.
+These are not all “spec bugs” in a narrow sense. They are evidence that the decisions surrounding what to build and how it should behave deserve the same discipline as the code.
 
-(See Boehm & Basili, "Software Defect Reduction Top 10 List," *IEEE Computer*, January 2001.)
+[See the evidence and its limits on the ROI page.](/guides/roi#pre-ai-evidence-what-specifications-did-for-quality)
 
 ## The Golden Rule of Feedback
 
@@ -46,23 +46,23 @@ You already know this intuitively. You've lived it. The question is whether your
 
 AI didn't create the quality problem. But it accelerated it.
 
-What used to decay over months and years now rots in days. Prompt-to-app tools skip the specification stage entirely, going straight from a vague idea to running code. This means that 50% defect rate from missing and incorrect specifications isn't just still there. It's being generated at unprecedented speed.
+What used to decay over months and years can now rot in days. Prompt-to-app tools can turn a vague idea into running code before important product and design decisions have been made explicit.
 
 You're not building faster. You're accumulating defects faster. And the codebase that AI generated in a weekend becomes the codebase you spend months debugging by hand.
 
-## Your Prompts Are Specifications
+## Your Prompts Contain Specification Material
 
-Every prompt you write to an AI is a specification. Think about it. You're describing what you want built, what it should do, how it should behave. That's a specification by any definition.
+Every prompt to an AI can contain instructions about what to build, what it should do, and how it should behave. That makes it an input to specification—not automatically a sufficient specification.
 
 The difference is that your prompts are ephemeral (gone after the session), unstructured (natural language with implicit assumptions), and unverifiable (no way to prove the output matches the intent).
 
-Spec-driven development is what happens when you take that same act of specifying and make it persistent, structured, and executable. You're not adding a new step. You're upgrading the step you're already doing.
+Spec-driven development takes the important decisions in that exchange and makes them persistent, inspectable, and appropriately connected to implementation or verification.
 
 ## The Throwaway Problem
 
 Here's the paradox: every software team already does spec-driven development. They just do it badly.
 
-Every standup where someone explains what they're building? That's a verbal specification. Every pull request description? A retroactive specification. Every argument about whether a feature "should" work a certain way? That's a specification negotiation happening in real time.
+Standups, pull request descriptions, and arguments about how a feature “should” work all contain decisions that may belong in a specification.
 
 Specifications are everywhere. They permeate every phase of your process. The problem is that you treat them as exhaust, a byproduct of the "real work," instead of as the primary artifact.
 
@@ -78,7 +78,6 @@ When the code is your only spec, every future decision gets made without context
 
 The answer isn't to slow down. You don't need to choose between speed and quality. That's a false trade-off.
 
-The answer is to apply quality functions at the right time, starting with specifications. When you get the specification right, the code almost writes itself. When you get it wrong, no amount of testing can save you.
+The answer is to apply quality functions at the right time, starting with the decisions that will guide implementation. Better specifications do not make implementation automatic, but they reduce avoidable guesswork and give people and agents a stable reference for building and checking the result.
 
 Spec-Driven Development puts specifications first, making them explicit, persistent, and executable. Not as bureaucratic overhead, but as the shortest path to software that actually does what you intended.
-
