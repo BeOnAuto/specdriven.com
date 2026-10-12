@@ -1,6 +1,6 @@
 ---
 title: Auto — Tool Profile
-description: An editorial profile of Auto's product-modeling workflow for software built with agents.
+description: An archived August 2026 assessment of Auto's earlier product-modeling workflow, with a link to its current playbook automation product.
 prev:
   text: Evaluation Framework
   link: /landscape/evaluation
@@ -15,6 +15,10 @@ image: /images/pages/auto.png
 ![Auto](/images/pages/auto.png)
 
 > **Disclosure:** Auto was founded by Sam Hatoum, who publishes SpecDriven. This profile is Sam’s assessment of a product in which he has a direct commercial interest. **Last reviewed: August 7, 2026.**
+
+::: info Historical profile
+This assessment records the product reviewed on August 7, 2026. Auto's current direction is playbook automation: a playbook contains one brain of reusable functions and its workflows. Auto Runtime executes them, Auto Studio presents and manages them, and the user's agent is a separate client. See the [current product](https://on.auto) and [concepts](https://on.auto/docs/concepts/playbooks). The assessment below remains a historical record.
+:::
 
 ## What it is
 

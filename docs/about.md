@@ -19,7 +19,7 @@ I am [Sam Hatoum](https://www.linkedin.com/in/samhatoum/), a product and softwar
 
 I began using the phrase “spec-driven development” in my consulting work in 2016 and purchased specdriven.com in 2020. The [origins](/origins) and [timeline](/timeline) pages separate my own history with the term from the much broader history of specification in software.
 
-Today I work on [Auto](https://on.auto), the product modeling platform I founded for software built with agents. Auto makes product workflows, rules, screens, and decisions visible so people can review what is going to be built and check the result against what they approved.
+Today I work on [Auto](https://on.auto), the playbook automation product I founded. People describe how they want work done through their agents, then inspect, test and manage reusable functions and workflows. Auto Runtime executes the playbooks; Auto Studio presents and manages them.
 
 ## The relationship to Auto
 
