@@ -25,6 +25,7 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - run: pnpm test
       - name: Install Chrome for OG screenshots
         run: pnpm exec puppeteer browsers install chrome
       - name: Regenerate OG images

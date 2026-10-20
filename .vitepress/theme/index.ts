@@ -8,6 +8,7 @@ import EmailModal from './components/EmailModal.vue';
 import FlywheelDiagram from './components/FlywheelDiagram.vue';
 import FundamentalsIntro from './components/FundamentalsIntro.vue';
 import ThemeImage from './components/ThemeImage.vue';
+import { createScarfTracker } from './scarf';
 
 export default {
   extends: DefaultTheme,
@@ -45,6 +46,10 @@ export default {
       router.onAfterRouteChanged = (to) => {
         posthog.capture('$pageview', { path: to });
       };
+
+      const trackScarfPageview = createScarfTracker(window);
+      trackScarfPageview();
+      router.onAfterRouteChange = trackScarfPageview;
 
       document.addEventListener('click', (event) => {
         const target = event.target as HTMLElement | null;
