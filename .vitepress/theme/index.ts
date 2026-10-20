@@ -8,6 +8,7 @@ import EmailModal from './components/EmailModal.vue';
 import FlywheelDiagram from './components/FlywheelDiagram.vue';
 import FundamentalsIntro from './components/FundamentalsIntro.vue';
 import ThemeImage from './components/ThemeImage.vue';
+import { createPosthogPageviewTracker } from './posthog-pageview';
 import { createScarfTracker } from './scarf';
 
 export default {
@@ -39,17 +40,14 @@ export default {
       // Tag all events with environment
       posthog.register({ environment: isLocal ? 'development' : 'production' });
 
-      // Capture initial page view
-      posthog.capture('$pageview', { path: window.location.pathname });
-
-      // Capture page views on route change
-      router.onAfterRouteChanged = (to) => {
-        posthog.capture('$pageview', { path: to });
-      };
-
+      const trackPosthogPageview = createPosthogPageviewTracker(window.location, posthog);
       const trackScarfPageview = createScarfTracker(window);
-      trackScarfPageview();
-      router.onAfterRouteChange = trackScarfPageview;
+      const trackPageview = () => {
+        trackPosthogPageview();
+        trackScarfPageview();
+      };
+      trackPageview();
+      router.onAfterRouteChange = trackPageview;
 
       document.addEventListener('click', (event) => {
         const target = event.target as HTMLElement | null;
