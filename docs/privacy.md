@@ -19,6 +19,12 @@ The email address is used to send SpecDriven updates and to understand which pub
 
 SpecDriven uses PostHog to understand page visits and newsletter sign-ups. Analytics events can include the page path, environment, subscription placement, and the source of a subscription. After a successful subscription, the normalized email address is associated with the PostHog profile so the subscription event can be attributed correctly.
 
+## Organization analytics
+
+On each page you visit, SpecDriven loads a small image from `static.on.auto`, a domain operated by [Scarf](https://scarf.sh), to understand which organizations read the site. The image sets no cookies. The request carries the address of the page without its query string, along with what every browser request includes, such as your IP address. Scarf uses the IP address to look up the organization it belongs to and does not store the address itself. This information is available to Auto (OnAuto, Inc.), whose Scarf account receives it.
+
+The image is not loaded when your browser sends a Do Not Track signal.
+
 ## Questions and corrections
 
 If you want to ask what information is associated with your subscription, correct it, or request its removal, contact [Sam Hatoum on LinkedIn](https://www.linkedin.com/in/samhatoum/).
