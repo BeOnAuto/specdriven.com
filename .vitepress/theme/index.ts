@@ -9,7 +9,6 @@ import FlywheelDiagram from './components/FlywheelDiagram.vue';
 import FundamentalsIntro from './components/FundamentalsIntro.vue';
 import ThemeImage from './components/ThemeImage.vue';
 import { createPosthogPageviewTracker } from './posthog-pageview';
-import { createScarfTracker } from './scarf';
 
 export default {
   extends: DefaultTheme,
@@ -40,12 +39,7 @@ export default {
       // Tag all events with environment
       posthog.register({ environment: isLocal ? 'development' : 'production' });
 
-      const trackPosthogPageview = createPosthogPageviewTracker(window.location, posthog);
-      const trackScarfPageview = createScarfTracker(window);
-      const trackPageview = () => {
-        trackPosthogPageview();
-        trackScarfPageview();
-      };
+      const trackPageview = createPosthogPageviewTracker(window.location, posthog);
       trackPageview();
       router.onAfterRouteChange = trackPageview;
 
